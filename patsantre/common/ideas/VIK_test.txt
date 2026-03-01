@@ -1,0 +1,563 @@
+ideas = {
+    country = {
+	     VIK_slaboumie = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_slaboumie
+			  
+			  modifier = {
+			      offence = 0.1
+				  research_speed_factor = -0.10
+				  offensive_war_stability_factor = 0.2
+				  war_support_factor = 0.05
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     VIK_podgotovka = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_idea_VIK_podgotovka
+			  
+			  modifier = {
+			      consumer_goods_factor = -0.1
+				  political_power_gain = 0.15
+				  war_support_weekly = 0.01
+				  production_speed_buildings_factor = 0.1
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     VIK_alkogol = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_idea_VIK_alkogol
+			  
+			  modifier = {
+			      consumer_goods_factor = 0.5
+				  political_power_gain = -0.30
+				  war_support_weekly = -0.005
+				  stability_weekly = -0.005
+				  production_speed_buildings_factor = -0.15
+				  industrial_capacity_factory = -0.15
+				}
+			}
+		}
+	}
+ideas = {
+    country = {
+	     VIK_bestleto = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_idea_VIK_bestleto
+			  
+			  modifier = {
+			      consumer_goods_factor = -0.2
+				  political_power_gain = 0.2
+				  war_support_weekly = 0.01
+				  production_speed_buildings_factor = 0.15
+				}
+			}
+		}
+	}
+ideas = {
+    country = {
+	     VIK_nestabilnost = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_slaboumie
+			  
+			  modifier = {
+			      war_support_weekly = -0.01
+				  stability_weekly = -0.01 
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     VIK_1stpatsaniwar = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_1stpatsaniwar
+			  
+			  modifier = {
+			      army_infantry_attack_factor = 0.15
+				  army_org = 5
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     VIK_WW1tactic = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_WW1tactic
+			  
+			  modifier = {
+			      army_infantry_defence_factor = 0.1
+				  army_org_factor = 0.05
+				  max_dig_in_factor = 0.2
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     VIK_Blitzkrieg = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_Blitzkrieg
+			  
+			  modifier = {
+			      army_armor_attack_factor = 0.15
+				  army_armor_defence_factor = 0.05
+				  planning_speed = 0.15
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     VIK_mobilisation = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_mobilisation
+			  
+			  modifier = {
+				  max_planning_factor = 0.15
+				  out_of_supply_factor = -0.1
+				  weekly_manpower = 1400
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     VIK_victory_or_death = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_victory_or_death
+			  
+			  modifier = {
+				  breakthrough_factor = 0.1
+				  out_of_supply_factor = -0.1
+				  army_attack_factor = 0.05
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     VIK_voisko1 = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_voisko1
+			  
+			  modifier = {
+				  weekly_manpower = 250
+				  planning_speed = -0.1
+				  army_org_factor = -0.05
+				  army_core_defence_factor = 0.05
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     VIK_sever1 = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_1stpatsaniwar
+			  
+			  targeted_modifier = {
+				tag = ILY
+				attack_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = NKD
+				attack_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = SAS
+				attack_bonus_against = -0.05
+			}
+			targeted_modifier = {
+				tag = NAN
+				attack_bonus_against = -0.05
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     VIK_zapad1 = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_1stpatsaniwar
+			  
+			  targeted_modifier = {
+				tag = ILY
+				attack_bonus_against = -0.05
+			}
+			targeted_modifier = {
+				tag = NKD
+				attack_bonus_against = -0.05
+			}
+			targeted_modifier = {
+				tag = SAS
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = NAN
+				attack_bonus_against = 0.1
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     VIK_flowers1 = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_flowers1
+			  
+			  modifier = {
+				  political_power_gain = 0.15
+				  stability_factor = 0.03
+				  war_support_factor = 0.03
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     VIK_love = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_love
+			  
+			  modifier = {
+				  political_power_gain = 0.1
+				  drift_defence_factor = -0.5
+				  consumer_goods_factor = 0.1
+				  stability_factor = 0.05
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     VIK_sportmaster = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_sportmaster
+			  
+			  modifier = {
+                  production_factory_efficiency_gain_factor = 0.05
+				  consumer_goods_factor = -0.1
+				  production_factory_max_efficiency_factor = 0.05
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     VIK_bunker = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_bunker
+			  
+			  modifier = {
+				  consumer_goods_factor = 0.2
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     VIK_sam = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_generic_intel_bonus
+			  
+			  modifier = {
+				  production_speed_arms_factory_factor = 0.1
+				  production_factory_max_efficiency_factor = 0.05
+				  army_core_attack_factor = 0.1
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     VIK_voisko2 = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_voisko1
+			  
+			  modifier = {
+				  weekly_manpower = 250
+				  army_core_defence_factor = 0.05
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     VIK_endsieg = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_endsieg
+			  
+			  modifier = {
+				  army_core_defence_factor = 0.05
+				  war_support_factor = 0.08
+				  stability_factor = -0.08
+				  surrender_limit = 0.1
+				  army_org_factor = -0.08
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     VIK_endsieg1 = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_endsieg
+			  
+			  modifier = {
+				  army_core_defence_factor = 0.05
+				  war_support_factor = 0.08
+				  stability_factor = -0.18
+				  surrender_limit = 0.1
+				  army_org_factor = -0.08
+				  industrial_capacity_factory = 0.1
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     VIK_endsieg2 = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_endsieg
+			  
+			  modifier = {
+				  army_core_defence_factor = 0.07
+				  war_support_factor = 0.08
+				  stability_factor = -0.18
+				  surrender_limit = 0.1
+				  army_org_factor = -0.08
+				  industrial_capacity_factory = 0.1
+				  weekly_manpower = 1000
+			}
+		}
+	}
+}
+
+ideas = {
+    country = {
+	     VIK_airforce = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_airforce
+			  
+			  modifier = {
+				  air_accidents_factor = -0.1
+                  air_attack_factor = 0.15
+                  air_agility_factor = 0.15
+                  air_night_penalty = -0.15
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     VIK_autarky = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_endsieg
+			  
+			  modifier = {
+				  min_export = -0.1
+                  consumer_goods_factor = 0.05
+                  monthly_population = 0.1
+                  local_resources_factor =0.1
+                  production_speed_buildings_factor = 0.05
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     VIK_patriot = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_idea_VIK_bestleto
+			  
+			  modifier = {
+			      offence = 0.24
+				  defence = 0.1
+				  attrition = -0.05
+				}
+			}
+		}
+	}

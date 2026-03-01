@@ -1,0 +1,143 @@
+﻿capital = 219
+set_stability = 0.46
+set_war_support = 0.34
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_oob = "GNL_1936_nsb"
+}
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_oob = "GNL_1936"
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+	gwtank = 1
+    basic_light_tank = 1
+    
+
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		engine_tech_1 = 1
+		engine_tech_2 = 1
+	}
+}
+
+set_research_slots = 3
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_military_police = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	paratroopers = 1
+	gw_artillery = 1
+	mass_assault = 1
+	
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2022.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+
+set_popularities = {
+	democratic = 18
+	fascism = 12
+	communism = 10
+	neutrality = 60
+}
+
+add_ideas = {
+	
+}
+
+
+create_country_leader = { 
+    name = "Независимые люди"
+	desc = "POLITICS_ADOLF_HITLER_DESC"
+	picture = "Portrait_People.dds"
+	expire = "2029.1.1"
+	ideology = despotism
+	traits = { GNL_troevlastie }
+}
+create_country_leader = { 
+    name = "Кира Сидорова"
+	desc = "POLITICS_ADOLF_HITLER_DESC"
+	picture = "Portrait_KiraS2024.dds"
+	expire = "2029.1.1"
+	ideology = nazism
+	traits = {
+	    
+	}
+}
+
+
+
+if = {
+  limit = { has_dlc = "By Blood Alone" }
+    set_air_oob = "GNL_1936_air_bba"
+    set_technology = {
+      aa_lmg = 1
+      engines_1 = 1
+      engines_2 = 1
+      iw_small_airframe = 1
+      iw_medium_airframe = 1
+      early_bombs = 1
+      bba_early_transport_plane = 1
+    }
+  else = {
+    set_air_oob = "GNL_1936_air_legacy"
+    set_technology = {
+      early_fighter = 1
+      early_bomber = 1
+      CAS1 = 1
+      early_transport_plane = 1
+    }
+  }
+}
+
+if = {
+  limit = {
+    has_dlc = "By Blood Alone"
+  }
+  create_equipment_variant = {
+    name = "L.7"
+    type = small_plane_airframe_0
+    modules = {
+      fixed_main_weapon_slot = light_mg_4x
+fixed_auxiliary_weapon_slot_1 = light_mg_2x
+      engine_type_slot = engine_2_1x
+      special_type_slot_1 = lmg_defense_turret
+    }
+  }
+}
+ 
+
+

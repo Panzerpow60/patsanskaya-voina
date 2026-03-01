@@ -1,0 +1,883 @@
+focus_tree = {
+	id = SAS
+	country = {
+		factor = 0
+		modifier = {
+		    add = 10
+			tag = SAS
+		}
+	}
+	default = no
+	focus = {
+		id = SAS_komp
+		icon = GFX_goal_unknown
+		cost = 4,00
+		x = 14
+		y = 0
+		completion_reward = {
+		add_timed_idea = {
+		idea = SAS_komp
+		days = 140
+		}
+		}
+
+	}
+	focus = {
+		id = SAS_2024
+		icon = GFX_goal_ILY_2024
+		cost = 5,00
+		x = 21
+		y = 0
+		available = {
+			if = {
+		date > 2024.01.01
+		has_idea = SAS_depression2
+	
+		}
+	}
+	completion_reward = {
+		country_event = viktor.9
+		}
+
+	}
+	focus = {
+		id = SAS_zd
+		icon = GFX_goal_SAS_argonskles
+		cost = 5,00
+		x = 31
+		y = 0
+		completion_reward = {
+					254 = {
+					add_building_construction = {
+						type = supply_node
+						level = 1
+						province = 6284
+						instant_build = yes
+					}
+					build_railway = {
+						path = { 9330 11248 269 9376 3257 6284 }
+					}
+					257 = {
+					add_building_construction = {
+						type = supply_node
+						level = 1
+						province = 11351
+						instant_build = yes
+					}
+					build_railway = {
+						path = { 471 11296 11351 11381 9245 9273 11294 11248 }
+					}
+				}
+				}
+				}
+
+	}
+	focus = {
+		id = SAS_vitya
+		icon = GFX_focus_eng_global_defense
+		cost = 5,00
+		x = 39
+		y = 0
+		available = {
+			if = {
+				threat > 0.49	
+			}
+		}
+		completion_reward = {
+		add_war_support = 0.05
+}
+	}
+	focus = {
+		id = SAS_andreev
+		icon = GFX_goal_continuous_restrict_freedom
+		cost = 5,00
+		x = 47
+		y = 0
+		available = {
+    NAN = {
+        is_puppet_of = SAS
+    }
+  }
+  completion_reward = {
+  every_country = {
+				limit = {
+					AND = {
+						OR = {
+							original_tag = NAN
+						}
+					}
+				}
+				country_event = andreev.8
+				}
+			}
+  
+
+	}
+	focus = {
+		id = SAS_newyear
+		icon = GFX_goal_ILY_2023
+		cost = 1,00
+		prerequisite = {
+			focus = SAS_komp
+		}
+		x = 14
+		y = 1
+		completion_reward = {
+		country_event = viktor.4
+		}
+
+	}
+	focus = {
+		id = SAS_skuka
+		icon = GFX_focus_eng_motion_of_no_confidence
+		cost = 5,00
+		prerequisite = {
+			focus = SAS_newyear
+		}
+		x = 14
+		y = 2
+		completion_reward = {
+		country_event = sasha.3
+		}
+
+	}
+	focus = {
+		id = SAS_eblanit
+		icon = GFX_goal_ILY_SOGE
+		cost = 5,00
+		prerequisite = {
+			focus = SAS_skuka
+		}
+		mutually_exclusive = {
+			focus = SAS_gotovitsa
+		}
+		x = 12
+		y = 3
+		completion_reward = {
+		add_ideas = SAS_xeroge
+		}
+
+	}
+	focus = {
+		id = SAS_oge2
+		icon = GFX_goal_ILY_SOGE
+		cost = 5,00
+		prerequisite = {
+			focus = SAS_eblanit
+		}
+		x = 12
+		y = 4
+		completion_reward = {
+		country_event = sasha.4
+		}
+
+
+	}
+	focus = {
+		id = SAS_gotovitsa
+		icon = GFX_goal_ILY_SOGE
+		cost = 5,00
+		prerequisite = {
+			focus = SAS_skuka
+		}
+		mutually_exclusive = {
+			focus = SAS_eblanit
+		}
+		x = 16
+		y = 3
+		completion_reward = {
+		add_ideas = SAS_goodoge
+		}
+
+
+	}
+	focus = {
+		id = SAS_oge1
+		icon = GFX_goal_ILY_SOGE
+		cost = 5,00
+		prerequisite = {
+			focus = SAS_gotovitsa
+		}
+		x = 16
+		y = 4
+		completion_reward = {
+		country_event = sasha.8
+		}
+
+	}
+	focus = {
+		id = SAS_leto
+		icon = GFX_focus_URG_colorados
+		cost = 5,00
+		prerequisite = {
+			focus = SAS_oge1
+			focus = SAS_oge2
+		}
+		x = 14
+		y = 5
+		completion_reward = {
+		add_stability = 0.05
+		}
+
+
+	}
+	focus = {
+		id = SAS_druzhba
+		icon = GFX_focus_ARG_pan_american_cooperation
+		cost = 5,00
+		prerequisite = {
+			focus = SAS_2024
+		}
+		x = 21
+		y = 1
+		completion_reward = {
+		swap_ideas = {
+				add_idea = SAS_depression3
+				remove_idea = SAS_depression2
+			}
+		}
+
+	}
+	focus = {
+		id = SAS_sigma
+		icon = GFX_goal_SAS_sigma
+		cost = 10,00
+		prerequisite = {
+			focus = SAS_druzhba
+		}
+		x = 21
+		y = 2
+		completion_reward = {
+		swap_ideas = {
+				add_idea = SAS_depression4
+				remove_idea = SAS_depression3
+			}
+		}
+
+	}
+	focus = {
+		id = SAS_smiritsa
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 5,00
+		prerequisite = {
+			focus = SAS_sigma
+		}
+		x = 21
+		y = 3
+		completion_reward = {
+		remove_ideas = SAS_depression4
+		}
+
+	}
+	focus = {
+		id = SAS_leto2024
+		icon = GFX_focus_URG_colorados
+		cost = 5,00
+		prerequisite = {
+			focus = SAS_smiritsa
+		}
+		x = 21
+		y = 4
+		completion_reward = {
+	country_event = sasha.10
+	}
+
+	}
+	focus = {
+		id = SAS_dr
+		icon = GFX_focus_SWE_exchange_of_holdings
+		cost = 5,00
+		prerequisite = {
+			focus = SAS_leto2024
+		}
+		x = 21
+		y = 5
+		completion_reward = {
+		country_event = sasha.11
+		}
+
+	}
+	focus = {
+		id = SAS_bestleto
+		icon = GFX_focus_URG_colorados
+		cost = 5,00
+		prerequisite = {
+			focus = SAS_dr
+		}
+		x = 21
+		y = 6
+		completion_reward = {
+		             add_timed_idea = {
+					 idea = SAS_bestleto
+					 days = 90
+					}
+
+	}
+}
+	focus = {
+		id = SAS_11klass
+		icon = GFX_focus_generic_university_1
+		cost = 5,00
+		prerequisite = {
+			focus = SAS_bestleto
+		}
+		x = 21
+		y = 7
+		completion_reward = {
+		country_event = sasha.7
+		}
+
+	}
+	focus = {
+		id = SAS_seriali
+		icon = GFX_goal_SAS_seriali
+		cost = 5,00
+		prerequisite = {
+			focus = SAS_11klass
+		}
+		x = 19
+		y = 8
+		completion_reward = {
+		country_event = sasha.12
+		}
+
+	}
+	focus = {
+		id = SAS_brba
+		icon = GFX_goal_SAS_tyashki
+		cost = 10,00
+		prerequisite = {
+			focus = SAS_seriali
+		}
+		x = 17
+		y = 9
+		completion_reward = {
+		country_event = sasha.13
+		}
+
+	}
+	focus = {
+		id = SAS_dexter
+		icon = GFX_goal_SAS_dex
+		cost = 10,00
+		prerequisite = {
+			focus = SAS_seriali
+		}
+		x = 21
+		y = 9
+		completion_reward = {
+		country_event = sasha.15
+		}
+
+	}
+	focus = {
+		id = SAS_selhoz
+		icon = GFX_focus_DEN_schleswigian_farmers
+		cost = 5,00
+		prerequisite = {
+			focus = SAS_zd
+		}
+		x = 29
+		y = 1
+		completion_reward = {
+		    swap_ideas = {
+				add_idea = SAS_agrar1
+				remove_idea = SAS_agrar
+			}
+		}
+
+	}
+	focus = {
+		id = SAS_zhdsily
+		icon = GFX_focus_BRA_reach_out_to_military_dem
+		cost = 4,00
+		prerequisite = {
+			focus = SAS_zd
+		}
+		x = 33
+		y = 1
+		completion_reward = {
+		every_country = {
+				limit = {
+					AND = {
+						OR = {
+							original_tag = ILY
+						}
+					}
+				}
+				country_event = ilya.13
+				}
+			}
+
+	}
+	focus = {
+		id = SAS_promm
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5,00
+		prerequisite = {
+			focus = SAS_zhdsily
+		}
+		prerequisite = {
+			focus = SAS_selhoz
+		}
+		x = 31
+		y = 2
+		completion_reward = {
+		add_tech_bonus = {
+    bonus = 0.5
+    uses = 2
+    category = industry
+	}
+}
+
+	}
+	focus = {
+		id = SAS_krestianskiyvopros
+		icon = GFX_focus_GER_the_peoples_victory
+		cost = 4,00
+		prerequisite = {
+			focus = SAS_promm
+		}
+		x = 29
+		y = 3
+		completion_reward = {
+	country_event = sasha.6
+	}
+
+	}
+	focus = {
+		id = SAS_nokrestiane
+		icon = GFX_focus_GER_liberate_exploited_colonial_workers
+		cost = 1,00
+		prerequisite = {
+			focus = SAS_krestianskiyvopros
+		}
+		mutually_exclusive = {
+			focus = SAS_yeskrestiane
+		}
+		x = 28
+		y = 4
+		completion_reward = {
+	add_stability = -0.1
+	add_war_support = 0.02
+	}
+
+	}
+	focus = {
+		id = SAS_yeskrestiane
+		icon = GFX_focus_ITA_topple_amhara_rulers
+		cost = 1,00
+		prerequisite = {
+			focus = SAS_krestianskiyvopros
+		}
+		mutually_exclusive = {
+			focus = SAS_nokrestiane
+		}
+		x = 30
+		y = 4
+		completion_reward = {
+	add_stability = 0.02
+	add_war_support = -0.15
+	}
+
+	}
+	focus = {
+		id = SAS_localproduction
+		icon = GFX_focus_CONGO_copper_cartridges
+		cost = 10,00
+		prerequisite = {
+			focus = SAS_promm
+		}
+		x = 33
+		y = 3
+		completion_reward = {
+        random_core_state = {
+        limit = {
+          ROOT = { controls_state = PREV }
+        }
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+          type = arms_factory
+          level = 1
+          instant_build = yes
+        }
+	}
+}
+
+	}
+	focus = {
+		id = SAS_bunkerevlesu
+		icon = GFX_focus_BEL_better_than_maginot
+		cost = 5,00
+		prerequisite = {
+			focus = SAS_localproduction
+		}
+		x = 33
+		y = 4
+		completion_reward = {
+		             add_timed_idea = {
+					 idea = VIK_bunker
+					 days = 180
+					}
+		             254 = {  
+	   		         add_building_construction = {
+							type = bunker
+							level = 3
+							province = {
+								id = 11363
+								id = 3322
+							}
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 4
+							province = {
+								id = 6284
+							}
+							instant_build = yes
+						}
+					}
+				}
+
+	}
+	focus = {
+		id = SAS_prizov
+		icon = GFX_focus_AUS_osterreichische_bundesheer
+		cost = 2
+		prerequisite = {
+			focus = SAS_vitya
+		}
+		x = 39
+		y = 1
+		available = {
+			if = {
+					has_war = yes
+				}
+           }
+		   completion_reward = {
+		   add_manpower = 42149
+		   add_war_support = 0.03
+	}
+}
+	focus = {
+		id = SAS_armyreform
+		icon = GFX_focus_chi_army_reform
+		cost = 5
+		prerequisite = {
+			focus = SAS_prizov
+		}
+		x = 37
+		y = 2
+		completion_reward = {
+		swap_ideas = {
+				add_idea = SAS_krestarmy1
+				remove_idea = SAS_krestarmy
+			}
+		}
+	}
+	focus = {
+		id = SAS_doctrine
+		icon = GFX_goal_generic_army_doctrines
+		cost = 10,00
+		prerequisite = {
+			focus = SAS_prizov
+		}
+		x = 41
+		y = 2
+		completion_reward = {
+		add_doctrine_cost_reduction = {
+	cost_reduction = 0.5
+	uses = 2
+	category = land_doctrine
+      }
+   }
+ }
+	focus = {
+		id = SAS_homedef
+		icon = GFX_goal_generic_defence
+		cost = 10,00
+		prerequisite = {
+			focus = SAS_doctrine
+			focus = SAS_armyreform
+		}
+		x = 39
+		y = 3
+		completion_reward = {
+		             254 = {  
+	   		         add_building_construction = {
+							type = bunker
+							level = 3
+							province = {
+								id = 11248
+								id = 269
+								id = 3356
+								id = 11294
+							}
+							instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = SAS_highcommand
+		icon = GFX_focus_GER_heed_von_neuraths_concerns
+		cost = 10,00
+		prerequisite = {
+			focus = SAS_andreev
+		}
+		x = 45
+		y = 1
+		completion_reward = {
+  every_country = {
+				limit = {
+					AND = {
+						OR = {
+							original_tag = NAN
+						}
+					}
+				}
+				country_event = andreev.9
+				}
+			}
+		
+
+	}
+	focus = {
+		id = SAS_zavodizagran
+		icon = GFX_focus_GER_autonomous_organization_todt
+		cost = 10,00
+		prerequisite = {
+			focus = SAS_andreev
+		}
+		x = 49
+		y = 1
+		completion_reward = {
+		add_offsite_building = { type = arms_factory level = 1 }
+		}
+
+	}
+	focus = {
+		id = SAS_sdelka
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 10,00
+		prerequisite = {
+			focus = SAS_zavodizagran
+		}
+		prerequisite = {
+			focus = SAS_highcommand
+		}
+		x = 47
+		y = 2
+		completion_reward = {
+	    every_country = {
+				limit = {
+					AND = {
+						OR = {
+							original_tag = NAN
+						}
+					}
+				}
+				country_event = andreev.10
+				}
+
+	}
+}
+	focus = {
+		id = SAS_dacha
+		icon = GFX_focus_GER_the_four_year_plan
+		cost = 5,00
+		prerequisite = {
+			focus = SAS_leto
+		}
+		x = 14
+		y = 6
+		completion_reward = {
+		add_timed_idea = {
+		idea = SAS_dacha
+		days = 100
+		}
+    }
+
+	}
+	focus = {
+		id = SAS_10klass
+		icon = GFX_focus_generic_university_1
+		cost = 5,00
+		prerequisite = {
+			focus = SAS_dacha
+		}
+		x = 14
+		y = 7
+		completion_reward = {
+	country_event = sasha.9
+	}
+
+	}
+	focus = {
+		id = SAS_vsoploho
+		icon = GFX_focus_SWE_neither_death_nor_dishonor
+		cost = 5,00
+		prerequisite = {
+			focus = SAS_10klass
+		}
+		x = 14
+		y = 8
+		completion_reward = {
+		add_ideas = SAS_depression
+		}
+
+	}
+	focus = {
+		id = SAS_motivation1
+		icon = GFX_focus_ICE_embrace_the_workers_revolution
+		cost = 5,00
+		prerequisite = {
+			focus = SAS_motivation2
+		}
+		x = 14
+		y = 10
+		completion_reward = {
+		swap_ideas = {
+				add_idea = SAS_depression2
+				remove_idea = SAS_depression1
+			}
+		}
+
+	}
+	focus = {
+		id = SAS_motivation2
+		icon = GFX_focus_generic_whispers
+		cost = 5,00
+		prerequisite = {
+			focus = SAS_vsoploho
+		}
+		x = 14
+		y = 9
+		completion_reward = {
+		swap_ideas = {
+				add_idea = SAS_depression1
+				remove_idea = SAS_depression
+			}
+		}
+
+	}
+	focus = {
+		id = SAS_bcs
+		icon = GFX_goal_SAS_sol
+		cost = 10,00
+		prerequisite = {
+			focus = SAS_seriali
+		}
+		x = 19
+		y = 9
+		completion_reward = {
+		country_event = sasha.14
+		}
+
+	}
+	focus = {
+		id = SAS_literallyme
+		icon = GFX_goal_SAS_literally
+		cost = 2,00
+		prerequisite = {
+			focus = SAS_brba
+		}
+		prerequisite = {
+			focus = SAS_bcs
+		}
+		prerequisite = {
+			focus = SAS_dexter
+		}
+		x = 19
+		y = 10
+		completion_reward = {
+		country_event = sasha.16
+		}
+
+	}
+	focus = {
+		id = SAS_raskulachivanie
+		icon = GFX_focus_SOV_penal_battalions
+		cost = 5,00
+		prerequisite = {
+			focus = SAS_nokrestiane
+		}
+		x = 28
+		y = 5
+		completion_reward = {
+		    swap_ideas = {
+				add_idea = SAS_slabpromm
+				remove_idea = SAS_agrar1
+			}
+
+	}
+
+	}
+	focus = {
+		id = SAS_richkrestiane
+		icon = GFX_focus_GER_wirtschaftswunder
+		cost = 5,00
+		prerequisite = {
+			focus = SAS_yeskrestiane
+		}
+		x = 30
+		y = 5
+		completion_reward = {
+		    swap_ideas = {
+				add_idea = SAS_agrar2
+				remove_idea = SAS_agrar1
+			}
+		}
+
+	}
+	focus = {
+		id = SAS_promm1
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10,00
+		prerequisite = {
+			focus = SAS_richkrestiane
+			focus = SAS_raskulachivanie
+		}
+		x = 29
+		y = 6
+		completion_reward = {
+        random_core_state = {
+        limit = {
+          ROOT = { controls_state = PREV }
+        }
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+          type = industrial_complex
+          level = 1
+          instant_build = yes
+        }
+	}
+}
+
+	}
+	focus = {
+		id = SAS_promm2
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10,00
+		prerequisite = {
+			focus = SAS_promm1
+		}
+		x = 29
+		y = 7
+		completion_reward = {
+        random_core_state = {
+        limit = {
+          ROOT = { controls_state = PREV }
+        }
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+          type = industrial_complex
+          level = 1
+          instant_build = yes
+        }
+	}
+}
+
+	}
+}

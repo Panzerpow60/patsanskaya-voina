@@ -1,0 +1,18 @@
+characters = {
+VIK_Brat
+	    name = "VIK_Brat"
+		portraits = {
+		    civilian = {
+			    small = "GFX_idea_SOV_grigory_kulik"
+			    large = "GFX_idea_SOV_grigory_kulik"
+			}
+		}
+		advisor = {
+		    slot = political_advisor
+			idea_token = VIK_Brat_it
+			ledger = civilian
+			cost = 125
+			traits = { Captain_of_Industry }
+		}
+	}
+}

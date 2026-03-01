@@ -1,0 +1,291 @@
+add_namespace = kudinov
+
+country_event = {
+    id = kudinov.1
+	title = kudinov.1.t
+	desc = kudinov.1.d
+	picture = GFX_report_event_british_inspect_troops
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = kudinov.1.a
+		ai_chance = { factor = 50 }
+		trigger = {  }
+		every_country = {
+				limit = {
+					AND = {
+						OR = {
+							original_tag = NKD
+						}
+					}
+				}
+				add_opinion_modifier = {
+					target = VIK
+					modifier = VIK_slilfotky
+				}
+		diplomatic_relation = {
+                country = VIK
+                relation = non_aggression_pact
+                active = no
+                }
+			}
+		}
+}
+country_event = {
+    id = kudinov.2
+	title = kudinov.2.t
+	desc = kudinov.2.d
+	picture = GFX_report_event_british_inspect_troops
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = kudinov.2.a
+		ai_chance = { factor = 50 }
+		trigger = {  }
+        white_peace = VIK
+	}
+	option = {
+	    name = kudinov.2.b
+		ai_chance = { factor = 50 }
+		trigger = {  }
+
+	}
+}
+country_event = {
+    id = kudinov.3
+	title = kudinov.3.t
+	desc = kudinov.3.d
+	picture = GFX_report_event_bul_italian_equipment
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = kudinov.3.a
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		ILY = {add_to_faction = NKD}
+	}
+	option = {
+	    name = kudinov.3.b
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		
+	}
+}
+country_event = {
+    id = kudinov.4
+	title = kudinov.4.t
+	desc = kudinov.4.d
+	picture = GFX_report_event_bul_italian_equipment
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = kudinov.4.a
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		
+	}
+}
+country_event = {
+    id = kudinov.5
+	title = kudinov.5.t
+	desc = kudinov.5.d
+	picture = GFX_report_event_bul_italian_equipment
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = kudinov.5.a
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		add_stability = 0.02
+		
+	}
+}
+country_event = {
+    id = kudinov.6
+	title = kudinov.6.t
+	desc = kudinov.6.d
+	picture = GFX_report_event_bul_italian_equipment
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = kudinov.6.a
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		complete_national_focus = NKD_ebashit
+		
+	}
+	option = {
+	    name = kudinov.6.b
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		complete_national_focus = NKD_kinutdotu
+		
+	}
+}
+country_event = {
+    id = kudinov.7
+	title = kudinov.7.t
+	desc = kudinov.7.d
+	picture = GFX_report_event_bul_italian_equipment
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = kudinov.7.a
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		add_ideas = NKD_music
+		
+	}
+	option = {
+	    name = kudinov.7.b
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		add_war_support = 0.05
+		
+	}
+}
+country_event = {
+    id = kudinov.8
+	title = kudinov.8.t
+	desc = kudinov.8.d
+	picture = GFX_report_event_bul_italian_equipment
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = kudinov.8.a
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		
+		
+	}
+	
+}
+country_event = {
+    id = kudinov.9
+	title = kudinov.9.t
+	desc = kudinov.9.d
+	picture = GFX_report_event_bul_italian_equipment
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = kudinov.9.a
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		
+		
+	}
+	
+}
+country_event = {
+    id = kudinov.10
+	title = kudinov.10.t
+	desc = kudinov.10.d
+	picture = GFX_report_event_bul_italian_equipment
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = kudinov.10.a
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		
+		
+	}
+	
+}
+country_event = {
+    id = kudinov.11
+	title = kudinov.11.t
+	desc = kudinov.11.d
+	picture = GFX_report_event_bul_italian_equipment
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = kudinov.11.a
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		complete_national_focus = NKD_no
+		
+	}
+	option = {
+	    name = kudinov.11.b
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		complete_national_focus = NKD_yes
+		
+	}
+	
+}
+country_event = {
+    id = kudinov.12
+	title = kudinov.12.t
+	desc = ilya.33.d
+	picture = GFX_report_event_bul_making_bricks_for_school
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.33.a
+		ai_chance = { factor = 20 }
+		trigger = {  }
+		complete_national_focus = NKD_war
+	}		
+}

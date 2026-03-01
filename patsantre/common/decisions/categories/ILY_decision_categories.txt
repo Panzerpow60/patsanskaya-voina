@@ -1,0 +1,30 @@
+ILY_guide_kredit = {
+
+    icon = border_war
+	
+	priority = 90
+	
+	allowed = {
+	    original_tag = ILY
+	}
+	
+	visible = {
+	  has_completed_focus = ILY_VAZ2112
+	}
+}
+
+ILY_edits = {
+
+    icon = border_war
+	
+	priority = 85
+	
+	allowed = {
+	    original_tag = ILY
+	}
+	
+	visible = {
+	  has_completed_focus = ILY_pereosmyslil
+	}
+}
+

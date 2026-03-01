@@ -1,0 +1,423 @@
+focus_tree = {
+	id = GNL
+	country = {
+		factor = 1
+	}
+	default = yes
+	focus = {
+		id = GNL_2023
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 15
+		y = 0
+
+	}
+	focus = {
+		id = GNL_Vitya
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 29
+		y = 0
+
+	}
+	focus = {
+		id = GNL_ukreplenie
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_2023
+		}
+		x = 13
+		y = 1
+
+	}
+	focus = {
+		id = GNL_control
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_2023
+		}
+		x = 15
+		y = 1
+
+	}
+	focus = {
+		id = GNL_pravo
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_2023
+		}
+		x = 17
+		y = 1
+
+	}
+	focus = {
+		id = GNL_voproslegit
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_pravo
+		}
+		prerequisite = {
+			focus = GNL_control
+		}
+		prerequisite = {
+			focus = GNL_ukreplenie
+		}
+		x = 15
+		y = 2
+
+	}
+	focus = {
+		id = GNL_rol
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_voproslegit
+		}
+		x = 15
+		y = 4
+
+	}
+	focus = {
+		id = GNL_collectivn
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_rol
+		}
+		mutually_exclusive = {
+			focus = GNL_svoboda
+			focus = GNL_sila
+		}
+		x = 8
+		y = 5
+
+	}
+	focus = {
+		id = GNL_svoboda
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_rol
+		}
+		mutually_exclusive = {
+			focus = GNL_sila
+			focus = GNL_collectivn
+		}
+		x = 15
+		y = 5
+
+	}
+	focus = {
+		id = GNL_ruslan
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_svoboda
+		}
+		x = 15
+		y = 7
+
+	}
+	focus = {
+		id = GNL_sila
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_rol
+		}
+		mutually_exclusive = {
+			focus = GNL_svoboda
+			focus = GNL_collectivn
+		}
+		x = 21
+		y = 5
+
+	}
+	focus = {
+		id = GNL_woman
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_sila
+		}
+		x = 21
+		y = 6
+
+	}
+	focus = {
+		id = GNL_masha
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_woman
+		}
+		mutually_exclusive = {
+			focus = GNL_kira
+		}
+		x = 19
+		y = 7
+
+	}
+	focus = {
+		id = GNL_kira
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_woman
+		}
+		mutually_exclusive = {
+			focus = GNL_masha
+		}
+		x = 23
+		y = 7
+
+	}
+	focus = {
+		id = GNL_newkurs
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_kira
+		}
+		x = 23
+		y = 8
+
+	}
+	focus = {
+		id = GNL_newgenerals
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_newkurs
+		}
+		x = 21
+		y = 9
+
+	}
+	focus = {
+		id = GNL_kirillk
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_collectivn
+		}
+		x = 8
+		y = 7
+
+	}
+	focus = {
+		id = GNL_clublife
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_newgenerals
+		}
+		x = 21
+		y = 10
+
+	}
+	focus = {
+		id = GNL_30june25
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_clublife
+		}
+		x = 21
+		y = 11
+
+	}
+	focus = {
+		id = GNL_happy
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_30june25
+		}
+		x = 21
+		y = 12
+
+	}
+	focus = {
+		id = GNL_weakpoints
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_happy
+		}
+		x = 21
+		y = 13
+
+	}
+	focus = {
+		id = GNL_SPB2025
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_weakpoints
+		}
+		x = 21
+		y = 14
+
+	}
+	focus = {
+		id = GNL_goldapple
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_SPB2025
+		}
+		x = 18
+		y = 15
+
+	}
+	focus = {
+		id = GNL_romashki
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_SPB2025
+		}
+		x = 21
+		y = 15
+
+	}
+	focus = {
+		id = GNL_byvshiy
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_SPB2025
+		}
+		x = 24
+		y = 15
+
+	}
+	focus = {
+		id = GNL_voinasILY
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_destabilisation
+		}
+		x = 21
+		y = 17
+
+	}
+	focus = {
+		id = GNL_destabilisation
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_byvshiy
+		}
+		prerequisite = {
+			focus = GNL_romashki
+		}
+		prerequisite = {
+			focus = GNL_goldapple
+		}
+		x = 21
+		y = 16
+
+	}
+	focus = {
+		id = GNL_allyvitya
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_voinasILY
+		}
+		mutually_exclusive = {
+			focus = GNL_sami
+		}
+		x = 18
+		y = 19
+
+	}
+	focus = {
+		id = GNL_sami
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_voinasILY
+		}
+		mutually_exclusive = {
+			focus = GNL_allyvitya
+		}
+		x = 24
+		y = 19
+
+	}
+	focus = {
+		id = GNL_nastroitpatsani
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_voinasILY
+		}
+		x = 24
+		y = 18
+
+	}
+	focus = {
+		id = GNL_podeda
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_sami
+		}
+		prerequisite = {
+			focus = GNL_allyvitya
+		}
+		mutually_exclusive = {
+			focus = GNL_lose
+		}
+		x = 22
+		y = 21
+
+	}
+	focus = {
+		id = GNL_lose
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_sami
+		}
+		prerequisite = {
+			focus = GNL_allyvitya
+		}
+		mutually_exclusive = {
+			focus = GNL_podeda
+		}
+		x = 20
+		y = 21
+
+	}
+	focus = {
+		id = GNL_KarinaD
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_lose
+		}
+		x = 20
+		y = 22
+
+	}
+	focus = {
+		id = GNL_totalcontrol
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_podeda
+		}
+		x = 22
+		y = 22
+
+	}
+}

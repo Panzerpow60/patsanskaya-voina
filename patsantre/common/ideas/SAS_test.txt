@@ -1,0 +1,518 @@
+ideas = {
+    country = {
+	     SAS_cezik = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_SAS_cezik
+			  
+			  modifier = {
+			      political_power_factor = 0.2
+				  stability_factor = 0.1
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     SAS_sfitness = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_ILY_sfitness
+			  
+			  modifier = {
+			      production_factory_max_efficiency_factor = 0.10
+				  army_core_defence_factor = 0.05
+				  war_support_factor = 0.05
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     SAS_agrar = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_SAS_agrar
+			  
+			  modifier = {
+			  global_building_slots_factor = -0.40
+			  consumer_goods_factor = -0.1
+			  production_speed_buildings_factor = -0.11
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     SAS_agrar1 = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_SAS_agrar
+			  
+			  modifier = {
+			  global_building_slots_factor = -0.40
+			  consumer_goods_factor = -0.1
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     SAS_agrar2 = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_SAS_agrar
+			  
+			  modifier = {
+			  global_building_slots_factor = -0.15
+			  consumer_goods_factor = -0.05
+			  production_speed_buildings_factor = 0.1
+			  production_factory_efficiency_gain_factor = 0.05 
+			  production_factory_max_efficiency_factor = 0.08
+			  stability_factor = -0.1
+			  war_support_factor = -0.1
+			  
+			  
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     SAS_slabpromm = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_endsieg
+			  
+			  modifier = {
+			  consumer_goods_factor = 0.05
+			  production_speed_buildings_factor = 0.15
+			  production_factory_efficiency_gain_factor = 0.05 
+			  production_factory_max_efficiency_factor = 0.05
+			  stability_factor = -0.2
+			  
+			  
+			}
+		}
+	}
+}
+
+
+
+ideas = {
+    country = {
+	     SAS_krestarmy = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_endsieg
+			  
+			  modifier = {
+			  army_org_factor = -0.1
+			  army_core_defence_factor = 0.03
+			  army_core_attack_factor = 0.03
+			  mobilization_speed = -0.1
+			  conscription = 0.005
+			  land_doctrine_cost_factor = 0.2
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     SAS_komp = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_endsieg
+			  
+			  modifier = {
+			  political_power_gain = -0.4
+			  stability_factor = 0.1
+			  consumer_goods_factor = 0.1
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     SAS_xeroge = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_endsieg
+			  
+			  modifier = {
+			  political_power_gain = 0.2
+			  stability_factor = 0.05
+			  consumer_goods_factor = -0.15
+			  production_factory_max_efficiency_factor = 0.10
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     SAS_goodoge = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_endsieg
+			  
+			  modifier = {
+			  political_power_gain = -0.2
+			  war_support_factor = -0.05
+			  consumer_goods_factor = 0.15
+			  production_factory_max_efficiency_factor = -0.10
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     SAS_depression = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_endsieg
+			  
+			  modifier = {
+			  political_power_gain = -0.1
+			  stability_factor = -0.2
+			  war_support_factor = -0.2
+			  consumer_goods_factor = 0.5
+			  production_factory_max_efficiency_factor = -0.2
+			  army_org_factor = -0.15
+			  training_time_army_factor = 0.5
+			  
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     SAS_depression1 = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_endsieg
+			  
+			  modifier = {
+			  political_power_gain = -0.1
+			  stability_factor = -0.2
+			  war_support_factor = -0.1
+			  consumer_goods_factor = 0.5
+			  production_factory_max_efficiency_factor = -0.2
+			  army_org_factor = -0.15
+			  training_time_army_factor = 0.25
+			  
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     SAS_depression2 = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_endsieg
+			  
+			  modifier = {
+			  political_power_gain = -0.1
+			  stability_factor = -0.1
+			  war_support_factor = -0.1
+			  consumer_goods_factor = 0.5
+			  production_factory_max_efficiency_factor = -0.1
+			  army_org_factor = -0.15
+			  training_time_army_factor = 0.25
+			  
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     SAS_depression3 = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_endsieg
+			  
+			  modifier = {
+			  political_power_gain = -0.1
+			  stability_factor = -0.05
+			  war_support_factor = -0.05
+			  consumer_goods_factor = 0.5
+			  production_factory_max_efficiency_factor = -0.1
+			  army_org_factor = -0.05
+			  training_time_army_factor = 0.25
+			  
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     SAS_depression4 = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_endsieg
+			  
+			  modifier = {
+			  political_power_gain = -0.1
+			  stability_factor = -0.05
+			  war_support_factor = -0.05
+			  consumer_goods_factor = 0.25
+			  army_org_factor = -0.05
+			  training_time_army_factor = 0.25
+			  
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     SAS_dacha = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_SAS_wdacha
+			  
+			  modifier = {
+			  industrial_capacity_factory = 0.1
+			  consumer_goods_factor = 0.1
+			  
+			  
+			  
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     SAS_bestleto = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_idea_VIK_bestleto
+			  
+			  modifier = {
+			      consumer_goods_factor = -0.1
+				  political_power_gain = 0.1
+				  production_speed_buildings_factor = 0.15
+				}
+			}
+		}
+	}
+ideas = {
+    country = {
+	     SAS_lalo = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_SAS_salo
+			  
+			  modifier = {
+			      industrial_capacity_factory = 0.05
+				  political_power_gain = -0.5
+				  war_support_factor = 0.1
+				  army_org_factor = 0.05
+				  offence = 0.1
+				  defence = 0.1
+				}
+			}
+		}
+	}
+ideas = {
+    country = {
+	     SAS_dexter1 = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_SAS_dexter
+			  
+			  modifier = {
+			      research_speed_factor = 0.1
+				  political_power_gain = -0.5
+				  stability_factor = 0.15
+				  operative_slot = 1
+				  offence = 0.05
+				  defence = 0.05
+				}
+			}
+		}
+	}
+ideas = {
+    country = {
+	     SAS_WW = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_SAS_ww
+			  
+			  modifier = {
+			      research_speed_factor = 0.08
+				  political_power_gain = 0.2
+				  production_speed_buildings_factor = 0.12
+				  production_factory_max_efficiency_factor = 0.10
+				}
+			}
+		}
+	}
+ideas = {
+    country = {
+	     SAS_idrive = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_SAS_gosling
+			  
+			  modifier = {
+			      army_core_defence_factor = 0.08
+				  consumer_goods_factor = -0.15
+				  production_speed_buildings_factor = 0.05
+				  stability_weekly = 0.015
+				  war_support_weekly = 0.015
+				}
+			}
+		}
+	}
+ideas = {
+    country = {
+	     SAS_krestarmy1 = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_endsieg
+			  
+			  modifier = {
+			  army_org_factor = -0.05
+			  army_core_defence_factor = 0.08
+			  army_core_attack_factor = 0.08
+			  mobilization_speed = -0.1
+			  conscription = 0.005
+			  land_doctrine_cost_factor = 0.2
+			}
+		}
+	}
+}
+
+	

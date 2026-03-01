@@ -1,0 +1,90 @@
+﻿#KEY:
+#
+#.0xx: country fall events
+#.1xx: historical war events 
+#.2xx: ahistorical war events
+#.3xx: new country cosmetic
+#.4xx: nation internal change events (excluding civil wars)
+#.5xx: powerful achievement events
+#
+#
+#
+#
+#
+#
+#EXAMPLE: .001 would be the first event for country fall events section.
+
+add_namespace = superevents
+
+country_event = {
+	id = superevents.504
+	title = superevents.504.t
+	desc = superevents.504.d
+	
+	immediate = {
+		set_global_flag = SE_superevents_activate
+		set_global_flag = SE_1st_patsaniwar
+		
+		#cue funni music
+		sound_effect = superevents_1st_patsaniwar
+	}
+
+	hidden = yes
+	
+	fire_only_once = yes
+
+	trigger = {
+		NOT = {
+			has_global_flag = SE_superevents_activate
+		}
+		VIK = {
+			has_war = yes
+		}
+		any_country = {
+			has_war_with = VIK
+			NOT = {
+				original_tag = VIK
+			}
+		}
+		NOT = {
+			has_global_flag = SE_superevents_activate
+		}
+		
+	}
+	option = {
+		name = superevents.0.a
+	}
+}
+country_event = {
+	id = superevents.506
+	title = superevents.506.t
+	desc = superevents.506.d
+	
+	immediate = {
+		set_global_flag = SE_superevents_activate
+		set_global_flag = SE_kirarast
+		
+		#cue funni music
+		sound_effect = superevents_kirarast
+	}
+
+	hidden = yes
+	
+	fire_only_once = yes
+
+	trigger = {
+		NOT = {
+			has_global_flag = SE_superevents_activate
+		}
+		ILY = {
+			has_completed_focus = ILY_sea
+		}
+		NOT = {
+			has_global_flag = SE_superevents_activate
+		}
+		
+	}
+	option = {
+		name = superevents.0.a
+	}
+}

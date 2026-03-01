@@ -1,0 +1,1082 @@
+add_namespace = ilya
+
+country_event = {
+    id = ilya.1
+	title = ilya.1.t
+	desc = ilya.1.d
+	picture = GFX_report_event_DEN_german_tanks
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.1.a
+		ai_chance = { factor = 20 }
+		trigger = {  }
+		add_stability = 0.05
+		add_political_power = 50
+	}
+	
+	option = {
+	    name = ilya.1.b
+		ai_chance = { factor = 80 }
+		trigger = {  }
+		country_event = ilya.2
+	}
+}
+
+country_event = {
+    id = ilya.2
+	title = ilya.2.t
+	desc = ilya.2.d
+	picture = GFX_report_event_generic_african_unity
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.2.a
+		ai_chance = { factor = 100 }
+		trigger = {  }
+		add_political_power = 150
+		add_stability = 0.1
+		country_event = ilya.3
+	}
+}
+
+country_event = {
+    id = ilya.3
+	title = ilya.3.t
+	desc = ilya.3.d
+	picture = GFX_report_event_generic_african_unity
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.3.a
+		ai_chance = { factor = 100 }
+		trigger = {  }
+		add_stability = -0.1
+		add_political_power = -100
+		country_event = ilya.4
+	}
+}
+
+country_event = {
+    id = ilya.4
+	title = ilya.4.t
+	desc = ilya.4.d
+	picture = GFX_report_event_generic_african_unity
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.4.a
+		ai_chance = { factor = 100 }
+		trigger = {  }
+		add_stability = -0.1
+		add_political_power = -150
+		country_event = ilya.5
+	}
+}
+
+country_event = {
+    id = ilya.5
+	title = ilya.5.t
+	desc = ilya.5.d
+	picture = GFX_report_event_generic_polish_machinegunners
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.5.a
+		ai_chance = { factor = 100 }
+		trigger = {  }
+		add_stability = 0.05
+		add_political_power = 23
+		country_event = ilya.7
+		swap_ideas = {
+				add_idea = ILY_krugobshenia0
+				remove_idea = ILY_krugobshenia
+			}
+	}
+}
+
+country_event = {
+    id = ilya.6
+	title = ilya.6.t
+	desc = ilya.6.d
+	picture = GFX_report_event_carol_meeting
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.6.a
+		ai_chance = { factor = 100 }
+		trigger = {  }
+		add_stability = -0.05
+		swap_ideas = {
+				add_idea = ILY_krugobshenia2
+				remove_idea = ILY_krugobshenia3
+			}
+	}
+}
+
+country_event = {
+    id = ilya.7
+	title = ilya.7.t
+	desc = ilya.7.d
+	picture = GFX_report_event_generic_african_unity
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.7.a
+		ai_chance = { factor = 100 }
+		trigger = {  }
+		add_stability = -0.05
+		news_event = news.412
+		
+	}
+}
+
+country_event = {
+    id = ilya.8
+	title = ilya.8.t
+	desc = ilya.8.d
+	picture = GFX_report_event_eng_good_blackshirt_march
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.8.a
+		ai_chance = { factor = 100 }
+		trigger = {  }
+		complete_national_focus = ILY_irayes
+		country_event = ilya.9
+	}
+	option = {
+	    name = ilya.8.b
+		ai_chance = { factor = 0 }
+		trigger = {  }
+		complete_national_focus = ILY_irano
+	}
+}
+
+country_event = {
+    id = ilya.9
+	title = ilya.9.t
+	desc = ilya.9.d
+	picture = GFX_report_event_eng_good_blackshirt_march
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.9.a
+		ai_chance = { factor = 100 }
+		trigger = {  }
+		add_ideas = {
+		ILY_frendzone
+		}
+	}
+}
+
+country_event = {
+    id = ilya.10
+	title = ilya.10.t
+	desc = ilya.10.d
+	picture = GFX_report_event_ENG_middle_eastern_conflict
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.10.a
+		ai_chance = { factor = 100 }
+		trigger = {  }
+		add_stability = 0.03
+
+	}
+}
+country_event = {
+    id = ilya.11
+	title = ilya.11.t
+	desc = ilya.11.d
+	picture = GFX_report_event_SOV_purge_young_officers
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.11.a
+		ai_chance = { factor = 100 }
+		trigger = {  }
+		add_political_power = -15
+		add_stability = -0.03
+	}
+}
+country_event = {
+    id = ilya.12
+	title = ilya.12.t
+	desc = ilya.12.d
+	picture = GFX_report_event_ENG_middle_eastern_conflict_2
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.12.a
+		ai_chance = { factor = 100 }
+		trigger = {  }
+		add_war_support = 0.03
+
+	}
+}
+country_event = {
+    id = ilya.13
+	title = ilya.13.t
+	desc = ilya.13.d
+	picture = GFX_report_event_eng_mosley_march_on_downing_street
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.13.a
+		ai_chance = { factor = 100 }
+		trigger = {  }
+		254 = {
+					add_building_construction = {
+						type = supply_node
+						level = 1
+						province = 11248
+						instant_build = yes
+					}
+					build_railway = {
+						path = { 11248 11314 3275 3339 }
+					}
+				}
+		253 = {
+					build_railway = {
+						path = { 3339 }
+					}
+				}
+		add_stability = 0.02
+		add_opinion_modifier = {
+					target = ILY
+					modifier = SAS_zhd
+				}
+
+	}
+	option = {
+	    name = ilya.13.b
+		ai_chance = { factor = 100 }
+		trigger = {  }
+		add_political_power = 10
+
+	}
+}
+country_event = {
+    id = ilya.14
+	title = ilya.14.t
+	desc = ilya.14.d
+	picture = GFX_report_event_eng_royal_family
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.14.a
+		ai_chance = { factor = 100 }
+		trigger = {  }
+		add_war_support = 0.03
+		complete_national_focus = ILY_pityasituation
+
+	}
+}
+country_event = {
+    id = ilya.15
+	title = ilya.15.t
+	desc = ilya.15.d
+	picture = GFX_report_event_eng_mosley_mussolini
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.15.a
+		ai_chance = { factor = 100 }
+		trigger = {  }
+		complete_national_focus = ILY_kiraandtema
+
+	}
+}
+country_event = {
+    id = ilya.16
+	title = ilya.16.t
+	desc = ilya.16.d
+	picture = GFX_report_event_eng_mosley_mussolini
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.16.a
+		ai_chance = { factor = 0 }
+		trigger = {  }
+		 = news.417
+		complete_national_focus = ILY_bezotn
+		add_war_support = 0.2
+		add_stability = -0.11
+		add_political_power = 10
+		
+	}
+	option = {
+	    name = ilya.16.b
+		ai_chance = { factor = 100 }
+		trigger = {  }
+		 = news.417
+		complete_national_focus = ILY_goododnogr
+		add_political_power = 150
+		add_stability = 0.09
+		add_war_support = 0.09
+		add_ideas = {
+		ILY_kiraot
+		}
+		remove_ideas = {
+		ILY_kirarst
+		}
+		}
+		
+	}
+country_event = {
+    id = ilya.17
+	title = ilya.17.t
+	desc = ilya.17.d
+	picture = GFX_report_event_chinese_soldiers_02
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.17.a
+		ai_chance = { factor = 100 }
+		trigger = {  }
+		add_political_power = 50
+
+	}
+}
+country_event = {
+    id = ilya.18
+	title = ilya.18.t
+	desc = ilya.18.d
+	picture = GFX_report_event_bul_soviet_army_sofia
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.18.a
+		ai_chance = { factor = 100 }
+		trigger = {  }
+		add_political_power = 10
+		complete_national_focus = ILY_neutrality2
+		add_popularity = {
+        ideology = neutrality
+        popularity = 0.07
+        }
+		add_stability = 0.05
+		add_war_support = -0.05
+
+	}
+	option = {
+	    name = ilya.18.b
+		ai_chance = { factor = 100 }
+		trigger = {  }
+		add_political_power = 50
+		complete_national_focus = ILY_novitya
+		add_popularity = {
+        ideology = fascism
+        popularity = 0.07
+        }
+		add_stability = 0.05
+		add_war_support = 0.05
+
+	}
+}
+country_event = {
+    id = ilya.19
+	title = ilya.19.t
+	desc = ilya.19.d
+	picture = GFX_report_event_NOR_quisling_and_terboven
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days =  }
+	
+	option = {
+	    name = ilya.19.a
+		ai_chance = { factor = 100 }
+		trigger = {  }
+		add_political_power = 10
+		create_country_leader = {
+	    name = "Илья и Кира"
+	    desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	    picture = "Portrait_IlyaKira.dds"
+	    expire = "2029.1.1"
+	    ideology = nazism
+	    }
+		remove_ideas = ILY_sfitness
+		set_party_name = {
+        ideology = fascism
+        long_name = "Партия националистов союза улицы Михайловской"
+        name = ПНСУМ
+        }
+
+	}
+}
+	country_event = {
+    id = ilya.20
+	title = ilya.20.t
+	desc = ilya.20.d
+	picture = GFX_report_event_chinese_soldiers_city_ruin
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.20.a
+		ai_chance = { factor = 100 }
+		trigger = {  }
+		add_political_power = -15
+		add_stability = -0.05
+
+	}
+    }
+	country_event = {
+    id = ilya.21
+	title = ilya.21.t
+	desc = ilya.21.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.21.a
+		ai_chance = { factor = 100 }
+		trigger = {  }
+		country_event = news.415
+	}
+    }
+	country_event = {
+    id = ilya.22
+	title = ilya.22.t
+	desc = ilya.22.d
+	picture = GFX_report_event_chinese_soldiers_mountain
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.22.a
+		ai_chance = { factor = 100 }
+		trigger = {  }
+		
+	}
+    }
+	country_event = {
+    id = ilya.23
+	title = ilya.23.t
+	desc = ilya.23.d
+	picture = GFX_report_event_chinese_soldiers_running
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.23.a
+		ai_chance = { factor = 100 }
+		trigger = {  }
+		
+	}
+    }
+	country_event = {
+    id = ilya.24
+	title = ilya.24.t
+	desc = ilya.24.d
+	picture = GFX_report_event_eng_mosley_mussolini
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.24.a
+		ai_chance = { factor = 100 }
+		trigger = {  }
+		launch_nuke = {
+        state = 252
+        controller = ILY
+        use_nuke = yes
+        nuke_type = nuclear_bomb 
+        }
+		
+	}
+    }
+	country_event = {
+    id = ilya.25
+	title = ilya.25.t
+	desc = ilya.25.d
+	picture = GFX_report_event_bul_ff_troops_yugoslavia
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.25.a
+		ai_chance = { factor = 100 }
+		trigger = {  }
+		remove_idea = ILY_kiraot
+		add_political_power = 90
+		add_stability = -0.05
+		add_war_support = -0.05
+		add_command_power = 30
+		complete_national_focus = ILY_rasstavanie
+		country_event = news.426
+		
+	}
+	option = {
+	    name = ilya.25.b
+		ai_chance = { factor = 100 }
+		trigger = {  }
+		add_political_power = 25
+		add_stability = 0.01
+		add_war_support = 0.01
+		
+	}
+    }
+	country_event = {
+    id = ilya.26
+	title = ilya.26.t
+	desc = ilya.26.d
+	picture = GFX_report_event_bul_ff_troops_yugoslavia
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.26.a
+		ai_chance = { factor = 100 }
+		trigger = {  }
+		remove_ideas = ILY_kiraot
+		news_event = news.426
+		retire_ideology_leader = fascism
+		create_country_leader = { 
+        name = "Илья"
+	    desc = "POLITICS_ADOLF_HITLER_DESC"
+	    picture = "Portrait_Ilya.dds"
+	    expire = "2029.1.1"
+	    ideology = nazism
+	    traits = {
+	    
+	    }
+        }
+		remove_advisor_role = {
+        character = "ILY_kira"
+        slot = political_advisor
+        }
+		add_popularity = {
+        ideology = fascism
+        popularity = 0.10
+        }
+		every_country = {
+				limit = {
+					AND = {
+						OR = {
+							original_tag = NKD
+							original_tag = NAN
+							original_tag = SAS
+							original_tag = KRL
+							original_tag = VIK
+						}
+					}
+				}
+				add_opinion_modifier = {
+					target = ILY
+					modifier = ILY_kirarasstavanie
+				}
+			}
+		
+		
+	}
+	}
+	country_event = {
+    id = ilya.27
+	title = ilya.27.t
+	desc = ilya.27.d
+	picture = GFX_report_event_bul_imro_chieftain
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.27.a
+		ai_chance = { factor = 20 }
+		trigger = {  }
+		add_stability = -0.05
+		news_event = news.422
+		random_list = {
+				60 = {
+					ILY = {
+						country_event = { days = 1 id = ilya.28}
+					}
+				}
+				40 = {
+					ILY = {
+						country_event = { days = 1 id = ilya.25 }
+					}
+				}
+			}
+	}
+}
+country_event = {
+    id = ilya.28
+	title = ilya.28.t
+	desc = ilya.28.d
+	picture = GFX_report_event_bul_imro_chieftain
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.28.a
+		ai_chance = { factor = 20 }
+		trigger = {  }
+		add_stability = -0.05
+		add_war_support = 0.08
+		add_threat = 5
+		remove_ideas = ILY_kiraot
+		retire_ideology_leader = fascism
+		create_country_leader = { 
+        name = "Илья"
+	    desc = "POLITICS_ADOLF_HITLER_DESC"
+	    picture = "Portrait_Ilya.dds"
+	    expire = "2029.1.1"
+	    ideology = nazism
+	    traits = {
+	    
+	    }
+        }
+		remove_advisor_role = {
+        character = "ILY_kira"
+        slot = political_advisor
+        }
+		add_popularity = {
+        ideology = fascism
+        popularity = 0.10
+        }
+	}
+}
+country_event = {
+    id = ilya.29
+	title = ilya.29.t
+	desc = ilya.29.d
+	picture = GFX_report_event_bul_italian_equipment
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.29.a
+		ai_chance = { factor = 20 }
+		trigger = {  }
+		add_political_power = 40
+		random_list = {
+				91 = {
+					ILY = {
+						country_event = { days = 1 id = ilya.30 }
+					}
+				}
+				9 = {
+					ILY = {
+						country_event = { days = 1 id = ilya.31 }
+					}
+				}
+			}
+	}
+}
+country_event = {
+    id = ilya.30
+	title = ilya.30.t
+	desc = ilya.30.d
+	picture = GFX_report_event_bul_imro_chieftain
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.30.a
+		ai_chance = { factor = 20 }
+		trigger = {  }
+		complete_national_focus = ILY_Kiracrisis4
+
+	}		
+}
+country_event = {
+    id = ilya.31
+	title = ilya.31.t
+	desc = ilya.31.d
+	picture = GFX_report_event_DEN_german_tanks
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.31.a
+		ai_chance = { factor = 20 }
+		trigger = {  }
+		complete_national_focus = ILY_Kiraizmena
+	}		
+}
+country_event = {
+    id = ilya.32
+	title = ilya.32.t
+	desc = ilya.32.d
+	picture = GFX_report_event_bul_making_bricks_for_school
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.32.a
+		ai_chance = { factor = 20 }
+		trigger = {  }
+		
+	}		
+}
+country_event = {
+    id = ilya.33
+	title = ilya.33.t
+	desc = ilya.33.d
+	picture = GFX_report_event_CHL_chillan_earthquake
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.33.a
+		ai_chance = { factor = 20 }
+		trigger = {  }
+		complete_national_focus = ILY_1stwar
+	}		
+}
+country_event = {
+    id = ilya.34
+	title = ilya.34.t
+	desc = ilya.34.d
+	picture = GFX_report_event_eng_mosley_speech
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.34.a
+		ai_chance = { factor = 20 }
+		trigger = {  }
+		
+	}		
+}
+country_event = {
+    id = ilya.34
+	title = ilya.34.t
+	desc = ilya.34.d
+	picture = GFX_report_event_eng_mosley_speech
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.34.a
+		ai_chance = { factor = 20 }
+		trigger = {  }
+		
+	}		
+}
+country_event = {
+    id = ilya.35
+	title = ilya.35.t
+	desc = ilya.35.d
+	picture = GFX_report_event_COG_force_publique_capturing_area
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.35.a
+		ai_chance = { factor = 20 }
+		trigger = {  }
+		
+	}		
+}
+country_event = {
+    id = ilya.36
+	title = ilya.36.t
+	desc = ilya.36.d
+	picture = GFX_report_event_eng_mosley_speech
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.36.a
+		ai_chance = { factor = 20 }
+		trigger = {  }
+		
+	}		
+}
+country_event = {
+    id = ilya.37
+	title = ilya.37.t
+	desc = ilya.37.d
+	picture = GFX_report_event_eng_mosley_speech
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.37.a
+		ai_chance = { factor = 20 }
+		trigger = {  }
+		country_event = ilya.26
+		complete_national_focus = ILY_Kiracrisis4
+		complete_national_focus = ILY_rasstavanie
+	}		
+	option = {
+	    name = ilya.37.b
+		ai_chance = { factor = 20 }
+		trigger = {  }
+		random_list = {
+				84 = {
+					ILY = {
+						country_event = { days = 1 id = ilya.30 }
+					}
+				}
+				16 = {
+					ILY = {
+						country_event = { days = 1 id = ilya.28 }
+					}
+				}
+			}
+	}	
+	option = {
+	    name = ilya.37.c
+		ai_chance = { factor = 20 }
+		trigger = {  }
+		random_list = {
+				84 = {
+					ILY = {
+						country_event = { days = 1 id = ilya.30 }
+					}
+				}
+				16 = {
+					ILY = {
+						country_event = { days = 1 id = ilya.28 }
+					}
+				}
+			}
+	}	
+	option = {
+	    name = ilya.37.e
+		ai_chance = { factor = 20 }
+		trigger = {  }
+		random_list = {
+				60 = {
+					ILY = {
+						country_event = { days = 1 id = ilya.30 }
+					}
+				}
+				40 = {
+					ILY = {
+						
+					}
+				}
+			}
+	}	
+}
+country_event = {
+    id = ilya.38
+	title = ilya.38.t
+	desc = ilya.38.d
+	picture = GFX_report_event_eng_mosley_speech
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.38.a
+		ai_chance = { factor = 20 }
+		trigger = {  }
+		add_war_support = 0.05
+	}		
+}
+country_event = {
+    id = ilya.39
+	title = ilya.39.t
+	desc = ilya.39.d
+	picture = GFX_report_event_eng_mosley_speech
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.39.a
+		ai_chance = { factor = 20 }
+		trigger = {  }
+		
+	}		
+}
+country_event = {
+    id = ilya.40
+	title = ilya.40.t
+	desc = ilya.40.d
+	picture = GFX_report_event_eng_mosley_speech
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.40.a
+		ai_chance = { factor = 20 }
+		trigger = {  }
+		
+	}		
+}

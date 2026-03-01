@@ -1,0 +1,83 @@
+ILY_guide_kredit = {
+
+    ILY_pogasitkredit = {
+
+        icon = generic_ignite_civil_war
+		
+		available = {
+		has_completed_focus = ILY_VAZ2112
+		
+		}
+		
+		cost = 300
+		
+		visible = {
+		    always = yes
+		}
+		complete_effect = {
+		remove_ideas = ILY_dvinka
+		}
+	}
+}
+	
+ILY_edits = {
+
+    ILY_makesmalledits = {
+
+        icon = generic_ignite_civil_war
+		
+		available = {
+		has_completed_focus = ILY_pereosmyslil
+		
+		}
+		
+		cost = 50
+		
+		visible = {
+		    always = yes
+		}
+		complete_effect = {
+		add_war_support = 0.05
+		}
+	}
+	
+	ILY_makebasededits = {
+
+        icon = generic_ignite_civil_war
+		
+		available = {
+		has_completed_focus = ILY_pereosmyslil
+		
+		}
+		
+		cost = 100
+		
+		visible = {
+		    always = yes
+		}
+		complete_effect = {
+		add_war_support = 0.05
+		add_stability = 0.05
+		}
+	}
+	
+	ILY_makebigedits = {
+
+        icon = generic_ignite_civil_war
+		
+		available = {
+		has_completed_focus = ILY_pereosmyslil
+		
+		}
+		
+		cost = 150
+		
+		visible = {
+		    always = yes
+		}
+		complete_effect = {
+		add_war_support = 0.1
+		add_stability = 0.05
+		}
+	}
+	

@@ -1,0 +1,370 @@
+add_namespace = andreev
+
+country_event = {
+    id = andreev.1
+	title = andreev.1.t
+	desc = andreev.1.d
+	picture = GFX_report_event_british_inspect_troops
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = andreev.1.a
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		ILY = {add_to_faction = NAN}
+	}
+	option = {
+	    name = andreev.1.b
+		ai_chance = { factor = 10 }
+		trigger = {  }
+		
+	}
+}
+country_event = {
+    id = andreev.2
+	title = andreev.2.t
+	desc = andreev.2.d
+	picture = GFX_report_event_british_inspect_troops
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = andreev.2.a
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		every_country = {
+				limit = {
+					AND = {
+						OR = {
+							original_tag = SAS
+						}
+					}
+				}
+				country_event = sasha.5
+			}
+		remove_ideas = NAN_bunt1
+	}
+	option = {
+	    name = andreev.2.b
+		ai_chance = { factor = 10 }
+		trigger = {  }
+		remove_ideas = NAN_bunt1
+		every_country = {
+				limit = {
+					AND = {
+						OR = {
+							original_tag = SAS
+						}
+					}
+				}
+				create_wargoal = {
+                type = puppet_wargoal_focus
+                target = NAN
+                }
+			}
+	}
+}
+country_event = {
+    id = andreev.3
+	title = andreev.3.t
+	desc = andreev.3.d
+	picture = GFX_report_event_BRA_cangaco
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = andreev.3.a
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		complete_national_focus = NAN_sanya
+	}
+	option = {
+	    name = andreev.3.b
+		ai_chance = { factor = 10 }
+		trigger = {  }
+		complete_national_focus = NAN_sila
+	}
+}
+country_event = {
+    id = andreev.4
+	title = andreev.4.t
+	desc = andreev.4.d
+	picture = GFX_report_event_british_inspect_troops
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = andreev.4.a
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		damage_building = {
+              type = industrial_complex
+              state = 258
+              damage = 5
+			 }
+			 damage_building = {
+              type = arms_factory
+              state = 258
+              damage = 1
+			 }
+		
+	}
+}
+country_event = {
+    id = andreev.5
+	title = andreev.5t
+	desc = andreev.5.d
+	picture = GFX_report_event_british_inspect_troops
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = andreev.5.a
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		complete_national_focus = NAN_tankovayaeconom
+		
+	}
+	option = {
+	    name = andreev.5.b
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		complete_national_focus = NAN_gibkayapromm
+		remove_ideas = NAN_babkinatanki
+	}
+}
+country_event = {
+    id = andreev.6
+	title = andreev.6.t
+	desc = andreev.6.d
+	picture = GFX_report_event_british_inspect_troops
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = andreev.6.a
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		complete_national_focus = NAN_peoplearmy
+		
+	}
+	option = {
+	    name = andreev.6.b
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		complete_national_focus = NAN_specialforces
+		
+	}
+}
+country_event = {
+    id = andreev.7
+	title = andreev.7.t
+	desc = andreev.7.d
+	picture = GFX_report_event_british_inspect_troops
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = andreev.7.a
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		add_timed_idea = {
+		idea = NAN_gumhelp
+		days = 180
+		}
+		258 = {
+				limit = {
+					ROOT = { controls_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				
+				
+			}
+	}
+	option = {
+	    name = andreev.7.b
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		add_political_power = 5
+		
+	}
+}
+country_event = {
+    id = andreev.8
+	title = andreev.8.t
+	desc = andreev.8.d
+	picture = GFX_report_event_british_inspect_troops
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = andreev.8.a
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		every_country = {
+				limit = {
+					AND = {
+						OR = {
+							original_tag = SAS
+						}
+					}
+				}
+				country_event = sasha.17
+				}
+	}
+}
+country_event = {
+    id = andreev.9
+	title = andreev.9.t
+	desc = andreev.9.d
+	picture = GFX_report_event_british_inspect_troops
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = andreev.9.a
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		army_experience = 70
+		every_country = {
+				limit = {
+					AND = {
+						OR = {
+							original_tag = SAS
+						}
+					}
+				}
+				country_event = sasha.18
+				}
+	}
+	option = {
+	    name = andreev.9.b
+		ai_chance = { factor = 10 }
+		trigger = {  }
+		add_war_support = 0.05
+		add_threat = 1
+		every_country = {
+				limit = {
+					AND = {
+						OR = {
+							original_tag = SAS
+						}
+					}
+				}
+				country_event = sasha.19
+				}
+	}
+}
+country_event = {
+    id = andreev.10
+	title = andreev.10.t
+	desc = andreev.10.d
+	picture = GFX_report_event_british_inspect_troops
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = andreev.10.a
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		add_offsite_building = { type = industrial_complex level = 1 }
+		257 = {
+				limit = {
+					ROOT = { controls_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				
+				
+			}
+		every_country = {
+				limit = {
+					AND = {
+						OR = {
+							original_tag = SAS
+						}
+					}
+				}
+				country_event = sasha.20
+				}
+	}
+	option = {
+	    name = andreev.10.b
+		ai_chance = { factor = 10 }
+		trigger = {  }
+		add_war_support = 0.05
+		add_threat = 0.01
+   }
+}
+country_event = {
+    id = andreev.11
+	title = andreev.11.t
+	desc = ilya.33.d
+	picture = GFX_report_event_bul_making_bricks_for_school
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.33.a
+		ai_chance = { factor = 20 }
+		trigger = {  }
+		complete_national_focus = NAN_war
+	}		
+}
+
+
+

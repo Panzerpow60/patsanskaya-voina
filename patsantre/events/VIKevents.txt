@@ -1,0 +1,451 @@
+add_namespace = viktor
+
+country_event = {
+    id = viktor.1
+	title = viktor.1.t
+	desc = viktor.1.d
+	picture = GFX_report_event_NOR_quisling_and_terboven
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = viktor.1.a
+		ai_chance = { factor = 50 }
+		trigger = {  }
+		add_political_power = 10
+	}
+	
+	option = {
+	    name = viktor.1.b
+		ai_chance = { factor = 50 }
+		trigger = { TAG = VIK }
+		every_country = {
+				limit = {
+					AND = {
+						OR = {
+							original_tag = NKD
+							original_tag = NAN
+							original_tag = SAS
+						}
+					}
+				}
+				add_opinion_modifier = {
+					target = VIK
+					modifier = VIK_kirarazzkaz
+				}
+			}
+			every_country = {
+				limit = {
+					AND = {
+						OR = {
+							original_tag = ILY
+						}
+					}
+				}
+				add_opinion_modifier = {
+					target = VIK
+					modifier = ILY_kirarazzkazal
+				}
+			}
+		
+	}
+}
+
+country_event = {
+    id = viktor.2
+	title = viktor.2.t
+	desc = viktor.2.d
+	picture = GFX_report_event_french_resistance_02
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = viktor.2.a
+		ai_chance = { factor = 50 }
+		trigger = {  }
+		add_stability = -0.05
+		add_political_power = 50
+	}
+	
+	option = {
+	    name = viktor.2.b
+		ai_chance = { factor = 50 }
+		trigger = { TAG = VIK }
+		add_political_power = 1
+	}
+}
+
+country_event = {
+    id = viktor.3
+	title = viktor.3.t
+	desc = viktor.3.d
+	picture = GFX_report_event_SOV_purge_young_officers
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = viktor.3.a
+		ai_chance = { factor = 50 }
+		trigger = {  }
+		add_timed_idea = {
+        idea = VIK_alkogol 
+         days = 90
+		}
+	}
+}
+
+country_event = {
+    id = viktor.4
+    title = viktor.4.t
+    desc = viktor.4.d
+    picture = GFX_report_event_SOV_purge_young_officers
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = viktor.4.a
+        add_political_power = 15
+    }
+}
+
+
+country_event = {
+    id = viktor.5
+	title = viktor.5.t
+	desc = viktor.5.d
+	picture = GFX_report_event_SOV_purge_young_officers
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = viktor.5.a
+		ai_chance = { factor = 50 }
+		trigger = {  }
+		add_timed_idea = {
+        idea = VIK_bestleto
+         days = 90
+		}
+	}
+}
+
+country_event = {
+    id = viktor.6
+	title = viktor.6.t
+	desc = viktor.6.d
+	picture = GFX_report_event_COG_force_publique_marching_to_war
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = viktor.6.a
+		ai_chance = { factor = 25 }
+		trigger = {  }
+		add_timed_idea = {
+        idea = VIK_Blitzkrieg
+         days = 365
+		}
+	}
+	
+	option = {
+	    name = viktor.6.b
+		ai_chance = { factor = 25 }
+		trigger = {  }
+		add_timed_idea = {
+        idea = VIK_victory_or_death
+         days = 365
+		}
+	}
+	
+	option = {
+	    name = viktor.6.c
+		ai_chance = { factor = 25 }
+		trigger = {  }
+		add_timed_idea = {
+        idea = VIK_WW1tactic
+         days = 365
+		}
+	}
+	
+	option = {
+	    name = viktor.6.e
+		ai_chance = { factor = 25 }
+		trigger = {  }
+		add_timed_idea = {
+        idea = VIK_mobilisation
+         days = 365
+		}
+	}
+}
+
+country_event = {
+    id = viktor.7
+	title = viktor.7.t
+	desc = viktor.7.d
+	picture = GFX_report_event_asian_politicians
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = viktor.7.a
+		ai_chance = { factor = 50 }
+		trigger = {  }
+		add_political_power = 20
+		}
+	}
+	
+country_event = {
+    id = viktor.8
+	title = viktor.8.t
+	desc = viktor.8.d
+	picture = GFX_report_event_ast_parliament_house
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = viktor.8.a
+		ai_chance = { factor = 50 }
+		trigger = {  }
+		add_political_power = 30
+		add_stability = 0.05
+		}
+		
+	
+	option = {
+	    name = viktor.8.b
+		ai_chance = { factor = 50 }
+		trigger = {  }
+		add_political_power = 35
+		add_war_support = 0.05
+		}
+	}	
+
+country_event = {
+    id = viktor.9
+	title = viktor.9.t
+	desc = viktor.9.d
+	picture = GFX_report_event_chamberlain
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = viktor.9.a
+		ai_chance = { factor = 50 }
+		trigger = {  }
+		add_political_power = 20
+		add_stability = 0.02
+		}
+	}
+	
+country_event = {
+    id = viktor.10
+	title = viktor.10.t
+	desc = viktor.10.d
+	picture = GFX_report_event_albanian_king_zog
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = viktor.10.a
+		ai_chance = { factor = 50 }
+		trigger = {  }
+		add_stability = -0.05
+		}
+	}
+	
+country_event = {
+    id = viktor.11
+	title = viktor.11.t
+	desc = viktor.11.d
+	picture = GFX_report_event_bul_italian_equipment
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = viktor.11.a
+		ai_chance = { factor = 100000 }
+		trigger = {  }
+		complete_national_focus = VIK_nopatsani2
+		}
+	option = {
+	    name = viktor.11.b
+		ai_chance = { factor = 50 }
+		trigger = {  }
+		complete_national_focus = VIK_obdumal
+		}
+	}
+country_event = {
+    id = viktor.12
+	title = viktor.12.t
+	desc = viktor.12.d
+	picture = GFX_report_event_BEL_leopold
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = viktor.12.a
+		ai_chance = { factor = 50 }
+		trigger = {  }
+		add_stability = 0.05
+		complete_national_focus = VIK_yes
+	}
+}
+country_event = {
+    id = viktor.13
+	title = viktor.13.t
+	desc = viktor.13.d
+	picture = GFX_report_event_BEL_paul_van_zeeland
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = viktor.13.a
+		ai_chance = { factor = 50 }
+		trigger = {  }
+		add_political_power = 30
+		add_stability = 0.03
+	}
+}
+country_event = {
+    id = viktor.14
+	title = viktor.14.t
+	desc = viktor.14.d
+	picture = GFX_report_event_ast_army
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = viktor.14.a
+		ai_chance = { factor = 50 }
+		trigger = {  }
+		add_stability = 0.06
+	}
+}
+country_event = {
+    id = viktor.15
+	title = viktor.15.t
+	desc = viktor.15.d
+	picture = GFX_report_event_ast_army
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = viktor.15.a
+		ai_chance = { factor = 50 }
+		trigger = {  }
+		add_stability = 0.06
+	}
+}
+country_event = {
+    id = viktor.16
+	title = viktor.16.t
+	desc = viktor.16.d
+	picture = GFX_report_event_ast_army
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = viktor.16.a
+		ai_chance = { factor = 50 }
+		trigger = {  }
+		set_politics = {
+    ruling_party = fascism
+    elections_allowed = no
+    last_election = "1935.12.17"
+    election_frequency = 48
+    long_name = fascism
+    name = fascism
+}
+}
+}
+country_event = {
+    id = viktor.17
+	title = viktor.17.t
+	desc = viktor.17.d
+	picture = GFX_report_event_chinese_soldiers_city_ruin
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+       
+    }
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = viktor.17.a
+		ai_chance = { factor = 50 }
+		trigger = { }
+		
+	}
+	option = {
+	    name = viktor.17.b
+		ai_chance = { factor = 50 }
+		trigger = { }
+		
+	}
+}
+}
+
+	

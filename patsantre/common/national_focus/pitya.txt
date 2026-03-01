@@ -1,0 +1,1201 @@
+focus_tree = {
+	id = pitya
+	country = {
+		factor = 0
+		modifier = {
+		    add = 10
+			tag = VIK
+		}
+	}
+	default = no
+	focus = {
+		id = VIK_Gofman
+		icon = GFX_focus_RAJ_tea_exports
+		cost = 4,30
+		x = 12
+		y = 0
+		completion_reward = { 
+		     country_event = viktor.2
+		}
+
+	}
+	focus = {
+		id = VIK_2024
+		icon = GFX_focus_FIN_oy_alkoholiliike
+		cost = 1
+		x = 21
+		y = 0
+		available = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				OR = {
+					date > 2024.01.01
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_dlc = "Man the Guns" }
+				}
+				OR = {
+					date > 2024.01.01
+				}
+			}
+		}
+		completion_reward = {
+		country_event = viktor.9
+		}
+
+	}
+	focus = {
+		id = VIK_voisko
+		icon = GFX_focus_AFG_royal_guard
+		cost = 5,00
+		x = 33
+		y = 0
+		completion_reward = {
+		add_ideas = VIK_voisko1
+		country_event = viktor.16
+		}
+
+	}
+	focus = {
+		id = VIK_2023
+		icon = GFX_focus_CHL_expand_the_forestry
+		cost = 1
+		prerequisite = {
+			focus = VIK_Gofman
+		}
+		x = 12
+		y = 1
+		completion_reward = { 
+		country_event = viktor.4
+		}
+
+	}
+	focus = {
+		id = VIK_birthday
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = VIK_2023
+		}
+		x = 12
+		y = 2
+		completion_reward = {
+		    random_core_state = {
+				limit = {
+					ROOT = { controls_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = VIK_OGE
+		icon = GFX_goal_ILY_SOGE
+		cost = 5
+		prerequisite = {
+			focus = VIK_birthday
+		}
+		x = 12
+		y = 3
+		completion_reward = {
+		add_stability = 0.05 
+		add_political_power = 30
+		}
+
+	}
+	focus = {
+		id = VIK_SPB
+		icon = GFX_focus_SWE_per_albin_bus
+		cost = 10,00
+		prerequisite = {
+			focus = VIK_OGE
+		}
+		x = 12
+		y = 4
+		completion_reward = {
+		    country_event = viktor.7
+		}
+
+	}
+	focus = {
+		id = VIK_patsani
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = VIK_SPB
+		}
+		x = 12
+		y = 5
+		completion_reward = { 
+		country_event = viktor.5
+		add_political_power = 10
+		diplomatic_relation = {
+            country = ILY
+            relation = non_aggression_pact
+            active = yes
+			}
+		diplomatic_relation = {
+            country = SAS
+            relation = non_aggression_pact
+            active = yes
+			}
+		diplomatic_relation = {
+            country = NAN
+            relation = non_aggression_pact
+            active = yes
+			}
+		diplomatic_relation = {
+            country = NKD
+            relation = non_aggression_pact
+            active = yes
+			}
+		}
+
+	}
+	focus = {
+		id = VIK_10kl
+		icon = GFX_goal_unknown
+		cost = 1
+		prerequisite = {
+			focus = VIK_patsani
+		}
+		x = 12
+		y = 6
+		available = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				OR = {
+					date > 2023.09.01
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_dlc = "Man the Guns" }
+				}
+				OR = {
+					date > 2023.09.01
+				}
+			}
+		}
+		completion_reward = {
+		country_event = viktor.13
+		}
+
+
+	}
+	focus = {
+		id = VIK_newfriends
+		icon = GFX_focus_AUS_legitimistische_jugend
+		cost = 5
+		prerequisite = {
+			focus = VIK_10kl
+		}
+		x = 12
+		y = 7
+		completion_reward = {
+		    add_political_power = 10
+			country_event = viktor.8
+		}
+
+	}
+	focus = {
+		id = VIK_stabyear
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 4
+		prerequisite = {
+			focus = VIK_newfriends
+		}
+		x = 12
+		y = 8
+		completion_reward = {
+		add_stability = 0.1
+		}
+
+	}
+	focus = {
+		id = VIK_17y
+		icon = GFX_focus_BRA_cafe_com_leite_politics
+		cost = 5
+		prerequisite = {
+			focus = VIK_2024
+		}
+		x = 21
+		y = 2
+		completion_reward = {
+		country_event = viktor.3
+		}
+
+	}
+	focus = {
+		id = VIK_furry
+		icon = GFX_goal_VIK_furry
+		cost = 5
+		prerequisite = {
+			focus = VIK_17y
+		}
+		x = 21
+		y = 3
+		completion_reward = {
+		country_event = viktor.10
+		}
+
+	}
+	focus = {
+		id = VIK_nostab
+		icon = GFX_focus_spr_crush_the_revolution
+		cost = 5
+		prerequisite = {
+			focus = VIK_furry
+		}
+		x = 21
+		y = 4
+		completion_reward = {
+		add_threat = 5
+		    add_timed_idea = {
+            idea = VIK_nestabilnost
+             days = 100
+			}
+        }
+
+	}
+	focus = {
+		id = VIK_arseny
+		icon = GFX_focus_GER_party_chancellor_bormann
+		cost = 2
+		prerequisite = {
+			focus = VIK_nostab
+		}
+		x = 21
+		y = 5
+		completion_reward = {
+		add_threat = 4
+		every_country = {
+				limit = {
+					AND = {
+						OR = {
+							original_tag = NKD
+						}
+					}
+				}
+				country_event = kudinov.1
+
+				}
+			}
+		}
+
+	focus = {
+		id = VIK_sorry
+		icon = GFX_goal_generic_military_deal
+		cost = 99
+		prerequisite = {
+			focus = VIK_arseny
+		}
+		mutually_exclusive = {
+			focus = VIK_noappologise
+		}
+		x = 18
+		y = 6
+
+	}
+	focus = {
+		id = VIK_noappologise
+		icon = GFX_focus_AUS_frontmiliz_focus
+		cost = 5
+		prerequisite = {
+			focus = VIK_arseny
+		}
+		mutually_exclusive = {
+			focus = VIK_sorry
+		}
+		x = 24
+		y = 6
+		completion_reward = {
+		add_threat = 3`
+		add_war_support = 0.05
+		diplomatic_relation = {
+            country = ILY
+            relation = non_aggression_pact
+            active = no
+			}
+		diplomatic_relation = {
+            country = SAS
+            relation = non_aggression_pact
+            active = no
+			}
+		diplomatic_relation = {
+            country = NAN
+            relation = non_aggression_pact
+            active = no
+			}
+		}
+
+	}
+	focus = {
+		id = VIK_crazyshit
+		icon = GFX_focus_NOR_lurk_in_the_shadows
+		cost = 5
+		prerequisite = {
+			focus = VIK_noappologise
+			focus = VIK_sorry
+		}
+		x = 21
+		y = 7
+		completion_reward = {
+		add_threat = 8
+		unlock_decision_category_tooltip = VIK_guide_huinya
+		every_country = {
+				limit = {
+					AND = {
+						OR = {
+							original_tag = ILY
+						}
+					}
+				}
+				country_event = ilya.14
+
+				}
+		every_country = {
+				limit = {
+					AND = {
+						OR = {
+							original_tag = SAS
+						}
+					}
+				}
+				country_event = sasha.1
+
+				}
+		add_state_claim = 250
+		add_state_claim = 258
+		add_state_claim = 252
+		add_state_claim = 401
+		}
+
+	}
+	focus = {
+		id = VIK_risha
+		icon = GFX_goal_VIK_risha
+		cost = 5
+		prerequisite = {
+			focus = VIK_crazyshit
+		}
+		x = 21
+		y = 8
+		completion_reward = {
+		country_event = viktor.12
+		}
+
+	}
+	focus = {
+		id = VIK_yes
+		icon = GFX_goal_VIK_yes
+		cost = 1
+		prerequisite = {
+			focus = VIK_risha
+		}
+		mutually_exclusive = {
+			focus = VIK_no
+		}
+		x = 24
+		y = 9
+		completion_reward = {
+		add_ideas = VIK_love
+		}
+
+	}
+	focus = {
+		id = VIK_nopatsani
+		icon = GFX_focus_generic_total_war
+		cost = 7
+		prerequisite = {
+			focus = VIK_yes
+		}
+		x = 24
+		y = 10
+		completion_reward = {
+			add_timed_idea = {
+             idea = VIK_podgotovka
+             days = 200
+            }
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+
+			random_core_state = {
+				limit = {
+					ROOT = { controls_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 10
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+				prioritize = { 946 945 } #optional: to pick those states first if they fulfill the limit
+				
+			}
+		}
+
+	}
+	focus = {
+		id = VIK_alone
+		icon = GFX_goal_VIK_ilya_kira
+		cost = 5
+		prerequisite = {
+			focus = VIK_nopatsani
+		}
+		x = 24
+		y = 11
+		completion_reward = { 
+		     country_event = viktor.1 
+		}
+
+	}
+	focus = {
+		id = VIK_firehouse
+		icon = GFX_focus_SWE_hygienic_housing
+		cost = 5
+		prerequisite = {
+			focus = VIK_alone
+		}
+		x = 24
+		y = 12
+		completion_reward = {
+        news_event = news.414
+		damage_building = {
+              type = industrial_complex
+              state = 255
+              damage = 2
+			 }
+		}
+
+	}
+	focus = {
+		id = VIK_job
+		icon = GFX_goal_VIK_sportmaster
+		cost = 4
+		prerequisite = {
+			focus = VIK_firehouse
+		}
+		x = 24
+		y = 13
+		completion_reward = {
+		add_timed_idea = {
+		idea = VIK_sportmaster
+		days = 200
+		}
+		}
+
+	}
+	focus = {
+		id = VIK_priorities
+		icon = GFX_focus_CHL_revise_the_social_classes
+		cost = 10
+		prerequisite = {
+			focus = VIK_job
+		}
+		x = 24
+		y = 14
+		completion_reward = {
+		country_event = viktor.11
+		}
+
+	}
+	focus = {
+		id = VIK_obdumal
+		icon = GFX_focus_GER_rally_the_industrialists
+		cost = 10,00
+		prerequisite = {
+			focus = VIK_priorities
+		}
+		mutually_exclusive = {
+			focus = VIK_nopatsani2
+		}
+		x = 22
+		y = 15
+
+	}
+	focus = {
+		id = VIK_nopatsani2
+		icon = GFX_focus_BEL_legacy_of_the_great_war
+		cost = 10,00
+		prerequisite = {
+			focus = VIK_priorities
+		}
+		mutually_exclusive = {
+			focus = VIK_obdumal
+		}
+		x = 26
+		y = 15
+		completion_reward = {
+		    news_event = news.432
+			news_event = news.431
+		    country_event = superevents.504
+			add_timed_idea = {
+			idea = VIK_patriot
+			days = 45
+			}
+			every_country = {
+				limit = {
+					AND = {
+						OR = {
+							original_tag = ILY
+						}
+					}
+				}
+				country_event = ilya.33
+
+				}
+				every_country = {
+				limit = {
+					AND = {
+						OR = {
+							original_tag = SAS
+						}
+					}
+				}
+				country_event = sasha.21
+
+				}
+				every_country = {
+				limit = {
+					AND = {
+						OR = {
+							original_tag = NAN
+						}
+					}
+				}
+				country_event = andreev.11
+
+				}
+				every_country = {
+				limit = {
+					AND = {
+						OR = {
+							original_tag = NKD
+						}
+					}
+				}
+				country_event = kudinov.12
+
+				}
+		     add_stability = -0.10
+		     add_war_support = 0.10
+		     declare_war_on = { 
+		     target = ILY
+			 type = annex_everything
+			}
+			declare_war_on = { 
+		     target = NAN
+			 type = annex_everything
+			}
+			declare_war_on = { 
+		     target = NKD
+			 type = annex_everything
+			}
+			declare_war_on = { 
+		     target = SAS
+			 type = annex_everything
+			}
+		}
+
+	}
+	focus = {
+		id = VIK_nowoman
+		icon = GFX_focus_SWE_education_reform
+		cost = 5
+		prerequisite = {
+			focus = VIK_nopatsani2
+		}
+		x = 26
+		y = 16
+		completion_reward = {
+		country_event = viktor.14
+		}
+
+	}
+	focus = {
+		id = VIK_aloneagain
+		icon = GFX_focus_cze_german_puppet
+		cost = 5
+		prerequisite = {
+			focus = VIK_nowoman
+		}
+		x = 26
+		y = 17
+		completion_reward = {
+		add_ideas = VIK_sam
+		}
+
+	}
+	focus = {
+		id = VIK_vintovka
+		icon = GFX_goal_VIK_vintovka
+		cost = 5
+		prerequisite = {
+			focus = VIK_voisko
+		}
+		x = 33
+		y = 1
+		completion_reward = {
+		       add_tech_bonus = {
+               bonus = 0.5
+               uses = 1
+               category = infantry_weapons
+			}
+		}
+
+	}
+	focus = {
+		id = VIK_gavry
+		icon = GFX_goal_VIK_gavry
+		cost = 5
+		prerequisite = {
+			focus = VIK_vintovka
+		}
+		x = 33
+		y = 2
+		completion_reward = {
+		            255 = {  
+	   		         add_building_construction = {
+							type = bunker
+							level = 1
+							province = {
+								id = 6343
+							}
+						}
+					}
+					255 = {
+					add_building_construction = {
+						type = supply_node
+						level = 1
+						province = 6343
+						instant_build = yes
+					}
+					build_railway = {
+						path = { 9258 6248 6291 9324 376 9276 6343 }
+					}
+				}
+				}
+	}
+	focus = {
+		id = VIK_doktrina
+		icon = GFX_goal_generic_army_doctrines
+		cost = 5
+		prerequisite = {
+			focus = VIK_gavry
+		}
+		x = 33
+		y = 3
+		completion_reward = {
+		add_doctrine_cost_reduction = {
+	           cost_reduction = 0.5
+	           uses = 2
+	           category = land_doctrine
+			}
+		}
+    }
+	focus = {
+		id = VIK_pitya
+		icon = GFX_goal_generic_construct_military
+		cost = 5
+		prerequisite = {
+			focus = VIK_doktrina
+		}
+		mutually_exclusive = {
+			focus = VIK_vidr
+		}
+		available = {
+			OR = {
+				has_full_control_of_state = 255
+				has_full_control_of_state = 239
+			}
+		}
+		x = 31
+		y = 4
+		completion_reward = {
+		             add_timed_idea = {
+					 idea = VIK_bunker
+					 days = 180
+					}
+		             255 = {  
+	   		         add_building_construction = {
+							type = bunker
+							level = 3
+							province = {
+								id = 6343
+								id = 9344
+								id = 11262
+								id = 6391
+								id = 324
+								id = 3317
+								id = 257
+								id = 380
+							}
+							instant_build = yes
+						}
+					}
+				}
+				
+	}
+	focus = {
+		id = VIK_vidr
+		icon = GFX_focus_GER_the_eastern_border
+		cost = 5
+		prerequisite = {
+			focus = VIK_doktrina
+		}
+		mutually_exclusive = {
+			focus = VIK_pitya
+		}
+		x = 35
+		y = 4
+		completion_reward = {
+                    add_timed_idea = {
+					 idea = VIK_bunker
+					 days = 180
+					}		
+		             239 = {  
+	   		         add_building_construction = {
+							type = bunker
+							level = 4
+							province = {
+								id = 11449
+								id = 3465
+								id = 3316
+							}
+						}
+					 add_building_construction = {
+							type = bunker
+							level = 5
+							province = {
+								id = 3578
+							}
+							instant_build = yes
+						}
+					}
+					 255 = {  
+	   		         add_building_construction = {
+							type = bunker
+							level = 4
+							province = {
+								id = 6382
+								id = 208
+								id = 6343
+								id = 9258
+							}
+						}
+					}
+
+			}
+	}
+	focus = {
+		id = VIK_1stwar
+		icon = GFX_focus_BRA_acquire_german_tanks
+		cost = 1
+		prerequisite = {
+			focus = VIK_vidr
+			focus = VIK_pitya
+		}
+		x = 33
+		y = 5
+		available = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				OR = {
+					has_war = yes
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_dlc = "Man the Guns" }
+				}
+				OR = {
+					has_war = yes
+				}
+			}
+		}
+		completion_reward = {
+		country_event = viktor.6
+		}
+
+	}
+	focus = {
+		id = VIK_mobilis
+		icon = GFX_focus_generic_infiltration
+		cost = 2
+		prerequisite = {
+			focus = VIK_1stwar
+		}
+		x = 33
+		y = 6
+		completion_reward = {
+		      add_manpower = 100000
+			  add_equipment_to_stockpile = {
+			  type = infantry_equipment
+              amount = 10000
+              producer = GER
+			}
+		}
+
+	}
+	focus = {
+		id = VIK_defence
+		icon = GFX_goal_VIK_zapad
+		cost = 4
+		prerequisite = {
+			focus = VIK_mobilis
+		}
+		mutually_exclusive = {
+			focus = VIK_rypnytsa
+		}
+		x = 35
+		y = 7
+		completion_reward = {
+		add_ideas = VIK_zapad1
+		}
+
+	}
+	focus = {
+		id = VIK_rypnytsa
+		icon = GFX_goal_VIK_sever
+		cost = 4
+		prerequisite = {
+			focus = VIK_mobilis
+		}
+		mutually_exclusive = {
+			focus = VIK_defence
+		}
+		x = 31
+		y = 7
+		completion_reward = {
+		add_ideas = VIK_sever1
+		}
+
+	}
+	focus = {
+		id = VIK_razrabotka
+		icon = GFX_goal_VIK_razrabotka
+		cost = 7
+		prerequisite = {
+			focus = VIK_defence
+			focus = VIK_rypnytsa
+		}
+		x = 33
+		y = 8
+		completion_reward = {
+		       add_tech_bonus = {
+               bonus = 1
+               uses = 1
+               category = infantry_weapons
+			}
+			add_tech_bonus = {
+               bonus = 1
+               uses = 1
+               category = industry
+			}
+			add_tech_bonus = {
+               bonus = 0.5
+               uses = 2
+               category = artillery
+			}
+		}
+			
+
+	}
+	focus = {
+		id = VIK_zavod
+		icon = GFX_goal_VIK_zavod
+		cost = 5
+		prerequisite = {
+			focus = VIK_razrabotka
+		}
+		x = 33
+		y = 10
+		completion_reward = {
+		random_core_state = {
+				limit = {
+					ROOT = { controls_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				prioritize = { 946 945 } #optional: to pick those states first if they fulfill the limit
+				
+			}
+		}
+
+	}
+	focus = {
+		id = newfocus_56
+		icon = GFX_goal_VIK_urokiv
+		cost = 5
+		prerequisite = {
+			focus = VIK_zavod
+		}
+		x = 33
+		y = 11
+		completion_reward = {
+		    swap_ideas = {
+				add_idea = VIK_voisko2
+				remove_idea = VIK_voisko1
+			}
+		}
+
+	}
+	focus = {
+		id = newfocus_57
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = newfocus_56
+		}
+		x = 33
+		y = 12
+		available = {
+			has_war = yes
+			OR = {
+				surrender_progress > 0.1
+				casualties_k > 100
+			}
+		}
+		completion_reward = {
+		add_ideas = {
+			VIK_endsieg
+			}
+		         random_owned_controlled_state = {
+                 limit = { ROOT = { has_full_control_of_state = PREV } }
+                 prioritize = { 239 }
+                 create_unit = {
+                 division = "name = \"Divizya detey\" division_template = \"Divizya detey\" start_experience_factor = 0.05" 
+                 owner = VIK
+                }
+				}
+		        random_owned_controlled_state = {
+                limit = { ROOT = { has_full_control_of_state = PREV } }
+                prioritize = { 239 }
+                create_unit = {
+                division = "name = \"Divizya detey\" division_template = \"Divizya detey\" start_experience_factor = 0.05" 
+                owner = VIK
+                }
+		        }
+				random_owned_controlled_state = {
+                limit = { ROOT = { has_full_control_of_state = PREV } }
+                prioritize = { 239 }
+                create_unit = {
+                division = "name = \"Divizya detey\" division_template = \"Divizya detey\" start_experience_factor = 0.05" 
+                owner = VIK
+                }
+		        }
+		    random_owned_controlled_state = {
+            limit = { ROOT = { has_full_control_of_state = PREV } }
+            prioritize = { 239 }
+            create_unit = {
+            division = "name = \"Divizya detey\" division_template = \"Divizya detey\" start_experience_factor = 0.05" 
+            owner = VIK
+            }
+		    }
+		}
+	
+
+	}
+	focus = {
+		id = newfocus_58
+		icon = GFX_goal_VIK_zavod
+		cost = 5
+		prerequisite = {
+			focus = newfocus_57
+		}
+		x = 33
+		y = 13
+		completion_reward = {
+		swap_ideas = {
+				add_idea = VIK_endsieg1
+				remove_idea = VIK_endsieg
+			}
+        }
+	}
+	focus = {
+		id = VIK_army9
+		icon = GFX_focus_GER_demonstration_of_military_achievements
+		cost = 5
+		prerequisite = {
+			focus = newfocus_58
+		}
+		x = 33
+		y = 14
+		completion_reward = {
+		swap_ideas = {
+				add_idea = VIK_endsieg2
+				remove_idea = VIK_endsieg1
+			}
+		}
+
+	}
+	focus = {
+		id = newfocus_48
+		icon = GFX_focus_NORDIC_com_capstone_materiel
+		cost = 5
+		prerequisite = {
+			focus = VIK_army9
+		}
+		x = 33
+		y = 15
+        completion_reward = {
+		every_country = {
+				limit = {
+					AND = {
+						OR = {
+							original_tag = NAN
+							original_tag = ILY
+							original_tag = NKD
+							original_tag = SAS
+							original_tag = KRL
+						}
+					}
+				}
+				country_event = kudinov.2
+				}
+		remove_ideas = { 
+		VIK_endsieg
+		}
+		}
+		ai_will_do = {
+		base = 0
+		}
+
+	}
+	focus = {
+		id = VIK_no
+		icon = GFX_goal_VIK_no
+		cost = 1
+		prerequisite = {
+			focus = VIK_risha
+		}
+		mutually_exclusive = {
+			focus = VIK_yes
+		}
+		x = 18
+		y = 9
+
+	}
+	focus = {
+		id = VIK_bf
+		icon = GFX_goal_generic_improve_relations
+		cost = 10,00
+		prerequisite = {
+			focus = VIK_no
+		}
+		x = 18
+		y = 10
+
+	}
+	focus = {
+		id = VIK_11kl
+		icon = GFX_focus_generic_university_1
+		cost = 5
+		prerequisite = {
+			focus = VIK_goodsummer
+			focus = VIK_bestsummer
+			focus = VIK_aloneagain
+		}
+		x = 20
+		y = 18
+
+	}
+	focus = {
+		id = VIK_friendsstr
+		icon = GFX_focus_ARG_pan_american_cooperation
+		cost = 10,00
+		prerequisite = {
+			focus = VIK_obdumal
+		}
+		x = 22
+		y = 16
+
+	}
+	focus = {
+		id = newfocus_31
+		icon = GFX_focus_BRA_anaue
+		cost = 10,00
+		prerequisite = {
+			focus = VIK_bf
+		}
+		x = 18
+		y = 12
+
+	}
+	focus = {
+		id = VIK_ege
+		icon = GFX_focus_BRA_the_polaca
+		cost = 10,00
+		prerequisite = {
+			focus = VIK_11kl
+		}
+		x = 20
+		y = 20
+
+	}
+	focus = {
+		id = VIK_itogi
+		icon = GFX_focus_GER_loyalty_to_the_fuhrer
+		cost = 5
+		prerequisite = {
+			focus = VIK_ege
+		}
+		x = 20
+		y = 21
+
+	}
+	focus = {
+		id = VIK_bestsummer
+		icon = GFX_focus_SWE_state_paid_vacation
+		cost = 10,00
+		prerequisite = {
+			focus = newfocus_31
+		}
+		x = 18
+		y = 17
+
+	}
+	focus = {
+		id = VIK_goodsummer
+		icon = GFX_focus_SWE_privately_managed_vacation
+		cost = 10,00
+		prerequisite = {
+			focus = VIK_friendsstr
+		}
+		x = 22
+		y = 17
+
+	}
+	focus = {
+		id = 2025
+		icon = GFX_focus_ARG_defense_and_democracy
+		cost = 1
+		prerequisite = {
+			focus = VIK_itogi
+		}
+		x = 20
+		y = 22
+
+	}
+}

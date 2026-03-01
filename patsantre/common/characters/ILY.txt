@@ -1,0 +1,18 @@
+characters = {
+ILY_kira
+	    name = "ILY_kira"
+		portraits = {
+		    civilian = {
+			    small = "GFX_idea_SOV_grigory_kulik"
+			    large = "GFX_idea_SOV_grigory_kulik"
+			}
+		}
+		advisor = {
+		    slot = political_advisor
+			idea_token = ILY_kira_it
+			ledger = civilian
+			cost = 80
+			traits = { Propaganda_Master }
+		}
+	}
+}

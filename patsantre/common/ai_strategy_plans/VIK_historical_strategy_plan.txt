@@ -1,0 +1,49 @@
+VIK_historical = {
+	name = "Viktor historical plan"
+	desc = ""
+	allowed = {
+		original_tag = VIK
+	}
+	enable = {
+	is_historical_focus_on = yes
+	}
+	ai_national_focuses = {
+	VIK_voisko
+	VIK_Gofman
+	VIK_2023
+	VIK_vintovka
+	VIK_gavry
+	VIK_birthday
+	VIK_OGE
+	VIK_SPB
+	VIK_patsani
+	VIK_10kl
+	VIK_newfriends
+	VIK_stabyear
+	VIK_2024
+	VIK_17y
+	VIK_furry
+	VIK_nostab
+	VIK_arseny
+	VIK_noappologise
+	VIK_crazyshit
+	VIK_risha
+	VIK_yes
+	VIK_doktrina
+	VIK_vidr
+	VIK_nopatsani
+	VIK_alone
+	VIK_firehouse
+	VIK_job
+	VIK_priorities
+	VIK_1stwar
+	VIK_mobilis
+	VIK_defence
+	VIK_razrabotka
+	VIK_zavod
+	newfocus_56
+	VIK_nowoman
+	VIK_aloneagain
+	}
+}
+	

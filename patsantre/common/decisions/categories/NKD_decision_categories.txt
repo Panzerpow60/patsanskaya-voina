@@ -1,0 +1,29 @@
+NKD_dota = {
+
+    icon = border_war
+	
+	priority = 90
+	
+	allowed = {
+	    original_tag = NKD
+	}
+	
+	visible = {
+	  has_completed_focus = NKD_regnut
+	}
+}
+NKD_army = {
+
+    icon = border_war
+	
+	priority = 90
+	
+	allowed = {
+	    original_tag = NKD
+	}
+	
+	visible = {
+	  has_completed_focus = NKD_reforma
+	}
+}
+

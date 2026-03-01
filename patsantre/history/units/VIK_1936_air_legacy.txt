@@ -1,0 +1,22 @@
+air_wings = {
+	# Letectvo I.Armády -- Prague
+	# Letectvo Hlavniho Velitelstivi -- Prague
+	255 = { 
+		fighter_equipment_0 = {		
+			owner = "VIK" 
+			amount = 100
+		}
+		fighter_equipment_0 = {		
+			owner = "VIK" 
+			amount = 100
+		}
+		fighter_equipment_0 = {		
+			owner = "VIK" 
+			amount = 35
+		}
+		tac_bomber_equipment_0 =  {	
+			owner = "VIK" 
+			amount = 72
+		}
+	}
+}

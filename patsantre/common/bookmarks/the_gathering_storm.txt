@@ -1,0 +1,99 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 2022.12.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "VIK"
+		
+		  "VIK"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = democratic
+			available = 
+			ideas = {
+				VIK_slaboumie
+				VIK_airforce
+				VIK_autarky
+			}
+			focuses = {
+				VIK_1stwar
+				VIK_nopatsani
+				VIK_arseny
+			}
+		}
+		"ILY"={
+			history = "ILY_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				ILY_sfitness
+				ILY_badroads
+				ILY_slabprom
+			}
+			focuses = {
+				ILY_ohvat98
+				ILY_prava
+				ILY_kiracrisis3
+			}
+		}
+		"SAS"={
+			history = "SAS_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				SAS_cezik
+				SAS_agrar
+				SAS_krestarmy
+			}
+			focuses = {
+			    SAS_zd
+				SAS_zhdsily
+				SAS_dexter
+			}
+		}
+		"NKD"={
+			history = "NKD_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				NKD_badarmy
+				NKD_doter
+				NKD_love
+			}
+			focuses = {
+				tizard_mission_focus
+				ENG_war_with_germany
+				ENG_war_with_italy
+			}
+		}
+		"NAN"={
+			history = "NAN_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				NAN_tankist
+				NAN_babkinatanki
+				NAN_bunt
+			}
+			focuses = {
+				tizard_mission_focus
+				ENG_war_with_germany
+				NAN_rokossovskogo
+			}
+		}
+		"KRL"={
+			history = "KRL_GATHERING_STORM_DESC"
+			ideology = fascism
+			available = 
+			ideas = {
+				
+			}
+			focuses = {
+			}
+		}
+		"GNL"={
+			history = "GNL_GATHERING_STORM_DESC"
+			ideology = democratic
+			available = 
+			ideas = {
+				
+			}
+			focuses = {
+			}
+		}

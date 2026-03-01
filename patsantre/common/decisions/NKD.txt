@@ -1,0 +1,346 @@
+NKD_dota = {
+
+    NKD_ebashit = {
+
+        icon = generic_ignite_civil_war
+		
+		available = {
+		has_completed_focus = NKD_regnut
+		
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		days_remove = 180
+		
+		visible = {
+		    always = yes
+		}
+		complete_effect = {
+		add_timed_idea = {
+        idea = NKD_ebashit1
+        days = 180
+        }
+		ai_will_do = {
+      base = 200
+    }
+		set_country_flag = NKD_ebashit
+		}
+		remove_effect = {
+		swap_ideas = {
+        remove_idea = NKD_doter
+        add_idea = NKD_doterrek
+        }
+
+		
+	}
+	}
+	NKD_ebashit2 = {
+
+        icon = generic_ignite_civil_war
+		
+		available = {
+		has_completed_focus = NKD_regnut
+		has_country_flag = NKD_ebashit
+		NOT = { 
+		has_idea = NKD_ebashit1 
+		}
+		
+		}
+	
+		
+		fire_only_once = yes
+		
+		cost = 50
+		days_remove = 180
+		
+		visible = {
+		    always = yes
+		}
+		complete_effect = {
+		add_timed_idea = {
+        idea = NKD_ebashit1
+        days = 180
+        }
+		set_country_flag = NKD_ebashit2
+		}
+		remove_effect = {
+		swap_ideas = {
+        remove_idea = NKD_doterrek
+        add_idea = NKD_doterstraj
+        }
+		ai_will_do = {
+      base = 200
+    }
+		
+	}
+	}
+	NKD_ebashit3 = {
+
+        icon = generic_ignite_civil_war
+		
+		available = {
+		has_completed_focus = NKD_regnut
+		has_country_flag = NKD_ebashit2
+		NOT = { 
+		has_idea = NKD_ebashit1 
+		}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		days_remove = 180
+		
+		visible = {
+		    always = yes
+		}
+		complete_effect = {
+		add_timed_idea = {
+        idea = NKD_ebashit1
+        days = 180
+        }
+		set_country_flag = NKD_ebashit3
+		}
+		remove_effect = {
+		swap_ideas = {
+        remove_idea = NKD_doterstraj
+        add_idea = NKD_doterridtsr
+        }
+		ai_will_do = {
+      base = 200
+    }
+		
+	}
+	}
+	NKD_ebashit4 = {
+
+        icon = generic_ignite_civil_war
+		
+		available = {
+		has_completed_focus = NKD_regnut
+		has_country_flag = NKD_ebashit3
+		NOT = { 
+		has_idea = NKD_ebashit1 
+		}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		days_remove = 180
+		
+		visible = {
+		    always = yes
+		}
+		complete_effect = {
+		add_timed_idea = {
+        idea = NKD_ebashit1
+        days = 180
+        }
+		set_country_flag = NKD_ebashit4
+		}
+		remove_effect = {
+		swap_ideas = {
+        remove_idea = NKD_doterridtsr
+        add_idea = NKD_doterhero
+        }
+		ai_will_do = {
+      base = 200
+    }
+		
+	}
+	}
+	NKD_ebashit5 = {
+
+        icon = generic_ignite_civil_war
+		
+		available = {
+		has_completed_focus = NKD_regnut
+		has_country_flag = NKD_ebashit4
+		NOT = { 
+		has_idea = NKD_ebashit1 
+		}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		days_remove = 180
+		
+		visible = {
+		    always = yes
+		}
+		complete_effect = {
+		add_timed_idea = {
+        idea = NKD_ebashit1
+        days = 180
+        }
+		set_country_flag = NKD_ebashit5
+		}
+		remove_effect = {
+		swap_ideas = {
+        remove_idea = NKD_doterhero
+        add_idea = NKD_doterlegend
+        }
+		ai_will_do = {
+      base = 200
+    }
+		
+	}
+	}
+	NKD_ebashit6 = {
+
+        icon = generic_ignite_civil_war
+		
+		available = {
+		has_completed_focus = NKD_regnut
+		has_country_flag = NKD_ebashit5
+		NOT = { 
+		has_idea = NKD_ebashit1 
+		}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		days_remove = 180
+		
+		visible = {
+		    always = yes
+		}
+		complete_effect = {
+		add_timed_idea = {
+        idea = NKD_ebashit1
+        days = 180
+        }
+		set_country_flag = NKD_ebashit6
+		}
+		remove_effect = {
+		swap_ideas = {
+        remove_idea = NKD_doterlegend
+        add_idea = NKD_dotervlast
+        }
+		ai_will_do = {
+      base = 200
+    }
+		
+	}
+	}
+	NKD_ebashit7 = {
+
+        icon = generic_ignite_civil_war
+		
+		available = {
+		has_completed_focus = NKD_regnut
+		has_country_flag = NKD_ebashit6
+		NOT = { 
+		has_idea = NKD_ebashit1 
+		}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		days_remove = 180
+		
+		visible = {
+		    always = yes
+		}
+		complete_effect = {
+		add_timed_idea = {
+        idea = NKD_ebashit1
+        days = 180
+        }
+		set_country_flag = NKD_ebashit7
+		}
+		remove_effect = {
+		swap_ideas = {
+        remove_idea = NKD_dotervlast
+        add_idea = NKD_titan
+        }
+		ai_will_do = {
+      base = 200
+    }
+		
+	}
+	}
+	}
+NKD_army = {
+    NKD_reforma1 = {
+
+        icon = generic_ignite_civil_war
+		
+		available = {
+		has_completed_focus = NKD_reforma
+		
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		days_remove = 35
+		
+		visible = {
+		    always = yes
+		}
+		complete_effect = {
+		
+		set_country_flag = NKD_reforma1
+		}
+		remove_effect = {
+		swap_ideas = {
+		remove_idea = NKD_badarmy
+		add_idea = NKD_badarmy1
+		}
+		ai_will_do = {
+      base = 200
+    }
+		
+	}
+	}
+	NKD_reforma2 = {
+
+        icon = generic_ignite_civil_war
+		
+		available = {
+		has_completed_focus = NKD_reforma
+		has_country_flag = NKD_reforma1
+		has_army_experience > 35
+		}
+		
+		fire_only_once = yes
+		
+		cost = 65
+		days_remove = 35
+		
+		visible = {
+		    always = yes
+		}
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -50
+				add_political_power = -50
+				army_experience = -35
+				set_country_flag = NKD_reforma2
+			}
+		}
+		remove_effect = {
+		army_expericence = -35
+		swap_ideas = {
+		remove_idea = NKD_badarmy1
+		add_idea = NKD_badarmy2
+		}
+		ai_will_do = {
+      base = 200
+    }
+	}
+	}
+	}
+	
+
+
+	
+    
+	

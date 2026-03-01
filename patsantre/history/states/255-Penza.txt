@@ -1,0 +1,43 @@
+
+state={
+	id=255
+	name="STATE_255"
+	manpower = 8660000
+	resources = {
+		oil = 50
+		rubber = 10
+		aluminium = 20
+	}
+	
+	
+	state_category = megalopolis
+
+
+	history={
+		owner = VIK
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 6
+			arms_factory = 4
+		}
+		add_core_of = VIK
+		victory_points = {
+			9258 10
+		}
+		victory_points = {
+			6343 10
+		}
+		victory_points = {
+			208 4
+		}
+		victory_points = {
+			6382 10
+		}
+	}
+
+	provinces={
+		208 257 324 376 380 3221 3266 3317 3360 3371 6248 6291 6329 6343 6353 6382 6391 6409 9258 9276 9286 9324 9344 9380 9409 11240 11262 11269 11309 11335 11364 11393 
+	}
+
+	local_supplies=6.0 
+}

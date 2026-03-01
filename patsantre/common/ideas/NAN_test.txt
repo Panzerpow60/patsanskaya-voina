@@ -1,0 +1,220 @@
+ideas = {
+    country = {
+	     NAN_tankist = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_NAN_tankist
+			  
+			  modifier = {
+			      army_armor_attack_factor = 0.15
+				  army_armor_defence_factor = 0.1
+				  army_armor_speed_factor = 0.05
+				  army_infantry_attack_factor = -0.15
+				  army_infantry_defence_factor = -0.15	
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     NAN_babkinatanki = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_NAN_babkinatanki
+			  
+			  modifier = {
+			      consumer_goods_factor = 0.2
+				  stability_weekly = -0.005
+				  industrial_capacity_factory = 0.1
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     NAN_bunt = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_NAN_bunt
+			  
+			  modifier = {
+			      consumer_goods_factor = 0.2
+				  stability_weekly = -0.01
+				  war_support_weekly = -0.01
+				  production_speed_buildings_factor = -0.2
+				  weekly_manpower = -149
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     NAN_bunt1 = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_NAN_bunt
+			  
+			  modifier = {
+			      consumer_goods_factor = 0.5
+				  stability_weekly = -0.02
+				  war_support_weekly = -0.02
+				  production_speed_buildings_factor = -0.4
+				  weekly_manpower = -149
+				  industrial_capacity_factory = -0.1
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     NAN_vosstanov = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_NAN_vosstanov
+			  
+			  modifier = {
+				  stability_weekly = 0.01
+				  war_support_weekly = 0.01
+				  production_speed_buildings_factor = 0.2
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     NAN_gibkayaeco = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_NAN_gibkayaeco
+			  
+			  modifier = {
+				  industrial_capacity_factory = 0.1
+				  production_speed_buildings_factor = 0.05
+				  production_factory_efficiency_gain_factor = 0.1
+				  consumer_goods_factor = -0.05
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     NAN_babkinatanki1 = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_NAN_babkinatanki
+			  
+			  modifier = {
+				 consumer_goods_factor = 0
+				 stability_weekly = 0.01
+				 industrial_capacity_factory = 0.1
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     NAN_tankspez = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_NAN_tankspez
+			  
+			  modifier = {
+			      army_armor_attack_factor = 0.2
+				  army_armor_defence_factor = 0.15
+				  army_armor_speed_factor = 0.1
+				  army_infantry_attack_factor = -0.2
+				  army_infantry_defence_factor = -0.2
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     NAN_peoplear = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_NAN_peoplear
+			  
+			  modifier = {
+			      army_core_defence_factor = 0.05
+				  recruitable_population_factor = 0.01
+				  supply_factor = 0.1
+				  
+				  
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     NAN_gumhelp = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_NAN_gibkayaeco
+			  
+			  modifier = {
+			  consumer_goods_factor = 0.2
+			}
+		}
+	}
+}

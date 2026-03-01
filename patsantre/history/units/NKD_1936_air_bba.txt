@@ -1,0 +1,9 @@
+air_wings = {
+	256 = { 
+		large_plane_airframe_1 = {		
+			owner = "NKD" 
+			amount = 97
+			version_name = "DB"
+		}
+	}
+}

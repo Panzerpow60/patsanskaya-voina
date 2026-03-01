@@ -1,0 +1,614 @@
+focus_tree = {
+	id = kirillo
+	country = {
+		factor = 0
+		modifier = {
+		    add = 10
+			tag = EMP
+		}
+	}
+	default = yes
+	focus = {
+		id = KRL_2023
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 16
+		y = 0
+		completion_reward = {
+		add_stability = 0.04
+		}
+
+	}
+	focus = {
+		id = KRL_igry
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 40
+		y = 0
+
+	}
+	focus = {
+		id = KRL_letospatsani
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 23
+		y = 0
+
+	}
+	focus = {
+		id = KRL_2025
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 30
+		y = 0
+
+	}
+	focus = {
+		id = KRL_prom1
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 50
+		y = 0
+
+	}
+	focus = {
+		id = KRL_1stwar
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 40
+		y = 3
+
+	}
+	focus = {
+		id = KRL_1stwar
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 40
+		y = 3
+
+	}
+	focus = {
+		id = KRL_nolisa
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_2023
+		}
+		x = 16
+		y = 1
+
+	}
+	focus = {
+		id = KRL_petrova
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_nolisa
+		}
+		x = 16
+		y = 2
+
+	}
+	focus = {
+		id = KRL_altuha
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_petrova
+		}
+		mutually_exclusive = {
+			focus = KRL_buravchik
+		}
+		x = 14
+		y = 3
+
+	}
+	focus = {
+		id = KRL_zabit
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_altuha
+		}
+		x = 14
+		y = 4
+
+	}
+	focus = {
+		id = KRL_buravchik
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_petrova
+		}
+		mutually_exclusive = {
+			focus = KRL_altuha
+		}
+		x = 18
+		y = 3
+
+	}
+	focus = {
+		id = KRL_ustrus
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_buravchik
+		}
+		x = 18
+		y = 4
+
+	}
+	focus = {
+		id = KRL_parlament
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_ustrus
+			focus = KRL_zabit
+		}
+		x = 16
+		y = 5
+
+	}
+	focus = {
+		id = KRL_OGE
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_ustrus
+		}
+		x = 18
+		y = 5
+
+	}
+	focus = {
+		id = KRL_furor
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_OGE
+		}
+		x = 18
+		y = 6
+
+	}
+	focus = {
+		id = KRL_redan
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_parlament
+		}
+		x = 16
+		y = 6
+
+	}
+	focus = {
+		id = KRL_talant
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_redan
+		}
+		mutually_exclusive = {
+			focus = KRL_redan1
+		}
+		x = 18
+		y = 8
+
+	}
+	focus = {
+		id = KRL_stattalant
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_talant
+		}
+		x = 18
+		y = 9
+
+	}
+	focus = {
+		id = KRL_flowers
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_stattalant
+		}
+		x = 18
+		y = 10
+
+	}
+	focus = {
+		id = KRL_10klass
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_letospatsani
+		}
+		x = 23
+		y = 1
+
+	}
+	focus = {
+		id = KRL_znakomstva
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_10klass
+		}
+		x = 23
+		y = 2
+
+	}
+	focus = {
+		id = KRL_2024
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_znakomstva
+		}
+		x = 23
+		y = 3
+
+	}
+	focus = {
+		id = KRL_vityasituation
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_2024
+		}
+		x = 23
+		y = 4
+
+	}
+	focus = {
+		id = KRL_neitral
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_vityasituation
+		}
+		mutually_exclusive = {
+			focus = KRL_vstatprotiv
+		}
+		x = 21
+		y = 5
+
+	}
+	focus = {
+		id = KRL_vstatprotiv
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_vityasituation
+		}
+		mutually_exclusive = {
+			focus = KRL_neitral
+		}
+		x = 25
+		y = 5
+
+	}
+	focus = {
+		id = KRL_razvitprom
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_vstatprotiv
+			focus = KRL_neitral
+		}
+		x = 23
+		y = 6
+
+	}
+	focus = {
+		id = KRL_razvitarmy
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_razvitprom
+		}
+		x = 23
+		y = 7
+
+	}
+	focus = {
+		id = KRL_leto
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_razvitarmy
+		}
+		x = 23
+		y = 8
+
+	}
+	focus = {
+		id = KRL_dacha
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_leto
+		}
+		x = 23
+		y = 9
+
+	}
+	focus = {
+		id = KRL_11klass
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_dacha
+		}
+		x = 23
+		y = 10
+
+	}
+	focus = {
+		id = KRL_lina
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_11klass
+		}
+		x = 23
+		y = 11
+
+	}
+	focus = {
+		id = KRL_EGE
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_2025
+		}
+		x = 28
+		y = 1
+
+	}
+	focus = {
+		id = KRL_otnoshenia
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_2025
+		}
+		x = 32
+		y = 1
+
+	}
+	focus = {
+		id = KRL_leto2025
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_otnoshenia
+		}
+		prerequisite = {
+			focus = KRL_EGE
+		}
+		x = 30
+		y = 3
+
+	}
+	focus = {
+		id = KRL_vedmak
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_igry
+		}
+		x = 36
+		y = 1
+
+	}
+	focus = {
+		id = KRL_discoelizym
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_igry
+		}
+		x = 38
+		y = 1
+
+	}
+	focus = {
+		id = KRL_dotaforces
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_1stwar
+		}
+		x = 40
+		y = 4
+
+	}
+	focus = {
+		id = KRL_millitary1
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_dotaforces
+		}
+		x = 39
+		y = 5
+
+	}
+	focus = {
+		id = KRL_cyberpuk
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_igry
+		}
+		x = 40
+		y = 1
+
+	}
+	focus = {
+		id = KRL_millitary2
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_dotaforces
+		}
+		x = 41
+		y = 5
+
+	}
+	focus = {
+		id = KRL_eldenring
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_igry
+		}
+		x = 42
+		y = 1
+
+	}
+	focus = {
+		id = KRL_baldursgate
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_igry
+		}
+		x = 44
+		y = 1
+
+	}
+	focus = {
+		id = KRL_prom2
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_prom1
+		}
+		x = 49
+		y = 1
+
+	}
+	focus = {
+		id = KRL_prom3
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_prom1
+		}
+		x = 51
+		y = 1
+
+	}
+	focus = {
+		id = KRL_prom4
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_prom3
+		}
+		prerequisite = {
+			focus = KRL_prom2
+		}
+		x = 50
+		y = 2
+
+	}
+	focus = {
+		id = KRL_prom5
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_prom4
+		}
+		x = 50
+		y = 3
+
+	}
+	focus = {
+		id = KRL_prom6
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_prom5
+		}
+		x = 48
+		y = 4
+
+	}
+	focus = {
+		id = KRL_prom7
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_prom5
+		}
+		x = 50
+		y = 4
+
+	}
+	focus = {
+		id = KRL_redan1
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_redan
+		}
+		mutually_exclusive = {
+			focus = KRL_talant
+		}
+		x = 14
+		y = 8
+
+	}
+	focus = {
+		id = KRL_stathuesos
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_redan1
+		}
+		x = 14
+		y = 9
+
+	}
+	focus = {
+		id = KRL_vypusk
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_flowers
+			focus = KRL_stathuesos
+		}
+		x = 16
+		y = 11
+
+	}
+	focus = {
+		id = KRL_SPB
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_vypusk
+		}
+		x = 16
+		y = 12
+
+	}
+	focus = {
+		id = KRL_prom8
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_prom5
+		}
+		x = 52
+		y = 4
+
+	}
+}

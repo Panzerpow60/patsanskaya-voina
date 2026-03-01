@@ -1,0 +1,16 @@
+air_wings = {
+	
+	252 = { 
+		small_plane_airframe_0 = {		# Therussianknok.52
+			owner = "ILY" 
+			amount = 100
+			version_name = "TRK.52"
+		}
+		
+		small_plane_airframe_0 = {		# Therussianknok.52
+			owner = "ILY" 
+			amount = 49
+			version_name = "TRK.52"
+		}
+	}
+}

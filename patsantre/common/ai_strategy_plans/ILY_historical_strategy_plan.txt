@@ -1,0 +1,92 @@
+ILY_historical = {
+	name = "Ilya historical plan"
+	desc = ""
+	allowed = {
+		original_tag = ILY
+	}
+	enable = {
+	is_historical_focus_on = yes
+	}
+	ai_national_focuses = {
+	2023
+	ILY_DR
+	ILY_SOGE
+	ILY_SPB1
+	ILY_industry1
+	ILY_millitary1
+	ILY_razvitarmy
+	ILY_newdoctrine
+	newfocus_64
+	ILY_MSK
+	ILY_koper
+	ILY_pereosmyslil
+	ILY_stop
+	ILY_itog
+	ILY_industry2
+	ILY_infra
+	ILY_industry3
+	ILY_industry4
+	2024
+	ILY_wtfira
+	ILY_pitindr
+	ILY_thesecondtime
+	ILY_project
+	ILY_bunkers
+	ILY_stratpoints
+	ILY_pityasituation
+	ILY_novitya
+	ILY_niggerfaggot2
+    ILY_1stwar
+	ILY_SPB
+	ILY_2kurs
+	ILY_18y
+	ILY_research1
+	ILY_odnogruppnitsi
+	ILY_bb
+	ILY_itogi2024
+	2025
+	ILY_prava
+	ILY_VAZ2112
+	ILY_yanddostavka
+	ILY_millitary2
+	ILY_millitary3
+	ILY_mihailovsk
+	INFRA2
+	ILY_kira1
+	ILY_may2025
+	ILY_kiracrisis
+	ILY_accept
+	ILY_helppereezd
+	ILY_malotime
+	ILY_14june
+	ILY_kiraandtema
+	ILY_mnogovnim
+	ILY_uvolitsa
+	ILY_popytkavosst
+	ILY_kiralove
+	ILY_goododnogr
+	ILY_sea
+	ILY_kiracrisis1
+	ILY_Kiracrisis2
+	ILY_SPB2025
+	ILY_kiracrisis3
+	ILY_breakup
+	ILY_les
+	ILY_3kurs
+	ILY_SPB10
+	ILY_Kiracrisis4
+	ILY_rasstavanie
+	ILY_vosstanovlenie
+	ILY_Sfitness
+	ILY_workurself
+	ILY_kurs
+	ILY_patsani
+	ILY_patsani1
+	ILY_bestfriends
+	ILY_defence
+	
+	
+	
+	
+	}
+}

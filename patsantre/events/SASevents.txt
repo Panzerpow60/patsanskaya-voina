@@ -1,0 +1,471 @@
+add_namespace = sasha
+
+country_event = {
+    id = sasha.1
+	title = sasha.1.t
+	desc = sasha.1.d
+	picture = GFX_report_event_bul_italian_equipment
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = sasha.1.a
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		complete_national_focus = SAS_vitya
+	}
+}
+country_event = {
+    id = sasha.2
+	title = sasha.2.t
+	desc = sasha.2.d
+	picture = GFX_report_event_bul_italian_equipment
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = sasha.2.a
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		ILY = {add_to_faction = SAS}
+	}
+	option = {
+	    name = sasha.2.b
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		
+	}
+}
+country_event = {
+    id = sasha.3
+	title = sasha.3.t
+	desc = sasha.3.d
+	picture = GFX_report_event_bul_italian_equipment
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = sasha.3.a
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		add_war_support = -0.05
+		add_stability = -0.1
+	}
+}
+country_event = {
+    id = sasha.4
+	title = sasha.4.t
+	desc = sasha.4.d
+	picture = GFX_report_event_bul_italian_equipment
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = sasha.4.a
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		remove_ideas = SAS_xeroge
+		add_stability = -0.15
+		add_war_support = -0.15
+	}
+}
+country_event = {
+    id = sasha.5
+	title = sasha.5.t
+	desc = sasha.5.d
+	picture = GFX_report_event_bul_italian_equipment
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = sasha.5.a
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		puppet = NAN
+	}
+}
+country_event = {
+    id = sasha.6
+	title = sasha.6.t
+	desc = sasha.6.d
+	picture = GFX_report_event_bul_italian_equipment
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = sasha.6.a
+		ai_chance = { factor = 0 }
+		trigger = {  }
+		complete_national_focus = SAS_nokrestiane
+	}
+	option = {
+	    name = sasha.6.b
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		complete_national_focus = SAS_yeskrestiane
+	}
+}
+country_event = {
+    id = sasha.7
+	title = sasha.7.t
+	desc = sasha.7.d
+	picture = GFX_report_event_BEL_paul_van_zeeland
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = sasha.7.a
+		ai_chance = { factor = 50 }
+		trigger = {  }
+		add_stability = 0.03
+	}
+}
+country_event = {
+    id = sasha.8
+	title = sasha.8.t
+	desc = sasha.8.d
+	picture = GFX_report_event_BEL_paul_van_zeeland
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = sasha.8.a
+		ai_chance = { factor = 50 }
+		trigger = {  }
+		add_stability = 0.08
+		add_war_support = 0.08
+		remove_ideas = SAS_goodoge
+	}
+}
+country_event = {
+    id = sasha.9
+	title = sasha.9.t
+	desc = sasha.9.d
+	picture = GFX_report_event_BEL_paul_van_zeeland
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = sasha.9.a
+		ai_chance = { factor = 50 }
+		trigger = {  }
+		add_stability = -0.08
+		add_war_support = -0.08
+	}
+}
+country_event = {
+    id = sasha.10
+	title = sasha.10.t
+	desc = sasha.10.d
+	picture = GFX_report_event_BEL_paul_van_zeeland
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = sasha.10.a
+		ai_chance = { factor = 50 }
+		trigger = {  }
+		add_stability = 0.05
+	}
+}
+country_event = {
+    id = sasha.11
+	title = sasha.11.t
+	desc = sasha.11.d
+	picture = GFX_report_event_BEL_paul_van_zeeland
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = sasha.11.a
+		ai_chance = { factor = 50 }
+		trigger = {  }
+		random_core_state = {
+        limit = {
+          ROOT = { controls_state = PREV }
+        }
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+          type = industrial_complex
+          level = 1
+          instant_build = yes
+        }
+	}
+	}
+	option = {
+	    name = sasha.11.b
+		ai_chance = { factor = 50 }
+		trigger = {  }
+		random_core_state = {
+        limit = {
+          ROOT = { controls_state = PREV }
+        }
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+          type = arms_factory
+          level = 1
+          instant_build = yes
+        }
+	}
+	}
+	
+}
+country_event = {
+    id = sasha.12
+	title = sasha.12.t
+	desc = sasha.12.d
+	picture = GFX_report_event_bul_italian_equipment
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = sasha.12.a
+		ai_chance = { factor = 90 }
+		trigger = {  }
+	}
+}
+country_event = {
+    id = sasha.13
+	title = sasha.13.t
+	desc = sasha.13.d
+	picture = GFX_report_event_BRA_smoking_snakes
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = sasha.13.a
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		add_stability = 0.05
+	}
+}
+country_event = {
+    id = sasha.14
+	title = sasha.14.t
+	desc = sasha.14.d
+	picture = GFX_report_event_BRA_departamento_femininio
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = sasha.14.a
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		add_stability = 0.05
+	}
+}
+country_event = {
+    id = sasha.15
+	title = sasha.15.t
+	desc = sasha.15.d
+	picture = GFX_report_event_BRA_us_cooperation
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = sasha.15.a
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		add_stability = 0.05
+	}
+}
+country_event = {
+    id = sasha.16
+	title = sasha.16.t
+	desc = sasha.16.d
+	picture = GFX_report_event_british_artillery
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = sasha.16.a
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		add_ideas = SAS_lalo
+	}
+	option = {
+	    name = sasha.16.b
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		add_ideas = SAS_dexter1
+	}
+	option = {
+	    name = sasha.16.c
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		add_ideas = SAS_WW
+	}
+	option = {
+	    name = sasha.16.dd
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		add_ideas = SAS_idrive
+	}
+}
+country_event = {
+    id = sasha.17
+	title = sasha.17.t
+	desc = sasha.17.d
+	picture = GFX_report_event_bul_italian_equipment
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = sasha.17.a
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		add_stability = 0.01
+	}
+}
+country_event = {
+    id = sasha.18
+	title = sasha.18.t
+	desc = sasha.18.d
+	picture = GFX_report_event_bul_italian_equipment
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = sasha.18.a
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		army_experience = 70
+	}
+}
+country_event = {
+    id = sasha.19
+	title = sasha.19.t
+	desc = sasha.19.d
+	picture = GFX_report_event_bul_italian_equipment
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = sasha.19.a
+		ai_chance = { factor = 90 }
+		trigger = {  }
+	}
+}
+country_event = {
+    id = sasha.20
+	title = sasha.20.t
+	desc = sasha.20.d
+	picture = GFX_report_event_bul_italian_equipment
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = sasha.20.a
+		ai_chance = { factor = 90 }
+		trigger = {  }
+	}
+	
+}
+country_event = {
+    id = sasha.21
+	title = sasha.21.t
+	desc = ilya.33.d
+	picture = GFX_report_event_bul_making_bricks_for_school
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.33.a
+		ai_chance = { factor = 20 }
+		trigger = {  }
+		complete_national_focus = SAS_prizov
+	}		
+}
+
+
+
+
+
+
+
+
+

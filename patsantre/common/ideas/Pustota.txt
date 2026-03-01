@@ -1,0 +1,23 @@
+ideas = {
+    country = {
+	     EMP_noland = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_NAN_tankist
+			  
+			  modifier = {
+			      enemy_justify_war_goal_time = 10000000
+                  ai_get_ally_desire_factor = -10000000
+                  ai_desired_divisions_factor =  -1000
+				  min_export = 0
+				  local_resources_factor = -1
+			}
+		}
+	}
+}

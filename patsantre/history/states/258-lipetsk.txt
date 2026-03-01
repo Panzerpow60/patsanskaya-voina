@@ -1,0 +1,39 @@
+
+state={
+	id=258
+	name="STATE_258"
+	manpower = 3282096
+	resources = {
+	steel = 7
+	aluminium = 3
+	tungsten = 35
+	chromium = 30
+	}
+	
+	state_category = megalopolis
+
+	history={
+		owner = NAN
+		buildings = {
+			infrastructure = 2 #was: 5
+			industrial_complex = 6
+			arms_factory = 1
+		}
+		add_core_of = NAN
+		victory_points = {
+			6398 15
+		}
+		victory_points = {
+			6341 4
+		}
+		victory_points = {
+			6230 10
+		}
+	}
+
+	provinces={
+		356 3199 3291 3318 3346 6230 6317 6341 6369 6398 9339 9394 
+	}
+
+	local_supplies=0.0 
+}

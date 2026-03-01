@@ -1,0 +1,420 @@
+spriteTypes = {
+
+    spriteType = {
+	    name = "GFX_idea_VIK_slaboumie"
+		texturefile = "gfx/interface/ideas/VIK_slaboumie.dds"
+	}
+
+    spriteType = {
+	    name = "GFX_idea_VIK_podgotovka"
+		texturefile = "gfx/interface/ideas/VIK_podgotovka.dds"
+	}
+	
+	 spriteType = {
+	    name = "GFX_idea_VIK_alkogol"
+		texturefile = "gfx/interface/ideas/VIK_alkogol.dds"
+	}
+		
+	 spriteType = {
+	    name = "GFX_idea_ILY_transport"
+		texturefile = "gfx/interface/ideas/ILY_transport.dds"
+	}
+	
+	 spriteType = {
+	    name = "GFX_idea_VIK_bestleto"
+		texturefile = "gfx/interface/ideas/VIK_bestleto.dds"
+	}
+	
+	 spriteType = {
+	    name = "GFX_idea_VIK_nestabilnost"
+		texturefile = "gfx/interface/ideas/VIK_nestabilnost.dds"
+	}
+	
+	 spriteType = {
+	    name = "GFX_idea_SAS_cezik"
+		texturefile = "gfx/interface/ideas/SAS_cezik.dds"
+	}
+	
+	 spriteType = {
+	    name = "GFX_idea_NAN_tankist"
+		texturefile = "gfx/interface/ideas/NAN_tankist.dds"
+	}
+	
+	 spriteType = {
+	    name = "GFX_idea_ILY_sfitness"
+		texturefile = "gfx/interface/ideas/ILY_sfitness.dds"
+	}
+	
+	 spriteType = {
+	    name = "GFX_idea_SAS_sfitness"
+		texturefile = "gfx/interface/ideas/ILY_sfitness.dds"
+	}
+	
+	 spriteType = {
+	    name = "GFX_idea_ILY_krugobshenia"
+		texturefile = "gfx/interface/ideas/ILY_krugobshenia.dds"
+	}
+	
+	 spriteType = {
+	    name = "GFX_idea_VIK_1stpatsaniwar"
+		texturefile = "gfx/interface/ideas/VIK_1stpatsaniwar.dds"
+	}
+	 spriteType = {
+	    name = "GFX_idea_VIK_Blitzkrieg"
+		texturefile = "gfx/interface/ideas/VIK_Blitzkrieg.dds"
+	}
+	 spriteType = {
+	    name = "GFX_idea_VIK_WW1tactic"
+		texturefile = "gfx/interface/ideas/VIK_WW1tactic.dds"
+	}
+	 spriteType = {
+	    name = "GFX_idea_VIK_victory_or_death"
+		texturefile = "gfx/interface/ideas/VIK_victory_or_death.dds"
+	}
+	 spriteType = {
+	    name = "GFX_idea_VIK_mobilisation"
+		texturefile = "gfx/interface/ideas/VIK_mobilisation.dds"
+	}
+	 spriteType = {
+	    name = "GFX_idea_ILY_dvinka"
+		texturefile = "gfx/interface/ideas/ILY_dvinka.dds"
+	}
+	 spriteType = {
+	    name = "GFX_idea_NAN_babkinatanki"
+		texturefile = "gfx/interface/ideas/NAN_babkinatanki.dds"
+	}
+	 spriteType = {
+	    name = "GFX_idea_NAN_bunt"
+		texturefile = "gfx/interface/ideas/NAN_bunt.dds"
+	}
+	 spriteType = {
+	    name = "GFX_idea_ILY_krugobshenia0"
+		texturefile = "gfx/interface/ideas/ILY_krugobshenia0.dds"
+	}
+	 spriteType = {
+	    name = "GFX_idea_ILY_krugobshenia2"
+		texturefile = "gfx/interface/ideas/ILY_krugobshenia2.dds"
+	}
+	 spriteType = {
+	    name = "GFX_idea_ILY_krugobshenia3"
+		texturefile = "gfx/interface/ideas/ILY_krugobshenia3.dds"
+	}
+	 spriteType = {
+	    name = "GFX_idea_ILY_defence"
+		texturefile = "gfx/interface/ideas/ILY_defence.dds"
+	}
+	 spriteType = {
+	    name = "GFX_idea_VIK_voisko1"
+		texturefile = "gfx/interface/ideas/VIK_voisko1.dds"
+	}
+	 spriteType = {
+	    name = "GFX_idea_VIK_sever1"
+		texturefile = "gfx/interface/ideas/VIK_1stpatsaniwar.dds"
+	}
+	 spriteType = {
+	    name = "GFX_idea_VIK_zapad1"
+		texturefile = "gfx/interface/ideas/VIK_1stpatsaniwar.dds"
+	}
+	 spriteType = {
+	    name = "GFX_idea_ILY_dodo"
+		texturefile = "gfx/interface/ideas/ILY_dodo.dds"
+	}
+	 spriteType = {
+	    name = "GFX_idea_VIK_flowers1"
+		texturefile = "gfx/interface/ideas/VIK_flowers1.dds"
+	}
+	 spriteType = {
+	    name = "GFX_idea_VIK_love"
+		texturefile = "gfx/interface/ideas/VIK_love.dds"
+	}
+	 spriteType = {
+	    name = "GFX_idea_VIK_sportmaster"
+		texturefile = "gfx/interface/ideas/VIK_sportmaster.dds"
+	}
+	 spriteType = {
+	    name = "GFX_idea_VIK_bunker"
+		texturefile = "gfx/interface/ideas/VIK_bunker.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_ILY_nkop"
+		texturefile = "gfx/interface/ideas/idea_ARG_construction_guilds.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_ILY_frendzone"
+		texturefile = "gfx/interface/ideas/idea_ARG_construction_guilds.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_VIK_endsieg"
+		texturefile = "gfx/interface/ideas/VIK_endsieg.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_SAS_agrar"
+		texturefile = "gfx/interface/ideas/SAS_agrar.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_SAS_krestarmy"
+		texturefile = "gfx/interface/ideas/SAS_krestarmy.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_ILY_musora"
+		texturefile = "gfx/interface/ideas/ILY_musora.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_ILY_slabprom"
+		texturefile = "gfx/interface/ideas/ILY_slabprom.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_ILY_kirarst"
+		texturefile = "gfx/interface/ideas/ILY_kirarst.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_SAS_komp"
+		texturefile = "gfx/interface/ideas/VIK_endsieg.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_SAS_xeroge"
+		texturefile = "gfx/interface/ideas/VIK_endsieg.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_SAS_depression"
+		texturefile = "gfx/interface/ideas/VIK_endsieg.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_SAS_depression1"
+		texturefile = "gfx/interface/ideas/VIK_endsieg.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_SAS_depression2"
+		texturefile = "gfx/interface/ideas/VIK_endsieg.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_VIK_airforce"
+		texturefile = "gfx/interface/ideas/VIK_airforce.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_NAN_bunt1"
+		texturefile = "gfx/interface/ideas/NAN_bunt.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_NAN_vosstanov"
+		texturefile = "gfx/interface/ideas/NAN_vosstanov.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_NAN_gibkayaeco"
+		texturefile = "gfx/interface/ideas/NAN_gibkayaeco.dds"
+	}
+	 spriteType = {
+	    name = "GFX_idea_NAN_babkinatanki1"
+		texturefile = "gfx/interface/ideas/NAN_babkinatanki.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_NAN_tankspez"
+		texturefile = "gfx/interface/ideas/NAN_tankspez.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_NAN_peoplear"
+		texturefile = "gfx/interface/ideas/NAN_peoplear.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_NAN_gumhelp"
+		texturefile = "gfx/interface/ideas/NAN_gibkayaeco.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_ILY_kirarst1"
+		texturefile = "gfx/interface/ideas/ILY_kirarst.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_ILY_kirarst2"
+		texturefile = "gfx/interface/ideas/ILY_kirarst.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_VIK_autarky"
+		texturefile = "gfx/interface/ideas/VIK_endsieg.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_NKD_export"
+		texturefile = "gfx/interface/ideas/VIK_endsieg.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_SAS_ww"
+		texturefile = "gfx/interface/ideas/SAS_ww.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_SAS_gosling"
+		texturefile = "gfx/interface/ideas/SAS_gosling.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_SAS_dexter"
+		texturefile = "gfx/interface/ideas/SAS_dexter.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_SAS_salo"
+		texturefile = "gfx/interface/ideas/SAS_salo.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_ILY_kiraot"
+		texturefile = "gfx/interface/ideas/ILY_kiraot.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_NKD_mak"
+		texturefile = "gfx/interface/ideas/NKD_mak.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_ILY_len"
+		texturefile = "gfx/interface/ideas/VIK_nestabilnost.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_ILY_badroads"
+		texturefile = "gfx/interface/ideas/ILY_badroads.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_ILY_noeffroad"
+		texturefile = "gfx/interface/ideas/ILY_noeffroad.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_ILY_bestroads"
+		texturefile = "gfx/interface/ideas/ILY_bestroads.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_ILY_kruglogodpriziv"
+		texturefile = "gfx/interface/ideas/ILY_bestroads.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_NKD_doter"
+		texturefile = "gfx/interface/ideas/VIK_endsieg.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_NKD_love"
+		texturefile = "gfx/interface/ideas/VIK_love.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_NKD_doterrek"
+		texturefile = "gfx/interface/ideas/VIK_endsieg.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_NKD_ebashit1"
+		texturefile = "gfx/interface/ideas/VIK_endsieg.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_NKD_doterstraj"
+		texturefile = "gfx/interface/ideas/VIK_endsieg.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_NKD_doterridtsr"
+		texturefile = "gfx/interface/ideas/VIK_endsieg.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_NKD_doterhero"
+		texturefile = "gfx/interface/ideas/VIK_endsieg.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_NKD_doterlegend"
+		texturefile = "gfx/interface/ideas/VIK_endsieg.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_NKD_dotervlast"
+		texturefile = "gfx/interface/ideas/VIK_endsieg.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_NKD_titan"
+		texturefile = "gfx/interface/ideas/VIK_endsieg.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_NKD_music"
+		texturefile = "gfx/interface/ideas/VIK_endsieg.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_NKD_rasstavanie"
+		texturefile = "gfx/interface/ideas/VIK_endsieg.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_NKD_kursi"
+		texturefile = "gfx/interface/ideas/VIK_endsieg.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_NKD_badarmy"
+		texturefile = "gfx/interface/ideas/VIK_endsieg.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_NKD_badarmy1"
+		texturefile = "gfx/interface/ideas/VIK_endsieg.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_NKD_badarmy2"
+		texturefile = "gfx/interface/ideas/VIK_endsieg.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_NKD_badarmy3"
+		texturefile = "gfx/interface/ideas/VIK_endsieg.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_NKD_badarmy4"
+		texturefile = "gfx/interface/ideas/VIK_endsieg.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_NKD_shock"
+		texturefile = "gfx/interface/ideas/VIK_endsieg.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_NKD_standfor"
+		texturefile = "gfx/interface/ideas/VIK_endsieg.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_ILY_musora1"
+		texturefile = "gfx/interface/ideas/ILY_musora.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_ILY_armymix"
+		texturefile = "gfx/interface/ideas/ILY_armymix.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_ILY_investments"
+		texturefile = "gfx/interface/ideas/VIK_endsieg.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_ILY_alkogol"
+		texturefile = "gfx/interface/ideas/VIK_alkogol.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_ILY_MVD"
+		texturefile = "gfx/interface/ideas/ILY_MVD.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_ILY_MVD1"
+		texturefile = "gfx/interface/ideas/ILY_MVD.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_ILY_MVD2"
+		texturefile = "gfx/interface/ideas/ILY_MVD.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_ILY_Zakon"
+		texturefile = "gfx/interface/ideas/ILY_MVD.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_ILY_armymix1"
+		texturefile = "gfx/interface/ideas/ILY_armymix.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_ILY_armymix2"
+		texturefile = "gfx/interface/ideas/ILY_armymix.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_ILY_armymix3"
+		texturefile = "gfx/interface/ideas/ILY_goodarmy.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_ILY_kirarst3"
+		texturefile = "gfx/interface/ideas/ILY_kirarst.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_ILY_garantee"
+		texturefile = "gfx/interface/ideas/ILY_garantee.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_SAS_wdacha"
+		texturefile = "gfx/interface/ideas/SAS_wdacha.dds"
+	}
+}
+
+

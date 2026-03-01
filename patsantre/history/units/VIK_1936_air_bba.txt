@@ -1,0 +1,19 @@
+air_wings = {
+		239 = {
+		medium_plane_airframe_0 =  {	
+			owner = "VIK" 
+			amount = 72
+			version_name = "NN.b.15"
+		}
+		small_plane_airframe_0 = {		
+			owner = "VIK" 
+			amount = 100
+			version_name = "NN.21"
+		}	
+		small_plane_airframe_0 = {		
+			owner = "VIK" 
+			amount = 37
+			version_name = "NN.21"
+	}
+}
+}

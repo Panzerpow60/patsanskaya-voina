@@ -1,0 +1,12 @@
+sound = {
+	name = "1st_patsaniwar"
+	file = "superevents/1st_patsaniwar.wav"
+}
+sound = {
+	name = "kiravstr"
+	file = "superevents/kiravstr.wav"
+}
+sound = {
+	name = "kirarast"
+	file = "superevents/kirarast.wav"
+}

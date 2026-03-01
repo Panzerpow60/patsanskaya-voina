@@ -1,0 +1,38 @@
+SAS_historical = {
+	name = "Sasha historical plan"
+	desc = ""
+	allowed = {
+		original_tag = SAS
+	}
+	enable = {
+	is_historical_focus_on = yes
+	}
+	ai_national_focuses = {
+SAS_komp
+SAS_newyear
+SAS_skuka
+SAS_eblanit
+SAS_oge2
+SAS_leto
+SAS_zd
+SAS_selhoz
+SAS_zhdsily
+SAS_dacha
+SAS_10klass
+SAS_vsoploho
+SAS_motivation2
+SAS_motivation1
+SAS_2024
+SAS_promm
+SAS_localproduction
+SAS_bunkerevlesu
+SAS_druzhba
+SAS_sigma
+SAS_smiritsa
+SAS_leto2024
+SAS_dr
+SAS_bestleto
+SAS_11klass
+SAS_krestianskiyvopros
+SAS_yeskrestiane
+SAS_richkrestiane

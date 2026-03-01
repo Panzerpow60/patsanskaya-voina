@@ -1,0 +1,84 @@
+﻿capital = 251
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_oob = "KRL_1936_nsb"
+}
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_oob = "KRL_1936"
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+	gwtank = 1
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		engine_tech_1 = 1
+	}
+}
+
+set_research_slots = 4
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_military_police = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	paratroopers = 1
+	gw_artillery = 1
+	mobile_warfare = 1
+	fleet_in_being = 1
+}
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "2022.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 20
+	fascism = 70
+	communism = 0
+	neutrality = 10
+}
+
+create_country_leader = { 
+    name = "Кирилл"
+	desc = "POLITICS_ADOLF_HITLER_DESC"
+	picture = "Portrait_Kirill.dds"
+	expire = "2030.1.1"
+	ideology = nazism
+	traits = {
+	    dictator
+	}
+}
+
+add_ideas = {
+}
+
+
+

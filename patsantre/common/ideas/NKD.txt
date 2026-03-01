@@ -1,0 +1,497 @@
+ideas = {
+    country = {
+	     NKD_export = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_endsieg
+			  
+			  modifier = {
+			      min_export = 0.1
+                  local_resources_factor = 0.05
+                  production_speed_industrial_complex_factor = 0.1
+                  production_speed_infrastructure_factor = 0.1
+                  production_speed_arms_factory_factor = -0.1
+                  consumer_goods_factor = 0.1
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     NKD_mak = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_NKD_mak
+			  
+			  modifier = {
+                  production_factory_efficiency_gain_factor = 0.05
+				  consumer_goods_factor = -0.1
+				  production_factory_max_efficiency_factor = 0.05
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     NKD_doter = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_endsieg
+			  
+			  modifier = {
+			    stability_factor = -0.05
+				war_support_factor = 0.05
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     NKD_doterrek = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_endsieg
+			  
+			  modifier = {
+			    stability_factor = -0.075
+				war_support_factor = 0.075
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     NKD_doterstraj = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_endsieg
+			  
+			  modifier = {
+			    stability_factor = -0.1
+				war_support_factor = 0.1
+				army_core_attack_factor = 0.03
+				army_core_defence_factor = 0.03
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     NKD_doterridtsr = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_endsieg
+			  
+			  modifier = {
+			    stability_factor = -0.125
+				war_support_factor = 0.125
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     NKD_doterhero = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_endsieg
+			  
+			  modifier = {
+			    stability_factor = -0.15
+				war_support_factor = 0.15
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				planning_speed = 0.05
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     NKD_doterlegend = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_endsieg
+			  
+			  modifier = {
+			    stability_factor = -0.175
+				war_support_factor = 0.175
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				planning_speed = 0.1
+				
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     NKD_dotervlast = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_endsieg
+			  
+			  modifier = {
+			    stability_factor = -0.175
+				war_support_factor = 0.175
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				planning_speed = 0.1
+				army_org_factor = 0.05
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     NKD_titan = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_endsieg
+			  
+			  modifier = {
+			    stability_factor = -0.175
+				war_support_factor = 0.175
+				army_core_attack_factor = 0.075
+				army_core_defence_factor = 0.075
+				planning_speed = 0.1
+				army_org_factor = 0.05
+				political_power_gain = 0.5
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     NKD_love = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_love
+			  
+			  modifier = {
+				  political_power_gain = 0.1
+				  drift_defence_factor = -0.5
+				  consumer_goods_factor = 0.1
+				  stability_factor = 0.05
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     NKD_ebashit1 = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_endsieg
+			  
+			  modifier = {
+			    political_power_gain = -0.3
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = -0.05
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     NKD_music = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_endsieg
+			  
+			  modifier = {
+			    political_power_gain = 0.1
+				stability_factor = 0.05
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     NKD_rasstavanie = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_endsieg
+			  
+			  modifier = {
+				war_support_factor = 0.05
+				consumer_goods_factor = -0.15
+				production_speed_buildings_factor = 0.05
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     NKD_kursi = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_endsieg
+			  
+			  modifier = {
+				training_time_army_factor = 0.15
+				consumer_goods_factor = 0.20
+				production_factory_max_efficiency_factor = -0.1
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     NKD_badarmy = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_endsieg
+			  
+			  modifier = {
+				command_power_gain = -0.15
+				training_time_army_factor = 0.05
+				land_doctrine_cost_factor = 0.2
+				dig_in_speed_factor = 0.1
+				max_planning_factor = 0.1
+				army_defence_factor = -0.05
+				
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     NKD_badarmy1 = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_endsieg
+			  
+			  modifier = {
+				command_power_gain = -0.15
+				land_doctrine_cost_factor = 0.2
+				dig_in_speed_factor = 0.1
+				max_planning_factor = 0.1
+				army_defence_factor = -0.05
+				
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     NKD_badarmy2 = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_endsieg
+			  
+			  modifier = {
+				command_power_gain = -0.15
+				land_doctrine_cost_factor = 0.15
+				dig_in_speed_factor = 0.1
+				max_planning_factor = 0.1
+				army_defence_factor = -0.05
+				
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     NKD_badarmy3 = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_endsieg
+			  
+			  modifier = {
+				command_power_gain = -0.1
+				land_doctrine_cost_factor = 0.15
+				dig_in_speed_factor = 0.1
+				max_planning_factor = 0.1
+				
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     NKD_badarmy4 = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_endsieg
+			  
+			  modifier = {
+				command_power_gain = -0.1
+				land_doctrine_cost_factor = 0.15
+				dig_in_speed_factor = 0.1
+				max_planning_factor = 0.1
+				army_defence_factor = -0.05
+				army_attack_factor = 0.05
+				
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     NKD_shock= {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_endsieg
+			  
+			  modifier = {
+			  army_org_factor = -0.1
+			  army_speed_factor = -0.05
+			  army_defence_factor = -0.06
+			  air_accidents_factor = 0.2
+			  stability_factor = -0.1
+
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     NKD_standfor = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_endsieg
+			  
+			  modifier = {
+			  army_org_factor = 0.05
+			  army_defence_factor = 0.1
+			  army_core_attack_factor = 0.1
+
+			}
+		}
+	}
+}

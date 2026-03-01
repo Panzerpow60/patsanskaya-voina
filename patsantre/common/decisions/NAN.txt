@@ -1,0 +1,39 @@
+NAN_guide_help = {
+
+    NAN_pomosh = {
+
+        icon = generic_ignite_civil_war
+		
+		available = {
+		has_completed_focus = NAN_laststrike
+		
+		}
+		
+		fire_only_once = yes
+		
+		cost = 100
+		
+		visible = {
+		    always = yes
+		}
+		complete_effect = {
+		every_country = {
+				limit = {
+					AND = {
+						OR = {
+							original_tag = NKD
+							original_tag = SAS
+							original_tag = ILY
+							original_tag = VIK
+							original_tag = KRL
+							
+						}
+					}
+				}
+				country_event = andreev.7
+
+				}
+		}
+	}
+}
+	

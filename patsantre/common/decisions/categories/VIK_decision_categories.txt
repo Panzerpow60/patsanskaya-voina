@@ -1,0 +1,28 @@
+VIK_guide_huinya = {
+
+    icon = border_war
+	
+	priority = 90
+	
+	picture = GFX_huinya_cat
+	
+	allowed = {
+	    original_tag = VIK
+	}
+	
+	visible = {
+	  has_completed_focus = VIK_crazyshit
+	}
+}
+VIK_guide_sfitness = {
+
+    icon = border_war
+	
+	priority = 85
+	
+	allowed = {
+	    original_tag = VIK
+	}
+}
+
+

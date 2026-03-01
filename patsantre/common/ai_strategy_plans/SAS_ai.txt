@@ -1,0 +1,23 @@
+ai_strategy_plan = {
+
+    SAS_army_focus = {
+	
+	    allowed = { always = yes }
+
+        ai_strategy = {
+            type = build_army
+            value = 120
+        }
+		
+		ai_strategy = {
+        type = prepare_for_war
+        value = 120
+        }
+		
+		ai_strategy = {
+            type = army_size
+            value = 24
+        }
+    }
+
+}

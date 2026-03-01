@@ -1,0 +1,713 @@
+focus_tree = {
+	id = kudinov
+	country = {
+		factor = 0
+		modifier = {
+		    add = 10
+			tag = NKD
+		}
+	}
+	default = no
+	focus = {
+		id = NKD_regnut
+		icon = GFX_goal_unknown
+		cost = 2,00
+		x = 3
+		y = 0
+		completion_reward = {
+		country_event = kudinov.5
+		
+		}
+
+	}
+	focus = {
+		id = NKD_oge
+		icon = GFX_goal_unknown
+		cost = 5,00
+		x = 11
+		y = 0
+		completion_reward = {
+		add_stability = 0.06
+		add_political_power = 30
+		}
+
+	}
+	focus = {
+		id = NKD_vs
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 22
+		y = 0
+		completion_reward = {
+		army_experience = 25
+		}
+
+	}
+	focus = {
+		id = NKD_promm
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 30
+		y = 0
+		completion_reward = {
+		add_tech_bonus = {
+        bonus = 0.25
+        uses = 1
+        category = industry
+        }
+		}
+
+	}
+	focus = {
+		id = NKD_2024
+		icon = GFX_goal_unknown
+		cost = 1,00
+		x = 16
+		y = 0
+		available = {
+			if = {
+			date > 2024.01.01
+			}
+			}
+		
+
+	}
+	focus = {
+		id = NKD_regnutMM
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = NKD_regnut
+		}
+		x = 3
+		y = 1
+		completion_reward = {
+		country_event = kudinov.6
+		}
+
+	}
+	focus = {
+		id = NKD_ebashit
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NKD_regnutMM
+		}
+		mutually_exclusive = {
+			focus = NKD_kinutdotu
+		}
+		x = 1
+		y = 2
+		completion_reward = {
+		unlock_decision_category_tooltip = NKD_dota
+		}
+
+	}
+	focus = {
+		id = NKD_kinutdotu
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NKD_regnutMM
+		}
+		mutually_exclusive = {
+			focus = NKD_ebashit
+		}
+		x = 5
+		y = 2
+		completion_reward = {
+		add_stability = 0.15
+		add_political_power = 100
+		remove_ideas = NKD_doter
+		}
+
+	}
+	focus = {
+		id = NKD_mak
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = NKD_oge
+		}
+		x = 11
+		y = 1
+		completion_reward = {
+		add_ideas = NKD_mak
+		add_political_power = 30
+		}
+
+	}
+	focus = {
+		id = NKD_leto
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = NKD_mak
+		}
+		x = 11
+		y = 2
+		completion_reward = {
+		add_timed_idea = {
+		idea = VIK_bestleto
+		days = 40
+		}
+		add_stability = 0.04
+		}
+
+	}
+	focus = {
+		id = NKD_10klass
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NKD_leto
+		}
+		x = 11
+		y = 3
+		completion_reward = {
+		country_event = kudinov.4
+		}
+
+	}
+	focus = {
+		id = NKD_uvolilsa
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NKD_10klass
+		}
+		x = 11
+		y = 4
+		completion_reward = {
+		remove_ideas = NKD_mak
+		add_stability = -0.01
+		}
+
+	}
+	focus = {
+		id = NKD_muz
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = NKD_uvolilsa
+		}
+		x = 11
+		y = 5
+		completion_reward = {
+		country_event = kudinov.7
+		}
+
+	}
+	focus = {
+		id = NKD_rasstatsa
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = NKD_muz
+		}
+		x = 11
+		y = 6
+		completion_reward = {
+		add_timed_idea = {
+		idea = NKD_rasstavanie
+		days = 130
+		}
+		remove_ideas = NKD_love
+		}
+
+	}
+	focus = {
+		id = NKD_dela
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = NKD_rasstatsa
+		}
+		x = 11
+		y = 7
+
+	}
+	focus = {
+		id = NKD_activnayashkola
+		icon = GFX_goal_unknown
+		cost = 25,00
+		prerequisite = {
+			focus = NKD_2024
+		}
+		x = 16
+		y = 1
+		completion_reward = {
+		country_event = kudinov.8
+		}
+
+	}
+	focus = {
+		id = NKD_leto1
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = NKD_activnayashkola
+		}
+		x = 16
+		y = 2
+		completion_reward = {
+		add_stability = 0.05
+		add_political_power = 20
+		country_event = kudinov.9
+		}
+
+	}
+	focus = {
+		id = NKD_dacha
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = NKD_leto1
+		}
+		x = 16
+		y = 3
+		completion_reward = {
+		add_tech_bonus = {
+        bonus = 0.5
+        uses = 1
+        category = industry
+        }
+		random_core_state = {
+        limit = {
+          ROOT = { controls_state = PREV }
+        }
+        add_extra_state_shared_building_slots = 2
+        add_building_construction = {
+          type = industrial_complex
+          level = 1
+          instant_build = yes
+        }
+		add_building_construction = {
+          type = infrastructure
+          level = 1
+          instant_build = yes
+        }
+        }
+		}
+
+	}
+	focus = {
+		id = NKD_11klass
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = NKD_dacha
+		}
+		x = 16
+		y = 4
+		completion_reward = {
+		country_event = kudinov.10
+		}
+
+	}
+	focus = {
+		id = NKD_kursi
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = NKD_11klass
+		}
+		x = 16
+		y = 5
+		completion_reward = {
+		add_ideas = NKD_kursi
+		}
+
+	}
+	focus = {
+		id = NKD_alla
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NKD_kursi
+		}
+		x = 16
+		y = 6
+		completion_reward = {
+		country_event = kudinov.11
+		}
+
+	}
+	focus = {
+		id = NKD_no
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NKD_alla
+		}
+		mutually_exclusive = {
+			focus = NKD_yes
+		}
+		x = 14
+		y = 7
+		completion_reward = {
+		add_war_support = 0.05
+		add_stability = -0.1
+		}
+
+	}
+	focus = {
+		id = NKD_yes
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NKD_alla
+		}
+		mutually_exclusive = {
+			focus = NKD_no
+		}
+		x = 18
+		y = 7
+		completion_reward = {
+		add_war_support = -0.1
+		add_stability = 0.05
+		}
+
+	}
+	focus = {
+		id = NKD_reforma
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = NKD_vs
+		}
+		x = 22
+		y = 1
+		completion_reward = {
+		add_command_power = 30
+		add_political_power = 30
+		army_experience = 15
+		unlock_decision_category_tooltip = NKD_army
+		}
+		
+
+	}
+	focus = {
+		id = NKD_defence
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = NKD_reforma
+		}
+		mutually_exclusive = {
+			focus = NKD_attack
+		}
+		available = {
+		has_country_flag = NKD_reforma2
+		}
+		x = 20
+		y = 2
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = NKD_badarmy2
+		add_idea = NKD_badarmy3
+		}
+		add_doctrine_cost_reduction = {
+	    cost_reduction = 0.5
+	    uses = 1
+	    category = land_doctrine
+        }
+		}
+
+	}
+	focus = {
+		id = NKD_vkusnoitochka
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = NKD_defence
+		}
+		x = 20
+		y = 3
+		completion_reward = {
+		             add_timed_idea = {
+					 idea = VIK_bunker
+					 days = 180
+					}
+		             256 = {  
+	   		         add_building_construction = {
+							type = bunker
+							level = 2
+							province = {
+								id = 9244
+								id = 6357
+								id = 6312
+							}
+						    instant_build = yes
+
+	}
+	}
+	}
+	}
+	focus = {
+		id = NKD_attack
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NKD_reforma
+		}
+		mutually_exclusive = {
+			focus = NKD_defence
+		}
+		available = {
+		has_country_flag = NKD_reforma2
+		}
+		x = 24
+		y = 2
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = NKD_badarmy2
+		add_idea = NKD_badarmy4
+		}
+		add_doctrine_cost_reduction = {
+	    cost_reduction = 0.5
+	    uses = 1
+	    category = land_doctrine
+        }
+		}
+		
+
+	}
+	focus = {
+		id = NKD_preparations
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NKD_attack
+		}
+		x = 24
+		y = 3
+		completion_reward = {
+		add_equipment_to_stockpile = {
+        type = infantry_equipment
+        amount = 3500
+        producer = NKD
+        }  
+		add_equipment_to_stockpile = {
+        type = support_equipment
+        amount = 500
+        producer = NKD
+        } 
+        }		
+
+	}
+	focus = {
+		id = NKD_war
+		icon = GFX_goal_unknown
+		cost = 10,00
+		available = {
+		has_war_with = VIK
+		}
+		prerequisite = {
+			focus = NKD_vkusnoitochka
+			focus = NKD_preparations
+		}
+		x = 22
+		y = 4
+		completion_reward = {
+		add_timed_idea = {
+		idea = NKD_shock
+		days = 90
+		}
+		add_ideas = {
+		war_economy
+		}
+		random_owned_controlled_state = {
+            limit = { ROOT = { has_full_control_of_state = PREV } }
+            prioritize = { 256 }
+            create_unit = {
+            division = "name = \"Opolchenie Vkusno i tochka\" division_template = \"Opolchenie Vkusno i tochka\" start_experience_factor = 0.05" 
+            owner = NKD
+            }
+		    }
+			}
+		
+
+	}
+	focus = {
+		id = NKD_resourses
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NKD_promm
+		}
+		x = 30
+		y = 1
+		completion_reward = {
+		add_resource = {
+        type = oil
+        amount = 15
+        state = 833
+        }
+					256 = {
+					add_building_construction = {
+						type = supply_node
+						level = 1
+						province = 6357
+						instant_build = yes
+					}
+					build_railway = {
+						path = { 6372 9402 6307 9259 9373 6357 6294 11373 3317 }
+					}
+				}
+				
+		}
+
+	}
+	focus = {
+		id = NKD_fabrika
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = NKD_resourses
+		}
+		x = 28
+		y = 2
+		completion_reward = {
+		random_core_state = {
+				limit = {
+					ROOT = { controls_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				prioritize = { 256 }
+				
+			}
+			}
+
+	}
+	focus = {
+		id = NKD_mill
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NKD_resourses
+		}
+		x = 32
+		y = 2
+		completion_reward = {
+		random_core_state = {
+				limit = {
+					ROOT = { controls_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				prioritize = { 256 }
+				
+			}
+			}
+
+	}
+	focus = {
+		id = NKD_prommvopros
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NKD_fabrika
+		}
+		prerequisite = {
+			focus = NKD_mill
+		}
+		x = 30
+		y = 3
+		completion_reward = {
+		add_ideas = {
+		NAN_gibkayaeco
+		}
+		}
+
+	}
+	focus = {
+		id = NKD_gotovitsa
+		icon = GFX_goal_unknown
+		cost = 15,00
+		prerequisite = {
+			focus = NKD_yes
+			focus = NKD_no
+		}
+		x = 16
+		y = 8
+		completion_reward = {
+		add_political_power = 100
+		add_command_power = 39
+		add_stability = 0.05
+		add_war_support = 0.01
+		}
+
+	}
+	focus = {
+		id = NKD_prizov
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = NKD_war
+		}
+		x = 22
+		y = 5
+		completion_reward = {
+		add_manpower = 52051
+		}
+
+	}
+	focus = {
+		id = NKD_newweapons
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NKD_prizov
+		}
+		x = 22
+		y = 6
+		completion_reward = {
+		add_equipment_to_stockpile = {
+        type = infantry_equipment
+        amount = 3000
+        producer = NKD
+        }  
+		add_equipment_to_stockpile = {
+        type = support_equipment
+        amount = 100
+        producer = NKD
+        } 
+		add_equipment_to_stockpile = {
+        type = artillery_equipment
+        amount = 100
+        producer = NKD
+        } 
+		}
+
+	}
+	focus = {
+		id = NKD_resistandbite
+		icon = GFX_goal_unknown
+		cost = 10,00
+		available = {
+			has_war = yes
+			OR = {
+				surrender_progress > 0.2
+			}
+		}
+		prerequisite = {
+			focus = NKD_newweapons
+		}
+		x = 22
+		y = 7
+		completion_reward = {
+		add_ideas = NKD_standfor
+		}
+
+	}
+}

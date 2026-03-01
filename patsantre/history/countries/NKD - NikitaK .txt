@@ -1,0 +1,160 @@
+﻿capital = 256
+set_stability = 0.8
+set_war_support = 0.25
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_oob = "NKD_1936_nsb"
+}
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_oob = "NKD_1936"
+}
+
+set_research_slots = 3
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_military_police = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	paratroopers = 1
+	gw_artillery = 1
+	
+	mass_assault = 1
+	fleet_in_being = 1
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "2022.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 70
+	fascism = 15
+	communism = 4
+	neutrality = 11
+}
+
+add_ideas = {
+    NKD_export
+	NKD_badarmy
+	NKD_doter
+	NKD_love
+}
+
+create_country_leader = { 
+    name = "Никита Кудинов"
+	desc = "POLITICS_ADOLF_HITLER_DESC"
+	picture = "Portrait_NikitaK.dds"
+	expire = "2029.1.1"
+	ideology = liberalism
+	traits = { NKD_fair_leader }
+}
+
+create_corps_commander = {
+    name = "Пудж"
+	picture = "Portrait_Pudge.dds"
+	traits = { defensive_doctrine }
+	skill = 5
+	attack_skill = 4
+	defence_skill = 4
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+    name = "Оби-Ван Кеноби"
+	picture = "Portrait_Kenobi.dds"
+	traits = { defensive_doctrine }
+	skill = 5
+	attack_skill = 1
+	defence_skill = 5
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+
+if = {
+  limit = { has_dlc = "By Blood Alone" }
+    set_air_oob = "NKD_1936_air_bba"
+    set_technology = {
+      iw_small_airframe = 1
+      aa_lmg = 1
+      early_bombs = 1
+      engines_1 = 1
+      engines_2 = 1
+      iw_medium_airframe = 1
+      iw_large_airframe = 1
+      basic_small_airframe = 1
+      basic_medium_airframe = 1
+basic_large_airframe = 1
+      aircraft_construction = 1
+      air_torpedoe_1 = 1
+      bba_early_transport_plane = 1
+    }
+  else = {
+    set_air_oob = "NKD_1936_air_legacy"
+    set_technology = {
+      early_fighter = 1
+      fighter1 = 1
+      early_bomber = 1
+      strategic_bomber1 = 1
+      naval_bomber1 = 1
+      early_transport_plane = 1
+    }
+  }
+}
+
+if = {
+  limit = {
+    has_dlc = "By Blood Alone"
+  }
+  create_equipment_variant = {
+    name = "DB"
+    type = large_plane_airframe_1
+    modules = {
+     fixed_main_weapon_slot = large_bomb_bay
+     fixed_auxiliary_weapon_slot_1 =  large_bomb_bay
+     engine_type_slot = engine_2_4x
+     special_type_slot_1 = lmg_defense_turret_2x
+    }
+  }
+}
+
+if = {
+  limit = { has_dlc = "By Blood Alone" }
+    set_air_oob = "NKD_1936_air_bba"
+    set_technology = {
+      aa_lmg = 1
+      engines_1 = 1
+      engines_2 = 1
+      iw_small_airframe = 1
+      iw_medium_airframe = 1
+      early_bombs = 1
+      bba_early_transport_plane = 1
+    }
+  else = {
+    set_air_oob = "NKD_1936_air_legacy"
+    set_technology = {
+      early_fighter = 1
+      early_bomber = 1
+      CAS1 = 1
+      early_transport_plane = 1
+    }
+  }
+}
+

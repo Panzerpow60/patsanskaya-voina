@@ -1,0 +1,250 @@
+﻿division_template = {
+	name = "Divizya Pehoti"
+	division_names_group = VIK_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		}
+		support = { 
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+
+}
+division_template = {
+	name = "Divizya detey"
+	division_names_group = VIK_INF_02
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		}
+}
+
+division_template = {
+	name = "Tankovaya Brigada"  
+	division_names_group = VIK_MEC_01
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 1 y = 0 }		
+		light_armor = { x = 1 y = 1 }		
+		light_armor = { x = 1 y = 2 }
+		light_armor = { x = 1 y = 3 }
+		motorized = { x = 2 y = 0 }		
+		motorized = { x = 2 y = 1 }	
+		motorized = { x = 2 y = 2 }		
+		motorized = { x = 2 y = 3 }	
+	}
+}
+
+units = {
+	##### Lichnaya armiya Viktora #####
+	division= {	# "1 Strelkoviy polk"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 208 
+		division_template = "Divizya Pehoti"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}
+	division= {	# "2 Strelkoviy polk"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 3316 
+		division_template = "Divizya Pehoti" 
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+		}
+		
+        division= {	# "3 Strelkoviy polk"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 3578 
+		division_template = "Divizya Pehoti" 
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division= {	# "4 Strelkoviy polk"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9258 
+		division_template = "Divizya Pehoti" 
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	
+	division= {	# "4 Strelkoviy polk"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 6343 
+		division_template = "Divizya Pehoti" 
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division= {	# "5 Strelkoviy polk"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 6382 
+		division_template = "Divizya Pehoti" 
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division= {	# "6 Strelkoviy polk"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 11449 
+		division_template = "Divizya Pehoti" 
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division= {	# "Tankoviy kulak 1"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 3465 
+		division_template = "Tankovaya Brigada" 
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0	
+	}
+	division= {	# "Tankoviy kulak 2"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 3477 
+		division_template = "Tankovaya Brigada" 
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division= {	# "7 Strelkoviy polk"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 3343 
+		division_template = "Divizya Pehoti" 
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division= {	# "8 Strelkoviy polk"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 3317 
+		division_template = "Divizya Pehoti" 
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division= {	# "9 Strelkoviy polk"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9258 
+		division_template = "Divizya Pehoti" 
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division= {	# "10 Strelkoviy polk"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 11262 
+		division_template = "Divizya Pehoti" 
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division= {	# "11 Strelkoviy polk"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 11449 
+		division_template = "Divizya Pehoti" 
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division= {	# "12 Strelkoviy polk"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 3578 
+		division_template = "Divizya Pehoti" 
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division= {	# "13 Strelkoviy polk"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 3477 
+		division_template = "Divizya Pehoti" 
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division= {	# "14 Strelkoviy polk"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9258 
+		division_template = "Divizya Pehoti" 
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+    division= {	# "15 Strelkoviy polk"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 6382 
+		division_template = "Divizya Pehoti" 
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division= {	# "16 Strelkoviy polk"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 3465 
+		division_template = "Divizya Pehoti" 
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+}
+
+

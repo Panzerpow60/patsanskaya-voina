@@ -1,0 +1,16 @@
+NAN_guide_help = {
+
+    icon = border_war
+	
+	priority = 90
+	
+	allowed = {
+	    original_tag = NAN
+	}
+	
+	visible = {
+	  has_completed_focus = NAN_laststrike
+	}
+}
+
+

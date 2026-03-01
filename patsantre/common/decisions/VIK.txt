@@ -1,0 +1,120 @@
+VIK_guide_huinya = {
+
+    VIK_kozyrek = {
+
+        icon = generic_ignite_civil_war
+		
+		available = {
+		has_completed_focus = VIK_crazyshit
+		
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		
+		visible = {
+		    always = yes
+		}
+		complete_effect = {
+		add_stability = 0.03
+		}
+		ai_will_do = {
+      factor = 200
+    }
+	}
+	
+    VIK_pole = {
+
+        icon = generic_ignite_civil_war
+		
+		available = {
+		has_completed_focus = VIK_crazyshit
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		
+		visible = {
+		    always = yes
+		}
+		complete_effect = {
+		add_war_support = 0.05
+		}
+		ai_will_do = {
+      factor = 200
+    }
+	}
+	
+	VIK_5raz = {
+
+        icon = generic_ignite_civil_war
+		
+		available = {
+		has_completed_focus = VIK_crazyshit
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		
+		visible = {
+		    
+		}
+		complete_effect = {
+		add_war_support = 0.05
+		}
+		ai_will_do = {
+      factor = 200
+    }
+	}
+	
+	VIK_flowers = {
+
+        icon = generic_ignite_civil_war
+		
+		available = {
+		has_completed_focus = VIK_crazyshit
+		has_completed_focus = VIK_yes
+		}
+		
+		fire_only_once = yes
+		
+		cost = 55
+		
+		visible = {
+		    always = yes
+		}
+		complete_effect = {
+		add_ideas = VIK_flowers1
+		}
+		ai_will_do = {
+      factor = 200
+    }
+	}
+}
+
+VIK_guide_sfitness = {
+
+    VIK_sfitness = {
+
+        icon = generic_ignite_civil_war
+		
+		fire_only_once = yes
+		
+		cost = 200
+		
+		visible = {
+		    always = yes
+		}
+		complete_effect = {
+		add_ideas = SAS_sfitness
+		}
+		ai_will_do = {
+      factor = 200
+    }
+	}
+
+
+	

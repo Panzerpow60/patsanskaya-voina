@@ -1,0 +1,801 @@
+ideas = {
+    country = {
+	     ILY_transport = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_ILY_transport
+			  
+			  modifier = {
+			      army_speed_factor = 0.1
+				  army_org_factor = 0.05
+				  planning_speed = 0.1
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     ILY_sfitness = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_ILY_sfitness
+			  
+			  modifier = {
+			      production_factory_max_efficiency_factor = 0.10
+				  army_core_defence_factor = 0.05
+				  war_support_factor = 0.05
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     ILY_krugobshenia = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_ILY_krugobshenia
+			  
+			  modifier = {
+                  political_power_factor = 0.15
+				  stability_factor = 0.1
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     ILY_dvinka = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_ILY_dvinka
+			  
+			  modifier = {
+                  consumer_goods_factor = 0.5
+				  political_power_cost = 0.3
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     ILY_krugobshenia0 = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_ILY_krugobshenia0
+			  
+			  modifier = {
+                  political_power_factor = 0.05
+				  stability_factor = 0.05
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     ILY_krugobshenia2 = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_ILY_krugobshenia2
+			  
+			  modifier = {
+                  political_power_factor = 0.02
+				  stability_factor = 0.02
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     ILY_krugobshenia3 = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_ILY_krugobshenia3
+			  
+			  modifier = {
+                  political_power_factor = 0.10
+				  stability_factor = 0.1
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     ILY_defence = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_ILY_defence
+			  
+			  modifier = {
+                  surrender_limit = 0.15
+				  army_core_defence_factor = 0.1
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     ILY_dodo = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_ILY_dodo
+			  
+			  modifier = {
+                  production_factory_efficiency_gain_factor = 0.05
+				  consumer_goods_factor = -0.1
+				  production_factory_max_efficiency_factor = 0.05
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     ILY_nkop = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_idea_ARG_construction_guilds
+			  
+			  modifier = {
+                  conversion_cost_civ_to_mil_factor = -0.4
+				  production_factory_max_efficiency_factor = 0.1
+				  production_factory_efficiency_gain_factor = -0.1
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     ILY_frendzone = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_idea_ARG_construction_guilds
+			  
+			  modifier = {
+                  political_power_gain = -0.2
+				  drift_defence_factor = -0.5
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     ILY_musora = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_ILY_musora
+			  
+			  modifier = {
+                  political_power_gain = -0.35
+				  drift_defence_factor = 0.3
+				  civilian_intel_to_others = -25
+				  air_intel_to_others = -25
+				  navy_intel_to_others = -25
+				  army_intel_to_others = -25
+				  decryption_factor = 0.05
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     ILY_slabprom = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_ILY_slabprom
+			  
+			  modifier = {
+				  production_factory_max_efficiency_factor = -0.1
+				  consumer_goods_factor = 0.15
+				  production_speed_buildings_factor = -0.1
+				  
+
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     ILY_kirarst = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_ILY_kirarst
+			  
+			  modifier = {
+                  political_power_factor = -0.20
+				  stability_factor = -0.1
+				  drift_defence_factor = -0.3
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     ILY_kirarst1 = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_ILY_kirarst
+			  
+			  modifier = {
+                  political_power_factor = -0.50
+				  stability_factor = -0.25
+				  drift_defence_factor = -0.6
+				  production_factory_max_efficiency_factor = -0.3
+				  consumer_goods_factor = 0.30
+				  production_speed_buildings_factor = -0.2
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     ILY_kirarst3 = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_ILY_kirarst
+			  
+			  modifier = {
+				  political_power_factor = -0.25
+				  stability_factor = -0.15
+				  drift_defence_factor = -0.2
+				  consumer_goods_factor = 0.15
+				  production_speed_buildings_factor = -0.1
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     ILY_slabVS = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_ILY_slabVS
+			  
+			  modifier = {
+                army_attack_factor = -0.1
+				army_defence_factor = -0.1
+				army_speed_factor = -0.1
+				army_org_factor = -0.05
+				planning_speed = -0.2
+				land_doctrine_cost_factor = 0.1
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     ILY_kiraot = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_ILY_kiraot
+			  
+			  modifier = {
+                 political_power_factor = 0.1
+				  stability_factor = -0.1
+				  drift_defence_factor = -0.1
+				  production_factory_start_efficiency_factor = -0.05
+				  production_factory_max_efficiency_factor = -0.05
+				  consumer_goods_factor = 0.16
+				  production_speed_buildings_factor = -0.05
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     ILY_len = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_ILY_kirarst
+			  
+			  modifier = {
+				  stability_factor = -0.03
+				  political_power_factor = -0.1
+				  production_speed_buildings_factor = -0.1
+				  surrender_limit = -0.1
+				  air_advisor_cost_factor = 0.2
+				  navy_advisor_cost_factor = 0.2
+				  army_advisor_cost_factor = 0.2
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     ILY_badroads = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_ILY_badroads
+			  
+			  modifier = {
+				  supply_factor = -0.25
+				  supply_consumption_factor = 0.10
+				  out_of_supply_factor = 0.25
+				  supply_node_range = -0.15
+				  production_speed_infrastructure_factor = -0.16
+				  
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     ILY_noeffroad = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_ILY_noeffroad
+			  
+			  modifier = {
+				  supply_factor = -0.1
+				  supply_consumption_factor = 0.05
+				  out_of_supply_factor = 0.05
+				  supply_node_range = -0.1
+				  production_speed_infrastructure_factor = -0.05
+				  
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     ILY_bestroads = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_ILY_bestroads
+			  
+			  modifier = {
+				  supply_factor = 0.12
+				  supply_consumption_factor = -0.1
+				  out_of_supply_factor = -0.1
+				  supply_node_range = 0.1
+				  production_speed_infrastructure_factor = 0.1
+				  
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     ILY_kruglogodpriziv = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_ILY_bestroads
+			  
+			  modifier = {
+				weekly_manpower = 600
+				stability_factor = -0.05  
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     ILY_armymix = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_ILY_armymix
+			  
+			  modifier = {
+				army_attack_factor = 0.08
+				army_defence_factor = -0.1
+				army_speed_factor = -0.2
+				army_morale_factor = -0.1
+				army_org_factor = -0.1
+				dig_in_speed_factor = -0.05
+				max_planning_factor = -0.1
+				air_accidents_factor = 0.1
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     ILY_musora1 = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_ILY_musora
+			  
+			  modifier = {
+                  political_power_gain = -0.35
+				  drift_defence_factor = 0.35
+				  civilian_intel_to_others = -25
+				  air_intel_to_others = -30
+				  navy_intel_to_others = -30
+				  army_intel_to_others = -30
+				  decryption_factor = 0.05
+
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     ILY_investments = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_ILY_musora
+			  
+			  modifier = {
+                  political_power_gain = -0.35
+				  consumer_goods_factor = -0.2
+				  industrial_capacity_factory = 0.1
+				  production_factory_efficiency_gain_factor = 0.05 
+                  production_factory_max_efficiency_factor = 0.05 
+				  production_speed_buildings_factor = 0.1 
+
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     ILY_alkogol = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_idea_VIK_alkogol
+			  
+			  modifier = {
+			      consumer_goods_factor = 0.75
+				  political_power_gain = -0.40
+				  war_support_weekly = -0.005
+				  stability_weekly = -0.005
+				  production_speed_buildings_factor = -0.35
+				  industrial_capacity_factory = -0.35
+				}
+			}
+		}
+	}
+ideas = {
+    country = {
+	     ILY_MVD = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_idea_ILY_MVD
+			  
+			  modifier = {
+			      compliance_growth_on_our_occupied_states = -0.1
+				  resistance_target_on_our_occupied_states = 0.05
+				  drift_defence_factor = 0.1
+				  resistance_activity = -0.05
+				  resistance_target = -0.05
+				}
+			}
+		}
+	}
+ideas = {
+    country = {
+	     ILY_MVD1 = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_idea_ILY_MVD
+			  
+			  modifier = {
+			      compliance_growth_on_our_occupied_states = -0.1
+				  resistance_target_on_our_occupied_states = 0.05
+				  drift_defence_factor = 0.1
+				  resistance_activity = -0.05
+				  resistance_target = -0.05
+				  special_forces_training_time_factor = -0.1
+				  coordination_bonus = 0.15
+				  initiative_factor = 0.1
+				}
+			}
+		}
+	}
+ideas = {
+    country = {
+	     ILY_MVD2 = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_idea_ILY_MVD
+			  
+			  modifier = {
+			      political_power_factor = 0.1
+			      compliance_growth_on_our_occupied_states = -0.1
+				  resistance_target_on_our_occupied_states = 0.05
+				  drift_defence_factor = 0.15
+				  resistance_activity = -0.07
+				  resistance_target = -0.07
+				  special_forces_training_time_factor = -0.15
+				  coordination_bonus = 0.175
+				  initiative_factor = 0.1
+				}
+			}
+		}
+	}
+	ideas = {
+    country = {
+	     ILY_Zakon = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_idea_ILY_MVD
+			  
+			  modifier = {
+			      political_power_factor = 0.15
+				  stability_factor = 0.1
+				  surrender_limit = 0.05
+				  army_advisor_cost_factor = -0.1
+				  air_advisor_cost_factor = -0.1
+				  navy_advisor_cost_factor = -0.1
+
+				}
+			}
+		}
+	}
+ideas = {
+    country = {
+	     ILY_armymix1 = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_ILY_armymix
+			  
+			  modifier = {
+				army_attack_factor = 0.08
+				army_defence_factor = -0.05
+				army_speed_factor = -0.15
+				army_morale_factor = -0.1
+				army_org_factor = -0.1
+				max_planning_factor = -0.1
+				air_accidents_factor = 0.1
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     ILY_armymix2 = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_ILY_armymix
+			  
+			  modifier = {
+				army_attack_factor = 0.08
+				army_speed_factor = -0.1
+				army_morale_factor = -0.1
+				army_org_factor = -0.05
+				max_planning_factor = -0.1
+				air_accidents_factor = 0.1
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     ILY_armymix3 = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_ILY_goodarmy
+			  
+			  modifier = {
+				army_attack_factor = 0.1
+				army_org_factor = 0.05
+				max_planning_factor = 0.1
+				army_defence_factor = 0.1
+				army_morale_factor = 0.1
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     ILY_garantee= {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_ILY_garantee
+			  
+			  modifier = {
+                  political_power_factor = -0.02
+				  stability_factor = -0.02
+				  drift_defence_factor = 0.01
+			}
+		}
+	}
+}

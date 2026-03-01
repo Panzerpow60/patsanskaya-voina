@@ -1,0 +1,455 @@
+focus_tree = {
+	id = andr
+	country = {
+		factor = 0
+		modifier = {
+		    add = 10
+			tag = NAN
+		}
+	}
+	default = no
+	focus = {
+		id = NAN_prizov
+		icon = GFX_focus_AFG_royal_guard
+		cost = 7,00
+		x = 6
+		y = 0
+		completion_reward = {
+		random_owned_controlled_state = {
+          limit = { ROOT = { has_full_control_of_state = PREV } }
+          prioritize = { 258 }
+          create_unit = {
+            division = "name = \"Pogranichniki\" division_template = \"Pogranichniki\" start_experience_factor = 0.5" 
+            owner = NAN
+          }
+        }
+		
+        random_owned_controlled_state = {
+          limit = { ROOT = { has_full_control_of_state = PREV } }
+          prioritize = { 258 }
+          create_unit = {
+            division = "name = \"Pogranichniki\" division_template = \"Pogranichniki\" start_experience_factor = 0.5" 
+            owner = NAN
+          }
+        } 
+		}
+
+	}
+	focus = {
+		id = NAN_promm
+		icon = GFX_focus_generic_economic_recovery
+		cost = 10,00
+		x = 16
+		y = 0
+		completion_reward = {
+		random_core_state = {
+				limit = {
+					ROOT = { controls_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				
+				
+			}
+		}
+
+	}
+	focus = {
+		id = NAN_war
+		icon = GFX_focus_GER_schlieffen_once_more
+		cost = 10,00
+		x = 24
+		y = 0
+		available = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				OR = {
+					has_war = yes
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_dlc = "Man the Guns" }
+				}
+				OR = {
+					has_war = yes
+				}
+			}
+		}
+		completion_reward = {
+		add_war_support = 0.1
+		}
+
+	}
+	focus = {
+		id = NAN_situation
+		icon = GFX_goal_NAN_protests
+		cost = 10,00
+		prerequisite = {
+			focus = NAN_prizov
+		}
+		x = 6
+		y = 1
+		completion_reward = {
+		country_event = andreev.3
+			swap_ideas = {
+			add_idea = NAN_bunt1
+			remove_idea = NAN_bunt
+			}
+		}
+
+	}
+	focus = {
+		id = NAN_sanya
+		icon = GFX_focus_RAJ_seek_allies_with_the_muslim_league
+		cost = 10,00
+		prerequisite = {
+			focus = NAN_situation
+		}
+		mutually_exclusive = {
+			focus = NAN_sila
+		}
+		x = 3
+		y = 2
+
+	}
+	focus = {
+		id = NAN_help
+		icon = GFX_focus_generic_welfare
+		cost = 10,00
+		prerequisite = {
+			focus = NAN_sanya
+		}
+		x = 3
+		y = 3
+		completion_reward = {
+		add_equipment_to_stockpile = {
+			  type = infantry_equipment
+              amount = 2000
+              producer = SAS
+			}
+			add_equipment_to_stockpile = {
+			  type = support_equipment
+              amount = 500
+              producer = SAS
+			}
+			add_equipment_to_stockpile = {
+			  type = artillery_equipment
+              amount = 100
+              producer = SAS
+			}
+		}
+
+	}
+	focus = {
+		id = NAN_puppet
+		icon = GFX_focus_generic_subjugation
+		cost = 10,00
+		prerequisite = {
+			focus = NAN_help
+		}
+		x = 3
+		y = 4
+		completion_reward = {
+		country_event = andreev.2
+	    add_stability = -0.05
+		add_war_support = -0.1
+		add_political_power = -20
+		}
+
+	}
+	focus = {
+		id = NAN_sila
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 10,00
+		prerequisite = {
+			focus = NAN_situation
+		}
+		mutually_exclusive = {
+			focus = NAN_sanya
+		}
+		x = 9
+		y = 2
+		completion_reward = {
+		add_war_support = 0.05
+		}
+
+	}
+	focus = {
+		id = NAN_reforma3
+		icon = GFX_focus_GER_subdue_the_wehrmacht
+		cost = 10,00
+		prerequisite = {
+			focus = NAN_sila
+		}
+		x = 9
+		y = 3
+		completion_reward = {
+		    add_war_support = 0.05
+			  add_equipment_to_stockpile = {
+			  type = infantry_equipment
+              amount = -2000
+              producer = NAN
+			}
+			 add_equipment_to_stockpile = {
+			  type = support_equipment
+              amount = -200
+              producer = NAN
+			}
+		}
+
+	}
+	focus = {
+		id = NAN_reforma4
+		icon = GFX_focus_ICE_thungur_hnifur
+		cost = 10,00
+		prerequisite = {
+			focus = NAN_reforma3
+		}
+		x = 9
+		y = 4
+		completion_reward = {
+		country_event = andreev.4
+		add_stability = -0.05
+		}
+
+
+	}
+	focus = {
+		id = NAN_laststrike
+		icon = GFX_goal_NAN_rokossovskogo
+		cost = 10,00
+		prerequisite = {
+			focus = NAN_reforma4
+		}
+		x = 9
+		y = 5
+		completion_reward = {
+		unlock_decision_category_tooltip = NAN_guide_help
+		country_event = news.416
+		}
+
+	}
+	focus = {
+		id = NAN_promm2
+		icon = GFX_focus_generic_tank_assembly
+		cost = 10,00
+		prerequisite = {
+			focus = NAN_promm
+		}
+		x = 14
+		y = 1
+		completion_reward = {
+				random_core_state = {
+				limit = {
+					ROOT = { controls_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				
+				
+			}
+		}
+
+	}
+	focus = {
+		id = NAN_promm1
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10,00
+		prerequisite = {
+			focus = NAN_promm
+		}
+		x = 18
+		y = 1
+		completion_reward = {
+		random_core_state = {
+				limit = {
+					ROOT = { controls_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				
+				
+			}
+		}
+
+	}
+	focus = {
+		id = NAN_prommvopros
+		icon = GFX_focus_NORDIC_com_civilian
+		cost = 10,00
+		prerequisite = {
+			focus = NAN_promm1
+			focus = NAN_promm2
+		}
+		x = 16
+		y = 2
+		completion_reward = {
+		country_event = andreev.5
+		}
+
+	}
+	focus = {
+		id = NAN_gibkayapromm
+		icon = GFX_focus_NORDIC_com_capstone_civilian
+		cost = 10,00
+		prerequisite = {
+			focus = NAN_prommvopros
+		}
+		mutually_exclusive = {
+			focus = NAN_tankovayaeconom
+		}
+		x = 14
+		y = 3
+		completion_reward = {
+		add_ideas = NAN_gibkayaeco
+		}
+
+	}
+	focus = {
+		id = NAN_tankovayaeconom
+		icon = GFX_focus_NORDIC_com_materiel
+		cost = 10,00
+		prerequisite = {
+			focus = NAN_prommvopros
+		}
+		mutually_exclusive = {
+			focus = NAN_gibkayapromm
+		}
+		x = 18
+		y = 3
+		completion_reward = {
+		swap_ideas = {
+				add_idea = NAN_babkinatanki1
+				remove_idea = NAN_babkinatanki
+			}
+		}
+
+	}
+	focus = {
+		id = NAN_mobilisation
+		icon = GFX_focus_GER_hegemony_of_the_ss
+		cost = 10,00
+		prerequisite = {
+			focus = NAN_war
+		}
+		x = 24
+		y = 1
+		completion_reward = {
+		add_manpower = 10000
+		}
+
+	}
+	focus = {
+		id = NAN_reorganisation
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10,00
+		prerequisite = {
+			focus = NAN_mobilisation
+		}
+		x = 24
+		y = 2
+		completion_reward = {
+		country_event = andreev.6
+		}
+
+	}
+	focus = {
+		id = NAN_peoplearmy
+		icon = GFX_focus_generic_full_social_mobilization
+		cost = 10,00
+		prerequisite = {
+			focus = NAN_reorganisation
+		}
+		mutually_exclusive = {
+			focus = NAN_specialforces
+		}
+		x = 22
+		y = 3
+		completion_reward = {
+		swap_ideas = {
+				add_idea = NAN_peoplear
+				remove_idea = NAN_tankist
+			}
+		}
+
+	}
+	focus = {
+		id = NAN_specialforces
+		icon = GFX_goal_generic_CAS
+		cost = 10,00
+		prerequisite = {
+			focus = NAN_reorganisation
+		}
+		mutually_exclusive = {
+			focus = NAN_peoplearmy
+		}
+		x = 26
+		y = 3
+		completion_reward = {
+		swap_ideas = {
+				add_idea = NAN_tankspez
+				remove_idea = NAN_tankist
+			}
+		}
+
+	}
+	focus = {
+		id = NAN_homedefence
+		icon = GFX_goal_generic_defence
+		cost = 10,00
+		prerequisite = {
+			focus = NAN_specialforces
+			focus = NAN_peoplearmy
+		}
+		x = 24
+		y = 4
+		completion_reward = {
+		258 = {  
+	   		         add_building_construction = {
+							type = bunker
+							level = 2
+							province = {
+								id = 6230
+								id = 6398
+								id = 6341
+								
+							}
+							instant_build = yes
+						}
+					}
+				}
+
+	}
+	focus = {
+		id = NAN_after
+		icon = GFX_focus_generic_low_cost_housing
+		cost = 10,00
+		prerequisite = {
+			focus = NAN_laststrike
+			focus = NAN_puppet
+		}
+		x = 6
+		y = 6
+		completion_reward = {
+		add_timed_idea = {
+		idea = NAN_vosstanov
+		days = 365
+		}
+
+	}
+}

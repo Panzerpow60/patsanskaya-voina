@@ -987,7 +987,7 @@ focus_tree = {
 		x = 35
 		y = 22
 		completion_reward = {
-		coutnry_event = ilya.20
+		add_political_power = 100
 		}
 
 	}

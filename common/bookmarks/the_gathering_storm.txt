@@ -30,8 +30,8 @@ bookmarks = {
 				ILY_slabprom
 			}
 			focuses = {
-				ILY_ohvat98
-				ILY_prava
+				ILY_1stwar
+				ILY_MVD1
 				ILY_kiracrisis3
 			}
 		}

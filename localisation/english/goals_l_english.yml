@@ -373,9 +373,16 @@
  ILY_sea_desc: "To our great happiness, we got the chance to go with Kira to St. Petersburg for 3 days. We'll have our fill of fun!"
  ILY_rasstavanie: "Kira, We're Breaking Up!"
  ILY_vosstanovlenie: "Recovery After Crises"
- ILY_Sfitness: "Return to the Gym"
- ILY_workurself: "Work on Yourself"
- ILY_kurs: "Ilya's Course"
- ILY_womanandpatsani: "Relationships and the Boyz"
- ILY_mistakeskira: "Learn from Mistakes of Past Relationships"
- ILY_kiracrisis3: "Crisis in Kudrovo"
+ ILY_Sfitness:0 "Return to the Gym"
+ ILY_workurself:0 "Work on Yourself"
+ ILY_kurs:0 "Ilya's Course"
+ ILY_womanandpatsani:0 "Relationships and the Boyz"
+ ILY_mistakeskira:0 "Learn from Mistakes of Past Relationships"
+ ILY_kiracrisis3:0 "Crisis in Kudrovo"
+ ILY_kiracrisis3_desc:0 "Kudrovo is the place where the gradual process of ending the relationship between Ilya and Kira began, and where Ilya came to realize that Kira never truly loved him — she only used him for her own benefit and to beg for gifts.\nOn August 26, 2025, amid past scandals, Kira destabilizes Ilya by bringing up her ex-boyfriend, humiliating him, and throwing tantrums. At the same time, Ilya desperately wants to end this madness, but all his attempts are in vain."
+ ILY_1stwar:0 "The First Patsanskaya War"
+ ILY_1stwar_desc:0 "ATTENTION! COMBAT OPERATIONS HAVE BEGUN.\nAt 6:36 AM local time, Vitya's forces crossed the border in the area of Mykhailivska Street. An artillery barrage preceded the advance of motorized infantry. The enemy appears to be relying on the element of surprise. However, our valiant troops have already taken up defensive positions. Orders stand until victory. Victory will be ours."
+
+
+
+

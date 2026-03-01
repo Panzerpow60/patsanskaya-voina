@@ -10,7 +10,7 @@ focus_tree = {
 	default = no
 	focus = {
 		id = 2023
-		icon = GFX_goal_unknown
+		icon = GFX_goal_ILY_2023
 		cost = 10,00
 		x = 43
 		y = 0
@@ -426,7 +426,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ILY_2024
-		icon = GFX_goal_unknown
+		icon = GFX_goal_ILY_2024
 		cost = 10,00
 		prerequisite = {
 			focus = ILY_ukrep
@@ -774,7 +774,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ILY_1stwar
-		icon = GFX_goal_unknown
+		icon = GFX_goal_ILY_1stwar2
 		cost = 10,00
 		prerequisite = {
 			focus = ILY_extr
@@ -945,7 +945,7 @@ focus_tree = {
 	focus = {
 		id = ILY_2kurs
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 0,00
 		prerequisite = {
 			focus = ILY_millitary3
 			focus = ILY_chistki
@@ -1272,7 +1272,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ILY_sea
-		icon = GFX_goal_unknown
+		icon = GFX_goal_ILY_eysk2025
 		cost = 10,00
 		prerequisite = {
 			focus = ILY_goododnogr
@@ -1295,7 +1295,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ILY_bezotn
-		icon = GFX_goal_unknown
+		icon = GFX_goal_ILY_bezotn
 		cost = 10,00
 		available = {
 		date > 2025.06.30
@@ -1326,7 +1326,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ILY_SPB2025
-		icon = GFX_goal_unknown
+		icon = GFX_goal_ILY_SPB2025
 		cost = 10,00
 		prerequisite = {
 			focus = ILY_kiracrisis1
@@ -1337,7 +1337,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ILY_kiracrisis3
-		icon = GFX_goal_unknown
+		icon = GFX_goal_ILY_kiracrisis1
 		cost = 10,00
 		prerequisite = {
 			focus = ILY_SPB2025

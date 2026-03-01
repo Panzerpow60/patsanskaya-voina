@@ -57,7 +57,7 @@ focus_tree = {
 	focus = {
 		id = ILY_aviation1
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 1,00
 		prerequisite = {
 			focus = ILY_industry1
 		}
@@ -986,6 +986,9 @@ focus_tree = {
 		}
 		x = 35
 		y = 22
+		completion_reward = {
+		coutnry_event = ilya.20
+		}
 
 	}
 	focus = {

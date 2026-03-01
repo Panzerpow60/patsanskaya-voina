@@ -927,7 +927,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ILY_extr
-		icon = GFX_goal_unknown
+		icon = GFX_goal_ILY_sovet
 		cost = 10,00
 		prerequisite = {
 			focus = ILY_soceity

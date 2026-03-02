@@ -1,0 +1,23 @@
+state={
+	id=1017
+	name="STATE_1017"
+	provinces={
+		3257 3322 6284 11363 
+	}
+	manpower=13156
+	state_category = rural
+	history = {
+	   buildings = {
+	   infrastructure = 2
+	   industrial_complex = 1
+	   arms_factory = 1
+	   }
+	   victory_points = {
+			6284 10
+		}
+	owner = SAS
+	add_core_of = SAS
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=2.000
+}

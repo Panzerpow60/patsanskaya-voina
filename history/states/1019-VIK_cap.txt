@@ -1,0 +1,24 @@
+state={
+	id=1019
+	name="STATE_1019"
+	provinces={
+		3578 
+	}
+	manpower=789387
+	state_category = large_city
+	history = {
+	owner = VIK
+	add_core_of = VIK
+	  buildings = {
+	  infrastructure = 3 
+	  industrial_complex = 3
+	  arms_factory = 2
+	  air_base = 1
+	  }
+	  victory_points = {
+	   3578 50
+      }
+	  }
+	buildings_max_level_factor=1.000
+	local_supplies=1.000
+}

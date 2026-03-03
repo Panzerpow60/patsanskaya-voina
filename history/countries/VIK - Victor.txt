@@ -1,4 +1,4 @@
-﻿capital = 239
+﻿capital = 1019
 set_stability = 0.66
 
 

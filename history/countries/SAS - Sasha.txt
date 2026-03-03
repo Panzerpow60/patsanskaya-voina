@@ -1,4 +1,4 @@
-﻿capital = 254
+﻿capital = 1018
 set_stability = 0.55
 set_war_support = 0.41
 oob = "SAS_1936"

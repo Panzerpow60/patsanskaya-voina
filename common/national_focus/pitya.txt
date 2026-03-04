@@ -12,15 +12,19 @@ focus_tree = {
 		id = VIK_Gofman
 		icon = GFX_goal_unknown
 		cost = 10,00
-		x = 26
+		x = 35
 		y = 0
+		completion_reward = { 
+		     country_event = viktor.2
+		}
+
 
 	}
 	focus = {
-		id = VIC_1stwar
+		id = VIK_1stwar
 		icon = GFX_focus_BRA_acquire_german_tanks
 		cost = 10,00
-		x = 41
+		x = 50
 		y = 6
 
 	}
@@ -28,23 +32,51 @@ focus_tree = {
 		id = VIK_voisko
 		icon = GFX_goal_unknown
 		cost = 10,00
-		x = 41
+		x = 50
 		y = 0
+		completion_reward = {
+		add_ideas = VIK_voisko1
+		country_event = viktor.16
+		}
+
 
 	}
 	focus = {
 		id = VIK_gavry
 		icon = GFX_goal_unknown
 		cost = 10,00
-		x = 41
+		x = 50
 		y = 1
+		completion_reward = {
+		            255 = {  
+	   		         add_building_construction = {
+							type = bunker
+							level = 1
+							province = {
+								id = 6343
+							}
+						}
+					}
+					255 = {
+					add_building_construction = {
+						type = supply_node
+						level = 1
+						province = 6343
+						instant_build = yes
+					}
+					build_railway = {
+						path = { 9258 6248 6291 9324 376 9276 6343 }
+					}
+				}
+				}
+
 
 	}
 	focus = {
 		id = VIK_army12
 		icon = GFX_goal_unknown
 		cost = 10,00
-		x = 48
+		x = 57
 		y = 3
 
 	}
@@ -52,7 +84,7 @@ focus_tree = {
 		id = VIK_army13
 		icon = GFX_goal_unknown
 		cost = 10,00
-		x = 48
+		x = 57
 		y = 4
 
 	}
@@ -60,7 +92,7 @@ focus_tree = {
 		id = VIK_industry1
 		icon = GFX_goal_unknown
 		cost = 10,00
-		x = 10
+		x = 20
 		y = 0
 
 	}
@@ -68,7 +100,7 @@ focus_tree = {
 		id = VIK_industry15
 		icon = GFX_goal_unknown
 		cost = 10,00
-		x = 10
+		x = 20
 		y = 6
 
 	}
@@ -76,7 +108,7 @@ focus_tree = {
 		id = VIK_industry20
 		icon = GFX_goal_unknown
 		cost = 10,00
-		x = 10
+		x = 20
 		y = 7
 
 	}
@@ -84,7 +116,7 @@ focus_tree = {
 		id = VIK_industry21
 		icon = GFX_goal_unknown
 		cost = 10,00
-		x = 10
+		x = 20
 		y = 8
 
 	}
@@ -92,7 +124,7 @@ focus_tree = {
 		id = VIK_industry26
 		icon = GFX_goal_unknown
 		cost = 10,00
-		x = 10
+		x = 20
 		y = 9
 
 	}
@@ -100,7 +132,7 @@ focus_tree = {
 		id = VIK_aviation1
 		icon = GFX_goal_unknown
 		cost = 10,00
-		x = 61
+		x = 69
 		y = 0
 
 	}
@@ -111,7 +143,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_industry1
 		}
-		x = 10
+		x = 20
 		y = 1
 
 	}
@@ -122,7 +154,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_industry2
 		}
-		x = 10
+		x = 20
 		y = 2
 
 	}
@@ -133,7 +165,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_industry3
 		}
-		x = 10
+		x = 20
 		y = 3
 
 	}
@@ -147,7 +179,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = VIK_industry10
 		}
-		x = 2
+		x = 12
 		y = 4
 
 	}
@@ -161,7 +193,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = VIK_industry11
 		}
-		x = 4
+		x = 14
 		y = 4
 
 	}
@@ -173,7 +205,7 @@ focus_tree = {
 			focus = VIK_industry10
 			focus = VIK_industry11
 		}
-		x = 3
+		x = 13
 		y = 5
 
 	}
@@ -187,7 +219,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = VIK_industry8
 		}
-		x = 9
+		x = 19
 		y = 4
 
 	}
@@ -201,7 +233,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = VIK_industry9
 		}
-		x = 11
+		x = 21
 		y = 4
 
 	}
@@ -213,7 +245,7 @@ focus_tree = {
 			focus = VIK_industry8
 			focus = VIK_industry9
 		}
-		x = 10
+		x = 20
 		y = 5
 
 	}
@@ -224,7 +256,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_industry4
 		}
-		x = 14
+		x = 24
 		y = 4
 
 	}
@@ -235,7 +267,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_industry4
 		}
-		x = 18
+		x = 28
 		y = 4
 
 	}
@@ -249,7 +281,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_industry7
 		}
-		x = 16
+		x = 26
 		y = 5
 
 	}
@@ -260,7 +292,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_industry5
 		}
-		x = 16
+		x = 26
 		y = 6
 
 	}
@@ -271,7 +303,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_industry14
 		}
-		x = 14
+		x = 24
 		y = 7
 
 	}
@@ -285,7 +317,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = VIK_industry24
 		}
-		x = 13
+		x = 23
 		y = 8
 
 	}
@@ -299,7 +331,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = VIK_industry23
 		}
-		x = 15
+		x = 25
 		y = 8
 
 	}
@@ -310,8 +342,12 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_Gofman
 		}
-		x = 26
+		x = 35
 		y = 1
+		completion_reward = { 
+		country_event = viktor.4
+		}
+
 
 	}
 	focus = {
@@ -321,8 +357,12 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_2023
 		}
-		x = 26
+		x = 35
 		y = 2
+		completion_reward = { 
+		add_political_power = 50
+		}
+
 
 	}
 	focus = {
@@ -332,8 +372,13 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_school
 		}
-		x = 24
+		x = 33
 		y = 3
+		completion_reward = {
+		add_stability = 0.05 
+		add_political_power = 30
+		}
+
 
 	}
 	focus = {
@@ -343,8 +388,12 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_school
 		}
-		x = 26
+		x = 35
 		y = 3
+		completion_reward = {
+		    country_event = viktor.7
+		}
+
 
 	}
 	focus = {
@@ -354,8 +403,34 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_school
 		}
-		x = 28
+		x = 37
 		y = 3
+		completion_reward = { 
+		country_event = viktor.5
+		add_political_power = 10
+		diplomatic_relation = {
+            country = ILY
+            relation = non_aggression_pact
+            active = yes
+			}
+		diplomatic_relation = {
+            country = SAS
+            relation = non_aggression_pact
+            active = yes
+			}
+		diplomatic_relation = {
+            country = NAN
+            relation = non_aggression_pact
+            active = yes
+			}
+		diplomatic_relation = {
+            country = NKD
+            relation = non_aggression_pact
+            active = yes
+			}
+		}
+
+
 
 	}
 	focus = {
@@ -371,8 +446,31 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_OGE
 		}
-		x = 26
+		x = 35
 		y = 4
+		available = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				OR = {
+					date > 2023.09.01
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_dlc = "Man the Guns" }
+				}
+				OR = {
+					date > 2023.09.01
+				}
+			}
+		}
+		completion_reward = {
+		country_event = viktor.13
+		}
+
+
 
 	}
 	focus = {
@@ -382,8 +480,13 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_10kl
 		}
-		x = 26
+		x = 35
 		y = 5
+		completion_reward = {
+		    add_political_power = 10
+			country_event = viktor.8
+		}
+
 
 	}
 	focus = {
@@ -393,8 +496,12 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_newfriends
 		}
-		x = 26
+		x = 35
 		y = 6
+		completion_reward = {
+		add_stability = 0.1
+		}
+
 
 	}
 	focus = {
@@ -404,8 +511,30 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_stabyear
 		}
-		x = 26
+		x = 35
 		y = 7
+		available = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				OR = {
+					date > 2024.01.01
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_dlc = "Man the Guns" }
+				}
+				OR = {
+					date > 2024.01.01
+				}
+			}
+		}
+		completion_reward = {
+		country_event = viktor.9
+		}
+
 
 	}
 	focus = {
@@ -415,7 +544,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_2024
 		}
-		x = 26
+		x = 35
 		y = 8
 
 	}
@@ -426,7 +555,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_school2
 		}
-		x = 26
+		x = 35
 		y = 9
 
 	}
@@ -437,7 +566,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_17y
 		}
-		x = 26
+		x = 35
 		y = 10
 
 	}
@@ -448,7 +577,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_furry
 		}
-		x = 26
+		x = 35
 		y = 11
 
 	}
@@ -459,7 +588,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_nostab
 		}
-		x = 26
+		x = 35
 		y = 12
 
 	}
@@ -473,7 +602,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = VIK_noappologise
 		}
-		x = 23
+		x = 32
 		y = 13
 
 	}
@@ -487,7 +616,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = VIK_sorry
 		}
-		x = 29
+		x = 38
 		y = 13
 
 	}
@@ -499,7 +628,7 @@ focus_tree = {
 			focus = VIK_noappologise
 			focus = VIK_sorry
 		}
-		x = 26
+		x = 35
 		y = 14
 
 	}
@@ -510,7 +639,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_crazyshit
 		}
-		x = 26
+		x = 35
 		y = 15
 
 	}
@@ -524,7 +653,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = VIK_no
 		}
-		x = 29
+		x = 38
 		y = 16
 
 	}
@@ -535,7 +664,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_yes
 		}
-		x = 29
+		x = 38
 		y = 17
 
 	}
@@ -546,7 +675,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_nopatsani
 		}
-		x = 29
+		x = 38
 		y = 18
 
 	}
@@ -557,7 +686,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_alone
 		}
-		x = 29
+		x = 38
 		y = 19
 
 	}
@@ -568,7 +697,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_firehouse
 		}
-		x = 29
+		x = 38
 		y = 20
 
 	}
@@ -579,7 +708,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_job
 		}
-		x = 29
+		x = 38
 		y = 21
 
 	}
@@ -593,7 +722,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = VIK_nopatsani2
 		}
-		x = 27
+		x = 36
 		y = 22
 
 	}
@@ -607,7 +736,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = VIK_obdumal
 		}
-		x = 30
+		x = 39
 		y = 22
 
 	}
@@ -618,7 +747,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_nopatsani2
 		}
-		x = 30
+		x = 39
 		y = 23
 
 	}
@@ -629,7 +758,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_nowoman
 		}
-		x = 30
+		x = 39
 		y = 24
 
 	}
@@ -640,7 +769,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_voisko
 		}
-		x = 36
+		x = 45
 		y = 1
 
 	}
@@ -651,7 +780,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_vintovka
 		}
-		x = 34
+		x = 43
 		y = 2
 
 	}
@@ -662,7 +791,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_radio1
 		}
-		x = 34
+		x = 43
 		y = 3
 
 	}
@@ -673,7 +802,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_vintovka
 		}
-		x = 36
+		x = 45
 		y = 2
 
 	}
@@ -684,7 +813,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_army7
 		}
-		x = 36
+		x = 45
 		y = 3
 
 	}
@@ -698,7 +827,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = VIK_G17A
 		}
-		x = 39
+		x = 48
 		y = 2
 
 	}
@@ -709,18 +838,18 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_mihailovskaya
 		}
-		x = 39
+		x = 48
 		y = 3
 
 	}
 	focus = {
-		id = VIC_mobilis
+		id = VIK_mobilis
 		icon = GFX_focus_generic_infiltration
 		cost = 10,00
 		prerequisite = {
-			focus = VIC_1stwar
+			focus = VIK_1stwar
 		}
-		x = 41
+		x = 50
 		y = 7
 
 	}
@@ -729,9 +858,9 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10,00
 		prerequisite = {
-			focus = VIC_mobilis
+			focus = VIK_mobilis
 		}
-		x = 39
+		x = 48
 		y = 8
 
 	}
@@ -745,7 +874,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = VIK_mihailovskaya
 		}
-		x = 43
+		x = 52
 		y = 2
 
 	}
@@ -756,7 +885,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_G17A
 		}
-		x = 43
+		x = 52
 		y = 3
 
 	}
@@ -768,7 +897,7 @@ focus_tree = {
 			focus = VIK_army6
 			focus = VIK_army5
 		}
-		x = 41
+		x = 50
 		y = 4
 
 	}
@@ -777,9 +906,9 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10,00
 		prerequisite = {
-			focus = VIC_mobilis
+			focus = VIK_mobilis
 		}
-		x = 43
+		x = 52
 		y = 8
 
 	}
@@ -790,7 +919,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_voisko
 		}
-		x = 48
+		x = 57
 		y = 1
 
 	}
@@ -804,7 +933,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = VIK_vidr
 		}
-		x = 46
+		x = 55
 		y = 2
 
 	}
@@ -818,7 +947,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = VIK_pitya
 		}
-		x = 50
+		x = 59
 		y = 2
 
 	}
@@ -829,7 +958,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_voisko
 		}
-		x = 53
+		x = 62
 		y = 1
 
 	}
@@ -840,7 +969,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_army3
 		}
-		x = 53
+		x = 62
 		y = 2
 
 	}
@@ -851,7 +980,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_army11
 		}
-		x = 52
+		x = 61
 		y = 3
 
 	}
@@ -862,7 +991,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_army11
 		}
-		x = 54
+		x = 63
 		y = 3
 
 	}
@@ -873,7 +1002,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_aviation1
 		}
-		x = 61
+		x = 69
 		y = 1
 
 	}
@@ -884,7 +1013,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_aviation2
 		}
-		x = 59
+		x = 67
 		y = 2
 
 	}
@@ -895,7 +1024,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_aviation2
 		}
-		x = 63
+		x = 71
 		y = 2
 
 	}
@@ -909,7 +1038,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_aviation3
 		}
-		x = 61
+		x = 69
 		y = 3
 
 	}
@@ -923,7 +1052,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = VIK_yes
 		}
-		x = 23
+		x = 32
 		y = 16
 
 	}
@@ -934,7 +1063,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_no
 		}
-		x = 23
+		x = 32
 		y = 17
 
 	}
@@ -947,7 +1076,7 @@ focus_tree = {
 			focus = VIK_bestsummer
 			focus = VIK_aloneagain
 		}
-		x = 25
+		x = 34
 		y = 25
 
 	}
@@ -958,7 +1087,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_obdumal
 		}
-		x = 27
+		x = 36
 		y = 23
 
 	}
@@ -969,7 +1098,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_bf
 		}
-		x = 23
+		x = 32
 		y = 19
 
 	}
@@ -980,7 +1109,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_11kl
 		}
-		x = 25
+		x = 34
 		y = 26
 
 	}
@@ -991,7 +1120,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_grabli
 		}
-		x = 25
+		x = 34
 		y = 27
 
 	}
@@ -1002,7 +1131,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_ege
 		}
-		x = 25
+		x = 34
 		y = 28
 
 	}
@@ -1013,7 +1142,7 @@ focus_tree = {
 		prerequisite = {
 			focus = newfocus_31
 		}
-		x = 23
+		x = 32
 		y = 24
 
 	}
@@ -1024,7 +1153,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_friendsstr
 		}
-		x = 27
+		x = 36
 		y = 24
 
 	}
@@ -1035,19 +1164,19 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_itogi
 		}
-		x = 25
+		x = 34
 		y = 29
 
 	}
 	focus = {
-		id = VIC_razrabotka
+		id = VIK_razrabotka
 		icon = GFX_focus_ARG_develop_the_electricity_sector
 		cost = 10,00
 		prerequisite = {
 			focus = VIK_defence
 			focus = VIK_rypnytsa
 		}
-		x = 41
+		x = 50
 		y = 9
 
 	}
@@ -1056,9 +1185,9 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10,00
 		prerequisite = {
-			focus = VIC_razrabotka
+			focus = VIK_razrabotka
 		}
-		x = 41
+		x = 50
 		y = 10
 
 	}
@@ -1069,7 +1198,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_zavod
 		}
-		x = 41
+		x = 50
 		y = 11
 
 	}
@@ -1080,7 +1209,7 @@ focus_tree = {
 		prerequisite = {
 			focus = newfocus_56
 		}
-		x = 41
+		x = 50
 		y = 12
 
 	}
@@ -1091,7 +1220,7 @@ focus_tree = {
 		prerequisite = {
 			focus = newfocus_57
 		}
-		x = 38
+		x = 47
 		y = 13
 
 	}
@@ -1102,7 +1231,7 @@ focus_tree = {
 		prerequisite = {
 			focus = newfocus_57
 		}
-		x = 41
+		x = 50
 		y = 13
 
 	}
@@ -1113,7 +1242,7 @@ focus_tree = {
 		prerequisite = {
 			focus = newfocus_57
 		}
-		x = 44
+		x = 53
 		y = 13
 
 	}
@@ -1124,7 +1253,7 @@ focus_tree = {
 		prerequisite = {
 			focus = 2025
 		}
-		x = 25
+		x = 34
 		y = 30
 
 	}
@@ -1135,7 +1264,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_18Y
 		}
-		x = 25
+		x = 34
 		y = 31
 
 	}
@@ -1146,7 +1275,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_ukrepleniepatsani
 		}
-		x = 25
+		x = 34
 		y = 32
 
 	}
@@ -1157,7 +1286,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_egeend
 		}
-		x = 23
+		x = 32
 		y = 33
 
 	}
@@ -1168,7 +1297,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_egeend
 		}
-		x = 27
+		x = 36
 		y = 33
 
 	}
@@ -1179,8 +1308,14 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_helpILY
 		}
-		x = 25
+		x = 34
 		y = 35
+		completion_reward = {
+		add_victory_points = {
+        province = 11551
+        value = 10
+        }
+		}
 
 	}
 	focus = {
@@ -1193,7 +1328,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = VIK_niggerfaggot
 		}
-		x = 23
+		x = 32
 		y = 36
 
 	}
@@ -1207,7 +1342,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = VIK_SPBpatsani
 		}
-		x = 27
+		x = 36
 		y = 36
 
 	}
@@ -1221,7 +1356,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_vypysknoy
 		}
-		x = 25
+		x = 34
 		y = 34
 
 	}
@@ -1233,7 +1368,7 @@ focus_tree = {
 			focus = VIK_niggerfaggot
 			focus = VIK_SPBpatsani
 		}
-		x = 25
+		x = 34
 		y = 37
 
 	}
@@ -1244,7 +1379,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_industry12
 		}
-		x = 3
+		x = 13
 		y = 6
 
 	}
@@ -1255,7 +1390,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_industry16
 		}
-		x = 6
+		x = 16
 		y = 7
 
 	}
@@ -1269,7 +1404,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = VIK_industry19
 		}
-		x = 5
+		x = 15
 		y = 8
 
 	}
@@ -1283,7 +1418,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = VIK_industry18
 		}
-		x = 7
+		x = 17
 		y = 8
 
 	}
@@ -1295,7 +1430,7 @@ focus_tree = {
 			focus = VIK_industry19
 			focus = VIK_industry18
 		}
-		x = 6
+		x = 16
 		y = 9
 
 	}
@@ -1307,7 +1442,7 @@ focus_tree = {
 			focus = VIK_industry24
 			focus = VIK_industry23
 		}
-		x = 14
+		x = 24
 		y = 9
 
 	}
@@ -1324,7 +1459,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_industry25
 		}
-		x = 10
+		x = 20
 		y = 11
 
 	}

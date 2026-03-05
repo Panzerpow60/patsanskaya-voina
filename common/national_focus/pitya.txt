@@ -14,6 +14,10 @@ focus_tree = {
 		cost = 10,00
 		x = 35
 		y = 0
+		completion_reward = { 
+		     country_event = viktor.2
+		}
+
 
 	}
 	focus = {
@@ -22,6 +26,29 @@ focus_tree = {
 		cost = 10,00
 		x = 50
 		y = 6
+		available = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				OR = {
+					has_war = yes
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_dlc = "Man the Guns" }
+				}
+				OR = {
+					has_war = yes
+				}
+			}
+		}
+		completion_reward = {
+		country_event = viktor.6
+		}
+
+
 
 	}
 	focus = {
@@ -38,6 +65,29 @@ focus_tree = {
 		cost = 10,00
 		x = 50
 		y = 1
+		completion_reward = {
+		            255 = {  
+	   		         add_building_construction = {
+							type = bunker
+							level = 1
+							province = {
+								id = 6343
+							}
+						}
+					}
+					255 = {
+					add_building_construction = {
+						type = supply_node
+						level = 1
+						province = 6343
+						instant_build = yes
+					}
+					build_railway = {
+						path = { 9258 6248 6291 9324 376 9276 6343 }
+					}
+				}
+				}
+
 
 	}
 	focus = {
@@ -308,6 +358,10 @@ focus_tree = {
 		}
 		x = 35
 		y = 1
+		completion_reward = { 
+		country_event = viktor.4
+		}
+
 
 	}
 	focus = {
@@ -330,6 +384,11 @@ focus_tree = {
 		}
 		x = 33
 		y = 3
+		completion_reward = {
+		add_stability = 0.05 
+		add_political_power = 30
+		}
+
 
 	}
 	focus = {
@@ -341,6 +400,10 @@ focus_tree = {
 		}
 		x = 35
 		y = 3
+		completion_reward = {
+		    country_event = viktor.7
+		}
+
 
 	}
 	focus = {
@@ -352,6 +415,31 @@ focus_tree = {
 		}
 		x = 37
 		y = 3
+		completion_reward = { 
+		country_event = viktor.5
+		add_political_power = 10
+		diplomatic_relation = {
+            country = ILY
+            relation = non_aggression_pact
+            active = yes
+			}
+		diplomatic_relation = {
+            country = SAS
+            relation = non_aggression_pact
+            active = yes
+			}
+		diplomatic_relation = {
+            country = NAN
+            relation = non_aggression_pact
+            active = yes
+			}
+		diplomatic_relation = {
+            country = NKD
+            relation = non_aggression_pact
+            active = yes
+			}
+		}
+
 
 	}
 	focus = {
@@ -369,6 +457,28 @@ focus_tree = {
 		}
 		x = 35
 		y = 4
+		available = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				OR = {
+					date > 2023.09.01
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_dlc = "Man the Guns" }
+				}
+				OR = {
+					date > 2023.09.01
+				}
+			}
+		}
+		completion_reward = {
+		country_event = viktor.13
+		}
+
 
 	}
 	focus = {
@@ -380,6 +490,11 @@ focus_tree = {
 		}
 		x = 35
 		y = 5
+		completion_reward = {
+		    add_political_power = 10
+			country_event = viktor.8
+		}
+
 
 	}
 	focus = {
@@ -391,6 +506,10 @@ focus_tree = {
 		}
 		x = 35
 		y = 6
+		completion_reward = {
+		add_stability = 0.1
+		}
+
 
 	}
 	focus = {
@@ -402,6 +521,28 @@ focus_tree = {
 		}
 		x = 35
 		y = 7
+		available = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				OR = {
+					date > 2024.01.01
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_dlc = "Man the Guns" }
+				}
+				OR = {
+					date > 2024.01.01
+				}
+			}
+		}
+		completion_reward = {
+		country_event = viktor.9
+		}
+
 
 	}
 	focus = {
@@ -424,6 +565,10 @@ focus_tree = {
 		}
 		x = 35
 		y = 9
+		completion_reward = {
+		country_event = viktor.3
+		}
+
 
 	}
 	focus = {
@@ -435,6 +580,10 @@ focus_tree = {
 		}
 		x = 35
 		y = 10
+		completion_reward = {
+		country_event = viktor.10
+		}
+
 
 	}
 	focus = {
@@ -446,6 +595,15 @@ focus_tree = {
 		}
 		x = 35
 		y = 11
+		completion_reward = {
+		add_threat = 5
+		    add_timed_idea = {
+            idea = VIK_nestabilnost
+             days = 100
+			}
+        }
+
+
 
 	}
 	focus = {
@@ -457,6 +615,21 @@ focus_tree = {
 		}
 		x = 35
 		y = 12
+		completion_reward = {
+		add_threat = 4
+		every_country = {
+				limit = {
+					AND = {
+						OR = {
+							original_tag = NKD
+						}
+					}
+				}
+				country_event = kudinov.1
+
+				}
+			}
+
 
 	}
 	focus = {
@@ -485,6 +658,26 @@ focus_tree = {
 		}
 		x = 38
 		y = 13
+		completion_reward = {
+		add_threat = 3`
+		add_war_support = 0.05
+		diplomatic_relation = {
+            country = ILY
+            relation = non_aggression_pact
+            active = no
+			}
+		diplomatic_relation = {
+            country = SAS
+            relation = non_aggression_pact
+            active = no
+			}
+		diplomatic_relation = {
+            country = NAN
+            relation = non_aggression_pact
+            active = no
+			}
+		}
+
 
 	}
 	focus = {
@@ -497,6 +690,37 @@ focus_tree = {
 		}
 		x = 35
 		y = 14
+		completion_reward = {
+		add_threat = 8
+		unlock_decision_category_tooltip = VIK_guide_huinya
+		every_country = {
+				limit = {
+					AND = {
+						OR = {
+							original_tag = ILY
+						}
+					}
+				}
+				country_event = ilya.14
+
+				}
+		every_country = {
+				limit = {
+					AND = {
+						OR = {
+							original_tag = SAS
+						}
+					}
+				}
+				country_event = sasha.1
+
+				}
+		add_state_claim = 250
+		add_state_claim = 258
+		add_state_claim = 252
+		add_state_claim = 401
+		}
+
 
 	}
 	focus = {
@@ -508,6 +732,10 @@ focus_tree = {
 		}
 		x = 35
 		y = 15
+		completion_reward = {
+		country_event = viktor.12
+		}
+
 
 	}
 	focus = {
@@ -522,6 +750,10 @@ focus_tree = {
 		}
 		x = 38
 		y = 16
+		completion_reward = {
+		add_ideas = VIK_love
+		}
+
 
 	}
 	focus = {
@@ -533,6 +765,31 @@ focus_tree = {
 		}
 		x = 38
 		y = 17
+		completion_reward = {
+			add_timed_idea = {
+             idea = VIK_podgotovka
+             days = 200
+            }
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+
+			random_core_state = {
+				limit = {
+					ROOT = { controls_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 10
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+				prioritize = { 946 945 } #optional: to pick those states first if they fulfill the limit
+				
+			}
+		}
+
 
 	}
 	focus = {
@@ -544,6 +801,10 @@ focus_tree = {
 		}
 		x = 38
 		y = 18
+		completion_reward = { 
+		     country_event = viktor.1 
+		}
+
 
 	}
 	focus = {
@@ -555,6 +816,16 @@ focus_tree = {
 		}
 		x = 38
 		y = 19
+		completion_reward = {
+        news_event = news.414
+		damage_building = {
+              type = industrial_complex
+              state = 255
+              damage = 2
+			 }
+		}
+
+
 
 	}
 	focus = {
@@ -566,6 +837,13 @@ focus_tree = {
 		}
 		x = 38
 		y = 20
+		completion_reward = {
+		add_timed_idea = {
+		idea = VIK_sportmaster
+		days = 200
+		}
+		}
+
 
 	}
 	focus = {
@@ -577,6 +855,10 @@ focus_tree = {
 		}
 		x = 38
 		y = 21
+		completion_reward = {
+		country_event = viktor.11
+		}
+
 
 	}
 	focus = {
@@ -605,6 +887,78 @@ focus_tree = {
 		}
 		x = 39
 		y = 22
+		completion_reward = {
+		    news_event = news.432
+			news_event = news.431
+		    country_event = superevents.504
+			add_timed_idea = {
+			idea = VIK_patriot
+			days = 45
+			}
+			every_country = {
+				limit = {
+					AND = {
+						OR = {
+							original_tag = ILY
+						}
+					}
+				}
+				country_event = ilya.33
+
+				}
+				every_country = {
+				limit = {
+					AND = {
+						OR = {
+							original_tag = SAS
+						}
+					}
+				}
+				country_event = sasha.21
+
+				}
+				every_country = {
+				limit = {
+					AND = {
+						OR = {
+							original_tag = NAN
+						}
+					}
+				}
+				country_event = andreev.11
+
+				}
+				every_country = {
+				limit = {
+					AND = {
+						OR = {
+							original_tag = NKD
+						}
+					}
+				}
+				country_event = kudinov.12
+
+				}
+		     add_stability = -0.10
+		     add_war_support = 0.10
+		     declare_war_on = { 
+		     target = ILY
+			 type = annex_everything
+			}
+			declare_war_on = { 
+		     target = NAN
+			 type = annex_everything
+			}
+			declare_war_on = { 
+		     target = NKD
+			 type = annex_everything
+			}
+			declare_war_on = { 
+		     target = SAS
+			 type = annex_everything
+			}
+		}
+
 
 	}
 	focus = {
@@ -616,6 +970,10 @@ focus_tree = {
 		}
 		x = 39
 		y = 23
+		completion_reward = {
+		country_event = viktor.14
+		}
+
 
 	}
 	focus = {
@@ -627,6 +985,10 @@ focus_tree = {
 		}
 		x = 39
 		y = 24
+		completion_reward = {
+		add_ideas = VIK_sam
+		}
+
 
 	}
 	focus = {
@@ -638,6 +1000,14 @@ focus_tree = {
 		}
 		x = 45
 		y = 1
+		completion_reward = {
+		       add_tech_bonus = {
+               bonus = 0.5
+               uses = 1
+               category = infantry_weapons
+			}
+		}
+
 
 	}
 	focus = {
@@ -718,6 +1088,15 @@ focus_tree = {
 		}
 		x = 50
 		y = 7
+		completion_reward = {
+		      add_manpower = 100000
+			  add_equipment_to_stockpile = {
+			  type = infantry_equipment
+              amount = 10000
+              producer = GER
+			}
+		}
+
 
 	}
 	focus = {
@@ -727,8 +1106,15 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_mobilis
 		}
+		mutually_exclusive = {
+			focus = VIK_defence
+		}
 		x = 48
 		y = 8
+		completion_reward = {
+		add_ideas = VIK_sever1
+		}
+
 
 	}
 	focus = {
@@ -775,8 +1161,16 @@ focus_tree = {
 		prerequisite = {
 			focus = VIK_mobilis
 		}
+		mutually_exclusive = {
+			focus = VIK_rypnytsa
+		}
 		x = 52
 		y = 8
+		completion_reward = {
+		add_ideas = VIK_zapad1
+		}
+
+
 
 	}
 	focus = {
@@ -788,6 +1182,14 @@ focus_tree = {
 		}
 		x = 57
 		y = 1
+		completion_reward = {
+		add_doctrine_cost_reduction = {
+	           cost_reduction = 0.5
+	           uses = 2
+	           category = land_doctrine
+			}
+		}
+
 
 	}
 	focus = {
@@ -802,6 +1204,15 @@ focus_tree = {
 		}
 		x = 55
 		y = 2
+		available = {
+			OR = {
+				has_full_control_of_state = 255
+				has_full_control_of_state = 239
+			}
+		}
+		
+
+
 
 	}
 	focus = {
@@ -816,6 +1227,8 @@ focus_tree = {
 		}
 		x = 59
 		y = 2
+		
+
 
 	}
 	focus = {
@@ -828,6 +1241,18 @@ focus_tree = {
 		}
 		x = 57
 		y = 3
+		completion_reward = {
+		create_corps_commander = {
+    name = "Джон Кесслер"
+	picture = "Portrait_Kessler.dds"
+	traits = { infantry_officer }
+	skill = 4
+	attack_skill = 2
+	defence_skill = 1
+	planning_skill = 3
+	logistics_skill = 1
+}
+}
 
 	}
 	focus = {
@@ -1068,6 +1493,24 @@ focus_tree = {
 		}
 		x = 50
 		y = 9
+		completion_reward = {
+		       add_tech_bonus = {
+               bonus = 1
+               uses = 1
+               category = infantry_weapons
+			}
+			add_tech_bonus = {
+               bonus = 1
+               uses = 1
+               category = industry
+			}
+			add_tech_bonus = {
+               bonus = 0.5
+               uses = 2
+               category = artillery
+			}
+		}
+
 
 	}
 	focus = {
@@ -1079,6 +1522,22 @@ focus_tree = {
 		}
 		x = 50
 		y = 10
+		completion_reward = {
+		random_core_state = {
+				limit = {
+					ROOT = { controls_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				prioritize = { 946 945 } #optional: to pick those states first if they fulfill the limit
+				
+			}
+		}
+
 
 	}
 	focus = {
@@ -1090,6 +1549,14 @@ focus_tree = {
 		}
 		x = 50
 		y = 11
+		completion_reward = {
+		    swap_ideas = {
+				add_idea = VIK_voisko2
+				remove_idea = VIK_voisko1
+			}
+		}
+
+
 
 	}
 	focus = {
@@ -1101,6 +1568,57 @@ focus_tree = {
 		}
 		x = 50
 		y = 12
+		completion_reward = {
+		swap_ideas = {
+				add_idea = VIK_endsieg1
+				remove_idea = VIK_endsieg
+			}
+        }
+		available = {
+			has_war = yes
+			OR = {
+				surrender_progress > 0.1
+				casualties_k > 100
+			}
+		}
+		completion_reward = {
+		add_ideas = {
+			VIK_endsieg
+			}
+		         random_owned_controlled_state = {
+                 limit = { ROOT = { has_full_control_of_state = PREV } }
+                 prioritize = { 239 }
+                 create_unit = {
+                 division = "name = \"Divizya detey\" division_template = \"Divizya detey\" start_experience_factor = 0.05" 
+                 owner = VIK
+                }
+				}
+		        random_owned_controlled_state = {
+                limit = { ROOT = { has_full_control_of_state = PREV } }
+                prioritize = { 239 }
+                create_unit = {
+                division = "name = \"Divizya detey\" division_template = \"Divizya detey\" start_experience_factor = 0.05" 
+                owner = VIK
+                }
+		        }
+				random_owned_controlled_state = {
+                limit = { ROOT = { has_full_control_of_state = PREV } }
+                prioritize = { 239 }
+                create_unit = {
+                division = "name = \"Divizya detey\" division_template = \"Divizya detey\" start_experience_factor = 0.05" 
+                owner = VIK
+                }
+		        }
+		    random_owned_controlled_state = {
+            limit = { ROOT = { has_full_control_of_state = PREV } }
+            prioritize = { 239 }
+            create_unit = {
+            division = "name = \"Divizya detey\" division_template = \"Divizya detey\" start_experience_factor = 0.05" 
+            owner = VIK
+            }
+		    }
+		}
+
 
 	}
 	focus = {
@@ -1112,6 +1630,15 @@ focus_tree = {
 		}
 		x = 47
 		y = 13
+		completion_reward = {
+		swap_ideas = {
+				add_idea = VIK_endsieg1
+				remove_idea = VIK_endsieg
+			}
+        }
+
+	
+
 
 	}
 	focus = {

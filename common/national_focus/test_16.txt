@@ -525,6 +525,9 @@ focus_tree = {
 		id = ILY_MVD1
 		icon = GFX_goal_ILY_MVD
 		cost = 10,00
+		available = {
+		date > 2024.09.1
+		}
 		prerequisite = {
 			focus = ILY_ukrep
 		}
@@ -546,6 +549,9 @@ focus_tree = {
 		id = ILY_2024
 		icon = GFX_goal_ILY_2024
 		cost = 10,00
+		available = {
+		date > 2024.01.1
+		}
 		prerequisite = {
 			focus = ILY_ukrep
 		}
@@ -918,7 +924,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ILY_novitya
-		icon = GFX_goal_unknown
+		icon = GFX_goal_ILY_antivitya
 		cost = 10,00
 		prerequisite = {
 			focus = ILY_1stwar
@@ -928,6 +934,7 @@ focus_tree = {
 		}
 		x = 39
 		y = 15
+		
 
 	}
 	focus = {
@@ -957,7 +964,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ILY_niggerfaggot2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_ILY_coalition
 		cost = 10,00
 		prerequisite = {
 			focus = ILY_novitya
@@ -1008,6 +1015,49 @@ focus_tree = {
 		}
 		x = 39
 		y = 18
+		completion_reward = {
+		army_experience = 50
+		create_field_marshal = {
+    name = "Илья"
+	picture = "Portrait_Ilya.dds"
+	traits = {  }
+	skill = 5
+	attack_skill = 4
+	defence_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+		create_corps_commander = {
+    name = "Арсений Арутюнов"
+	picture = "Portrait_Arseny.dds"
+	traits = {  }
+	skill = 5
+	attack_skill = 3
+	defence_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+    name = "Кирилл Комов"
+	picture = "Portrait_Komow.dds"
+	traits = {  }
+	skill = 5
+	attack_skill = 3
+	defence_skill = 2
+	planning_skill = 1
+	logistics_skill = 3
+}
+create_corps_commander = {
+    name = "Роман Васильев"
+	picture = "Portrait_Romchik.dds"
+	traits = {  }
+	skill = 5
+	attack_skill = 2
+	defence_skill = 3
+	planning_skill = 4
+	logistics_skill = 2
+}
+}
 
 	}
 	focus = {
@@ -1064,6 +1114,9 @@ focus_tree = {
 		id = ILY_2kurs
 		icon = GFX_goal_unknown
 		cost = 0,00
+		available = {
+		date > 2024.09.1
+		}
 		prerequisite = {
 			focus = ILY_millitary3
 			focus = ILY_chistki
@@ -1099,6 +1152,9 @@ focus_tree = {
 		id = ILY_2025
 		icon = GFX_goal_unknown
 		cost = 10,00
+		available = {
+		date > 2025.01.1
+		}
 		prerequisite = {
 			focus = ILY_18y
 		}
@@ -1351,7 +1407,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ILY_goododnogr
-		icon = GFX_goal_unknown
+		icon = GFX_goal_ILY_kiraotn
 		cost = 10,00
 		available = {
 		date > 2025.06.30

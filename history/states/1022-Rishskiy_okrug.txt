@@ -1,0 +1,25 @@
+state={
+	id=1022
+	name="STATE_1022"
+	resources={
+		steel=30.000
+	}
+	provinces={
+		326 353 3316 3343 3477 6366 
+	}
+	history={
+		owner = VIK
+		buildings = {
+			infrastructure = 3 
+			arms_factory = 3
+		}
+		victory_points = {
+			3316 7
+		}
+		add_core_of = VIK
+	}
+	manpower=276891
+	state_category = large_city
+	buildings_max_level_factor=1.000
+	local_supplies=1.000
+}

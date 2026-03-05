@@ -1,0 +1,26 @@
+state={
+	id=1021
+	name="STATE_1021"
+	resources={
+		steel=5.000
+	}
+	provinces={
+		483 578 3426 6450 
+	}
+	history={
+		owner = VIK
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		add_core_of = VIK
+		victory_points = {
+			3426 5
+		}
+	}
+	manpower=75101
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = rural
+}
+

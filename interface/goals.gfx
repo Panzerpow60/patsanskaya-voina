@@ -10561,6 +10561,18 @@ spriteTypes = {
 	name = "GFX_goal_ILY_1stwar2"
 		texturefile = "gfx/interface/goals/goal_ILY_1stwar2.dds"	
 	}
+	SpriteType = {
+	name = "GFX_goal_ILY_kiraotn"
+		texturefile = "gfx/interface/goals/goal_ILY_kiraotn.dds"	
+	}
+	SpriteType = {
+	name = "GFX_goal_ILY_antivitya"
+		texturefile = "gfx/interface/goals/goal_ILY_antivitya.dds"	
+	}
+	SpriteType = {
+	name = "GFX_goal_ILY_coalition"
+		texturefile = "gfx/interface/goals/goal_ILY_coalition.dds"	
+	}
 	
 
 

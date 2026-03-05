@@ -14,10 +14,6 @@ focus_tree = {
 		cost = 10,00
 		x = 35
 		y = 0
-		completion_reward = { 
-		     country_event = viktor.2
-		}
-
 
 	}
 	focus = {
@@ -34,11 +30,6 @@ focus_tree = {
 		cost = 10,00
 		x = 50
 		y = 0
-		completion_reward = {
-		add_ideas = VIK_voisko1
-		country_event = viktor.16
-		}
-
 
 	}
 	focus = {
@@ -47,45 +38,6 @@ focus_tree = {
 		cost = 10,00
 		x = 50
 		y = 1
-		completion_reward = {
-		            255 = {  
-	   		         add_building_construction = {
-							type = bunker
-							level = 1
-							province = {
-								id = 6343
-							}
-						}
-					}
-					255 = {
-					add_building_construction = {
-						type = supply_node
-						level = 1
-						province = 6343
-						instant_build = yes
-					}
-					build_railway = {
-						path = { 9258 6248 6291 9324 376 9276 6343 }
-					}
-				}
-				}
-
-
-	}
-	focus = {
-		id = VIK_army12
-		icon = GFX_goal_unknown
-		cost = 10,00
-		x = 57
-		y = 3
-
-	}
-	focus = {
-		id = VIK_army13
-		icon = GFX_goal_unknown
-		cost = 10,00
-		x = 57
-		y = 4
 
 	}
 	focus = {
@@ -94,38 +46,6 @@ focus_tree = {
 		cost = 10,00
 		x = 20
 		y = 0
-
-	}
-	focus = {
-		id = VIK_industry15
-		icon = GFX_goal_unknown
-		cost = 10,00
-		x = 20
-		y = 6
-
-	}
-	focus = {
-		id = VIK_industry20
-		icon = GFX_goal_unknown
-		cost = 10,00
-		x = 20
-		y = 7
-
-	}
-	focus = {
-		id = VIK_industry21
-		icon = GFX_goal_unknown
-		cost = 10,00
-		x = 20
-		y = 8
-
-	}
-	focus = {
-		id = VIK_industry26
-		icon = GFX_goal_unknown
-		cost = 10,00
-		x = 20
-		y = 9
 
 	}
 	focus = {
@@ -250,6 +170,50 @@ focus_tree = {
 
 	}
 	focus = {
+		id = VIK_industry15
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = VIK_industry13
+		}
+		x = 20
+		y = 6
+
+	}
+	focus = {
+		id = VIK_industry20
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = VIK_industry15
+		}
+		x = 20
+		y = 7
+
+	}
+	focus = {
+		id = VIK_industry21
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = VIK_industry20
+		}
+		x = 20
+		y = 8
+
+	}
+	focus = {
+		id = VIK_industry26
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = VIK_industry21
+		}
+		x = 20
+		y = 9
+
+	}
+	focus = {
 		id = VIK_industry7
 		icon = GFX_goal_unknown
 		cost = 10,00
@@ -344,10 +308,6 @@ focus_tree = {
 		}
 		x = 35
 		y = 1
-		completion_reward = { 
-		country_event = viktor.4
-		}
-
 
 	}
 	focus = {
@@ -359,10 +319,6 @@ focus_tree = {
 		}
 		x = 35
 		y = 2
-		completion_reward = { 
-		add_political_power = 50
-		}
-
 
 	}
 	focus = {
@@ -374,11 +330,6 @@ focus_tree = {
 		}
 		x = 33
 		y = 3
-		completion_reward = {
-		add_stability = 0.05 
-		add_political_power = 30
-		}
-
 
 	}
 	focus = {
@@ -390,10 +341,6 @@ focus_tree = {
 		}
 		x = 35
 		y = 3
-		completion_reward = {
-		    country_event = viktor.7
-		}
-
 
 	}
 	focus = {
@@ -405,32 +352,6 @@ focus_tree = {
 		}
 		x = 37
 		y = 3
-		completion_reward = { 
-		country_event = viktor.5
-		add_political_power = 10
-		diplomatic_relation = {
-            country = ILY
-            relation = non_aggression_pact
-            active = yes
-			}
-		diplomatic_relation = {
-            country = SAS
-            relation = non_aggression_pact
-            active = yes
-			}
-		diplomatic_relation = {
-            country = NAN
-            relation = non_aggression_pact
-            active = yes
-			}
-		diplomatic_relation = {
-            country = NKD
-            relation = non_aggression_pact
-            active = yes
-			}
-		}
-
-
 
 	}
 	focus = {
@@ -448,29 +369,6 @@ focus_tree = {
 		}
 		x = 35
 		y = 4
-		available = {
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				OR = {
-					date > 2023.09.01
-				}
-			}
-			if = {
-				limit = {
-					NOT = { has_dlc = "Man the Guns" }
-				}
-				OR = {
-					date > 2023.09.01
-				}
-			}
-		}
-		completion_reward = {
-		country_event = viktor.13
-		}
-
-
 
 	}
 	focus = {
@@ -482,11 +380,6 @@ focus_tree = {
 		}
 		x = 35
 		y = 5
-		completion_reward = {
-		    add_political_power = 10
-			country_event = viktor.8
-		}
-
 
 	}
 	focus = {
@@ -498,10 +391,6 @@ focus_tree = {
 		}
 		x = 35
 		y = 6
-		completion_reward = {
-		add_stability = 0.1
-		}
-
 
 	}
 	focus = {
@@ -513,28 +402,6 @@ focus_tree = {
 		}
 		x = 35
 		y = 7
-		available = {
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				OR = {
-					date > 2024.01.01
-				}
-			}
-			if = {
-				limit = {
-					NOT = { has_dlc = "Man the Guns" }
-				}
-				OR = {
-					date > 2024.01.01
-				}
-			}
-		}
-		completion_reward = {
-		country_event = viktor.9
-		}
-
 
 	}
 	focus = {
@@ -952,6 +819,29 @@ focus_tree = {
 
 	}
 	focus = {
+		id = VIK_army12
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = VIK_vidr
+			focus = VIK_pitya
+		}
+		x = 57
+		y = 3
+
+	}
+	focus = {
+		id = VIK_army13
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = VIK_army12
+		}
+		x = 57
+		y = 4
+
+	}
+	focus = {
 		id = VIK_army3
 		icon = GFX_goal_unknown
 		cost = 10,00
@@ -1310,12 +1200,6 @@ focus_tree = {
 		}
 		x = 34
 		y = 35
-		completion_reward = {
-		add_victory_points = {
-        province = 11551
-        value = 10
-        }
-		}
 
 	}
 	focus = {

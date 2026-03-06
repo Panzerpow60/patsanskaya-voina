@@ -527,6 +527,7 @@ focus_tree = {
 		cost = 10,00
 		available = {
 		date > 2024.09.1
+		has_idea = ILY_musora
 		}
 		prerequisite = {
 			focus = ILY_ukrep
@@ -621,6 +622,15 @@ focus_tree = {
 		}
 		x = 44
 		y = 10
+		completion_reward = {
+		country_event = ilya.35
+		add_stability = 0.06
+		swap_ideas = {
+		remove_idea = ILY_MVD
+		add_idea = ILY_MVD1
+		}
+		}
+
 
 	}
 	focus = {
@@ -657,6 +667,40 @@ focus_tree = {
 		}
 		x = 48
 		y = 10
+		completion_reward = {
+		random_owned_controlled_state = {
+          limit = { ROOT = { has_full_control_of_state = PREV } }
+          prioritize = { 252 }
+          create_unit = {
+            division = "name = \"Divizya Pehoti\" division_template = \"Divizya Pehoti\" start_experience_factor = 0.5" 
+            owner = ILY
+          }
+        }
+		random_owned_controlled_state = {
+          limit = { ROOT = { has_full_control_of_state = PREV } }
+          prioritize = { 252 }
+          create_unit = {
+            division = "name = \"Divizya Pehoti\" division_template = \"Divizya Pehoti\" start_experience_factor = 0.5" 
+            owner = ILY
+          }
+        }
+		random_owned_controlled_state = {
+          limit = { ROOT = { has_full_control_of_state = PREV } }
+          prioritize = { 253 }
+          create_unit = {
+            division = "name = \"Divizya Pehoti\" division_template = \"Divizya Pehoti\" start_experience_factor = 0.5" 
+            owner = ILY
+          }
+        }
+		random_owned_controlled_state = {
+          limit = { ROOT = { has_full_control_of_state = PREV } }
+          prioritize = { 253 }
+          create_unit = {
+            division = "name = \"Motostrelki\" division_template = \"Motostrelki\" start_experience_factor = 0.5" 
+            owner = ILY
+          }
+        }
+		}
 
 	}
 	focus = {
@@ -672,6 +716,10 @@ focus_tree = {
 		x = 46
 		y = 11
 		completion_reward = {
+		swap_ideas = {
+		remove_idea = ILY_MVD1
+		add_idea = ILY_MVD11
+		}
 		add_political_power = 100
 		news_event = news.429
 		add_ideas = ILY_Zakon
@@ -880,6 +928,26 @@ focus_tree = {
 		}
 		x = 32
 		y = 12
+		completion_reward = {
+		add_ideas = tot_economic_mobilisation
+		add_ideas = limited_conscription
+		random_owned_controlled_state = {
+          limit = { ROOT = { has_full_control_of_state = PREV } }
+          prioritize = { 252 }
+          create_unit = {
+            division = "name = \"Divizya Pehoti\" division_template = \"Divizya Pehoti\" start_experience_factor = 0.5" 
+            owner = ILY
+          }
+        }
+		random_owned_controlled_state = {
+          limit = { ROOT = { has_full_control_of_state = PREV } }
+          prioritize = { 252 }
+          create_unit = {
+            division = "name = \"Divizya Pehoti\" division_template = \"Divizya Pehoti\" start_experience_factor = 0.5" 
+            owner = ILY
+          }
+        }
+		}
 
 	}
 	focus = {
@@ -900,11 +968,20 @@ focus_tree = {
 		id = ILY_1stwar
 		icon = GFX_goal_ILY_1stwar2
 		cost = 10,00
+		available = {
+		has_war_with = VIK
+		}
 		prerequisite = {
 			focus = ILY_extr
 		}
 		x = 35
 		y = 14
+		completion_reward = {
+		add_timed_idea = {
+		idea = NKD_shock
+		days = 90
+		}
+		}
 
 	}
 	focus = {
@@ -934,6 +1011,14 @@ focus_tree = {
 		}
 		x = 39
 		y = 15
+		completion_reward = {
+		add_war_support = 0.1
+		add_popularity = {
+		ideology = fascism 
+		popularity = 0.05
+		}
+		}
+
 		
 
 	}
@@ -960,6 +1045,20 @@ focus_tree = {
 		}
 		x = 35
 		y = 12
+		completion_reward = {
+		            252 = {  
+	   		         add_building_construction = {
+							type = bunker
+							level = 1
+							province = {
+								id = 11324
+								id = 11394
+								id = 9407
+								id = 6410
+							}
+						}
+					}
+					}
 
 	}
 	focus = {
@@ -1124,6 +1223,9 @@ create_corps_commander = {
 		}
 		x = 35
 		y = 19
+		completion_reward = {
+		add_ideas = ILY_musora
+		}
 
 	}
 	focus = {
@@ -1307,6 +1409,10 @@ create_corps_commander = {
 		}
 		x = 35
 		y = 24
+		completion_reward = {
+		add_ideas = ILY_transport
+		add_ideas = ILY_dvinka
+		}
 
 	}
 	focus = {
@@ -1482,12 +1588,19 @@ create_corps_commander = {
 		}
 		x = 33
 		y = 28
+		completion_reward = {
+		add_ideas = ILY_bf1exp
+		army_experience = 25
+		}
 
 	}
 	focus = {
 		id = ILY_kiracrisis1
 		icon = GFX_goal_unknown
 		cost = 10,00
+		available = {
+		has_completed_focus = ILY_goododnogr
+		}
 		prerequisite = {
 			focus = ILY_sea
 		}

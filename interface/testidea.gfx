@@ -412,6 +412,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/ILY_garantee.dds"
 	}
 	spriteType = {
+	    name = "GFX_idea_ILY_bf1exp"
+		texturefile = "gfx/interface/ideas/ILY_bf1exp.dds"
+	}
+	spriteType = {
 	    name = "GFX_idea_SAS_wdacha"
 		texturefile = "gfx/interface/ideas/SAS_wdacha.dds"
 	}

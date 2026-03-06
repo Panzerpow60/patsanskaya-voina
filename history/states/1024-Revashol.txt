@@ -1,0 +1,24 @@
+state={
+	id=1024
+	name="STATE_1024"
+	provinces={
+		11225 
+	}
+	state_category = town
+	history = {
+
+    owner = KRL
+    add_core_of = KRL
+	
+    victory_points = {
+      11225 25
+    } 
+    buildings = {
+      infrastructure = 3 
+      arms_factory = 2
+    }
+   }
+	manpower=257897
+	buildings_max_level_factor=1.000
+	local_supplies=2.000
+}

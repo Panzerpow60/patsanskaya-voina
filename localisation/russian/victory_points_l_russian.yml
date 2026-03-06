@@ -1331,7 +1331,7 @@
  VICTORY_POINTS_108: "Сыктывкар"
  VICTORY_POINTS_11617: "Сухуми"
  VICTORY_POINTS_11614: "Нальчик"
- VICTORY_POINTS_11523: "Энгельс"
+ VICTORY_POINTS_11523: "Таверна"
  GER_VICTORY_POINTS_11523: "Козакенштадт"
  RKM_VICTORY_POINTS_11523: "Козакенштадт"
  RKT_VICTORY_POINTS_11523: "Козакенштадт"
@@ -1874,10 +1874,12 @@
  VICTORY_POINTS_11351: "Сигмаград"
  VICTORY_POINTS_9245: "Гослингбург"
  VICTORY_POINTS_6230: "Мегагейск"
- VICTORY_POINTS_6341: "Город даунов"
+ VICTORY_POINTS_6341: "Малиновка"
  VICTORY_POINTS_6275: "Набережные члены"
  VICTORY_POINTS_365: "Тортуга"
  VICTORY_POINTS_11281: "Скеллиге"
  VICTORY_POINTS_11551: "Санкт-Петербургский технологический институт"
+ VICTORY_POINTS_3346: "Альпенштадт"
+      
  
  

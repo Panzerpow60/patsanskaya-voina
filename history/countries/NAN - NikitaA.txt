@@ -1,4 +1,4 @@
-﻿capital = 258
+﻿capital = 1026
 
 set_stability = 0.42
 set_war_support = 0.31

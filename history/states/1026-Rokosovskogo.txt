@@ -1,0 +1,22 @@
+state={
+	id=1026
+	name="STATE_1026"
+	provinces={
+		6398 
+	}
+	state_category = town
+	history = {
+    owner = NAN
+    buildings = {
+      infrastructure = 3 
+      arms_factory = 1
+    }
+    add_core_of = NAN
+    victory_points = {
+      6398 25
+    }
+	}
+	manpower=234123
+	buildings_max_level_factor=1.000
+	local_supplies=1.000
+}

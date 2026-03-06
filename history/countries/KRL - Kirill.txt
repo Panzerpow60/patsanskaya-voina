@@ -1,4 +1,4 @@
-﻿capital = 251
+﻿capital = 1024
 
 if = {
 	limit = {

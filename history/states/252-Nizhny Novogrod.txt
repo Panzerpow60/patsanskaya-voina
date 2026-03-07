@@ -1,47 +1,37 @@
-
 state={
 	id=252
 	name="STATE_252"
-	manpower = 4432141
-	resources = {
-	oil = 10
-	tungsten = 9
+	resources={
+		oil=10.000
+		tungsten=9.000
 	}
-	
-	state_category = megalopolis
-
-	history={
-		owner = ILY
-		victory_points = {
-			11375 50
-		}
-		victory_points = {
-			11344 25
-		}
-		victory_points = {
-			6299 6
-		}
-		victory_points = {
-			12 4
-		}
-		victory_points = {
-			9291 4
-		}
-		victory_points = {
-			6410 10
-		}
-		buildings = {
-			infrastructure =  4
-			industrial_complex = 6
-			arms_factory = 3
-			air_base = 3
-		}
-		add_core_of = ILY
-	}
-
 	provinces={
-		12 256 270 297 368 3224 3245 3261 3285 3303 3349 3352 3383 6149 6231 6295 6299 6327 6370 6374 6392 6410 9291 9298 9325 9358 9360 9368 9389 9407 11275 11277 11324 11340 11344 11375 11394 
+		297 3224 3285 3303 3352 3383 6231 6295 6299 6327 6370 6374 6392 6410 9298 9325 9360 9389 9407 11277 11324 11344 11394 
 	}
-
-	local_supplies=4.0 
+	history={
+    owner = ILY
+    victory_points = {
+      11344 20
+    }
+    victory_points = {
+      6299 6
+    }
+    victory_points = {
+      12 4
+    }
+    victory_points = {
+      6410 10
+    }
+    buildings = {
+      infrastructure =  4
+      industrial_complex = 1 
+      arms_factory = 1
+      air_base = 3
+    }
+    add_core_of = ILY
+  }
+	manpower=3032141
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=4.000
 }

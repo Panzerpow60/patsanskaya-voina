@@ -1,0 +1,24 @@
+state={
+	id=1032
+	name="STATE_1032"
+	provinces={
+		11375 
+	}
+	history={
+    owner = ILY
+    victory_points = {
+      11375 25
+    }
+    buildings = {
+      infrastructure =  4
+      industrial_complex = 3 
+      arms_factory = 2
+      air_base = 1
+    }
+    add_core_of = ILY
+  }
+	manpower=1012345
+	state_category = city
+	buildings_max_level_factor=1.000
+	local_supplies=4.000
+}

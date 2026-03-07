@@ -1,0 +1,25 @@
+state={
+	id=1030
+	name="STATE_1030"
+	resources = {
+	aluminium=75.000
+	}
+	history={
+    owner = ILY
+    buildings = {
+      infrastructure = 1 
+      industrial_complex = 2
+    }
+    add_core_of = ILY
+    victory_points = {
+      214 4
+    }
+  }
+	provinces={
+		214 280 357 378 3202 3268 3339 3370 6316 6362 9278 9311 9356 11295 11362 
+	}
+	manpower=421431
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

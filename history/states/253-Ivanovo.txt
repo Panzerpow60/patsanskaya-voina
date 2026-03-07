@@ -1,35 +1,29 @@
-
 state={
 	id=253
 	name="STATE_253"
-	manpower = 1364395
-	resources = {
-	steel = 20
-	aluminium = 75
-	rubber = 9
+	resources={
+		steel=20.000
+		rubber=9.000
 	}
-	
-	state_category = megalopolis
+	state_category = city
 
-	history={
-		owner = ILY
-		buildings = {
-			infrastructure = 2 #was: 5
-			industrial_complex = 4
-			arms_factory = 3
-		}
-		add_core_of = ILY
-		victory_points = {
-			6269 3
-		}
-		victory_points = {
-			214 4
-		}
-	}
-
+  history={
+    owner = ILY
+    buildings = {
+      infrastructure = 2 
+      industrial_complex = 2
+      arms_factory = 3
+    }
+    add_core_of = ILY
+    victory_points = {
+      6269 3
+    }
+    
+  }
 	provinces={
-		214 280 346 357 378 3202 3240 3268 3339 3347 3370 6135 6215 6247 6269 6316 6358 6362 9033 9159 9257 9267 9278 9311 9356 11134 11239 11252 11295 11338 11362 
+		346 3240 3347 6135 6215 6247 6269 6358 9033 9159 9257 9267 11134 11239 11252 11338 
 	}
-
-	local_supplies=0.0 
+	manpower=864395
+	buildings_max_level_factor=1.000
+	local_supplies=1.000
 }

@@ -1,0 +1,22 @@
+state={
+	id=1031
+	name="STATE_1031"
+	provinces={
+		12 256 270 368 3245 3261 3349 6149 9291 9358 9368 11275 11340 
+	}
+	history={
+		owner = ILY
+		victory_points = {
+			9291 4
+		}
+		buildings = {
+			infrastructure =  2
+			industrial_complex = 2 
+		}
+		add_core_of = ILY
+	}
+	manpower=387654
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=1.000
+}

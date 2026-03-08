@@ -3,6 +3,7 @@ category = {
 	name = "SuperEvents"
 	soundeffects = {	
 		superevents_1st_patsaniwar
+		superevents_kudrovowar
 		superevents_kiravstr
 		superevents_kirarast
 	}

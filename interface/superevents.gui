@@ -255,6 +255,12 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 		iconType = {
+			name = "superevents_kudrovowar"
+			quadTextureSprite ="GFX_superevents_kudrovowar"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
 			name = "superevents_kiravstr"
 			quadTextureSprite ="GFX_superevents_kiravstr"
 			position = { x = 0 y = 0 }

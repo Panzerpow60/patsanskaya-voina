@@ -14,6 +14,10 @@ focus_tree = {
 		cost = 10,00
 		x = 43
 		y = 0
+		completion_reward = {
+        country_event = viktor.4
+		}
+
 
 	}
 	focus = {
@@ -22,6 +26,14 @@ focus_tree = {
 		cost = 10,00
 		x = 26
 		y = 0
+		completion_reward = {
+		add_tech_bonus = {
+        bonus = 0.3
+        uses = 2
+        category = industry
+        }
+		}
+
 
 	}
 	focus = {
@@ -154,6 +166,26 @@ focus_tree = {
 		}
 		x = 26
 		y = 1
+		completion_reward = {
+		1032 = {
+				limit = {
+					ROOT = { controls_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				prioritize = { 946 945 } #optional: to pick those states first if they fulfill the limit
+				
+			}
+			}
 
 	}
 	focus = {
@@ -165,6 +197,21 @@ focus_tree = {
 		}
 		x = 26
 		y = 2
+		completion_reward = {
+		1031 = {
+				limit = {
+					ROOT = { controls_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				prioritize = { 946 945 } #optional: to pick those states first if they fulfill the limit
+				
+			}
+			}
 
 	}
 	focus = {
@@ -234,6 +281,14 @@ focus_tree = {
 		}
 		x = 29
 		y = 1
+		completion_reward = {
+		news_event = news.422
+		swap_ideas = {
+        remove_idea = ILY_badroads
+        add_idea = ILY_noeffroad
+        }
+		}
+
 
 	}
 	focus = {
@@ -259,6 +314,14 @@ focus_tree = {
 		}
 		x = 31
 		y = 3
+		completion_reward = {
+		swap_ideas = {
+        remove_idea = ILY_noeffroad
+        add_idea = ILY_bestroads
+        }
+		country_event = ilya.32
+		}
+
 
 	}
 	focus = {
@@ -270,6 +333,19 @@ focus_tree = {
 		}
 		x = 31
 		y = 5
+		completion_reward = {
+		253 = {
+					add_building_construction = {
+						type = supply_node
+						level = 1
+						province = 6269
+						instant_build = yes
+					}
+					build_railway = {
+						path = { 11375 9389 6370 3347 9267 6269 }
+					}
+					}
+					}
 
 	}
 	focus = {
@@ -435,6 +511,10 @@ focus_tree = {
 		}
 		x = 43
 		y = 2
+		completion_reward = {
+        country_event = ilya.8
+        }
+
 
 	}
 	focus = {
@@ -475,6 +555,10 @@ focus_tree = {
 		}
 		x = 43
 		y = 4
+		completion_reward = {
+        country_event = ilya.10
+        }
+
 
 	}
 	focus = {
@@ -486,6 +570,10 @@ focus_tree = {
 		}
 		x = 43
 		y = 5
+		completion_reward = {
+        country_event = ilya.6
+        }
+
 
 	}
 	focus = {
@@ -519,6 +607,10 @@ focus_tree = {
 		}
 		x = 41
 		y = 6
+		completion_reward = {
+        unlock_decision_category_tooltip = ILY_edits
+        }
+
 
 	}
 	focus = {
@@ -564,6 +656,10 @@ focus_tree = {
 		}
 		x = 35
 		y = 8
+		completion_reward = {
+        country_event = viktor.9
+        }
+
 
 	}
 	focus = {
@@ -678,7 +774,7 @@ focus_tree = {
         }
 		random_owned_controlled_state = {
           limit = { ROOT = { has_full_control_of_state = PREV } }
-          prioritize = { 252 }
+          prioritize = { 1032 }
           create_unit = {
             division = "name = \"Divizya Pehoti\" division_template = \"Divizya Pehoti\" start_experience_factor = 0.5" 
             owner = ILY
@@ -694,7 +790,7 @@ focus_tree = {
         }
 		random_owned_controlled_state = {
           limit = { ROOT = { has_full_control_of_state = PREV } }
-          prioritize = { 253 }
+          prioritize = { 1030 }
           create_unit = {
             division = "name = \"Motostrelki\" division_template = \"Motostrelki\" start_experience_factor = 0.5" 
             owner = ILY
@@ -1609,6 +1705,10 @@ create_corps_commander = {
 		}
 		x = 37
 		y = 31
+		completion_reward = {
+		add_ideas = ILY_kirarst
+		}
+
 
 	}
 	focus = {
@@ -1631,6 +1731,33 @@ create_corps_commander = {
 		}
 		x = 38
 		y = 33
+		completion_reward = {
+		every_country = {
+				limit = {
+					AND = {
+						OR = {
+							original_tag = GNL
+						}
+					}
+				}
+				declare_war_on = {
+                target = ILY
+                type = annex_everything
+                }
+
+				}
+			
+		
+		country_event = superevents.507
+		news_event = news.433
+		swap_ideas = {
+		remove_idea = ILY_kirarst
+		add_idea = ILY_kirarst3
+		}
+		country_event = ilya.27
+		}
+		
+
 
 	}
 	focus = {
@@ -1679,6 +1806,15 @@ create_corps_commander = {
 		}
 		x = 35
 		y = 34
+		completion_reward = {
+		country_event = ilya.36
+		swap_ideas = {
+		remove_idea = ILY_kirarst3
+		add_idea = ILY_kirarst1
+		}
+		add_ideas = ILY_garantee
+		}
+
 
 	}
 	focus = {

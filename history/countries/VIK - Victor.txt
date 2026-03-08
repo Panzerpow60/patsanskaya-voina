@@ -80,7 +80,7 @@ if = {
 add_ideas = {
     VIK_slaboumie
 	VIK_autarky
-	VIK_airforce
+	VIK_badairforce
 
 	
 

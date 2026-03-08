@@ -3,6 +3,10 @@ sound = {
 	file = "superevents/1st_patsaniwar.wav"
 }
 sound = {
+	name = "kudrovowar"
+	file = "superevents/kudrovowar.wav"
+}
+sound = {
 	name = "kiravstr"
 	file = "superevents/kiravstr.wav"
 }

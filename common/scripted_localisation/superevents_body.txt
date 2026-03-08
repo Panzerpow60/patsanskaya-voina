@@ -237,6 +237,12 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			has_global_flag = SE_kudrovowar
+		}
+		localization_key = SE_kudrovowar_body
+	}
+	text = {
+		trigger = {
 			has_global_flag = SE_kiravstr
 		}
 		localization_key = SE_kiravstr_body

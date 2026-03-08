@@ -192,6 +192,18 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/VIK_airforce.dds"
 	}
 	spriteType = {
+	    name = "GFX_idea_VIK_badairforce"
+		texturefile = "gfx/interface/ideas/VIK_airforce.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_VIK_NEP"
+		texturefile = "gfx/interface/ideas/VIK_airforce.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_VIK_VPK"
+		texturefile = "gfx/interface/ideas/VIK_airforce.dds"
+	}
+	spriteType = {
 	    name = "GFX_idea_NAN_bunt1"
 		texturefile = "gfx/interface/ideas/NAN_bunt.dds"
 	}

@@ -79,6 +79,45 @@ country_event = {
 		ILY = {
 			has_completed_focus = ILY_sea
 		}
+		ILY = {
+			has_war_with = GNL
+			NOT = {
+				original_tag = GNL
+			}
+		}
+		NOT = {
+			has_global_flag = SE_superevents_activate
+		}
+		
+	}
+	option = {
+		name = superevents.0.a
+	}
+}
+country_event = {
+	id = superevents.507
+	title = superevents.507.t
+	desc = superevents.507.d
+	
+	immediate = {
+		set_global_flag = SE_superevents_activate
+		set_global_flag = SE_kudrovowar
+		
+		#cue funni music
+		sound_effect = superevents_kudrovowar
+	}
+
+	hidden = yes
+	
+	fire_only_once = yes
+
+	trigger = {
+		NOT = {
+			has_global_flag = SE_superevents_activate
+		}
+		ILY = {
+			has_completed_focus = ILY_kiracrisis3
+		}
 		NOT = {
 			has_global_flag = SE_superevents_activate
 		}

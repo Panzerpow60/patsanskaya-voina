@@ -168,6 +168,10 @@ spriteTypes = {
 		textureFile = "/gfx/superevents_pictures/superevents_1st_patsaniwar.dds"
 	}
 	spriteType = {
+		name = "GFX_superevents_kudrovowar"
+		textureFile = "/gfx/superevents_pictures/superevents_kudrovowar.dds"
+	}
+	spriteType = {
 		name = "GFX_superevents_kiravstr"
 		textureFile = "/gfx/superevents_pictures/superevents_kiravstr.dds"
 	}

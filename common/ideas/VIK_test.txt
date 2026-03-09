@@ -626,3 +626,45 @@ ideas = {
 			}
 		}
 	}
+ideas = {
+    country = {
+	     VIK_rasstrel = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_idea_VIK_airforce
+			  
+			  modifier = {
+			      stability_factor = -0.2
+				  war_support_factor = -0.2
+				  weekly_manpower = -2000
+				  consumer_goods_factor = 0.5
+				}
+			}
+		}
+	}
+ideas = {
+    country = {
+	     VIK_prodnalog = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_idea_VIK_airforce
+			  
+			  modifier = {
+			      stability_factor = -0.1
+				  consumer_goods_factor = -0.1
+				}
+			}
+		}
+	}

@@ -446,6 +446,35 @@ country_event = {
 		
 	}
 }
+country_event = {
+    id = viktor.18
+	title = viktor.18.t
+	desc = viktor.18.d
+	picture = GFX_report_event_chinese_soldiers_city_ruin
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+       
+    }
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = viktor.18.a
+		ai_chance = { factor = 50 }
+		trigger = { }
+		complete_national_focus = VIK_industry8
+	}
+	option = {
+	    name = viktor.18.b
+		ai_chance = { factor = 50 }
+		trigger = { }
+		complete_national_focus = VIK_industry9
+	}
+}
 }
 
 	

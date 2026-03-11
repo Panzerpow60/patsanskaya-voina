@@ -435,15 +435,16 @@ country_event = {
 	
 	option = {
 	    name = viktor.17.a
-		ai_chance = { factor = 50 }
+		ai_chance = { factor = 80 }
 		trigger = { }
+		add_ideas = VIK_granati
 		
 	}
 	option = {
 	    name = viktor.17.b
 		ai_chance = { factor = 50 }
 		trigger = { }
-		
+		add_ideas = VIK_pulemet
 	}
 }
 country_event = {

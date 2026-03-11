@@ -79,7 +79,6 @@ if = {
 
 add_ideas = {
     VIK_slaboumie
-	VIK_autarky
 	VIK_badairforce
 
 	

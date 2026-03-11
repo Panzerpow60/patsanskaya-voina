@@ -11,7 +11,7 @@ focus_tree = {
 	focus = {
 		id = VIK_Gofman
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 4,00
 		x = 35
 		y = 0
 		completion_reward = { 
@@ -54,9 +54,13 @@ focus_tree = {
 	focus = {
 		id = VIK_voisko
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		x = 50
 		y = 0
+		completion_reward = {
+		add_ideas = VIK_voisko1
+		country_event = viktor.16
+		}
 
 	}
 	focus = {
@@ -65,8 +69,11 @@ focus_tree = {
 		cost = 10,00
 		x = 50
 		y = 1
+		prerequisite = {
+			focus = VIK_voisko
+		}
 		completion_reward = {
-		            255 = {  
+		            1020 = {  
 	   		         add_building_construction = {
 							type = bunker
 							level = 1
@@ -75,7 +82,7 @@ focus_tree = {
 							}
 						}
 					}
-					255 = {
+					1020 = {
 					add_building_construction = {
 						type = supply_node
 						level = 1
@@ -170,7 +177,13 @@ focus_tree = {
 		}
 		x = 12
 		y = 4
-
+		completion_reward = {
+		add_tech_bonus = {
+               bonus = 1.5
+               uses = 1
+               category = industry
+			}
+        }
 	}
 	focus = {
 		id = VIK_industry10
@@ -206,7 +219,13 @@ focus_tree = {
 		}
 		x = 13
 		y = 5
-
+		completion_reward = {
+		add_resource = {
+        type = oil
+        amount = 15
+        state = 1022
+        }
+	  }
 	}
 	focus = {
 		id = VIK_industry9
@@ -295,8 +314,15 @@ focus_tree = {
 			focus = VIK_industry8
 			focus = VIK_industry9
 		}
+		available = {
+		OR = {
+        NOT = { has_idea = VIK_prodnalog }
+		NOT = { has_idea = VIK_rasstrel }
+        }
+		  }
 		x = 20
 		y = 5
+		
 
 	}
 	focus = {
@@ -487,22 +513,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = VIK_school
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = VIK_2023
-		}
-		x = 35
-		y = 2
-
-	}
-	focus = {
 		id = VIK_OGE
 		icon = GFX_goal_unknown
 		cost = 10,00
 		prerequisite = {
-			focus = VIK_school
+			focus = VIK_2023
 		}
 		x = 33
 		y = 3
@@ -518,7 +533,7 @@ focus_tree = {
 		icon = GFX_focus_SWE_per_albin_bus
 		cost = 10,00
 		prerequisite = {
-			focus = VIK_school
+			focus = VIK_2023
 		}
 		x = 35
 		y = 3
@@ -533,7 +548,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10,00
 		prerequisite = {
-			focus = VIK_school
+			focus = VIK_2023
 		}
 		x = 37
 		y = 3
@@ -668,22 +683,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = VIK_school2
-		icon = GFX_focus_generic_university_1
-		cost = 10,00
-		prerequisite = {
-			focus = VIK_2024
-		}
-		x = 35
-		y = 8
-
-	}
-	focus = {
 		id = VIK_17y
 		icon = GFX_focus_BRA_cafe_com_leite_politics
 		cost = 10,00
 		prerequisite = {
-			focus = VIK_school2
+			focus = VIK_2024
 		}
 		x = 35
 		y = 9
@@ -1327,15 +1331,51 @@ focus_tree = {
 		x = 55
 		y = 2
 		available = {
-			OR = {
+			if = {
 				has_full_control_of_state = 255
 				has_full_control_of_state = 239
+				has_full_control_of_state = 1020
 			}
 		}
-		
-
-
-
+		completion_reward = {
+		             add_timed_idea = {
+					 idea = VIK_bunker
+					 days = 180
+					}
+		             1020 = {  
+	   		         add_building_construction = {
+							type = bunker
+							level = 4
+							province = {
+								id = 6343
+							}
+							instant_build = yes
+						}
+					}
+					255 = {  
+	   		         add_building_construction = {
+							type = bunker
+							level = 4
+							province = {
+								id = 9258
+								id = 208
+								id = 6382
+							}
+							instant_build = yes
+						}
+					}
+					239 = {  
+	   		         add_building_construction = {
+							type = bunker
+							level = 4
+							province = {
+								id = 11449
+								id = 3465
+							}
+							instant_build = yes
+						}
+					}
+				}
 	}
 	focus = {
 		id = VIK_vidr
@@ -1349,9 +1389,37 @@ focus_tree = {
 		}
 		x = 59
 		y = 2
-		
-
-
+		completion_reward = {
+		             add_timed_idea = {
+					 idea = VIK_bunker
+					 days = 180
+					}
+		             1020 = {  
+	   		         add_building_construction = {
+							type = bunker
+							level = 3
+							province = {
+								id = 6343
+								id = 9344
+								id = 11262
+								}
+							}
+						}
+							255 = {  
+	   		         add_building_construction = {
+							type = bunker
+							level = 3
+							province = {	
+								id = 6391
+								id = 324
+								id = 3317
+								id = 257
+								id = 380
+							}
+							instant_build = yes
+						}
+					}
+				}
 	}
 	focus = {
 		id = VIK_army12
@@ -1365,7 +1433,7 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 		create_corps_commander = {
-    name = "Джон Кесслер"
+    name = "Джо Кесслер"
 	picture = "Portrait_Kessler.dds"
 	traits = { infantry_officer }
 	skill = 4
@@ -1631,6 +1699,7 @@ focus_tree = {
                uses = 2
                category = artillery
 			}
+			country_event = viktor.17
 		}
 
 
@@ -1677,9 +1746,6 @@ focus_tree = {
 				remove_idea = VIK_voisko1
 			}
 		}
-
-
-
 	}
 	focus = {
 		id = newfocus_57
@@ -1914,7 +1980,11 @@ focus_tree = {
 		}
 		x = 13
 		y = 6
-
+		completion_reward = {
+		add_ideas = VIK_autarky0
+		}
+		
+		
 	}
 	focus = {
 		id = VIK_industry17
@@ -1925,7 +1995,12 @@ focus_tree = {
 		}
 		x = 16
 		y = 7
-
+		completion_reward = {
+		    swap_ideas = {
+				add_idea = VIK_autarky01
+				remove_idea = VIK_autarky0
+			}
+		}
 	}
 	focus = {
 		id = VIK_industry18
@@ -1939,6 +2014,12 @@ focus_tree = {
 		}
 		x = 15
 		y = 8
+		completion_reward = {
+		    swap_ideas = {
+				add_idea = VIK_autarky03
+				remove_idea = VIK_autarky01
+			}
+		}
 
 	}
 	focus = {
@@ -1953,6 +2034,12 @@ focus_tree = {
 		}
 		x = 17
 		y = 8
+		completion_reward = {
+		    swap_ideas = {
+				add_idea = VIK_autarky02
+				remove_idea = VIK_autarky01
+			}
+		}
 
 	}
 	focus = {

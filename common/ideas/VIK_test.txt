@@ -564,6 +564,91 @@ ideas = {
 }
 ideas = {
     country = {
+	     VIK_autarky0 = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_endsieg
+			  
+			  modifier = {
+				  min_export = -0.1
+                  consumer_goods_factor = 0.05
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     VIK_autarky01 = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_endsieg
+			  
+			  modifier = {
+				  min_export = -0.1
+                  consumer_goods_factor = 0.05
+				  monthly_population = 0.1
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     VIK_autarky02 = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_endsieg
+			  
+			  modifier = {
+				  min_export = -0.1
+                  consumer_goods_factor = 0.05
+				  monthly_population = 0.1
+				  production_speed_industrial_complex_factor = 0.1
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     VIK_autarky03 = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_endsieg
+			  
+			  modifier = {
+				  min_export = -0.1
+                  consumer_goods_factor = 0.05
+				  monthly_population = 0.1
+				  production_speed_arms_factory_factor = 0.05
+			}
+		}
+	}
+}
+ideas = {
+    country = {
 	     VIK_patriot = {
 		 
 		      removal_cost = -1
@@ -664,6 +749,44 @@ ideas = {
 			  modifier = {
 			      stability_factor = -0.1
 				  consumer_goods_factor = -0.1
+				}
+			}
+		}
+	}
+ideas = {
+    country = {
+	     VIK_granati = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_idea_VIK_airforce
+			  
+			  modifier = {
+			      breakthrough_factor = 0.03                   
+				}
+			}
+		}
+	}
+ideas = {
+    country = {
+	     VIK_pulemet = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_idea_VIK_airforce
+			  
+			  modifier = {
+			      army_infantry_defence_factor = 0.03                    
 				}
 			}
 		}

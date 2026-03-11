@@ -388,6 +388,18 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/ILY_armymix.dds"
 	}
 	spriteType = {
+	    name = "GFX_idea_ILY_armymix1"
+		texturefile = "gfx/interface/ideas/ILY_armymix.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_ILY_prom1"
+		texturefile = "gfx/interface/ideas/ILY_slabprom.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_ILY_voenprom"
+		texturefile = "gfx/interface/ideas/ILY_slabprom.dds"
+	}
+	spriteType = {
 	    name = "GFX_idea_ILY_investments"
 		texturefile = "gfx/interface/ideas/VIK_endsieg.dds"
 	}

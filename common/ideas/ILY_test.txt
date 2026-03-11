@@ -272,6 +272,29 @@ ideas = {
 }
 ideas = {
     country = {
+	     ILY_prom1 = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_ILY_slabprom
+			  
+			  modifier = {
+				  production_factory_max_efficiency_factor = 0.1
+				  production_speed_buildings_factor = 0.1
+				  industrial_capacity_factory = 0.05
+				  
+
+			}
+		}
+	}
+}
+ideas = {
+    country = {
 	     ILY_kirarst = {
 		 
 		      removal_cost = -1
@@ -817,6 +840,29 @@ ideas = {
 				  acclimatization_cold_climate_gain_factor = 0.1
 				  acclimatization_hot_climate_gain_factor = 0.1
 				  army_morale_factor = 0.05
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     ILY_voenprom = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_ILY_slabprom
+			  
+			  modifier = {
+				  production_factory_max_efficiency_factor = 0.1
+				  supply_node_range = 0.1
+				  industrial_capacity_factory = 0.1
+				  production_speed_arms_facrory_factor = 0.05
+
 			}
 		}
 	}

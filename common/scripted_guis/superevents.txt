@@ -50,6 +50,7 @@ scripted_gui = {
 			clr_global_flag = SE_unification_rome
 			clr_global_flag = SE_1st_patsaniwar
 			clr_global_flag = SE_kudrovowar
+			clr_global_flag = SE_lost1pw
 		}
     }
 
@@ -174,6 +175,9 @@ scripted_gui = {
 		}
 		superevents_kudrovowar = {
 			has_global_flag = SE_kudrovowar
+		}
+		superevents_lost1pw = {
+			has_global_flag = SE_lost1pw
 		}
 		superevents_kiravstr = {
 			has_global_flag = SE_kiravstr

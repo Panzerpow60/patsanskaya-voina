@@ -7,6 +7,10 @@ sound = {
 	file = "superevents/kudrovowar.wav"
 }
 sound = {
+	name = "lost1pw"
+	file = "superevents/lost1pw.wav"
+}
+sound = {
 	name = "kiravstr"
 	file = "superevents/kiravstr.wav"
 }

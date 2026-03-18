@@ -6,6 +6,7 @@ category = {
 		superevents_kudrovowar
 		superevents_kiravstr
 		superevents_kirarast
+		superevents_lost1pw
 	}
 	compressor =  {
 		enabled = yes

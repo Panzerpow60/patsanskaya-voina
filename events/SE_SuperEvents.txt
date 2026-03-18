@@ -127,3 +127,36 @@ country_event = {
 		name = superevents.0.a
 	}
 }
+country_event = {
+	id = superevents.508
+	title = superevents.508.t
+	desc = superevents.508.d
+	
+	immediate = {
+		set_global_flag = SE_superevents_activate
+		set_global_flag = SE_lost1pw
+		
+		#cue funni music
+		sound_effect = superevents_lost1pw
+	}
+
+	hidden = yes
+	
+	fire_only_once = yes
+
+	trigger = {
+		NOT = {
+			has_global_flag = SE_superevents_activate
+		}
+		ILY = {
+			has_completed_focus = ILY_kiracrisis3
+		}
+		NOT = {
+			has_global_flag = SE_superevents_activate
+		}
+		
+	}
+	option = {
+		name = superevents.0.a
+	}
+}

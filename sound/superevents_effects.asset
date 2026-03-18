@@ -417,6 +417,17 @@ soundeffect = {
 	volume = 1.0
 }
 soundeffect = {
+	name = superevents_lost1pw
+	loop = no
+	sounds = {
+		sound = lost1pw
+	}
+	is3d = no
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 1.0
+}
+soundeffect = {
 	name = superevents_kiravstr
 	loop = no
 	sounds = {

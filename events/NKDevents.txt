@@ -289,3 +289,32 @@ country_event = {
 		complete_national_focus = NKD_war
 	}		
 }
+country_event = {
+    id = kudinov.13
+	title = kudinov.13.t
+	desc = kudinov.13.d
+	picture = GFX_report_event_bul_making_bricks_for_school
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = kudinov.13.a
+		ai_chance = { factor = 100 }
+		trigger = {  }
+	    add_offsite_building = { type = industrial_complex level = 1 }
+		every_country = {
+				limit = {
+					AND = {
+						OR = {
+							original_tag = VIK
+						}
+					}
+				}
+				country_event = viktor.19
+				}
+	}		
+}

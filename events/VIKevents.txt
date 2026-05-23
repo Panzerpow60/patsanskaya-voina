@@ -476,6 +476,33 @@ country_event = {
 		complete_national_focus = VIK_industry9
 	}
 }
+country_event = {
+    id = viktor.19
+	title = viktor.19.t
+	desc = viktor.19.d
+	picture = GFX_report_event_chinese_soldiers_city_ruin
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+       
+    }
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = viktor.19.a
+		ai_chance = { factor = 100 }
+		trigger = { }
+		add_timed_idea = {
+        idea = VIK_stanki 
+         days = 144
+		}
+	}
+	
+}
 }
 
 	

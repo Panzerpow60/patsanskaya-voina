@@ -465,13 +465,13 @@ country_event = {
 	
 	option = {
 	    name = viktor.18.a
-		ai_chance = { factor = 50 }
+		ai_chance = { factor = 75 }
 		trigger = { }
 		complete_national_focus = VIK_industry8
 	}
 	option = {
 	    name = viktor.18.b
-		ai_chance = { factor = 50 }
+		ai_chance = { factor = 25 }
 		trigger = { }
 		complete_national_focus = VIK_industry9
 	}

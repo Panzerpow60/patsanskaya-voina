@@ -11,7 +11,7 @@ focus_tree = {
 	focus = {
 		id = VIK_Gofman
 		icon = GFX_goal_unknown
-		cost = 4,00
+		cost = 1,00
 		x = 35
 		y = 0
 		completion_reward = { 
@@ -23,7 +23,7 @@ focus_tree = {
 	focus = {
 		id = VIK_1stwar
 		icon = GFX_focus_BRA_acquire_german_tanks
-		cost = 10,00
+		cost = 5,00
 		x = 50
 		y = 6
 		available = {
@@ -66,7 +66,7 @@ focus_tree = {
 	focus = {
 		id = VIK_gavry
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		x = 50
 		y = 1
 		prerequisite = {
@@ -100,7 +100,7 @@ focus_tree = {
 	focus = {
 		id = VIK_industry1
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		x = 20
 		y = 0
 		completion_reward = {
@@ -111,7 +111,7 @@ focus_tree = {
 	focus = {
 		id = VIK_aviation1
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		x = 69
 		y = 0
 
@@ -119,7 +119,7 @@ focus_tree = {
 	focus = {
 		id = VIK_industry2
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_industry1
 		}
@@ -133,7 +133,7 @@ focus_tree = {
 	focus = {
 		id = VIK_industry3
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_industry2
 		}
@@ -154,7 +154,7 @@ focus_tree = {
 	focus = {
 		id = VIK_industry4
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_industry3
 		}
@@ -168,7 +168,7 @@ focus_tree = {
 	focus = {
 		id = VIK_industry11
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_industry4
 		}
@@ -188,7 +188,7 @@ focus_tree = {
 	focus = {
 		id = VIK_industry10
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_industry4
 		}
@@ -212,7 +212,7 @@ focus_tree = {
 	focus = {
 		id = VIK_industry12
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_industry10
 			focus = VIK_industry11
@@ -230,7 +230,7 @@ focus_tree = {
 	focus = {
 		id = VIK_industry9
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_industry4
 		}
@@ -250,7 +250,7 @@ focus_tree = {
 	focus = {
 		id = VIK_industry8
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_industry4
 		}
@@ -309,7 +309,7 @@ focus_tree = {
 	focus = {
 		id = VIK_industry13
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_industry8
 			focus = VIK_industry9
@@ -332,7 +332,7 @@ focus_tree = {
 	focus = {
 		id = VIK_industry15
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_industry13
 		}
@@ -348,21 +348,23 @@ focus_tree = {
 	focus = {
 		id = VIK_industry20
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_industry15
 		}
 		x = 20
 		y = 7
+		completion_reward = {
 		add_timed_idea = {
             idea = VIK_2letka
             days = 720
 			}
+		}
 	}
 	focus = {
 		id = VIK_industry21
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_industry20
 		}
@@ -382,7 +384,7 @@ focus_tree = {
 	focus = {
 		id = VIK_industry26
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_industry21
 		}
@@ -400,7 +402,7 @@ focus_tree = {
 	focus = {
 		id = VIK_industry7
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_industry4
 		}
@@ -453,7 +455,7 @@ focus_tree = {
 	focus = {
 		id = VIK_industry6
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_industry4
 		}
@@ -476,7 +478,7 @@ focus_tree = {
 	focus = {
 		id = VIK_industry5
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_industry6
 		}
@@ -490,7 +492,7 @@ focus_tree = {
 	focus = {
 		id = VIK_industry14
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_industry5
 		}
@@ -501,7 +503,7 @@ focus_tree = {
 	focus = {
 		id = VIK_industry22
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_industry14
 		}
@@ -512,7 +514,7 @@ focus_tree = {
 	focus = {
 		id = VIK_industry23
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_industry22
 		}
@@ -526,7 +528,7 @@ focus_tree = {
 	focus = {
 		id = VIK_industry24
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_industry22
 		}
@@ -540,7 +542,7 @@ focus_tree = {
 	focus = {
 		id = VIK_2023
 		icon = GFX_focus_CHL_expand_the_forestry
-		cost = 10,00
+		cost = 1,00
 		prerequisite = {
 			focus = VIK_Gofman
 		}
@@ -555,7 +557,7 @@ focus_tree = {
 	focus = {
 		id = VIK_OGE
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 2,00
 		prerequisite = {
 			focus = VIK_2023
 		}
@@ -571,7 +573,7 @@ focus_tree = {
 	focus = {
 		id = VIC_SPB
 		icon = GFX_focus_SWE_per_albin_bus
-		cost = 10,00
+		cost = 1,00
 		prerequisite = {
 			focus = VIK_2023
 		}
@@ -586,7 +588,7 @@ focus_tree = {
 	focus = {
 		id = VIK_patsani
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_2023
 		}
@@ -622,7 +624,7 @@ focus_tree = {
 	focus = {
 		id = VIK_10kl
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 1,00
 		prerequisite = {
 			focus = VIK_patsani
 		}
@@ -661,7 +663,7 @@ focus_tree = {
 	focus = {
 		id = VIK_newfriends
 		icon = GFX_focus_AUS_legitimistische_jugend
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_10kl
 		}
@@ -677,7 +679,7 @@ focus_tree = {
 	focus = {
 		id = VIK_stabyear
 		icon = GFX_goal_generic_neutrality_focus
-		cost = 10,00
+		cost = 2,00
 		prerequisite = {
 			focus = VIK_newfriends
 		}
@@ -692,7 +694,7 @@ focus_tree = {
 	focus = {
 		id = VIK_2024
 		icon = GFX_focus_FIN_oy_alkoholiliike
-		cost = 10,00
+		cost = 1,00
 		prerequisite = {
 			focus = VIK_stabyear
 		}
@@ -725,7 +727,7 @@ focus_tree = {
 	focus = {
 		id = VIK_17y
 		icon = GFX_focus_BRA_cafe_com_leite_politics
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_2024
 		}
@@ -740,7 +742,7 @@ focus_tree = {
 	focus = {
 		id = VIK_furry
 		icon = GFX_focus_FIN_the_lone_wolf
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_17y
 		}
@@ -755,7 +757,7 @@ focus_tree = {
 	focus = {
 		id = VIK_nostab
 		icon = GFX_focus_spr_crush_the_revolution
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_furry
 		}
@@ -775,7 +777,7 @@ focus_tree = {
 	focus = {
 		id = VIK_arseny
 		icon = GFX_focus_GER_party_chancellor_bormann
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_nostab
 		}
@@ -801,7 +803,7 @@ focus_tree = {
 	focus = {
 		id = VIK_sorry
 		icon = GFX_goal_generic_military_deal
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_arseny
 		}
@@ -815,7 +817,7 @@ focus_tree = {
 	focus = {
 		id = VIK_noappologise
 		icon = GFX_focus_AUS_frontmiliz_focus
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_arseny
 		}
@@ -849,7 +851,7 @@ focus_tree = {
 	focus = {
 		id = VIK_crazyshit
 		icon = GFX_focus_NOR_lurk_in_the_shadows
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_noappologise
 			focus = VIK_sorry
@@ -892,7 +894,7 @@ focus_tree = {
 	focus = {
 		id = VIK_risha
 		icon = GFX_focus_ARG_banco_central_de_la_republica_argentina
-		cost = 10,00
+		cost = 2,00
 		prerequisite = {
 			focus = VIK_crazyshit
 		}
@@ -907,7 +909,7 @@ focus_tree = {
 	focus = {
 		id = VIK_yes
 		icon = GFX_focus_SWE_form_rfsu
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_risha
 		}
@@ -925,7 +927,7 @@ focus_tree = {
 	focus = {
 		id = VIK_nopatsani
 		icon = GFX_focus_generic_total_war
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_yes
 		}
@@ -961,7 +963,7 @@ focus_tree = {
 	focus = {
 		id = VIK_alone
 		icon = GFX_focus_FIN_parmis_devils
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_nopatsani
 		}
@@ -976,7 +978,7 @@ focus_tree = {
 	focus = {
 		id = VIK_firehouse
 		icon = GFX_focus_SWE_hygienic_housing
-		cost = 10,00
+		cost = 1,00
 		prerequisite = {
 			focus = VIK_alone
 		}
@@ -997,7 +999,7 @@ focus_tree = {
 	focus = {
 		id = VIK_job
 		icon = GFX_focus_SWE_rations
-		cost = 10,00
+		cost = 4,00
 		prerequisite = {
 			focus = VIK_firehouse
 		}
@@ -1015,7 +1017,7 @@ focus_tree = {
 	focus = {
 		id = VIK_priorities
 		icon = GFX_focus_CHL_revise_the_social_classes
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_job
 		}
@@ -1030,7 +1032,7 @@ focus_tree = {
 	focus = {
 		id = VIK_obdumal
 		icon = GFX_focus_GER_rally_the_industrialists
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_priorities
 		}
@@ -1044,7 +1046,7 @@ focus_tree = {
 	focus = {
 		id = VIK_nopatsani2
 		icon = GFX_focus_BEL_legacy_of_the_great_war
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_priorities
 		}
@@ -1130,7 +1132,7 @@ focus_tree = {
 	focus = {
 		id = VIK_nowoman
 		icon = GFX_focus_SWE_education_reform
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_nopatsani2
 		}
@@ -1145,7 +1147,7 @@ focus_tree = {
 	focus = {
 		id = VIK_aloneagain
 		icon = GFX_focus_cze_german_puppet
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_nowoman
 		}
@@ -1160,7 +1162,7 @@ focus_tree = {
 	focus = {
 		id = VIK_vintovka
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_voisko
 		}
@@ -1179,7 +1181,7 @@ focus_tree = {
 	focus = {
 		id = VIK_radio1
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_vintovka
 		}
@@ -1190,7 +1192,7 @@ focus_tree = {
 	focus = {
 		id = VIK_radio2
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_radio1
 		}
@@ -1201,7 +1203,7 @@ focus_tree = {
 	focus = {
 		id = VIK_army7
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_vintovka
 		}
@@ -1212,7 +1214,7 @@ focus_tree = {
 	focus = {
 		id = VIK_army8
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_army7
 		}
@@ -1223,7 +1225,7 @@ focus_tree = {
 	focus = {
 		id = VIK_mihailovskaya
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_gavry
 		}
@@ -1237,7 +1239,7 @@ focus_tree = {
 	focus = {
 		id = VIK_army5
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_mihailovskaya
 		}
@@ -1248,7 +1250,7 @@ focus_tree = {
 	focus = {
 		id = VIK_mobilis
 		icon = GFX_focus_generic_infiltration
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_1stwar
 		}
@@ -1268,7 +1270,7 @@ focus_tree = {
 	focus = {
 		id = VIK_rypnytsa
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_mobilis
 		}
@@ -1286,7 +1288,7 @@ focus_tree = {
 	focus = {
 		id = VIK_G17A
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_gavry
 		}
@@ -1300,7 +1302,7 @@ focus_tree = {
 	focus = {
 		id = VIK_army6
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_G17A
 		}
@@ -1311,7 +1313,7 @@ focus_tree = {
 	focus = {
 		id = VIK_army14
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_army6
 			focus = VIK_army5
@@ -1323,7 +1325,7 @@ focus_tree = {
 	focus = {
 		id = VIK_defence
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_mobilis
 		}
@@ -1342,7 +1344,7 @@ focus_tree = {
 	focus = {
 		id = VIK_doktrina
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_voisko
 		}
@@ -1361,7 +1363,7 @@ focus_tree = {
 	focus = {
 		id = VIK_pitya
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_doktrina
 		}
@@ -1420,7 +1422,7 @@ focus_tree = {
 	focus = {
 		id = VIK_vidr
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_doktrina
 		}
@@ -1464,7 +1466,7 @@ focus_tree = {
 	focus = {
 		id = VIK_army12
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_vidr
 			focus = VIK_pitya
@@ -1488,7 +1490,7 @@ focus_tree = {
 	focus = {
 		id = VIK_army13
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_army12
 		}
@@ -1499,7 +1501,7 @@ focus_tree = {
 	focus = {
 		id = VIK_army3
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_voisko
 		}
@@ -1510,7 +1512,7 @@ focus_tree = {
 	focus = {
 		id = VIK_army11
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_army3
 		}
@@ -1521,7 +1523,7 @@ focus_tree = {
 	focus = {
 		id = VIK_army10
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_army11
 		}
@@ -1532,7 +1534,7 @@ focus_tree = {
 	focus = {
 		id = VIK_army4
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_army11
 		}
@@ -1543,7 +1545,7 @@ focus_tree = {
 	focus = {
 		id = VIK_aviation2
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_aviation1
 		}
@@ -1554,7 +1556,7 @@ focus_tree = {
 	focus = {
 		id = VIK_aviation3
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_aviation2
 		}
@@ -1565,7 +1567,7 @@ focus_tree = {
 	focus = {
 		id = VIK_aviation4
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_aviation2
 		}
@@ -1576,7 +1578,7 @@ focus_tree = {
 	focus = {
 		id = VIK_aviation5
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_aviation4
 		}
@@ -1590,7 +1592,7 @@ focus_tree = {
 	focus = {
 		id = VIK_no
 		icon = GFX_goal_continuous_suppression
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_risha
 		}
@@ -1604,7 +1606,7 @@ focus_tree = {
 	focus = {
 		id = VIK_bf
 		icon = GFX_goal_generic_improve_relations
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_no
 		}
@@ -1615,7 +1617,7 @@ focus_tree = {
 	focus = {
 		id = VIK_11kl
 		icon = GFX_focus_generic_university_1
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_goodsummer
 			focus = VIK_bestsummer
@@ -1628,7 +1630,7 @@ focus_tree = {
 	focus = {
 		id = VIK_friendsstr
 		icon = GFX_focus_ARG_pan_american_cooperation
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_obdumal
 		}
@@ -1639,7 +1641,7 @@ focus_tree = {
 	focus = {
 		id = newfocus_31
 		icon = GFX_focus_BRA_anaue
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_bf
 		}
@@ -1650,7 +1652,7 @@ focus_tree = {
 	focus = {
 		id = VIK_grabli
 		icon = GFX_focus_SWE_form_rfsu
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_11kl
 		}
@@ -1661,7 +1663,7 @@ focus_tree = {
 	focus = {
 		id = VIK_ege
 		icon = GFX_focus_BRA_the_polaca
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_grabli
 		}
@@ -1672,7 +1674,7 @@ focus_tree = {
 	focus = {
 		id = VIK_itogi
 		icon = GFX_focus_GER_loyalty_to_the_fuhrer
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_ege
 		}
@@ -1683,7 +1685,7 @@ focus_tree = {
 	focus = {
 		id = VIK_bestsummer
 		icon = GFX_focus_SWE_state_paid_vacation
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = newfocus_31
 		}
@@ -1694,7 +1696,7 @@ focus_tree = {
 	focus = {
 		id = VIK_goodsummer
 		icon = GFX_focus_SWE_privately_managed_vacation
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_friendsstr
 		}
@@ -1705,7 +1707,7 @@ focus_tree = {
 	focus = {
 		id = 2025
 		icon = GFX_focus_ARG_defense_and_democracy
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_itogi
 		}
@@ -1716,7 +1718,7 @@ focus_tree = {
 	focus = {
 		id = VIK_razrabotka
 		icon = GFX_focus_ARG_develop_the_electricity_sector
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_defence
 			focus = VIK_rypnytsa
@@ -1747,7 +1749,7 @@ focus_tree = {
 	focus = {
 		id = VIK_zavod
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_razrabotka
 		}
@@ -1774,7 +1776,7 @@ focus_tree = {
 	focus = {
 		id = newfocus_56
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_zavod
 		}
@@ -1790,7 +1792,7 @@ focus_tree = {
 	focus = {
 		id = newfocus_57
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = newfocus_56
 		}
@@ -1852,7 +1854,7 @@ focus_tree = {
 	focus = {
 		id = newfocus_58
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = newfocus_57
 		}
@@ -1872,7 +1874,7 @@ focus_tree = {
 	focus = {
 		id = VIK_propoganda
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = newfocus_57
 		}
@@ -1883,7 +1885,7 @@ focus_tree = {
 	focus = {
 		id = VIK_vorovstvo
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = newfocus_57
 		}
@@ -1894,7 +1896,7 @@ focus_tree = {
 	focus = {
 		id = VIK_18Y
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = 2025
 		}
@@ -1905,7 +1907,7 @@ focus_tree = {
 	focus = {
 		id = VIK_ukrepleniepatsani
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_18Y
 		}
@@ -1916,7 +1918,7 @@ focus_tree = {
 	focus = {
 		id = VIK_egeend
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_ukrepleniepatsani
 		}
@@ -1927,7 +1929,7 @@ focus_tree = {
 	focus = {
 		id = VIK_vypysknoy
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_egeend
 		}
@@ -1938,7 +1940,7 @@ focus_tree = {
 	focus = {
 		id = VIK_newjob
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_egeend
 		}
@@ -1949,7 +1951,7 @@ focus_tree = {
 	focus = {
 		id = VIK_SPB2025
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_helpILY
 		}
@@ -1960,7 +1962,7 @@ focus_tree = {
 	focus = {
 		id = VIK_SPBpatsani
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_SPB2025
 		}
@@ -1974,7 +1976,7 @@ focus_tree = {
 	focus = {
 		id = VIK_niggerfaggot
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_SPB2025
 		}
@@ -1988,7 +1990,7 @@ focus_tree = {
 	focus = {
 		id = VIK_helpILY
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_newjob
 		}
@@ -2002,7 +2004,7 @@ focus_tree = {
 	focus = {
 		id = 2026
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_niggerfaggot
 			focus = VIK_SPBpatsani
@@ -2014,7 +2016,7 @@ focus_tree = {
 	focus = {
 		id = VIK_industry16
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_industry12
 		}
@@ -2029,7 +2031,7 @@ focus_tree = {
 	focus = {
 		id = VIK_industry17
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_industry16
 		}
@@ -2045,7 +2047,7 @@ focus_tree = {
 	focus = {
 		id = VIK_industry18
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_industry17
 		}
@@ -2065,7 +2067,7 @@ focus_tree = {
 	focus = {
 		id = VIK_industry19
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_industry17
 		}
@@ -2085,7 +2087,7 @@ focus_tree = {
 	focus = {
 		id = VIK_industry25
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_industry19
 			focus = VIK_industry18
@@ -2106,7 +2108,7 @@ focus_tree = {
 	focus = {
 		id = VIK_industry27
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_industry24
 			focus = VIK_industry23
@@ -2118,7 +2120,7 @@ focus_tree = {
 	focus = {
 		id = VIK_industry28
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = VIK_industry27
 		}

@@ -571,7 +571,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = VIC_SPB
+		id = VIK_SPB
 		icon = GFX_focus_SWE_per_albin_bus
 		cost = 1,00
 		prerequisite = {

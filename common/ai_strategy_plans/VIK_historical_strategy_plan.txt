@@ -16,7 +16,7 @@ VIK_historical = {
 	VIK_gavry
 	VIK_birthday
 	VIK_OGE
-	VIС_SPB
+	VIK_SPB
 	VIK_patsani
 	VIK_vintovka
 	VIK_10kl

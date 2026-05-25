@@ -629,7 +629,7 @@ focus_tree = {
 			focus = VIK_patsani
 		}
 		prerequisite = {
-			focus = VIC_SPB
+			focus = VIK_SPB
 		}
 		prerequisite = {
 			focus = VIK_OGE

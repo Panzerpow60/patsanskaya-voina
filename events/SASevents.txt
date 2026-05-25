@@ -455,9 +455,13 @@ country_event = {
 	
 	option = {
 	    name = ilya.33.a
-		ai_chance = { factor = 20 }
+		ai_chance = { factor = 100 }
 		trigger = {  }
 		complete_national_focus = SAS_prizov
+		add_timed_idea = {
+        idea = SAS_VOV
+        days = 200
+		}
 	}		
 }
 

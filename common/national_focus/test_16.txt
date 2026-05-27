@@ -39,7 +39,7 @@ focus_tree = {
 	focus = {
 		id = ILY_army1
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		x = 57
 		y = 0
 
@@ -80,7 +80,7 @@ focus_tree = {
 	focus = {
 		id = ILY_aviation2
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_aviation1
 		}
@@ -91,7 +91,7 @@ focus_tree = {
 	focus = {
 		id = ILY_aviation3
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_aviation2
 		}
@@ -102,7 +102,7 @@ focus_tree = {
 	focus = {
 		id = ILY_aviation4
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_aviation2
 		}
@@ -113,7 +113,7 @@ focus_tree = {
 	focus = {
 		id = ILY_wunderbomber
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_aviation4
 		}
@@ -153,7 +153,7 @@ focus_tree = {
 	focus = {
 		id = ILY_millitary2
 		icon = GFX_goal_unknown
-		cost = 11,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_millitary1
 		}
@@ -164,7 +164,7 @@ focus_tree = {
 	focus = {
 		id = ILY_millitary4
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_millitary2
 		}
@@ -201,7 +201,7 @@ focus_tree = {
 	focus = {
 		id = ILY_industry3
 		icon = GFX_focus_generic_monetary_union
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_industry2
 		}
@@ -227,7 +227,7 @@ focus_tree = {
 	focus = {
 		id = ILY_industry4
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_industry3
 		}
@@ -261,7 +261,7 @@ focus_tree = {
 	focus = {
 		id = ILY_industry6
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_industry4
 		}
@@ -287,7 +287,7 @@ focus_tree = {
 	focus = {
 		id = ILY_industry5
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_industry3
 		}
@@ -342,7 +342,7 @@ focus_tree = {
 	focus = {
 		id = ILY_industry7
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_industry5
 		}
@@ -368,7 +368,7 @@ focus_tree = {
 	focus = {
 		id = ILY_industry8
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_industry6
 		}
@@ -388,8 +388,8 @@ focus_tree = {
 	}
 	focus = {
 		id = ILY_infra
-		icon = GFX_goal_unknown
-		cost = 10,00
+		icon = GFX_goal_ILY_infra
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_industry1
 		}
@@ -407,8 +407,8 @@ focus_tree = {
 	}
 	focus = {
 		id = ILY_mihailovsk
-		icon = GFX_goal_unknown
-		cost = 10,00
+		icon = GFX_goal_ILY_mihailovsk
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_industry1
 		}
@@ -418,7 +418,7 @@ focus_tree = {
 	}
 	focus = {
 		id = INFRA2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_ILY_dorogareforma
 		cost = 10,00
 		prerequisite = {
 			focus = ILY_mihailovsk
@@ -440,8 +440,8 @@ focus_tree = {
 	}
 	focus = {
 		id = ILY_snabzh
-		icon = GFX_goal_unknown
-		cost = 10,00
+		icon = GFX_goal_ILY_snabzh
+		cost = 5,00
 		prerequisite = {
 			focus = INFRA2
 		}
@@ -464,7 +464,7 @@ focus_tree = {
 	}
 	focus = {
 		id = INFRA3
-		icon = GFX_goal_unknown
+		icon = GFX_goal_ILY_INFRA3
 		cost = 15,50
 		prerequisite = {
 			focus = ILY_snabzh
@@ -483,7 +483,7 @@ focus_tree = {
 				253 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			    }
@@ -594,18 +594,21 @@ focus_tree = {
 	focus = {
 		id = ILY_DR
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = 2023
 		}
 		x = 41
 		y = 1
+		completion_reward = {
+		add_political_power = 11
+		}
 
 	}
 	focus = {
 		id = ILY_SOGE
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 15,00
 		prerequisite = {
 			focus = 2023
 		}
@@ -616,7 +619,7 @@ focus_tree = {
 	focus = {
 		id = ILY_SPB1
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_SOGE
 		}
@@ -634,7 +637,7 @@ focus_tree = {
 	focus = {
 		id = ILY_irayes
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_SPB1
 		}
@@ -648,7 +651,7 @@ focus_tree = {
 	focus = {
 		id = ILY_irano
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_SPB1
 		}
@@ -662,7 +665,7 @@ focus_tree = {
 	focus = {
 		id = ILY_MSK
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 1,00
 		prerequisite = {
 			focus = ILY_irano
 			focus = ILY_irayes
@@ -677,8 +680,8 @@ focus_tree = {
 	}
 	focus = {
 		id = ILY_koper
-		icon = GFX_goal_unknown
-		cost = 10,00
+		icon = GFX_goal_ILY_koper
+		cost = 1,00
 		prerequisite = {
 			focus = ILY_MSK
 		}
@@ -693,7 +696,7 @@ focus_tree = {
 	focus = {
 		id = ILY_collectiv
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_koper
 		}
@@ -715,7 +718,7 @@ focus_tree = {
 	focus = {
 		id = ILY_pereosmyslil
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_koper
 		}
@@ -730,7 +733,7 @@ focus_tree = {
 	focus = {
 		id = ILY_MVD1
 		icon = GFX_goal_ILY_MVD
-		cost = 10,00
+		cost = 5,00
 		available = {
 		date > 2024.09.1
 		has_idea = ILY_musora
@@ -755,7 +758,7 @@ focus_tree = {
 	focus = {
 		id = ILY_2024
 		icon = GFX_goal_ILY_2024
-		cost = 10,00
+		cost = 5,00
 		available = {
 		date > 2024.01.1
 		}
@@ -779,7 +782,7 @@ focus_tree = {
 	focus = {
 		id = ILY_project
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_2024
 		}
@@ -790,7 +793,7 @@ focus_tree = {
 	focus = {
 		id = ILY_pitindr
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_2024
 		}
@@ -801,7 +804,7 @@ focus_tree = {
 	focus = {
 		id = ILY_MVD2
 		icon = GFX_goal_ILY_centerMVD
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_MVD1
 		}
@@ -812,7 +815,7 @@ focus_tree = {
 	focus = {
 		id = ILY_MVD3
 		icon = GFX_goal_ILY_comanda
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_MVD1
 		}
@@ -823,7 +826,7 @@ focus_tree = {
 	focus = {
 		id = ILY_MVD6
 		icon = GFX_goal_ILY_FZ2011
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_MVD2
 		}
@@ -846,7 +849,7 @@ focus_tree = {
 	focus = {
 		id = ILY_MVD4
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_MVD1
 		}
@@ -857,7 +860,7 @@ focus_tree = {
 	focus = {
 		id = ILY_MVD5
 		icon = GFX_goal_ILY_MVD
-		cost = 10,00
+		cost = 4,00
 		prerequisite = {
 			focus = ILY_MVD1
 		}
@@ -868,7 +871,7 @@ focus_tree = {
 	focus = {
 		id = ILY_MVD7
 		icon = GFX_goal_ILY_podrazdelenie
-		cost = 10,00
+		cost = 4,00
 		prerequisite = {
 			focus = ILY_MVD5
 		}
@@ -916,7 +919,7 @@ focus_tree = {
 	focus = {
 		id = ILY_MVD8
 		icon = GFX_goal_ILY_zakon
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_MVD6
 		}
@@ -947,7 +950,7 @@ focus_tree = {
 	focus = {
 		id = ILY_army2
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_army1
 		}
@@ -965,7 +968,7 @@ focus_tree = {
 	focus = {
 		id = ILY_army3
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_army2
 		}
@@ -979,7 +982,7 @@ focus_tree = {
 	focus = {
 		id = ILY_army4
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_army2
 		}
@@ -993,7 +996,7 @@ focus_tree = {
 	focus = {
 		id = ILY_army8
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_army4
 			focus = ILY_army3
@@ -1005,7 +1008,7 @@ focus_tree = {
 	focus = {
 		id = ILY_army11
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_army8
 		}
@@ -1016,7 +1019,7 @@ focus_tree = {
 	focus = {
 		id = ILY_army5
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_army2
 		}
@@ -1027,7 +1030,7 @@ focus_tree = {
 	focus = {
 		id = ILY_army9
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_army5
 		}
@@ -1038,7 +1041,7 @@ focus_tree = {
 	focus = {
 		id = ILY_army12
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_army9
 		}
@@ -1049,7 +1052,7 @@ focus_tree = {
 	focus = {
 		id = ILY_army6
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_army2
 		}
@@ -1063,7 +1066,7 @@ focus_tree = {
 	focus = {
 		id = ILY_army7
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_army2
 		}
@@ -1077,7 +1080,7 @@ focus_tree = {
 	focus = {
 		id = ILY_army10
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_army7
 			focus = ILY_army6
@@ -1089,7 +1092,7 @@ focus_tree = {
 	focus = {
 		id = ILY_army13
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_army10
 		}
@@ -1100,7 +1103,7 @@ focus_tree = {
 	focus = {
 		id = ILY_army14
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_army13
 		}
@@ -1117,7 +1120,7 @@ focus_tree = {
 	focus = {
 		id = ILY_pityasituation
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 2,00
 		prerequisite = {
 			focus = ILY_stability
 		}
@@ -1128,12 +1131,16 @@ focus_tree = {
 	focus = {
 		id = ILY_soceity
 		icon = GFX_focus_BRA_anaue
-		cost = 10,00
+		cost = 1,00
 		prerequisite = {
 			focus = ILY_pityasituation
 		}
 		x = 38
 		y = 12
+		completion_reward = {
+		add_political_power = 50
+		add_war_support = 0.1
+		}
 
 	}
 	focus = {
@@ -1204,7 +1211,7 @@ focus_tree = {
 	focus = {
 		id = ILY_neutralitet
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 1,00
 		prerequisite = {
 			focus = ILY_1stwar
 		}
@@ -1256,7 +1263,7 @@ focus_tree = {
 	focus = {
 		id = ILY_borders
 		icon = GFX_goal_generic_construct_military
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_pityasituation
 		}
@@ -1379,7 +1386,7 @@ create_corps_commander = {
 	focus = {
 		id = ILY_wargov
 		icon = GFX_goal_unknown
-		cost = 40,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_niggerfaggot2
 		}
@@ -1390,7 +1397,7 @@ create_corps_commander = {
 	focus = {
 		id = ILY_vnutrdela
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_neutralitet
 		}
@@ -1401,7 +1408,7 @@ create_corps_commander = {
 	focus = {
 		id = ILY_coalition
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_allyvitya
 		}
@@ -1412,7 +1419,7 @@ create_corps_commander = {
 	focus = {
 		id = ILY_extr
 		icon = GFX_goal_ILY_sovet
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_soceity
 		}
@@ -1428,7 +1435,7 @@ create_corps_commander = {
 	}
 	focus = {
 		id = ILY_2kurs
-		icon = GFX_goal_unknown
+		icon = GFX_goal_ILY_2kurs
 		cost = 0,00
 		available = {
 		date > 2024.09.1
@@ -1448,7 +1455,7 @@ create_corps_commander = {
 	focus = {
 		id = ILY_18y
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_2kurs
 		}
@@ -1459,7 +1466,7 @@ create_corps_commander = {
 	focus = {
 		id = ILY_odnogruppnitsi
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 1,00
 		prerequisite = {
 			focus = ILY_18y
 		}
@@ -1470,7 +1477,7 @@ create_corps_commander = {
 	focus = {
 		id = ILY_2025
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 1,00
 		available = {
 		date > 2025.01.1
 		}
@@ -1487,7 +1494,7 @@ create_corps_commander = {
 	focus = {
 		id = ILY_chistki
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 15,00
 		prerequisite = {
 			focus = ILY_vnutrdela
 		}
@@ -1498,7 +1505,7 @@ create_corps_commander = {
 	focus = {
 		id = ILY_lendlease
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_coalition
 		}
@@ -1509,7 +1516,7 @@ create_corps_commander = {
 	focus = {
 		id = ILY_industrychudo
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 20,00
 		prerequisite = {
 			focus = ILY_millitary8
 		}
@@ -1526,7 +1533,7 @@ create_corps_commander = {
 	focus = {
 		id = ILY_millitary33
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_millitary2
 		}
@@ -1537,7 +1544,7 @@ create_corps_commander = {
 	focus = {
 		id = ILY_millitary5
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_millitary4
 		}
@@ -1551,7 +1558,7 @@ create_corps_commander = {
 	focus = {
 		id = ILY_millitary6
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_millitary5
 		}
@@ -1565,7 +1572,7 @@ create_corps_commander = {
 	focus = {
 		id = ILY_ohvat98
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_millitary5
 		}
@@ -1597,7 +1604,7 @@ create_corps_commander = {
 	focus = {
 		id = ILY_millitary8
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_millitary6
 			focus = ILY_ohvat98
@@ -1608,8 +1615,8 @@ create_corps_commander = {
 	}
 	focus = {
 		id = ILY_prava
-		icon = GFX_goal_unknown
-		cost = 10,00
+		icon = GFX_goal_ILY_prava
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_2025
 		}
@@ -1619,8 +1626,8 @@ create_corps_commander = {
 	}
 	focus = {
 		id = ILY_VAZ2112
-		icon = GFX_goal_unknown
-		cost = 10,00
+		icon = GFX_goal_ILY_VAZ2112
+		cost = 1,00
 		prerequisite = {
 			focus = ILY_prava
 		}
@@ -1635,7 +1642,7 @@ create_corps_commander = {
 	focus = {
 		id = ILY_yanddostavka
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 11,00
 		prerequisite = {
 			focus = ILY_industry8
 		}
@@ -1694,8 +1701,8 @@ create_corps_commander = {
 	}
 	focus = {
 		id = ILY_kira1
-		icon = GFX_goal_unknown
-		cost = 10,00
+		icon = GFX_goal_ILY_kira
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_dodo
 		}
@@ -1709,7 +1716,7 @@ create_corps_commander = {
 	focus = {
 		id = ILY_dodo
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_VAZ2112
 		}
@@ -1720,7 +1727,7 @@ create_corps_commander = {
 	focus = {
 		id = ILY_14june
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_kira1
 		}
@@ -1731,7 +1738,7 @@ create_corps_commander = {
 	focus = {
 		id = ILY_goododnogr
 		icon = GFX_goal_ILY_kiraotn
-		cost = 10,00
+		cost = 5,00
 		available = {
 		date > 2025.06.30
 		}
@@ -1770,7 +1777,7 @@ create_corps_commander = {
 	focus = {
 		id = ILY_sea
 		icon = GFX_goal_ILY_eysk2025
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_goododnogr
 			focus = ILY_bezotn
@@ -1781,8 +1788,8 @@ create_corps_commander = {
 	}
 	focus = {
 		id = ILY_malotime
-		icon = GFX_goal_unknown
-		cost = 10,00
+		icon = GFX_goal_ILY_GIBDD
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_VAZ2112
 		}
@@ -1793,7 +1800,7 @@ create_corps_commander = {
 	focus = {
 		id = ILY_bezotn
 		icon = GFX_goal_ILY_bezotn
-		cost = 10,00
+		cost = 5,00
 		available = {
 		date > 2025.06.30
 		}
@@ -1813,8 +1820,8 @@ create_corps_commander = {
 	}
 	focus = {
 		id = ILY_kiracrisis1
-		icon = GFX_goal_unknown
-		cost = 10,00
+		icon = GFX_goal_ILY_kiracrisis1
+		cost = 5,00
 		available = {
 		has_completed_focus = ILY_goododnogr
 		}
@@ -1835,18 +1842,21 @@ create_corps_commander = {
 	focus = {
 		id = ILY_SPB2025
 		icon = GFX_goal_ILY_SPB2025
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_kiracrisis1
 		}
 		x = 38
 		y = 32
+		completion_reward = {
+		country_event = ilya.41
+		}
 
 	}
 	focus = {
 		id = ILY_kiracrisis3
-		icon = GFX_goal_ILY_kiracrisis1
-		cost = 10,00
+		icon = GFX_goal_ILY_kiracrisis3
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_SPB2025
 		}
@@ -1884,7 +1894,7 @@ create_corps_commander = {
 	focus = {
 		id = ILY_Kiracrisis2
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_sea
 		}
@@ -1898,7 +1908,7 @@ create_corps_commander = {
 	focus = {
 		id = ILY_SPBnoKira
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_Kiracrisis2
 		}
@@ -1909,7 +1919,7 @@ create_corps_commander = {
 	focus = {
 		id = ILY_patsanispb
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_SPBnoKira
 		}
@@ -1920,7 +1930,7 @@ create_corps_commander = {
 	focus = {
 		id = ILY_3kurs
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_kiracrisis3
 			focus = ILY_patsanispb
@@ -1941,7 +1951,7 @@ create_corps_commander = {
 	focus = {
 		id = ILY_SPB102025
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_3kurs
 		}
@@ -1952,7 +1962,7 @@ create_corps_commander = {
 	focus = {
 		id = ILY_rasstavanie
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_SPB102025
 		}
@@ -1963,7 +1973,7 @@ create_corps_commander = {
 	focus = {
 		id = ILY_kurs
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_rasstavanie
 		}
@@ -1974,7 +1984,7 @@ create_corps_commander = {
 	focus = {
 		id = ILY_patsani
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_kurs
 		}
@@ -1988,7 +1998,7 @@ create_corps_commander = {
 	focus = {
 		id = ILY_girlsandpatsani
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_kurs
 		}
@@ -2002,7 +2012,7 @@ create_corps_commander = {
 	focus = {
 		id = ILY_rasstoyanie
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_patsani
 		}
@@ -2013,7 +2023,7 @@ create_corps_commander = {
 	focus = {
 		id = ILY_sluhi
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_rasstoyanie
 		}
@@ -2024,7 +2034,7 @@ create_corps_commander = {
 	focus = {
 		id = ILY_19y
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_sluhi
 			focus = newfocus_115
@@ -2036,7 +2046,7 @@ create_corps_commander = {
 	focus = {
 		id = newfocus_114
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 15,00
 		prerequisite = {
 			focus = ILY_girlsandpatsani
 		}
@@ -2047,7 +2057,7 @@ create_corps_commander = {
 	focus = {
 		id = newfocus_115
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = newfocus_114
 		}
@@ -2058,7 +2068,7 @@ create_corps_commander = {
 	focus = {
 		id = ILY_vliyanie
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ILY_19y
 		}

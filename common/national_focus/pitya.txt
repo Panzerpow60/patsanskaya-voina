@@ -46,6 +46,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		country_event = viktor.6
+		create_faction = "Фронт Анти-нигерфэготизма"
 		}
 
 

@@ -10573,7 +10573,26 @@ spriteTypes = {
 	name = "GFX_goal_ILY_coalition"
 		texturefile = "gfx/interface/goals/goal_ILY_coalition.dds"	
 	}
-	
+	SpriteType = {
+	name = "GFX_goal_ILY_snabzh"
+		texturefile = "gfx/interface/goals/goal_ILY_snabzh.dds"	
+	}
+	SpriteType = {
+	name = "GFX_goal_ILY_mihailovsk"
+		texturefile = "gfx/interface/goals/goal_ILY_mihailovsk.dds"	
+	}
+	SpriteType = {
+	name = "GFX_goal_ILY_infra"
+		texturefile = "gfx/interface/goals/goal_ILY_infra.dds"	
+	}
+	SpriteType = {
+	name = "GFX_goal_ILY_INFRA3"
+		texturefile = "gfx/interface/goals/goal_ILY_INFRA3.dds"	
+	}
+	SpriteType = {
+	name = "GFX_goal_ILY_kiracrisis3"
+		texturefile = "gfx/interface/goals/goal_ILY_kiracrisis3.dds"	
+	}
 
 
 

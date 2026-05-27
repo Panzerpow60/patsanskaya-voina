@@ -694,7 +694,7 @@ focus_tree = {
 
 	}
 }
-	focus = {закон био–савара–лапласа и его применение к расчету
+	focus = {
 		id = SAS_dacha
 		icon = GFX_focus_GER_the_four_year_plan
 		cost = 5,00
@@ -709,8 +709,7 @@ focus_tree = {
 		days = 100
 		}
     }
-
-	}
+}
 	focus = {
 		id = SAS_10klass
 		icon = GFX_focus_generic_university_1
@@ -721,8 +720,8 @@ focus_tree = {
 		x = 14
 		y = 7
 		completion_reward = {
-	country_event = sasha.9
-	}
+	    country_event = sasha.9
+	     }
 
 	}
 	focus = {

@@ -462,6 +462,34 @@ country_event = {
         idea = SAS_VOV
         days = 200
 		}
+		random_owned_controlled_state = {
+          limit = { ROOT = { has_full_control_of_state = PREV } }
+          create_unit = {
+            division = "name = \"Divizya Pehoti\" division_template = \"Divizya Pehoti\" start_experience_factor = 0.1" 
+            owner = SAS
+          }
+        }
+		random_owned_controlled_state = {
+          limit = { ROOT = { has_full_control_of_state = PREV } }
+          create_unit = {
+            division = "name = \"Divizya Pehoti\" division_template = \"Divizya Pehoti\" start_experience_factor = 0.1" 
+            owner = SAS
+          }
+        }
+		random_owned_controlled_state = {
+          limit = { ROOT = { has_full_control_of_state = PREV } }
+          create_unit = {
+            division = "name = \"Divizya Pehoti\" division_template = \"Divizya Pehoti\" start_experience_factor = 0.1" 
+            owner = SAS
+          }
+        }
+		random_owned_controlled_state = {
+          limit = { ROOT = { has_full_control_of_state = PREV } }
+          create_unit = {
+            division = "name = \"Divizya Pehoti\" division_template = \"Divizya Pehoti\" start_experience_factor = 0.1" 
+            owner = SAS
+          }
+        }
 	}		
 }
 

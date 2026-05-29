@@ -1,0 +1,58 @@
+focus_tree = {
+	id = kirill
+	country = {
+		factor = 0
+		modifier = {
+		    add = 10
+			tag = KRL
+		}
+	}
+	default = no
+	focus = {
+		id = newfocus_0
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 7
+		y = 1
+		completion_reward = {
+        load_focus_tree = {
+            tree = kirill2
+            keep_completed = yes
+        }
+		start_civil_war = {
+    ruling_party = fascism
+    ideology = communism
+    size = 0.5
+    capital = 282
+    states = {
+        401 1023
+    }
+    keep_political_leader = yes
+    keep_political_party_members = yes
+    }
+    }
+
+	}
+	focus = {
+		id = newfocus_1
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = newfocus_0
+		}
+		x = 7
+		y = 2
+
+	}
+	focus = {
+		id = newfocus_2
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = newfocus_1
+		}
+		x = 7
+		y = 3
+
+	}
+}

@@ -1,0 +1,19 @@
+focus_tree = {
+	id = kirill2
+	country = {
+		factor = 0
+		modifier = {
+		    add = 10
+			tag = KRL
+		}
+	}
+	default = no
+	focus = {
+		id = newfocus_0
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 8
+		y = 1
+
+	}
+}

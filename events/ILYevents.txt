@@ -1096,24 +1096,118 @@ country_event = {
 	    name = ilya.41.a
 		ai_chance = { factor = 20 }
 		trigger = {  }
-		
+		add_threat = 5
+		add_ideas = ILY_kudrovowar
+		declare_war_on = {
+        target = GNL
+        type = annex_everything
+        }
+		news_event = news.435
 	}		
 	option = {
 	    name = ilya.41.b
 		ai_chance = { factor = 20 }
 		trigger = {  }
-		
+		add_manpower = 99000
+		add_equipment_to_stockpile = {
+        type = infantry_equipment
+        amount = 10000
+        producer = ILY
+        }
+		add_equipment_to_stockpile = {
+        type = support_equipment
+        amount = 600
+        producer = ILY
+        }
+		add_equipment_to_stockpile = {
+        type = artillery_equipment
+        amount = 100
+        producer = ILY
+        }
 	}		
 	option = {
 	    name = ilya.41.c
 		ai_chance = { factor = 20 }
 		trigger = {  }
-		
+		random_list = {
+				19 = {
+					ILY = {
+						diplomatic_relation = {
+                        country = GNL
+                        relation = non_aggression_pact
+                        active = yes
+                        }
+					}
+					ILY = {
+						diplomatic_relation = {
+                        country = GNL
+                        relation = guarantee
+                        active = yes
+                        }
+					}
+				}
+				81 = {
+					ILY = {
+						
+					}
+				}
+			}
 	}		
 	option = {
 	    name = ilya.41.e
 		ai_chance = { factor = 20 }
 		trigger = {  }
-		
-	}			
+		add_war_support = 0.15
+		every_country = {
+				limit = {
+					AND = {
+						OR = {
+							original_tag = NKD
+							original_tag = NAN
+							original_tag = SAS
+							original_tag = KRL
+							original_tag = VIK
+						}
+					}
+				}
+				add_opinion_modifier = {
+					target = ILY
+					modifier = ILY_kompromat
+				}
+				
+			}
+		country_event = ilya.42
+		every_country = {
+				limit = {
+					AND = {
+						OR = {
+							original_tag = GNL
+						}
+					}
+				}
+				add_stability = -0.08
+				add_war_support = -0.1
+				add_political_power = -90
+				}
+				
+			}
+}			
+country_event = {
+    id = ilya.42
+	title = ilya.42.t
+	desc = ilya.42.d
+	picture = GFX_report_event_generic_troops_at_rivier_in_iraq
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.42.a
+		ai_chance = { factor = 20 }
+		trigger = {  }
+		news_event = news.436
+	}
 }

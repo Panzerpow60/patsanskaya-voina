@@ -37,4 +37,8 @@ opinion_modifiers = {
 	ILY_investments = {
 	    value = 20
 	}
+	
+	ILY_kompromat = {
+	    value = 15
+	}
 }

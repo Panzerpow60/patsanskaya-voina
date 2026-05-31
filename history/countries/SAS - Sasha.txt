@@ -19,6 +19,7 @@ set_technology = {
 	gwtank = 1
     basic_light_tank = 1
     improved_light_tank = 1
+	basic_train = 1
 	
 	mass_assault = 1
 	fleet_in_being = 1

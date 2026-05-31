@@ -58,6 +58,7 @@ set_technology = {
 	gw_artillery = 1
 	mobile_warfare = 1
 	fleet_in_being = 1
+	basic_train = 1
 }
 
 set_politics = {

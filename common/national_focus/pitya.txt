@@ -23,7 +23,7 @@ focus_tree = {
 	focus = {
 		id = VIK_1stwar
 		icon = GFX_focus_BRA_acquire_german_tanks
-		cost = 5,00
+		cost = 1,00
 		x = 50
 		y = 6
 		available = {
@@ -48,9 +48,6 @@ focus_tree = {
 		country_event = viktor.6
 		create_faction = "Фронт Анти-нигерфэготизма"
 		}
-
-
-
 	}
 	focus = {
 		id = VIK_voisko
@@ -115,7 +112,12 @@ focus_tree = {
 		cost = 5,00
 		x = 69
 		y = 0
-
+		completion_reward = {
+		add_equipment_to_stockpile = {
+				type = small_plane_airframe_0
+				amount = 42
+			}
+		}
 	}
 	focus = {
 		id = VIK_industry2
@@ -1188,7 +1190,13 @@ focus_tree = {
 		}
 		x = 43
 		y = 2
-
+		completion_reward = {
+        add_tech_bonus = {
+            bonus = 1.5      
+            category = electronics
+			uses = 1
+        }
+    }
 	}
 	focus = {
 		id = VIK_radio2
@@ -1199,7 +1207,9 @@ focus_tree = {
 		}
 		x = 43
 		y = 3
-
+		completion_reward = {
+		add_ideas = VIK_voisko3
+		}
 	}
 	focus = {
 		id = VIK_army7
@@ -1210,7 +1220,13 @@ focus_tree = {
 		}
 		x = 45
 		y = 2
-
+		completion_reward = {
+		add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = cat_medium_armor
+			}
+		}
 	}
 	focus = {
 		id = VIK_army8
@@ -1221,6 +1237,14 @@ focus_tree = {
 		}
 		x = 45
 		y = 3
+		completion_reward = {
+        add_tech_bonus = {
+				ahead_reduction = 1
+				bonus = 1
+				uses = 1
+				category = cat_mechanized_equipment
+			}
+    }
 
 	}
 	focus = {
@@ -1235,7 +1259,19 @@ focus_tree = {
 		}
 		x = 48
 		y = 2
-
+		available = {
+				has_full_control_of_state = 1019
+				has_tech = cat_anti_air
+		}
+		completion_reward = {
+		            1019 = {  
+	   		        add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+						}
+					}
+		}
 	}
 	focus = {
 		id = VIK_army5
@@ -1262,7 +1298,8 @@ focus_tree = {
 			  add_equipment_to_stockpile = {
 			  type = infantry_equipment
               amount = 10000
-              producer = GER
+              producer = VIK
+			  add_stability = -0.05
 			}
 		}
 
@@ -1298,6 +1335,19 @@ focus_tree = {
 		}
 		x = 52
 		y = 2
+		available = {
+				has_full_control_of_state = 255
+				has_tech = cat_anti_air
+		}
+		completion_reward = {
+		            255 = {  
+	   		        add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+						}
+					}
+		}
 
 	}
 	focus = {
@@ -1497,6 +1547,12 @@ focus_tree = {
 		}
 		x = 57
 		y = 4
+		available = {
+			if = {
+					has_war = yes
+					casualties_k > 150
+				}
+		}
 
 	}
 	focus = {
@@ -1552,7 +1608,13 @@ focus_tree = {
 		}
 		x = 69
 		y = 1
-
+		completion_reward = {
+		add_tech_bonus = {
+               bonus = 0.5
+               uses = 1
+               category = light_air
+			}
+        }
 	}
 	focus = {
 		id = VIK_aviation3

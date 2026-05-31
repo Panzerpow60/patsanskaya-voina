@@ -424,6 +424,25 @@ ideas = {
 }
 ideas = {
     country = {
+	     VIK_voisko3 = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_VIK_voisko1
+			  
+			  modifier = {
+				  coordination_bonus = 0.05
+			}
+		}
+	}
+}
+ideas = {
+    country = {
 	     VIK_endsieg = {
 		 
 		      removal_cost = -1

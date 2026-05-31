@@ -10593,6 +10593,14 @@ spriteTypes = {
 	name = "GFX_goal_ILY_kiracrisis3"
 		texturefile = "gfx/interface/goals/goal_ILY_kiracrisis3.dds"	
 	}
+	SpriteType = {
+	name = "GFX_goal_ILY_irano"
+		texturefile = "gfx/interface/goals/goal_ILY_irano.dds"	
+	}
+	SpriteType = {
+	name = "GFX_goal_ILY_patsanispb"
+		texturefile = "gfx/interface/goals/goal_ILY_patsanispb.dds"	
+	}
 
 
 

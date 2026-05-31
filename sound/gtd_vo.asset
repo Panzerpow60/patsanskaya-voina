@@ -23,10 +23,15 @@ soundeffect = {
 		sound = "ily_de_idle_007"
 		sound = "ily_de_idle_008"
 		sound = "ily_de_idle_009"
+		sound = "ily_de_idle_010"
+		sound = "ily_de_idle_011"
+		sound = "ily_de_idle_012"
+		sound = "ily_de_idle_013"
+		sound = "ily_de_idle_014"
     }
     max_audible = 1
     max_audible_behaviour = fail
-    volume = 2.50
+    volume = 3.50
     volume_random_offset = { 0.0 -0.15 }
     playbackrate_random_offset = { 0.0 -0.15 }
 }
@@ -147,11 +152,11 @@ sound = { name = "ily_de_idle_006"         file = "ILY/ily_de_idle_006.wav" }
 sound = { name = "ily_de_idle_007"         file = "ILY/ily_de_idle_007.wav" }
 sound = { name = "ily_de_idle_008"         file = "ILY/ily_de_idle_008.wav" }
 sound = { name = "ily_de_idle_009"         file = "ILY/ily_de_idle_009.wav" }
-sound = { name = "aus_de_idle_010"         file = "aus/aus_de_idle_010.wav" }
-sound = { name = "aus_de_idle_011"         file = "aus/aus_de_idle_011.wav" }
-sound = { name = "aus_de_idle_012"         file = "aus/aus_de_idle_012.wav" }
-sound = { name = "aus_de_idle_013"         file = "aus/aus_de_idle_013.wav" }
-sound = { name = "aus_de_idle_014"         file = "aus/aus_de_idle_014.wav" }
+sound = { name = "ily_de_idle_010"         file = "ILY/ily_de_idle_010.wav" }
+sound = { name = "ily_de_idle_011"         file = "ILY/ily_de_idle_011.wav" }
+sound = { name = "ily_de_idle_012"         file = "ILY/ily_de_idle_012.wav" }
+sound = { name = "ily_de_idle_013"         file = "ILY/ily_de_idle_013.wav" }
+sound = { name = "ily_de_idle_014"         file = "ILY/ily_de_idle_014.wav" }
 sound = { name = "aus_de_idle_015"         file = "aus/aus_de_idle_015.wav" }
 sound = { name = "aus_de_idle_016"         file = "aus/aus_de_idle_016.wav" }
 sound = { name = "aus_de_idle_017"         file = "aus/aus_de_idle_017.wav" }

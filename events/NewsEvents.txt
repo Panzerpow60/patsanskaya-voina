@@ -14206,6 +14206,27 @@ news_event = {
 		name = news.436.a
 	}
 }		
+news_event = {
+	id = news.437
+	title = news.437.t
+	desc = news.437.desc
+	picture = GFX_news_event_067
+	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		219 = { is_controlled_by = ILY }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = news.437.a
+		}
+	}
 
 
 

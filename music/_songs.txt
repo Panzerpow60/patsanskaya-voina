@@ -158,6 +158,17 @@ music = {
 		}		
 	}	
 }
+music = {
+	song = "silence1pw"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = no
+		}		
+	}	
+}
 
 music = {
 	song = "allies_peace_1"

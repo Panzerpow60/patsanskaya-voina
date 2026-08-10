@@ -308,6 +308,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/VIK_love.dds"
 	}
 	spriteType = {
+	    name = "GFX_idea_ILY_love"
+		texturefile = "gfx/interface/ideas/VIK_love.dds"
+	}
+	spriteType = {
 	    name = "GFX_idea_NKD_doterrek"
 		texturefile = "gfx/interface/ideas/VIK_endsieg.dds"
 	}

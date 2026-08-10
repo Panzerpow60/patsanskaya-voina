@@ -1211,3 +1211,77 @@ country_event = {
 		news_event = news.436
 	}
 }
+country_event = {
+    id = ilya.43
+	title = ilya.43.t
+	desc = ilya.43.d
+	picture = GFX_report_event_generic_troops_at_rivier_in_iraq
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.43.a
+		ai_chance = { factor = 20 }
+		trigger = {  }
+
+	}
+}
+country_event = {
+    id = ilya.44
+	title = ilya.44.t
+	desc = ilya.44.d
+	picture = GFX_report_event_generic_troops_at_rivier_in_iraq
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = ilya.44.a
+		ai_chance = { factor = 20 }
+		trigger = {  }
+		EMP = {
+		transfer_state = 1032
+		transfer_state = 1019
+		transfer_state = 256
+		transfer_state = 1024
+		transfer_state = 1018
+		transfer_state = 1026
+		transfer_state = 258
+		transfer_state = 1025
+		transfer_state = 257
+		transfer_state = 254
+		transfer_state = 1017
+		transfer_state = 1022
+		transfer_state = 239
+		transfer_state = 255
+		transfer_state = 1021
+		transfer_state = 1020
+		transfer_state = 252
+		transfer_state = 1031
+		transfer_state = 1030
+		transfer_state = 253
+		transfer_state = 833
+		transfer_state = 1028
+		transfer_state = 1029
+		transfer_state = 250
+		transfer_state = 1027
+		transfer_state = 219
+		transfer_state = 247
+		transfer_state = 248
+		transfer_state = 251
+		transfer_state = 1023
+		transfer_state = 401
+		}
+		add_stability = -1
+		add_war_support = -1
+		add_political_power = -2000
+		add_command_power = -500
+	}
+}

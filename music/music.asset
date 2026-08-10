@@ -2,7 +2,7 @@
 # MAIN THEME
 music = {
 	name = "maintheme"
-	file = "KudrovoSturm.ogg"
+	file = "silence1pw.ogg"
 	volume = 2
 }
 
@@ -41,6 +41,11 @@ music = {
 music = {
 	name = "spbaugust"
 	file = "spbaugust.ogg"
+	volume = 2
+}
+music = {
+	name = "silence1pw"
+	file = "silence1pw.ogg"
 	volume = 2
 }
 music = {

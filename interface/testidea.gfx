@@ -459,6 +459,10 @@ spriteTypes = {
 	    name = "GFX_idea_SAS_wdacha"
 		texturefile = "gfx/interface/ideas/SAS_wdacha.dds"
 	}
+	spriteType = {
+	    name = "GFX_idea_NRM_army"
+		texturefile = "gfx/interface/ideas/NRM_army.dds"
+	}
 }
 
 

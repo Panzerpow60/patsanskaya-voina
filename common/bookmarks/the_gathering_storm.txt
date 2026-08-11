@@ -97,3 +97,13 @@ bookmarks = {
 			focuses = {
 			}
 		}
+		"NRM"={
+			history = "GNL_GATHERING_STORM_DESC"
+			ideology = communism
+			available = 
+			ideas = {
+				
+			}
+			focuses = {
+			}
+		}

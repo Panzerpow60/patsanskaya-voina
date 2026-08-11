@@ -1,0 +1,87 @@
+ideas = {
+    country = {
+	     KRL_grazdanka = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_SAS_cezik
+			  
+			  modifier = {
+			      army_attack_factor = -0.7
+                  army_attack_defence = -0.20
+                  planning_speed = -0.50
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     NRM_gosudarstvo = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_SAS_cezik
+			  
+			  modifier = {
+			      drift_defence_factor = -0.3
+                  political_power_gain = -0.5
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     NRM_economika = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_SAS_cezik
+			  
+			  modifier = {
+			      production_speed_buildings_factor = 0.1
+                  production_factory_efficiency_gain_factor = -0.1
+				  production_factory_max_efficiency_factor = -0.1
+				  production_factory_start_efficiency_factor = -0.1
+				  research_speed_factor = -0.10
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     NRM_army = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_SAS_cezik
+			  
+			  modifier = {
+			      weekly_manpower = 1000
+				  army_attack_factor = 0.05
+				  army_org_factor = -0.05
+				  surrender_limit = 0.25
+			}
+		}
+	}
+}
+

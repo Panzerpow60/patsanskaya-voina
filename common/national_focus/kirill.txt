@@ -15,21 +15,14 @@ focus_tree = {
 		x = 7
 		y = 1
 		completion_reward = {
+		add_timed_idea = {
+		idea = KRL_grazdanka
+		days = 500
+		}
         load_focus_tree = {
             tree = kirill2
             keep_completed = yes
         }
-		start_civil_war = {
-    ruling_party = fascism
-    ideology = communism
-    size = 0.5
-    capital = 282
-    states = {
-        401 1023
-    }
-    keep_political_leader = yes
-    keep_political_party_members = yes
-    }
     }
 
 	}

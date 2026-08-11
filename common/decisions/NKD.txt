@@ -5,7 +5,7 @@ NKD_dota = {
         icon = generic_ignite_civil_war
 		
 		available = {
-		has_completed_focus = NKD_regnut
+		has_completed_focus = NKD_ebashit
 		
 		}
 		
@@ -23,8 +23,12 @@ NKD_dota = {
         days = 180
         }
 		ai_will_do = {
-      base = 200
-    }
+        base = 200
+			modifier = {
+				factor = 10
+				has_stability > 0.3
+			}
+        }
 		set_country_flag = NKD_ebashit
 		}
 		remove_effect = {
@@ -41,7 +45,7 @@ NKD_dota = {
         icon = generic_ignite_civil_war
 		
 		available = {
-		has_completed_focus = NKD_regnut
+		has_completed_focus = NKD_ebashit
 		has_country_flag = NKD_ebashit
 		NOT = { 
 		has_idea = NKD_ebashit1 
@@ -71,7 +75,7 @@ NKD_dota = {
         add_idea = NKD_doterstraj
         }
 		ai_will_do = {
-      base = 200
+        base = 200
     }
 		
 	}
@@ -81,7 +85,7 @@ NKD_dota = {
         icon = generic_ignite_civil_war
 		
 		available = {
-		has_completed_focus = NKD_regnut
+		has_completed_focus = NKD_ebashit
 		has_country_flag = NKD_ebashit2
 		NOT = { 
 		has_idea = NKD_ebashit1 
@@ -109,7 +113,7 @@ NKD_dota = {
         add_idea = NKD_doterridtsr
         }
 		ai_will_do = {
-      base = 200
+        base = 200
     }
 		
 	}
@@ -119,7 +123,7 @@ NKD_dota = {
         icon = generic_ignite_civil_war
 		
 		available = {
-		has_completed_focus = NKD_regnut
+		has_completed_focus = NKD_ebashit
 		has_country_flag = NKD_ebashit3
 		NOT = { 
 		has_idea = NKD_ebashit1 
@@ -147,7 +151,8 @@ NKD_dota = {
         add_idea = NKD_doterhero
         }
 		ai_will_do = {
-      base = 200
+        base = 200
+		
     }
 		
 	}
@@ -157,7 +162,7 @@ NKD_dota = {
         icon = generic_ignite_civil_war
 		
 		available = {
-		has_completed_focus = NKD_regnut
+		has_completed_focus = NKD_ebashit
 		has_country_flag = NKD_ebashit4
 		NOT = { 
 		has_idea = NKD_ebashit1 
@@ -185,7 +190,7 @@ NKD_dota = {
         add_idea = NKD_doterlegend
         }
 		ai_will_do = {
-      base = 200
+        base = 200
     }
 		
 	}
@@ -195,7 +200,7 @@ NKD_dota = {
         icon = generic_ignite_civil_war
 		
 		available = {
-		has_completed_focus = NKD_regnut
+		has_completed_focus = NKD_ebashit
 		has_country_flag = NKD_ebashit5
 		NOT = { 
 		has_idea = NKD_ebashit1 
@@ -223,7 +228,7 @@ NKD_dota = {
         add_idea = NKD_dotervlast
         }
 		ai_will_do = {
-      base = 200
+        base = 200
     }
 		
 	}
@@ -233,7 +238,7 @@ NKD_dota = {
         icon = generic_ignite_civil_war
 		
 		available = {
-		has_completed_focus = NKD_regnut
+		has_completed_focus = NKD_ebashit
 		has_country_flag = NKD_ebashit6
 		NOT = { 
 		has_idea = NKD_ebashit1 
@@ -261,7 +266,7 @@ NKD_dota = {
         add_idea = NKD_titan
         }
 		ai_will_do = {
-      base = 200
+        base = 200
     }
 		
 	}
@@ -295,7 +300,7 @@ NKD_army = {
 		add_idea = NKD_badarmy1
 		}
 		ai_will_do = {
-      base = 200
+         base = 200
     }
 		
 	}
@@ -333,7 +338,7 @@ NKD_army = {
 		add_idea = NKD_badarmy2
 		}
 		ai_will_do = {
-      base = 200
+        base = 200
     }
 	}
 	}

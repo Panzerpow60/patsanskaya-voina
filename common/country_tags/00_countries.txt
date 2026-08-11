@@ -1,6 +1,7 @@
 ILY = "countries/Ilya.txt"
 EMP = "countries/Pustota.txt"
 KRL = "countries/Kirill.txt"
+NRM = "countries/Normisi.txt"
 GNL = "countries/Ludi.txt"
 NKD = "countries/NikitaK.txt"
 NAN = "countries/NikitaA.txt"

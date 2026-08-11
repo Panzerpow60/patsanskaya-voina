@@ -25,3 +25,120 @@ country_event = {
 		
 	}
 }
+country_event = {
+    id = kirill.2
+	title = kirill.2.t
+	desc = kirill.2.d
+	picture = GFX_report_event_british_inspect_troops
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = kirill.2.a
+		ai_chance = { factor = 90 }
+		trigger = {  }
+        start_civil_war = {
+        ruling_party = fascism
+        ideology = communism
+        size = 0.5
+        capital = 401
+        states = {
+            401
+            1023
+        }
+    }
+		add_timed_idea = {
+		idea = KRL_grazdanka
+		days = 500
+		}
+		division_template = {
+	    name = "Opolchenie"
+	    division_names_group = KRL_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		}
+		
+    }
+	random_owned_controlled_state = {
+          limit = { ROOT = { has_full_control_of_state = PREV } }
+          prioritize = {  }
+          create_unit = {
+            division = "name = \"Opolchenie\" division_template = \"Opolchenie\" start_experience_factor = 0.1" 
+            owner = KRL
+          }
+        }
+		random_owned_controlled_state = {
+          limit = { ROOT = { has_full_control_of_state = PREV } }
+          prioritize = {  }
+          create_unit = {
+            division = "name = \"Opolchenie\" division_template = \"Opolchenie\" start_experience_factor = 0.1" 
+            owner = KRL
+          }
+        }
+		random_owned_controlled_state = {
+          limit = { ROOT = { has_full_control_of_state = PREV } }
+          prioritize = {  }
+          create_unit = {
+            division = "name = \"Opolchenie\" division_template = \"Opolchenie\" start_experience_factor = 0.1" 
+            owner = KRL
+          }
+        }
+		random_owned_controlled_state = {
+          limit = { ROOT = { has_full_control_of_state = PREV } }
+          prioritize = {  }
+          create_unit = {
+            division = "name = \"Opolchenie\" division_template = \"Opolchenie\" start_experience_factor = 0.1" 
+            owner = KRL
+          }
+        }
+		random_owned_controlled_state = {
+          limit = { ROOT = { has_full_control_of_state = PREV } }
+          prioritize = {  }
+          create_unit = {
+            division = "name = \"Opolchenie\" division_template = \"Opolchenie\" start_experience_factor = 0.1" 
+            owner = KRL
+          }
+        }
+		random_owned_controlled_state = {
+          limit = { ROOT = { has_full_control_of_state = PREV } }
+          prioritize = {  }
+          create_unit = {
+            division = "name = \"Opolchenie\" division_template = \"Opolchenie\" start_experience_factor = 0.1" 
+            owner = KRL
+          }
+        }
+		random_owned_controlled_state = {
+          limit = { ROOT = { has_full_control_of_state = PREV } }
+          prioritize = {  }
+          create_unit = {
+            division = "name = \"Opolchenie\" division_template = \"Opolchenie\" start_experience_factor = 0.1" 
+            owner = KRL
+          }
+        }
+		random_owned_controlled_state = {
+          limit = { ROOT = { has_full_control_of_state = PREV } }
+          prioritize = {  }
+          create_unit = {
+            division = "name = \"Opolchenie\" division_template = \"Opolchenie\" start_experience_factor = 0.1" 
+            owner = KRL
+          }
+        }
+		
+	}
+	option = {
+	    name = kirill.2.b
+		ai_chance = { factor = 10 }
+		trigger = {  }
+		
+	}
+}

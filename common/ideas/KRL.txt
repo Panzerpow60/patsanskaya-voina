@@ -1,0 +1,21 @@
+ideas = {
+    country = {
+	     KRL_grazdanka = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_SAS_cezik
+			  
+			  modifier = {
+			      army_attack_factor = -0.7
+                  army_attack_defence = -0.20
+                  planning_speed = -0.50
+			}
+		}
+	}
+}

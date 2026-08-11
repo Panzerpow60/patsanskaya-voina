@@ -2,25 +2,32 @@ state={
 	id=401
 	name="STATE_401"
 	resources={
-		steel=10.000
+		steel=15.000
 		tungsten=10.000
 	}
 	history = {
-    owner = KRL
+    owner = NRM
     buildings = {
-      infrastructure = 2
+      infrastructure = 3
       industrial_complex = 3
+	  arms_factory = 3
       
     }
-    add_core_of = KRL
+    add_core_of = NRM
 	victory_points = {
-			11523 2
+			11523 15
+	}
+	victory_points = {
+			6601 2
+	}
+	victory_points = {
+	        9432 2
 		}
     }
 	provinces={
 		499 3490 6430 6601 9432 9447 11460 11523 
 	}
-	manpower=309530
+	manpower=409530
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=3.000

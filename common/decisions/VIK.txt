@@ -20,7 +20,7 @@ VIK_guide_huinya = {
 		add_stability = 0.03
 		}
 		ai_will_do = {
-      factor = 200
+        factor = 200
     }
 	}
 	
@@ -43,7 +43,7 @@ VIK_guide_huinya = {
 		add_war_support = 0.05
 		}
 		ai_will_do = {
-      factor = 200
+        factor = 200
     }
 	}
 	
@@ -66,7 +66,7 @@ VIK_guide_huinya = {
 		add_war_support = 0.05
 		}
 		ai_will_do = {
-      factor = 200
+        factor = 200
     }
 	}
 	
@@ -90,7 +90,7 @@ VIK_guide_huinya = {
 		add_ideas = VIK_flowers1
 		}
 		ai_will_do = {
-      factor = 200
+        factor = 200
     }
 	}
 }
@@ -112,7 +112,7 @@ VIK_guide_sfitness = {
 		add_ideas = SAS_sfitness
 		}
 		ai_will_do = {
-      factor = 200
+        factor = 200
     }
 	}
 

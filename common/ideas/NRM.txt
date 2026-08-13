@@ -56,7 +56,6 @@ ideas = {
 			      production_speed_buildings_factor = 0.1
                   production_factory_efficiency_gain_factor = -0.1
 				  production_factory_max_efficiency_factor = -0.1
-				  production_factory_start_efficiency_factor = -0.1
 				  research_speed_factor = -0.10
 			}
 		}
@@ -80,6 +79,68 @@ ideas = {
 				  army_attack_factor = 0.05
 				  army_org_factor = -0.05
 				  surrender_limit = 0.25
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     NRM_liberation = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_NRM_army
+			  
+			    targeted_modifier = {
+				tag = KRL
+				attack_bonus_against = 0.1
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     NRM_ludi = {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_NRM_army
+			  
+			  modifier = {
+			    weekly_manpower = 4000
+				communism_drift = 0.03
+			   } 
+			}
+		}
+	}
+}
+ideas = {
+    country = {
+	     NRM_ludi1 {
+		 
+		      removal_cost = -1
+			  
+			  allowed = {
+			  
+			  }
+			  
+			  
+			  picture = GFX_NRM_army
+			  
+			  modifier = {
+			    weekly_manpower = -1000
+				communism_drift = -0.03
+			   } 
 			}
 		}
 	}

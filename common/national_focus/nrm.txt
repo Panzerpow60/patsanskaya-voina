@@ -12,13 +12,26 @@ focus_tree = {
 
 
 	focus = {
-		id = NRM_war
+		id = NRM_prepare
 		icon = generic_political_pressure
 		x = 2
 		y = 0
 		cost = 10
 		completion_reward = {
+			401 = {
+		add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			  add_manpower = 15421
+			  add_equipment_to_stockpile = {
+			  type = infantry_equipment
+              amount = 1000
+              producer = NRM
+			}
 			
+		}
 		}
 
 		ai_will_do = {
@@ -27,14 +40,91 @@ focus_tree = {
 	}
 
 	focus = {
-		id = NRM_manpower
+		id = NRM_war
 		icon = generic_political_pressure
 		x = 2
 		y = 1
 		cost = 10
+		prerequisite = { focus = NRM_prepare }
+		completion_reward = {
+		news_event = news.439
+		declare_war_on = { 
+		     target = KRL
+			 type = annex_everything
+			}
+		add_timed_idea = {
+					 idea = NRM_liberation
+					 days = 360
+					}
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+	focus = {
+		id = NRM_manpower
+		icon = generic_political_pressure
+		x = 2
+		y = 2
+		cost = 10
 		prerequisite = { focus = NRM_war }
 		completion_reward = {
-		}
+		add_timed_idea = {
+					 idea = NRM_ludi
+					 days = 70
+					}
+		every_country = {
+				limit = {
+					AND = {
+						OR = {
+							original_tag = SAS
+						}
+					}
+				}
+				country_event = andreev.12
+			}
+			every_country = {
+				limit = {
+					AND = {
+						OR = {
+							original_tag = NAN
+						}
+					}
+				}
+				country_event = andreev.12
+			}
+			every_country = {
+				limit = {
+					AND = {
+						OR = {
+							original_tag = NKD
+						}
+					}
+				}
+				country_event = andreev.12
+			}
+			every_country = {
+				limit = {
+					AND = {
+						OR = {
+							original_tag = VIK
+						}
+					}
+				}
+				country_event = andreev.12
+			}
+			every_country = {
+				limit = {
+					AND = {
+						OR = {
+							original_tag = ILY
+						}
+					}
+				}
+				country_event = andreev.12
+			}
+		
 
 		ai_will_do = {
 			base = 1

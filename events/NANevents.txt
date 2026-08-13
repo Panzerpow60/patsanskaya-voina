@@ -365,6 +365,28 @@ country_event = {
 		complete_national_focus = NAN_war
 	}		
 }
+country_event = {
+    id = andreev.12
+	title = andreev.12.t
+	desc = andreev.12.d
+	picture = GFX_report_event_bul_making_bricks_for_school
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = andreev.12.a
+		ai_chance = { factor = 20 }
+		trigger = {  }
+		add_timed_idea = {
+					 idea = NRM_ludi1
+					 days = 70
+					}
+	}
+}		
 
 
 

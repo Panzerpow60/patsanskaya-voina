@@ -14248,6 +14248,26 @@ news_event = {
 		name = news.438.a
 		}
 	}
+news_event = {
+	id = news.439
+	title = news.439.t
+	desc = news.439.desc
+	picture = GFX_news_event_002
+	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		
+	}
 
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = news.439.a
+		}
+	}
 
 

@@ -10,6 +10,7 @@ state={
 
     owner = KRL
     add_core_of = KRL
+	add_core_of = NRM
 
     victory_points = {
       6275 10

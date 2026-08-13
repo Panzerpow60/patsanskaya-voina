@@ -14,6 +14,7 @@ state={
       
     }
     add_core_of = NRM
+	add_core_of = KRL
 	victory_points = {
 			11523 15
 	}

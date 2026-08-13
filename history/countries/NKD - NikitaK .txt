@@ -54,6 +54,7 @@ add_ideas = {
 	NKD_badarmy
 	NKD_doter
 	NKD_love
+	NKD_pudgeours
 }
 
 create_country_leader = { 

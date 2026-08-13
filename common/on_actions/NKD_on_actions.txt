@@ -1,0 +1,32 @@
+on_actions = {
+    on_state_control_changed = {
+        effect = {
+            
+            if = {
+                limit = {
+                    FROM.FROM = { state = 1027 }
+                }
+                
+                
+                if = {
+                    limit = {
+                        ROOT = { tag = KRL }
+                    }
+                    
+                    ROOT = { add_ideas = KRL_state_buff }
+                    
+                    ROOT = { country_event = kirill.3 }
+                }
+				
+                
+                if = {
+                    limit = {
+                        ROOT = { tag = NKD }
+                    }
+                    
+                    ROOT = { add_ideas = NKD_pudgeours }
+				}
+            }
+        }
+    }
+}

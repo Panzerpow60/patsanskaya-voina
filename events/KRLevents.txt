@@ -142,3 +142,23 @@ country_event = {
 		
 	}
 }
+country_event = {
+    id = kirill.3
+	title = kirill.3.t
+	desc = kirill.3.d
+	picture = GFX_report_event_british_inspect_troops
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+	    name = kirill.3.a
+		ai_chance = { factor = 90 }
+		trigger = {  }
+		add_stability = 0.05
+		
+	}
+}

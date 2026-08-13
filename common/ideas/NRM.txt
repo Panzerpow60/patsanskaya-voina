@@ -30,7 +30,7 @@ ideas = {
 			  }
 			  
 			  
-			  picture = GFX_SAS_cezik
+			  picture = GFX_NRM_gosudarstvo
 			  
 			  modifier = {
 			      drift_defence_factor = -0.3
@@ -50,7 +50,7 @@ ideas = {
 			  }
 			  
 			  
-			  picture = GFX_SAS_cezik
+			  picture = GFX_NRM_economika
 			  
 			  modifier = {
 			      production_speed_buildings_factor = 0.1

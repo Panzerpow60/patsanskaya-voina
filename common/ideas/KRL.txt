@@ -19,3 +19,41 @@ ideas = {
 		}
 	}
 }
+ideas = {
+    country = {
+        KRL_lost_state_debuff = {
+            removal_cost = -1
+            available = {
+                NOT = { has_full_control_of_state = 1027 }
+            }
+            
+            cancel_trigger_effect = {}
+            picture = GFX_idea_disjointed_government 
+            
+            modifier = {
+                stability_factor = -0.10        
+                political_power_gain = -0.15    
+                war_support_factor = -0.05      
+            }
+        }
+	}
+}
+ideas = {
+    country = {
+        KRL_state_buff = {
+            removal_cost = -1
+            available = {
+                has_full_control_of_state = 1027
+            }
+            
+            cancel_trigger_effect = {}
+            picture = GFX_idea_disjointed_government 
+            
+            modifier = {
+                stability_factor = 0.05         
+                army_org_factor = 0.08          
+                recruitable_population_factor = 0.05    
+            }
+        }
+	}
+}

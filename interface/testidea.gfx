@@ -463,6 +463,14 @@ spriteTypes = {
 	    name = "GFX_idea_NRM_army"
 		texturefile = "gfx/interface/ideas/NRM_army.dds"
 	}
+	spriteType = {
+	    name = "GFX_idea_NRM_economika"
+		texturefile = "gfx/interface/ideas/NRM_economika.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_NRM_gosudarstvo"
+		texturefile = "gfx/interface/ideas/NRM_gosudarstvo.dds"
+	}
 }
 
 

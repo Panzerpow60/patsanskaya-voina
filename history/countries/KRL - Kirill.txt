@@ -78,6 +78,7 @@ create_country_leader = {
 }
 
 add_ideas = {
+KRL_lost_state_debuff
 }
 
 

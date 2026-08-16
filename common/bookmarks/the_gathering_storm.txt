@@ -27,7 +27,7 @@ bookmarks = {
 			ideas = {
 				ILY_sfitness
 				ILY_badroads
-				ILY_slabprom
+				ILY_kudrovowar
 			}
 			focuses = {
 				ILY_1stwar
@@ -102,7 +102,9 @@ bookmarks = {
 			ideology = communism
 			available = 
 			ideas = {
-				
+			  NRM_army
+			  NRM_economika
+			  NRM_gosudarstvo
 			}
 			focuses = {
 			}

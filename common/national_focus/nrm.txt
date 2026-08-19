@@ -1,134 +1,330 @@
 focus_tree = {
-	id = normisi_focus
-
+	id = NRM
 	country = {
-		base = 0
+		factor = 0
 		modifier = {
-			add = 100
-			original_tag = NRM
+		    add = 10
+			tag = NRM
 		}
 	}
 	default = no
-
-
 	focus = {
-		id = NRM_prepare
-		icon = generic_political_pressure
-		x = 2
+		id = NRM_civwar1
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 24
 		y = 0
-		cost = 10
-		completion_reward = {
-			401 = {
-		add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			  add_manpower = 15421
-			  add_equipment_to_stockpile = {
-			  type = infantry_equipment
-              amount = 1000
-              producer = NRM
-			}
-			
-		}
-		}
 
-		ai_will_do = {
-			base = 1
-		}
 	}
-
 	focus = {
-		id = NRM_war
-		icon = generic_political_pressure
-		x = 2
+		id = NRM_civwar2
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NRM_civwar1
+		}
+		x = 24
 		y = 1
-		cost = 10
-		prerequisite = { focus = NRM_prepare }
-		completion_reward = {
-		news_event = news.439
-		declare_war_on = { 
-		     target = KRL
-			 type = annex_everything
-			}
-		add_timed_idea = {
-					 idea = NRM_liberation
-					 days = 360
-					}
-		}
 
-		ai_will_do = {
-			base = 1
-		}
 	}
 	focus = {
-		id = NRM_manpower
-		icon = generic_political_pressure
-		x = 2
-		y = 2
-		cost = 10
-		prerequisite = { focus = NRM_war }
-		completion_reward = {
-		add_timed_idea = {
-					 idea = NRM_ludi
-					 days = 70
-					}
-		every_country = {
-				limit = {
-					AND = {
-						OR = {
-							original_tag = SAS
-						}
-					}
-				}
-				country_event = andreev.12
-			}
-			every_country = {
-				limit = {
-					AND = {
-						OR = {
-							original_tag = NAN
-						}
-					}
-				}
-				country_event = andreev.12
-			}
-			every_country = {
-				limit = {
-					AND = {
-						OR = {
-							original_tag = NKD
-						}
-					}
-				}
-				country_event = andreev.12
-			}
-			every_country = {
-				limit = {
-					AND = {
-						OR = {
-							original_tag = VIK
-						}
-					}
-				}
-				country_event = andreev.12
-			}
-			every_country = {
-				limit = {
-					AND = {
-						OR = {
-							original_tag = ILY
-						}
-					}
-				}
-				country_event = andreev.12
-			}
-		
-
-		ai_will_do = {
-			base = 1
+		id = NRM_civwar3
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NRM_civwar2
 		}
-	}
+		x = 24
+		y = 2
 
+	}
+	focus = {
+		id = NRM_NKD1
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NRM_civwar3
+		}
+		mutually_exclusive = {
+			focus = NRM_NKD2
+		}
+		x = 8
+		y = 3
+
+	}
+	focus = {
+		id = NRM_NKD2
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NRM_civwar3
+		}
+		mutually_exclusive = {
+			focus = NRM_NKD1
+		}
+		x = 12
+		y = 3
+
+	}
+	focus = {
+		id = NRM_NKD3
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NRM_NKD2
+			focus = NRM_NKD1
+		}
+		x = 10
+		y = 4
+
+	}
+	focus = {
+		id = NRM_partisan
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NRM_civwar3
+		}
+		x = 18
+		y = 3
+
+	}
+	focus = {
+		id = NRM_partisan2
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NRM_partisan
+		}
+		x = 15
+		y = 4
+
+	}
+	focus = {
+		id = NRM_partisan4
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NRM_partisan
+		}
+		x = 21
+		y = 4
+
+	}
+	focus = {
+		id = NRM_politics
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NRM_civwar3
+		}
+		x = 24
+		y = 3
+
+	}
+	focus = {
+		id = NRM_politics2
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NRM_politics
+		}
+		x = 24
+		y = 4
+
+	}
+	focus = {
+		id = NRM_politics3
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NRM_politics2
+		}
+		x = 24
+		y = 5
+
+	}
+	focus = {
+		id = NRM_politics4
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NRM_politics3
+		}
+		x = 24
+		y = 6
+
+	}
+	focus = {
+		id = NRM_industry
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NRM_civwar3
+		}
+		x = 29
+		y = 3
+
+	}
+	focus = {
+		id = NRM_industry2
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NRM_industry
+		}
+		x = 28
+		y = 4
+
+	}
+	focus = {
+		id = NRM_industry4
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NRM_industry2
+		}
+		x = 28
+		y = 5
+
+	}
+	focus = {
+		id = NRM_industry3
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NRM_industry
+		}
+		x = 30
+		y = 4
+
+	}
+	focus = {
+		id = NRM_industry5
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NRM_industry3
+		}
+		x = 30
+		y = 5
+
+	}
+	focus = {
+		id = NRM_industry6
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NRM_industry5
+		}
+		prerequisite = {
+			focus = NRM_industry4
+		}
+		x = 29
+		y = 6
+
+	}
+	focus = {
+		id = NRM_provocations
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NRM_civwar3
+		}
+		x = 32
+		y = 3
+
+	}
+	focus = {
+		id = NRM_provocations2
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NRM_civwar3
+		}
+		x = 34
+		y = 3
+
+	}
+	focus = {
+		id = NRM_provocations3
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NRM_provocations
+		}
+		prerequisite = {
+			focus = NRM_provocations2
+		}
+		x = 33
+		y = 4
+
+	}
+	focus = {
+		id = NRM_politics5
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NRM_politics4
+		}
+		mutually_exclusive = {
+			focus = NRM_politics6
+		}
+		x = 23
+		y = 7
+
+	}
+	focus = {
+		id = NRM_politics6
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NRM_politics4
+		}
+		mutually_exclusive = {
+			focus = NRM_politics5
+		}
+		x = 25
+		y = 7
+
+	}
+	focus = {
+		id = NRM_partisan3
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NRM_partisan
+		}
+		x = 18
+		y = 4
+
+	}
+	focus = {
+		id = NRM_partisan5
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NRM_partisan4
+		}
+		prerequisite = {
+			focus = NRM_partisan3
+		}
+		prerequisite = {
+			focus = NRM_partisan2
+		}
+		x = 18
+		y = 5
+
+	}
+	focus = {
+		id = NRM_partisan6
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = NRM_partisan5
+		}
+		x = 18
+		y = 6
+
+	}
 }

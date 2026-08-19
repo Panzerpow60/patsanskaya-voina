@@ -1,0 +1,1126 @@
+focus_tree = {
+	id = KRL
+	country = {
+		factor = 0
+		modifier = {
+		    add = 10
+			tag = KRL
+		}
+	}
+	default = no
+	focus = {
+		id = KRL_pudge1
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 9
+		y = 0
+
+	}
+	focus = {
+		id = KRL_civwar1
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 24
+		y = 0
+
+	}
+	focus = {
+		id = KRL_politics
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 40
+		y = 0
+
+	}
+	focus = {
+		id = KRL_industry1
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 55
+		y = 0
+
+	}
+	focus = {
+		id = KRL_dota1
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 15
+		y = 0
+
+	}
+	focus = {
+		id = KRL_army1
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 72
+		y = 0
+
+	}
+	focus = {
+		id = KRL_pudge2
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_pudge1
+		}
+		x = 9
+		y = 1
+
+	}
+	focus = {
+		id = KRL_pudge3
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_pudge2
+		}
+		x = 9
+		y = 2
+
+	}
+	focus = {
+		id = KRL_pudge4
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_pudge3
+		}
+		x = 7
+		y = 3
+
+	}
+	focus = {
+		id = KRL_pudge5
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_pudge3
+		}
+		x = 11
+		y = 3
+
+	}
+	focus = {
+		id = KRL_pudge6
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_pudge5
+		}
+		prerequisite = {
+			focus = KRL_pudge4
+		}
+		x = 9
+		y = 4
+
+	}
+	focus = {
+		id = KRL_dota2
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_dota1
+		}
+		x = 14
+		y = 1
+
+	}
+	focus = {
+		id = KRL_dota3
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_dota2
+		}
+		x = 14
+		y = 2
+
+	}
+	focus = {
+		id = KRL_dota4
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_dota3
+		}
+		x = 14
+		y = 3
+
+	}
+	focus = {
+		id = KRL_dota41
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_dota4
+		}
+		x = 14
+		y = 4
+
+	}
+	focus = {
+		id = KRL_dota5
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_dota1
+		}
+		x = 17
+		y = 1
+
+	}
+	focus = {
+		id = KRL_dota6
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_dota5
+		}
+		x = 17
+		y = 2
+
+	}
+	focus = {
+		id = KRL_civwar2
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_civwar1
+		}
+		x = 24
+		y = 1
+
+	}
+	focus = {
+		id = KRL_civwar3
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_civwar2
+		}
+		x = 22
+		y = 2
+
+	}
+	focus = {
+		id = KRL_civwar4
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_civwar2
+		}
+		x = 24
+		y = 2
+
+	}
+	focus = {
+		id = KRL_civwar5
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_civwar2
+		}
+		x = 26
+		y = 2
+
+	}
+	focus = {
+		id = KRL_civwar6
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_civwar5
+		}
+		prerequisite = {
+			focus = KRL_civwar4
+		}
+		prerequisite = {
+			focus = KRL_civwar3
+		}
+		x = 24
+		y = 3
+
+	}
+	focus = {
+		id = KRL_civwar7
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_civwar6
+		}
+		x = 24
+		y = 4
+
+	}
+	focus = {
+		id = KRL_civwar8
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_civwar7
+		}
+		mutually_exclusive = {
+			focus = KRL_civwar9
+		}
+		x = 20
+		y = 5
+
+	}
+	focus = {
+		id = KRL_civwar9
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_civwar7
+		}
+		mutually_exclusive = {
+			focus = KRL_civwar8
+		}
+		x = 28
+		y = 5
+
+	}
+	focus = {
+		id = KRL_civwar91
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_civwar9
+		}
+		x = 28
+		y = 6
+
+	}
+	focus = {
+		id = KRL_civwar92
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_civwar91
+		}
+		x = 28
+		y = 7
+
+	}
+	focus = {
+		id = KRL_politics2
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_politics
+		}
+		mutually_exclusive = {
+			focus = KRL_politics3
+			focus = KRL_politics4
+		}
+		x = 35
+		y = 2
+
+	}
+	focus = {
+		id = KRL_politics21
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_politics2
+		}
+		x = 35
+		y = 3
+
+	}
+	focus = {
+		id = KRL_politics22
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_politics21
+		}
+		x = 35
+		y = 4
+
+	}
+	focus = {
+		id = KRL_politics23
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_politics22
+		}
+		x = 35
+		y = 5
+
+	}
+	focus = {
+		id = KRL_politics3
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_politics
+		}
+		mutually_exclusive = {
+			focus = KRL_politics2
+			focus = KRL_politics4
+		}
+		x = 40
+		y = 2
+
+	}
+	focus = {
+		id = KRL_politics31
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_politics3
+		}
+		x = 40
+		y = 3
+
+	}
+	focus = {
+		id = KRL_politics32
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_politics31
+		}
+		x = 40
+		y = 4
+
+	}
+	focus = {
+		id = KRL_politics33
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_politics32
+		}
+		x = 40
+		y = 5
+
+	}
+	focus = {
+		id = KRL_politics4
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_politics
+		}
+		mutually_exclusive = {
+			focus = KRL_politics3
+			focus = KRL_politics2
+		}
+		x = 45
+		y = 2
+
+	}
+	focus = {
+		id = KRL_politics41
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_politics4
+		}
+		x = 45
+		y = 3
+
+	}
+	focus = {
+		id = KRL_politics42
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_politics41
+		}
+		x = 45
+		y = 4
+
+	}
+	focus = {
+		id = KRL_politics43
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_politics42
+		}
+		x = 45
+		y = 5
+
+	}
+	focus = {
+		id = KRL_politics5
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_politics43
+			focus = KRL_politics33
+			focus = KRL_politics23
+		}
+		x = 40
+		y = 7
+
+	}
+	focus = {
+		id = KRL_industry2
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_industry1
+		}
+		x = 55
+		y = 1
+
+	}
+	focus = {
+		id = KRL_industry3
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_industry2
+		}
+		x = 55
+		y = 2
+
+	}
+	focus = {
+		id = KRL_industry4
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_industry3
+		}
+		x = 51
+		y = 3
+
+	}
+	focus = {
+		id = KRL_industry7
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_industry4
+		}
+		mutually_exclusive = {
+			focus = KRL_industry8
+		}
+		x = 50
+		y = 4
+
+	}
+	focus = {
+		id = KRL_industry8
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_industry4
+		}
+		mutually_exclusive = {
+			focus = KRL_industry7
+		}
+		x = 52
+		y = 4
+
+	}
+	focus = {
+		id = KRL_industry5
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_industry3
+		}
+		x = 55
+		y = 3
+
+	}
+	focus = {
+		id = KRL_industry9
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_industry5
+		}
+		x = 55
+		y = 4
+
+	}
+	focus = {
+		id = KRL_industry13
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_industry9
+		}
+		x = 55
+		y = 5
+
+	}
+	focus = {
+		id = KRL_industry12
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_industry8
+		}
+		x = 52
+		y = 5
+
+	}
+	focus = {
+		id = KRL_industry11
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_industry7
+		}
+		x = 50
+		y = 5
+
+	}
+	focus = {
+		id = KRL_industry6
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_industry3
+		}
+		x = 59
+		y = 3
+
+	}
+	focus = {
+		id = KRL_industry10
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_industry6
+		}
+		x = 59
+		y = 4
+
+	}
+	focus = {
+		id = KRL_industry14
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_industry10
+		}
+		x = 59
+		y = 5
+
+	}
+	focus = {
+		id = KRL_industry15
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_industry14
+		}
+		prerequisite = {
+			focus = KRL_industry13
+			focus = KRL_industry12
+			focus = KRL_industry11
+		}
+		x = 55
+		y = 7
+
+	}
+	focus = {
+		id = KRL_army2
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_army1
+		}
+		x = 65
+		y = 2
+
+	}
+	focus = {
+		id = KRL_army21
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_army2
+		}
+		x = 63
+		y = 3
+
+	}
+	focus = {
+		id = KRL_army23
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_army21
+		}
+		x = 63
+		y = 4
+
+	}
+	focus = {
+		id = KRL_army22
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_army2
+		}
+		x = 67
+		y = 3
+
+	}
+	focus = {
+		id = KRL_army24
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_army22
+		}
+		x = 67
+		y = 4
+
+	}
+	focus = {
+		id = KRL_army25
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_army24
+		}
+		prerequisite = {
+			focus = KRL_army23
+		}
+		x = 65
+		y = 5
+
+	}
+	focus = {
+		id = KRL_army3
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_army1
+		}
+		x = 70
+		y = 2
+
+	}
+	focus = {
+		id = KRL_army31
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_army3
+		}
+		x = 70
+		y = 3
+
+	}
+	focus = {
+		id = KRL_army32
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_army31
+		}
+		x = 70
+		y = 4
+
+	}
+	focus = {
+		id = KRL_army33
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_army32
+		}
+		x = 70
+		y = 5
+
+	}
+	focus = {
+		id = KRL_army4
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_army1
+		}
+		x = 74
+		y = 2
+
+	}
+	focus = {
+		id = KRL_army41
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_army4
+		}
+		mutually_exclusive = {
+			focus = KRL_army42
+		}
+		x = 73
+		y = 3
+
+	}
+	focus = {
+		id = KRL_army42
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_army4
+		}
+		mutually_exclusive = {
+			focus = KRL_army41
+		}
+		x = 75
+		y = 3
+
+	}
+	focus = {
+		id = KRL_army5
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_army1
+		}
+		x = 79
+		y = 2
+
+	}
+	focus = {
+		id = KRL_army51
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_army5
+		}
+		mutually_exclusive = {
+			focus = KRL_army52
+		}
+		x = 78
+		y = 3
+
+	}
+	focus = {
+		id = KRL_army53
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_army51
+		}
+		x = 78
+		y = 4
+
+	}
+	focus = {
+		id = KRL_army55
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_army53
+		}
+		x = 78
+		y = 5
+
+	}
+	focus = {
+		id = KRL_civwar81
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_civwar8
+		}
+		x = 20
+		y = 6
+
+	}
+	focus = {
+		id = KRL_civwar82
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_civwar81
+		}
+		x = 20
+		y = 7
+
+	}
+	focus = {
+		id = KRL_civwar10
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_civwar92
+			focus = KRL_civwar82
+		}
+		x = 24
+		y = 8
+
+	}
+	focus = {
+		id = KRL_civwar11
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_civwar10
+		}
+		x = 24
+		y = 9
+
+	}
+	focus = {
+		id = KRL_politics6
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_politics5
+		}
+		x = 40
+		y = 8
+
+	}
+	focus = {
+		id = KRL_politics7
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_politics6
+		}
+		x = 40
+		y = 9
+
+	}
+	focus = {
+		id = KRL_Lina
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_politics7
+		}
+		mutually_exclusive = {
+			focus = KRL_kerri
+			focus = KRL_Vitya
+		}
+		x = 35
+		y = 11
+
+	}
+	focus = {
+		id = KRL_Lina2
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_Lina
+		}
+		mutually_exclusive = {
+			focus = KRL_Lina1
+		}
+		x = 37
+		y = 12
+
+	}
+	focus = {
+		id = KRL_Lina1
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_Lina
+		}
+		mutually_exclusive = {
+			focus = KRL_Lina2
+		}
+		x = 33
+		y = 12
+
+	}
+	focus = {
+		id = KRL_Lina21
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_Lina2
+		}
+		x = 37
+		y = 13
+
+	}
+	focus = {
+		id = KRL_Lina11
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_Lina1
+		}
+		x = 33
+		y = 13
+
+	}
+	focus = {
+		id = KRL_kerri
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_politics7
+		}
+		mutually_exclusive = {
+			focus = KRL_Lina
+			focus = KRL_Vitya
+		}
+		x = 40
+		y = 11
+
+	}
+	focus = {
+		id = KRL_kerri1
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_kerri
+		}
+		x = 40
+		y = 13
+
+	}
+	focus = {
+		id = KRL_Vitya
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_politics7
+		}
+		mutually_exclusive = {
+			focus = KRL_nikto
+			focus = KRL_Lina
+		}
+		x = 45
+		y = 11
+
+	}
+	focus = {
+		id = KRL_Vitya1
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_Vitya
+		}
+		mutually_exclusive = {
+			focus = KRL_Vitya2
+		}
+		x = 43
+		y = 12
+
+	}
+	focus = {
+		id = KRL_Vitya2
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_Vitya
+		}
+		mutually_exclusive = {
+			focus = KRL_Vitya1
+		}
+		x = 47
+		y = 12
+
+	}
+	focus = {
+		id = KRL_Vitya11
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_Vitya1
+		}
+		x = 43
+		y = 13
+
+	}
+	focus = {
+		id = KRL_Vitya21
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_Vitya2
+		}
+		x = 47
+		y = 13
+
+	}
+	focus = {
+		id = KRL_politics8
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_Lina21
+			focus = KRL_Vitya11
+		}
+		x = 40
+		y = 15
+
+	}
+	focus = {
+		id = KRL_army52
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_army5
+		}
+		mutually_exclusive = {
+			focus = KRL_army51
+		}
+		x = 80
+		y = 3
+
+	}
+	focus = {
+		id = KRL_army54
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_army52
+		}
+		x = 80
+		y = 4
+
+	}
+	focus = {
+		id = KRL_army56
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_army54
+		}
+		x = 80
+		y = 5
+
+	}
+	focus = {
+		id = KRL_army6
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_army56
+			focus = KRL_army55
+		}
+		x = 79
+		y = 6
+
+	}
+	focus = {
+		id = KRL_army7
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KRL_army6
+		}
+		prerequisite = {
+			focus = KRL_army33
+		}
+		prerequisite = {
+			focus = KRL_army25
+		}
+		x = 74
+		y = 8
+
+	}
+}

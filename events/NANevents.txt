@@ -381,10 +381,7 @@ country_event = {
 	    name = andreev.12.a
 		ai_chance = { factor = 20 }
 		trigger = {  }
-		add_timed_idea = {
-					 idea = NRM_ludi1
-					 days = 70
-					}
+		add_manpower = -4000
 	}
 }		
 

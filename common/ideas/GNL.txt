@@ -1,0 +1,336 @@
+# =====================================================================
+#  common/national_spirit/GNL_spirits.txt
+#  Все нацдухи, на которые ссылается GNL.txt (completion_reward).
+#  Новые (не было в скринах, додуманы под ваши id) помечены комментарием.
+# =====================================================================
+
+ideas = {
+	country = {
+
+		GNL_army_split_debuff = {
+			picture = GFX_idea_generic_low_org
+			removal_cost = -1
+			modifier = {
+				army_org_factor = -0.1
+			}
+		}
+
+		GNL_construction_speed_spirit = {
+			picture = GFX_idea_generic_construction
+			removal_cost = -1
+			modifier = {
+				construction_speed_factor = 0.05
+			}
+		}
+
+		GNL_private_investments_spirit = {
+			picture = GFX_idea_generic_trade
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.03
+				industrial_complex_construction_speed_factor = 0.10
+			}
+		}
+
+		GNL_import_tools_spirit = {
+			picture = GFX_idea_generic_production
+			removal_cost = -1
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.10
+			}
+		}
+
+		GNL_foreign_specialists_spirit = {
+			picture = GFX_idea_generic_scientific_exchange
+			removal_cost = -1
+			modifier = {
+				industry_research_speed_factor = 0.15
+			}
+		}
+
+		GNL_economy_of_retribution_spirit = {
+			picture = GFX_idea_generic_production
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+				arms_factory_construction_speed_factor = 0.15
+			}
+		}
+
+		GNL_labor_conscription_spirit = {
+			picture = GFX_idea_generic_manpower
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		GNL_fuel_stockpile_spirit = {
+			picture = GFX_idea_generic_oil
+			removal_cost = -1
+			modifier = {
+				max_fuel_stockpile_factor = 0.50
+			}
+		}
+
+		GNL_independent_mic_spirit = {
+			picture = GFX_idea_generic_production
+			removal_cost = -1
+			modifier = {
+				industry_repair_factor = 0.30
+				industrial_complex_bombing_defence = 0.20
+			}
+		}
+
+		GNL_free_template_changes_spirit = {
+			picture = GFX_idea_generic_manpower
+			removal_cost = -1
+			modifier = {
+				experience_gain_army_factor = 0.05
+			}
+		}
+
+		GNL_independent_officers_spirit = {
+			picture = GFX_idea_generic_officer_corps
+			removal_cost = -1
+			modifier = {
+				experience_gain_army_factor = 0.10
+			}
+		}
+
+		GNL_infantry_horde_defense_spirit = {
+			picture = GFX_idea_generic_manpower
+			removal_cost = -1
+			modifier = {
+				infantry_defence_factor = 0.10
+			}
+		}
+
+		GNL_vehicle_production_spirit = {
+			picture = GFX_idea_generic_production
+			removal_cost = -1
+			modifier = {
+				motorized_equipment_production_speed_factor = 0.10
+			}
+		}
+
+		GNL_blitzkrieg_doctrine_spirit = {
+			picture = GFX_idea_generic_land_doctrine
+			removal_cost = -1
+			modifier = {
+				planning_speed = 0.20
+				initiative_factor = 0.15
+			}
+		}
+
+		GNL_ammo_standardization_spirit = {
+			picture = GFX_idea_generic_production
+			removal_cost = -1
+			modifier = {
+				production_efficiency_retention = 0.10
+			}
+		}
+
+		GNL_conscription_expansion_spirit = {
+			picture = GFX_idea_generic_manpower
+			removal_cost = -1
+			modifier = {
+				conscription = 0.02
+				training_time_factor = -0.10
+			}
+		}
+
+		GNL_heavy_gear_spirit = {
+			picture = GFX_idea_generic_production
+			removal_cost = -1
+			modifier = {
+				anti_air_attack_factor = 0.10
+				anti_tank_attack_factor = 0.10
+			}
+		}
+
+		GNL_not_a_step_back_spirit = {
+			picture = GFX_idea_generic_defence
+			removal_cost = -1
+			modifier = {
+				entrenchment_speed = 0.15
+				defense_factor = 0.10
+			}
+		}
+
+		GNL_triumph_spirit = {
+			picture = GFX_idea_generic_national_unity
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.07
+				army_org_factor = 0.05
+				org_regain_factor = 0.10
+			}
+		}
+
+		GNL_kira_fascist_drift_spirit = {
+			picture = GFX_idea_generic_fascism_influence
+			removal_cost = -1
+			modifier = {
+				fascism_drift = 0.05
+			}
+		}
+
+		GNL_total_vendetta_spirit = {
+			picture = GFX_idea_generic_war_propaganda
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.10
+			}
+		}
+
+		GNL_mikhailovskaya_grudge_spirit = {
+			picture = GFX_idea_generic_national_will
+			removal_cost = -1
+			targeted_modifier = {
+				tag = ILY
+				attack_bonus_against = 0.05
+			}
+		}
+
+		GNL_spy_network_decrypt_spirit = {
+			picture = GFX_idea_generic_intelligence_agency
+			removal_cost = -1
+			modifier = {
+				decryption_factor = 0.15
+			}
+		}
+
+		# --- Новые: ветка Либералов (додумано, не было на скринах) ---
+
+		GNL_liberal_faction_spirit = {
+			picture = GFX_idea_generic_national_will
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+
+		GNL_full_democracy_spirit = {
+			picture = GFX_idea_generic_democratic
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = 0.05
+			}
+		}
+
+		GNL_ndk_talks_spirit = {
+			picture = GFX_idea_generic_diplomacy
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.05
+			}
+		}
+
+		GNL_kudinov_pact_spirit = {
+			picture = GFX_idea_generic_diplomacy
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+
+		# --- Новые: ветка Хунты (додумано) ---
+
+		GNL_junta_rule_spirit = {
+			picture = GFX_idea_generic_military_junta
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				stability_factor = -0.05
+			}
+		}
+
+		GNL_isolationism_spirit = {
+			picture = GFX_idea_generic_isolation
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				out_of_supply_factor = -0.10
+			}
+		}
+
+		GNL_arms_trade_spirit = {
+			picture = GFX_idea_generic_trade
+			removal_cost = -1
+			modifier = {
+				weapons_export_bonus = 0.10
+			}
+		}
+
+		GNL_armed_neutrality_spirit = {
+			picture = GFX_idea_generic_defence
+			removal_cost = -1
+			modifier = {
+				defense_factor = 0.10
+				justify_war_goal_time = 0.20
+			}
+		}
+
+		# --- Новые: доп. фокусы армейской развилки (додумано) ---
+
+		GNL_manpower_reserves_spirit = {
+			picture = GFX_idea_generic_manpower
+			removal_cost = -1
+			modifier = {
+				max_manpower_factor = 0.05
+			}
+		}
+
+		GNL_infantry_doctrine_bonus_spirit = {
+			picture = GFX_idea_generic_manpower
+			removal_cost = -1
+			modifier = {
+				infantry_attack_factor = 0.10
+			}
+		}
+
+		GNL_armored_doctrine_bonus_spirit = {
+			picture = GFX_idea_generic_land_doctrine
+			removal_cost = -1
+			modifier = {
+				armor_attack_factor = 0.10
+			}
+		}
+
+		# --- Новые: замена эффектов, требовавших несуществующих state ID ---
+
+		GNL_logistics_spirit = {
+			picture = GFX_idea_generic_construction
+			removal_cost = -1
+			modifier = {
+				supply_consumption_factor = -0.05
+			}
+		}
+
+		GNL_mining_boost_spirit = {
+			picture = GFX_idea_generic_production
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.03
+			}
+		}
+
+		GNL_border_defense_spirit = {
+			picture = GFX_idea_generic_defence
+			removal_cost = -1
+			modifier = {
+				defense_factor = 0.05
+			}
+		}
+
+		GNL_kudrovo_readiness_spirit = {
+			picture = GFX_idea_generic_defence
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.03
+			}
+		}
+	}
+}

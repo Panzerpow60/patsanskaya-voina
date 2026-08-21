@@ -1,0 +1,922 @@
+focus_tree = {
+	id = GNL
+	country = {
+		factor = 0
+		modifier = {
+		    add = 10
+			tag = GNL
+		}
+	}
+	default = no
+	focus = {
+		id = GNL_nasledie
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 34
+		y = 0
+		completion_reward = {
+			add_political_power = 50
+			set_country_flag = GNL_political_debates_unlocked
+		}
+	}
+	focus = {
+		id = GNL_goszakazi
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 17
+		y = 0
+		completion_reward = {
+			add_ideas = GNL_construction_speed_spirit
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = GNL_army1
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 59
+		y = 0
+		completion_reward = {
+			army_experience = 35
+			add_ideas = GNL_free_template_changes_spirit
+		}
+	}
+	focus = {
+		id = GNL_infra
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_goszakazi
+		}
+		x = 15
+		y = 1
+		completion_reward = {
+			add_ideas = GNL_logistics_spirit
+			add_political_power = 15
+		}
+	}
+	focus = {
+		id = GNL_fabrics
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_goszakazi
+		}
+		x = 19
+		y = 1
+		completion_reward = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	focus = {
+		id = GNL_mines
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_fabrics
+		}
+		prerequisite = {
+			focus = GNL_infra
+		}
+		x = 17
+		y = 2
+		completion_reward = {
+			add_ideas = GNL_mining_boost_spirit
+			add_political_power = 30
+		}
+	}
+	focus = {
+		id = GNL_techfactories
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_mines
+		}
+		x = 17
+		y = 3
+		completion_reward = {
+			add_tech_bonus = {
+				name = GNL_extra_research_slot
+				bonus = 1
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	focus = {
+		id = GNL_investments
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_techfactories
+		}
+		mutually_exclusive = {
+			focus = GNL_vozmezdie
+		}
+		x = 13
+		y = 4
+		completion_reward = {
+			add_ideas = GNL_private_investments_spirit
+		}
+	}
+	focus = {
+		id = GNL_stanki
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_investments
+		}
+		x = 16
+		y = 5
+		completion_reward = {
+			add_ideas = GNL_import_tools_spirit
+		}
+	}
+	focus = {
+		id = GNL_foreign
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_stanki
+		}
+		x = 16
+		y = 6
+		completion_reward = {
+			add_ideas = GNL_foreign_specialists_spirit
+		}
+	}
+	focus = {
+		id = GNL_vozmezdie
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_techfactories
+		}
+		mutually_exclusive = {
+			focus = GNL_investments
+		}
+		x = 22
+		y = 4
+		completion_reward = {
+			add_ideas = GNL_economy_of_retribution_spirit
+		}
+	}
+	focus = {
+		id = GNL_conversion
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_vozmezdie
+		}
+		x = 18
+		y = 5
+		completion_reward = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = -1
+				instant_build = yes
+			}
+		}
+	}
+	focus = {
+		id = GNL_trudovayap
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_conversion
+		}
+		x = 18
+		y = 6
+		completion_reward = {
+			add_stability = -0.05
+			add_ideas = GNL_labor_conscription_spirit
+		}
+	}
+	focus = {
+		id = GNL_oilskladi
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_trudovayap
+			focus = GNL_foreign
+		}
+		x = 17
+		y = 7
+		completion_reward = {
+			add_building_construction = {
+				type = oil_refinery
+				level = 2
+				instant_build = yes
+			}
+			add_ideas = GNL_fuel_stockpile_spirit
+		}
+	}
+	focus = {
+		id = GNL_generalitet
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_nasledie
+		}
+		x = 34
+		y = 1
+		completion_reward = {
+			add_stability = 0.05
+			remove_ideas = GNL_army_split_debuff
+		}
+	}
+	focus = {
+		id = GNL_sudba
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_generalitet
+		}
+		x = 34
+		y = 2
+		completion_reward = {
+			add_political_power = 100
+			set_country_flag = GNL_leader_choice_unlocked
+		}
+	}
+	focus = {
+		id = GNL_Liberals
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_sudba
+		}
+		x = 27
+		y = 4
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+			add_ideas = GNL_liberal_faction_spirit
+		}
+	}
+	focus = {
+		id = GNL_democracy
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_Liberals
+		}
+		x = 25
+		y = 5
+		completion_reward = {
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+			add_ideas = GNL_full_democracy_spirit
+		}
+	}
+	focus = {
+		id = GNL_NKDrelations
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_Liberals
+		}
+		x = 29
+		y = 5
+		completion_reward = {
+			# ВАЖНО: тег страны "НКД" ещё не заведён в вашем моде —
+			# как только заведёте (common/country_tags), можно вернуть:
+			# add_opinion_modifier = { target = NKD modifier = GNL_ndk_friendly_relations }
+			add_political_power = 50
+			add_ideas = GNL_ndk_talks_spirit
+		}
+	}
+	focus = {
+		id = GNL_KudinovPakt
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_NKDrelations
+		}
+		prerequisite = {
+			focus = GNL_democracy
+		}
+		x = 27
+		y = 6
+		completion_reward = {
+			# ВАЖНО: когда напишете событие в events/GNL_events.txt,
+			# можно вернуть country_event = { id = GNL_kudinov_pact.1 hours = 6 }
+			add_political_power = 75
+			add_stability = 0.05
+			add_ideas = GNL_kudinov_pact_spirit
+		}
+	}
+	focus = {
+		id = GNL_Kira
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_sudba
+		}
+		x = 34
+		y = 4
+		completion_reward = {
+			add_stability = -0.05
+			add_ideas = GNL_kira_fascist_drift_spirit
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			add_country_leader = {
+				name = "Кира"
+				desc = "POLITICS_KIRA_DESC"
+				picture = "Portrait_Kira.dds"
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = { }
+			}
+		}
+	}
+	focus = {
+		id = GNL_ideology
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_Kira
+		}
+		x = 34
+		y = 5
+		completion_reward = {
+			add_war_support = 0.15
+			add_ideas = GNL_total_vendetta_spirit
+		}
+	}
+	focus = {
+		id = GNL_obida
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_ideology
+		}
+		x = 34
+		y = 6
+		completion_reward = {
+			add_ideas = GNL_mikhailovskaya_grudge_spirit
+			add_opinion_modifier = {
+				target = ILY
+				modifier = GNL_incite_hatred
+			}
+		}
+	}
+	focus = {
+		id = GNL_spy
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_obida
+		}
+		x = 32
+		y = 7
+		completion_reward = {
+			add_operative_slot = 1
+			add_ideas = GNL_spy_network_decrypt_spirit
+		}
+	}
+	focus = {
+		id = GNL_peregovoriVitya
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_obida
+		}
+		x = 36
+		y = 7
+		completion_reward = {
+			set_country_flag = GNL_vty_diplomacy_unlocked
+			add_opinion_modifier = {
+				target = VTY
+				modifier = GNL_secret_talks_modifier
+			}
+		}
+	}
+	focus = {
+		id = GNL_podgotovka
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_spy
+		}
+		prerequisite = {
+			focus = GNL_peregovoriVitya
+		}
+		x = 34
+		y = 8
+		completion_reward = {
+			set_country_flag = GNL_war_preparations_started
+			add_political_power = 50
+			army_experience = 20
+		}
+	}
+	focus = {
+		id = GNL_defenceborders
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_podgotovka
+		}
+		x = 34
+		y = 9
+		completion_reward = {
+			add_ideas = GNL_border_defense_spirit
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = GNL_defenceKudrovo
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_podgotovka
+		}
+		x = 32
+		y = 9
+		completion_reward = {
+			add_ideas = GNL_kudrovo_readiness_spirit
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = 500
+				producer = GNL
+			}
+		}
+	}
+	focus = {
+		id = GNL_reserves
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_podgotovka
+		}
+		x = 36
+		y = 9
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 2000
+				producer = GNL
+			}
+			add_manpower = 5000
+		}
+	}
+	focus = {
+		id = GNL_paktPivo
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_defenceKudrovo
+		}
+		prerequisite = {
+			focus = GNL_defenceborders
+		}
+		prerequisite = {
+			focus = GNL_reserves
+		}
+		x = 34
+		y = 10
+		completion_reward = {
+			country_event = { id = GNL_kira_vitya_pact.1 hours = 6 }
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = GNL_KudrovoCrisis
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_paktPivo
+		}
+		x = 34
+		y = 11
+		completion_reward = {
+			add_named_threat = { threat = 5 name = "GNL_kudrovo_crisis_threat" }
+			add_opinion_modifier = {
+				target = ILY
+				modifier = GNL_kudrovo_crisis_modifier
+			}
+		}
+	}
+	focus = {
+		id = GNl_WarILY
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_KudrovoCrisis
+		}
+		x = 34
+		y = 12
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = ILY
+			}
+		}
+	}
+	focus = {
+		id = GNL_raspil
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNl_WarILY
+		}
+		x = 34
+		y = 15
+		completion_reward = {
+			add_state_core = { state = 1 country = GNL }
+			add_state_core = { state = 2 country = GNL }
+			add_state_core = { state = 3 country = GNL }
+		}
+	}
+	focus = {
+		id = GNL_Hunta
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_sudba
+		}
+		x = 43
+		y = 4
+		completion_reward = {
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+			add_ideas = GNL_junta_rule_spirit
+		}
+	}
+	focus = {
+		id = GNL_base
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_Hunta
+		}
+		x = 43
+		y = 5
+		completion_reward = {
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	focus = {
+		id = GNL_closeall
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_base
+		}
+		x = 41
+		y = 6
+		completion_reward = {
+			add_stability = 0.05
+			add_ideas = GNL_isolationism_spirit
+		}
+	}
+	focus = {
+		id = GNL_patsani
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_base
+		}
+		x = 45
+		y = 6
+		completion_reward = {
+			add_ideas = GNL_conscription_expansion_spirit
+			add_manpower = 3000
+		}
+	}
+	focus = {
+		id = GNL_voentorg
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_patsani
+		}
+		prerequisite = {
+			focus = GNL_closeall
+		}
+		x = 43
+		y = 7
+		completion_reward = {
+			add_ideas = GNL_arms_trade_spirit
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = GNL_neutrallity
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_voentorg
+		}
+		x = 43
+		y = 8
+		completion_reward = {
+			add_ideas = GNL_armed_neutrality_spirit
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = GNL_vpk
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_oilskladi
+		}
+		x = 17
+		y = 8
+		completion_reward = {
+			add_ideas = GNL_independent_mic_spirit
+		}
+	}
+	focus = {
+		id = GNL_totalwar
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_vpk
+		}
+		x = 17
+		y = 9
+		completion_reward = {
+			# постройка без указания state — движок выберет подходящий
+			# регион автоматически (не требует реальных state ID).
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+	focus = {
+		id = GNL_army2
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_army1
+		}
+		x = 59
+		y = 1
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 3000
+				producer = GNL
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = 300
+				producer = GNL
+			}
+		}
+	}
+	focus = {
+		id = GNL_army3
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_army2
+		}
+		x = 59
+		y = 2
+		completion_reward = {
+			add_ideas = GNL_independent_officers_spirit
+		}
+	}
+	focus = {
+		id = GNL_army4
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_army3
+		}
+		mutually_exclusive = {
+			focus = GNL_army8
+		}
+		x = 55
+		y = 3
+		completion_reward = {
+			add_ideas = GNL_infantry_horde_defense_spirit
+		}
+	}
+	focus = {
+		id = GNL_army5
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_army4
+		}
+		x = 53
+		y = 4
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 2500
+				producer = GNL
+			}
+		}
+	}
+	focus = {
+		id = GNL_army6
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_army4
+		}
+		x = 57
+		y = 4
+		completion_reward = {
+			add_ideas = GNL_manpower_reserves_spirit
+			add_manpower = 4000
+		}
+	}
+	focus = {
+		id = GNL_army7
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_army5
+		}
+		prerequisite = {
+			focus = GNL_army6
+		}
+		x = 55
+		y = 5
+		completion_reward = {
+			add_ideas = GNL_infantry_doctrine_bonus_spirit
+		}
+	}
+	focus = {
+		id = GNL_army8
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_army3
+		}
+		mutually_exclusive = {
+			focus = GNL_army4
+		}
+		x = 63
+		y = 3
+		completion_reward = {
+			add_tech_bonus = {
+				name = GNL_motorized_doctrine_bonus
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = GNL_army9
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_army8
+		}
+		x = 61
+		y = 4
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = motorized_1
+				amount = 500
+				producer = GNL
+			}
+			add_ideas = GNL_vehicle_production_spirit
+		}
+	}
+	focus = {
+		id = GNL_army10
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_army8
+		}
+		x = 65
+		y = 4
+		completion_reward = {
+			add_ideas = GNL_blitzkrieg_doctrine_spirit
+		}
+	}
+	focus = {
+		id = GNL_army11
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_army9
+		}
+		prerequisite = {
+			focus = GNL_army10
+		}
+		x = 63
+		y = 5
+		completion_reward = {
+			add_ideas = GNL_armored_doctrine_bonus_spirit
+		}
+	}
+	focus = {
+		id = GNL_army12
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_army11
+			focus = GNL_army7
+		}
+		x = 59
+		y = 6
+		completion_reward = {
+			army_experience = 25
+			add_manpower = 2000
+		}
+	}
+	focus = {
+		id = GNL_army13
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_army12
+		}
+		x = 59
+		y = 7
+		completion_reward = {
+			add_ideas = GNL_ammo_standardization_spirit
+		}
+	}
+	focus = {
+		id = GNL_army14
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_army13
+		}
+		x = 57
+		y = 8
+		completion_reward = {
+			# см. примечание у GNL_defenceborders — тот же фикс
+			add_ideas = GNL_border_defense_spirit
+			add_stability = 0.02
+		}
+	}
+	focus = {
+		id = GNL_army15
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_army13
+		}
+		x = 61
+		y = 8
+		completion_reward = {
+			add_ideas = GNL_conscription_expansion_spirit
+			add_manpower = 4000
+		}
+	}
+	focus = {
+		id = GNL_army16
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_army15
+		}
+		prerequisite = {
+			focus = GNL_army14
+		}
+		x = 59
+		y = 9
+		completion_reward = {
+			add_ideas = GNL_heavy_gear_spirit
+		}
+	}
+	focus = {
+		id = GNL_army17
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = GNL_army16
+		}
+		x = 59
+		y = 10
+		completion_reward = {
+			add_ideas = GNL_triumph_spirit
+			army_experience = 30
+		}
+	}
+}

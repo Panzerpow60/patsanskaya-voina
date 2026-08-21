@@ -41,4 +41,19 @@ opinion_modifiers = {
 	ILY_kompromat = {
 	    value = 15
 	}
+	
+	GNL_incite_hatred = {
+		value = -30
+		decay = 0.05
+	}
+
+	GNL_secret_talks_modifier = {
+		value = 25
+		decay = 0.02
+	}
+
+	GNL_kudrovo_crisis_modifier = {
+		value = -40
+		decay = 0.05
+	}
 }

@@ -1,0 +1,22 @@
+state={
+	id=1034
+	name="STATE_1034"
+	provinces={
+		6380 
+	}
+	history={
+		owner = GNL
+		victory_points = {
+			6380 25
+		}
+		buildings = {
+			infrastructure = 3 
+			industrial_complex = 5
+		}
+		add_core_of = GNL
+	}
+	state_category = city
+	manpower=1435670
+	buildings_max_level_factor=1.000
+	local_supplies=4.000
+}

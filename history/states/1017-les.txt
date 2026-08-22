@@ -19,5 +19,5 @@ state={
 	add_core_of = SAS
 	}
 	buildings_max_level_factor=1.000
-	local_supplies=2.000
+	local_supplies=3.000
 }

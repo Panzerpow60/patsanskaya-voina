@@ -1,0 +1,18 @@
+state={
+	id=1033
+	name="STATE_1033"
+	provinces={
+		121 231 252 3116 3220 6101 6356 9345 11205 
+	}
+	history={
+		owner = GNL
+		buildings = {
+			infrastructure = 2 
+	        arms_factory = 4
+		}
+		add_core_of = GNL
+	}
+	manpower=689432
+	buildings_max_level_factor=1.000
+	local_supplies=2.000
+}

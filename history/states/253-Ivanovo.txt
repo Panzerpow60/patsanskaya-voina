@@ -13,6 +13,21 @@ state={
       infrastructure = 2 
       industrial_complex = 2
       arms_factory = 3
+	  			6215 = {
+				bunker = 1
+			    }
+				6135 = {
+				bunker = 1
+			    }
+				6247 = {
+				bunker = 1
+			    }
+				346 = {
+				bunker = 1
+			    }
+				3240 = {
+				bunker = 1
+			    }
     }
     add_core_of = ILY
     victory_points = {

@@ -14,6 +14,9 @@ state={
 		buildings = {
 			infrastructure = 3 
 			industrial_complex = 6
+			397 = {
+				bunker = 2
+			    }
 		}
 		add_core_of = SAS
 		victory_points = {
